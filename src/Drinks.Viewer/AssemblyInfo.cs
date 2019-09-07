@@ -23,12 +23,11 @@
 */
 
 using System;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 
 // Assembly Configuration
-[assembly: CLSCompliant(true)]
+[assembly: CLSCompliant(false)]
 
 // COM Configuration
 [assembly: ComVisible(false)]
