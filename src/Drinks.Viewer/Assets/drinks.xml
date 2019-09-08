@@ -10,4 +10,9 @@
 		<teaser>Zitrone, Gin, Brombere</teaser>
 		<image>Bramble.jpg</image>
 	</drink>
+	<drink>
+		<name>Singapore Sling</name>
+		<teaser>Limette, Gin, Kirschlikör, Cointreau, Ananas</teaser>
+		<image>SingaporeSling.jpg</image>
+	</drink>
 </drinks>
