@@ -25,14 +25,17 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
+
 namespace Drinks.Model
 {
 	/// <summary>
+	/// This service provides access to drinks.
 	/// </summary>
 	public interface IDrinkRepository
 	{
 		/// <summary>
+		/// Gets all drinks.
 		/// </summary>
-		IEnumerable<Drink> GetAll();
+		Task<IEnumerable<Drink>> GetAll();
 	}
 }

@@ -23,18 +23,19 @@
 */
 
 using System;
+using System.Threading.Tasks;
 
 
 namespace Drinks.Model
 {
 	/// <summary>
+	/// This service provides access to images, like photos of drinks.
 	/// </summary>
 	public interface IImageRepository
 	{
 		/// <summary>
+		/// Gets the source URI for the given image.
 		/// </summary>
-		/// <param name="id"></param>
-		/// <returns></returns>
-		Uri GetById(ImageId id);
+		Task<Uri> GetById(ImageId id);
 	}
 }
