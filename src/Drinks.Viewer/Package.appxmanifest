@@ -8,8 +8,8 @@
 
   <Identity
     Name="Drinks.Viewer.24CA5266ECA14B1A8BCA0B124E40197"
-    Publisher="CN=olafk"
-    Version="1.0.0.0" />
+    Publisher="CN=Anton Paar GmbH, OU=purchasing department, O=Anton Paar GmbH, L=Graz-Strassgang, S=Steiermark, C=AT"
+    Version="1.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="b009ccb4-d4b8-469b-a02a-e1e8465f979f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
