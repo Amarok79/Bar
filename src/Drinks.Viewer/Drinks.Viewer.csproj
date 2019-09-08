@@ -73,6 +73,9 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Bramble.jpg" />
+    <Content Include="Assets\CaipiPassion.jpg" />
+    <Content Include="Assets\drinks.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -104,6 +107,16 @@
     <None Include="..\Bar.licenseheader">
       <Link>Bar.licenseheader</Link>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Drinks.Model\Drinks.Model.csproj">
+      <Project>{7e0070fc-e26d-4172-a7a0-154ef99e8adc}</Project>
+      <Name>Drinks.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drinks.Services\Drinks.Services.csproj">
+      <Project>{b32a8923-23af-4881-acf6-f83f198fc7ff}</Project>
+      <Name>Drinks.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

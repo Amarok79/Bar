@@ -64,6 +64,12 @@ namespace Drinks.Model
 		/// </summary>
 		public ImageId ImageId { get; private set; }
 
+		/// <summary>
+		/// </summary>
+		public String Image { get; set; }
+
+
+
 
 		/// <summary>
 		/// Initializes a new instance.

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Global Rules" ToolsVersion="15.0">
+<RuleSet Name="Global Rules" ToolsVersion="16.0">
   <IncludeAll Action="Warning" />
   <Rules AnalyzerId="ClrHeapAllocationAnalyzer" RuleNamespace="ClrHeapAllocationAnalyzer">
     <Rule Id="HAA0101" Action="None" />
@@ -24,6 +24,7 @@
   <Rules AnalyzerId="DevExpress.CodeAnalysis.CSharp.Diagnostics" RuleNamespace="DevExpress.CodeAnalysis.CSharp.Diagnostics">
     <Rule Id="CRR0013" Action="Warning" />
     <Rule Id="CRR0014" Action="Warning" />
+    <Rule Id="CRR0029" Action="None" />
   </Rules>
   <Rules AnalyzerId="DevExpress.CodeAnalysis.CSharp.Features" RuleNamespace="DevExpress.CodeAnalysis.CSharp.Features">
     <Rule Id="CR0001" Action="Warning" />
@@ -842,7 +843,6 @@
     <Rule Id="S4040" Action="Warning" />
     <Rule Id="S4041" Action="Warning" />
     <Rule Id="S4047" Action="Warning" />
-    <Rule Id="S4049" Action="Warning" />
     <Rule Id="S4050" Action="Warning" />
     <Rule Id="S4052" Action="Warning" />
     <Rule Id="S4056" Action="Warning" />

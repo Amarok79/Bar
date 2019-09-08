@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<drinks>
+	<drink>
+		<name>Caipirinha &amp; Passion</name>
+		<teaser>Limette, Cachaca, Passionsfrucht</teaser>
+		<image>CaipiPassion.jpg</image>
+	</drink>
+	<drink>
+		<name>Bramble</name>
+		<teaser>Zitrone, Gin, Brombere</teaser>
+		<image>Bramble.jpg</image>
+	</drink>
+</drinks>
