@@ -1,5 +1,5 @@
 ﻿<ProjectConfiguration>
   <Settings>
-    <IgnoreThisComponentCompletely>False</IgnoreThisComponentCompletely>
+    <HiddenComponentWarnings />
   </Settings>
 </ProjectConfiguration>

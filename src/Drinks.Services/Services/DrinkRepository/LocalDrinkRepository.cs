@@ -25,6 +25,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 using Drinks.Model;
 
@@ -32,43 +33,48 @@ using Drinks.Model;
 namespace Drinks.Services.DrinkRepository
 {
 	/// <summary>
+	/// An implementation that loads drinks from a local manifest.
 	/// </summary>
 	public sealed class LocalDrinkRepository :
 		IDrinkRepository
 	{
-		/// <summary>
-		/// </summary>
-		public String AssetsDirectory { get; }
+		// data
+		private readonly String mAssetsDirectory;
 
 
 		/// <summary>
+		/// Initializes a new instance.
 		/// </summary>
 		public LocalDrinkRepository(String assetsDirectory)
 		{
-			this.AssetsDirectory = assetsDirectory;
+			mAssetsDirectory = assetsDirectory;
 		}
 
 
 		/// <summary>
+		/// Gets all drinks.
 		/// </summary>
-		public IEnumerable<Drink> GetAll()
+		public Task<IEnumerable<Drink>> GetAll()
 		{
-			var indexPath = Path.Combine(this.AssetsDirectory, "drinks.xml");
-			var doc = XDocument.Load(indexPath);
+			var manifestPath = Path.Combine(mAssetsDirectory, "drinks.xml");
+			var doc = XDocument.Load(manifestPath);
 
+			var drinks = new List<Drink>();
 			foreach (var drinkNode in doc.Element("drinks").Elements("drink"))
 			{
 				var name = drinkNode.Element("name").Value;
 				var teaser = drinkNode.Element("teaser").Value;
 				var image = Guid.Parse(drinkNode.Element("image").Value);
 
-				var drink = new Drink(new DrinkId(), new BarId())
+				var drink = new Drink(new DrinkId(Guid.NewGuid()), new BarId())
 					.SetName(name)
 					.SetTeaser(teaser)
 					.SetImage(new ImageId(image));
 
-				yield return drink;
+				drinks.Add(drink);
 			}
+
+			return Task.FromResult<IEnumerable<Drink>>(drinks);
 		}
 	}
 }

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests.Drinks.Model", "src\T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Drinks.Services", "src\Drinks.Services\Drinks.Services.csproj", "{B32A8923-23AF-4881-ACF6-F83F198FC7FF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests.Drinks.Services", "src\Tests.Drinks.Services\Tests.Drinks.Services.csproj", "{D9BC767A-69FE-4DF9-8ECA-B90C960ACD43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,14 @@ Global
 		{B32A8923-23AF-4881-ACF6-F83F198FC7FF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B32A8923-23AF-4881-ACF6-F83F198FC7FF}.Release|x86.ActiveCfg = Release|Any CPU
 		{B32A8923-23AF-4881-ACF6-F83F198FC7FF}.Release|x86.Build.0 = Release|Any CPU
+		{D9BC767A-69FE-4DF9-8ECA-B90C960ACD43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9BC767A-69FE-4DF9-8ECA-B90C960ACD43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9BC767A-69FE-4DF9-8ECA-B90C960ACD43}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D9BC767A-69FE-4DF9-8ECA-B90C960ACD43}.Debug|x86.Build.0 = Debug|Any CPU
+		{D9BC767A-69FE-4DF9-8ECA-B90C960ACD43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9BC767A-69FE-4DF9-8ECA-B90C960ACD43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9BC767A-69FE-4DF9-8ECA-B90C960ACD43}.Release|x86.ActiveCfg = Release|Any CPU
+		{D9BC767A-69FE-4DF9-8ECA-B90C960ACD43}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

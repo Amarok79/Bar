@@ -17,13 +17,16 @@ namespace Drinks.Services.ImageRepository
 		/// <summary>
 		/// Gets the source URI for the given image.
 		/// </summary>
-		public async Task<Uri> GetById(ImageId id)
+		public Task<Uri> GetById(ImageId id)
 		{
-			var fileName = id.Guid.ToString("B", CultureInfo.InvariantCulture);
+			var fileName = id.Guid.ToString("B", CultureInfo.InvariantCulture)
+				.ToUpperInvariant();
 
-			return new Uri(
+			var uri = new Uri(
 				$"https://amarok.blob.core.windows.net/drinks/{fileName}.jpg"
 			);
+
+			return Task.FromResult(uri);
 		}
 	}
 }
