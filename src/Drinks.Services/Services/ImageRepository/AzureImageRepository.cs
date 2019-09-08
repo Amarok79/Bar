@@ -2,17 +2,22 @@
 
 using System;
 using System.Globalization;
+using System.Threading.Tasks;
 using Drinks.Model;
 
 
 namespace Drinks.Services.ImageRepository
 {
 	/// <summary>
+	/// An implementation that loads images from Azure.
 	/// </summary>
 	public sealed class AzureImageRepository :
 		IImageRepository
 	{
-		public Uri GetById(ImageId id)
+		/// <summary>
+		/// Gets the source URI for the given image.
+		/// </summary>
+		public async Task<Uri> GetById(ImageId id)
 		{
 			var fileName = id.Guid.ToString("B", CultureInfo.InvariantCulture);
 
