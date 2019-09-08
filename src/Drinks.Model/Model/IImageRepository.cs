@@ -23,52 +23,18 @@
 */
 
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Xml.Linq;
-using Drinks.Model;
 
 
-namespace Drinks.Services.DrinkRepository
+namespace Drinks.Model
 {
 	/// <summary>
 	/// </summary>
-	public sealed class LocalDrinkRepository :
-		IDrinkRepository
+	public interface IImageRepository
 	{
 		/// <summary>
 		/// </summary>
-		public String AssetsDirectory { get; }
-
-
-		/// <summary>
-		/// </summary>
-		public LocalDrinkRepository(String assetsDirectory)
-		{
-			this.AssetsDirectory = assetsDirectory;
-		}
-
-
-		/// <summary>
-		/// </summary>
-		public IEnumerable<Drink> GetAll()
-		{
-			var indexPath = Path.Combine(this.AssetsDirectory, "drinks.xml");
-			var doc = XDocument.Load(indexPath);
-
-			foreach (var drinkNode in doc.Element("drinks").Elements("drink"))
-			{
-				var name = drinkNode.Element("name").Value;
-				var teaser = drinkNode.Element("teaser").Value;
-				var image = Guid.Parse(drinkNode.Element("image").Value);
-
-				var drink = new Drink(new DrinkId(), new BarId())
-					.SetName(name)
-					.SetTeaser(teaser)
-					.SetImage(new ImageId(image));
-
-				yield return drink;
-			}
-		}
+		/// <param name="id"></param>
+		/// <returns></returns>
+		Uri GetById(ImageId id);
 	}
 }

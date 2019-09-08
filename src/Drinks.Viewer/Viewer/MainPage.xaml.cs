@@ -33,14 +33,14 @@ namespace Drinks.Viewer
 
 				foreach(var drink in drinks)
 				{
-					var imagePath = Path.Combine(assetsDirectory.Path, drink.Image);
-					var image = new BitmapImage(new Uri(imagePath));
+					//var imagePath = Path.Combine(assetsDirectory.Path, drink.Image);
+					//var image = new BitmapImage(new Uri(imagePath));
 					var viewModel = (MainPageViewModel)this.DataContext;
 
 					viewModel.Cocktails.Add(new Cocktail {
 						Name = drink.Name,
 						Description = drink.Teaser,
-						Image = image,
+						//Image = image,
 					});
 				}
 			}
