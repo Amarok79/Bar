@@ -23,25 +23,41 @@
 */
 
 using System;
+using System.Linq;
 using System.Threading.Tasks;
-using Drinks.Model;
 using NFluent;
 using NUnit.Framework;
 
 
-namespace Drinks.Services.ImageRepository
+namespace Drinks.Services.DrinkRepository
 {
 	[TestFixture]
-	public class Test_AzureImageRepository
+	public class Test_LocalDrinkRepository
 	{
 		[Test]
-		public async Task GetById()
+		public async Task GetAll()
 		{
-			var repo = new AzureImageRepository();
-			var id = new ImageId(new Guid("{E8608B08-4309-47EE-88FF-582301A48222}"));
+			var repo = new LocalDrinkRepository("testfiles");
 
-			Check.That(await repo.GetById(id))
-				.IsEqualTo(new Uri("https://amarok.blob.core.windows.net/drinks/{E8608B08-4309-47EE-88FF-582301A48222}.jpg"));
+			var drinks = (await repo.GetAll())
+				.ToList();
+
+			Check.That(drinks)
+				.HasSize(2);
+
+			Check.That(drinks[0].Name)
+				.IsEqualTo("Bramble");
+			Check.That(drinks[0].Teaser)
+				.IsEqualTo("Zitrone, Gin, Brombeere");
+			Check.That(drinks[0].ImageId.Guid)
+				.IsEqualTo(new Guid("{41E7903D-086C-4E4B-A4BA-869248A2DB25}"));
+
+			Check.That(drinks[1].Name)
+				.IsEqualTo("Singapore Sling");
+			Check.That(drinks[1].Teaser)
+				.IsEqualTo("Limette, Gin, Kirschlikör, Cointreau, Ananas");
+			Check.That(drinks[1].ImageId.Guid)
+				.IsEqualTo(new Guid("{50B3EA34-2FE3-47D2-8498-C956687DE2FB}"));
 		}
 	}
 }

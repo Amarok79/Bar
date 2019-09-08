@@ -45,7 +45,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Services\DrinkRepository\" />
+	  <None Update="testfiles\drinks.xml">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 
 	<Choose>
