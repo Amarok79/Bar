@@ -44,6 +44,10 @@
 		<ProjectReference Include="..\Drinks.Services\Drinks.Services.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Services\DrinkRepository\" />
+	</ItemGroup>
+
 	<Choose>
 		<When Condition=" '$(Configuration)' != 'Debug' ">
 			<ItemGroup>
