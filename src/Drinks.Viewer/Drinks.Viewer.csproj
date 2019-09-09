@@ -97,6 +97,12 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.8</Version>
     </PackageReference>
+    <PackageReference Include="Unity.Abstractions">
+      <Version>5.11.1</Version>
+    </PackageReference>
+    <PackageReference Include="Unity.Container">
+      <Version>5.11.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\amarok.snk">
