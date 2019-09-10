@@ -22,50 +22,57 @@
  * SOFTWARE.
 */
 
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
+using System.Threading.Tasks;
+using System.Xml.Linq;
 using Drinks.Model;
-using Drinks.Services.DrinkRepository;
-using Drinks.Services.ImageRepository;
-using Unity;
-using Windows.ApplicationModel;
-using Windows.ApplicationModel.Activation;
-using Windows.UI.Xaml;
 
 
-namespace Drinks.Viewer
+namespace Drinks.Services.DrinkRepository
 {
-	public sealed partial class App : Application
+	/// <summary>
+	/// </summary>
+	public sealed class AzureBlobDrinkRepository :
+		IDrinkRepository
 	{
-		public IUnityContainer Container { get; }
-
-		public static new App Current => (App)Application.Current;
-
-
-		public App()
+		/// <summary>
+		/// Gets all drinks.
+		/// </summary>
+		public async Task<IEnumerable<Drink>> GetAll()
 		{
-			this.Container = new UnityContainer();
-			this.InitializeComponent();
-		}
+			var manifestPath = Path.GetTempFileName();
 
-		protected override void OnLaunched(LaunchActivatedEventArgs args)
-		{
-			base.OnLaunched(args);
+			using (var client = new WebClient())
+			{
+				await client.DownloadFileTaskAsync(
+					"https://amarok.blob.core.windows.net/drinks/drinks.xml",
+					manifestPath)
+					.ConfigureAwait(false);
+			}
 
-			_RegisterServices(this.Container);
+			var doc = XDocument.Load(manifestPath);
 
-			Window.Current.Content = this.Container.Resolve<MainPage>();
-			Window.Current.Activate();
-		}
+			var drinks = new List<Drink>();
+			foreach (var drinkNode in doc.Element("drinks").Elements("drink"))
+			{
+				var name = drinkNode.Element("name").Value;
+				var teaser = drinkNode.Element("teaser").Value;
+				var image = Guid.Parse(drinkNode.Element("image").Value);
 
+				var drink = new Drink(new DrinkId(Guid.NewGuid()), new BarId())
+					.SetName(name)
+					.SetTeaser(teaser)
+					.SetImage(new ImageId(image));
 
-		private static void _RegisterServices(IUnityContainer container)
-		{
-			container.RegisterSingleton<IImageRepository, AzureImageRepository>();
+				drinks.Add(drink);
+			}
 
-			//var assetsDirectory = Package.Current.InstalledLocation.GetFolderAsync(@"Assets").GetResults();
-			//var repository = new LocalDrinkRepository(assetsDirectory.Path);
-			//container.RegisterInstance<IDrinkRepository>(repository);
+			File.Delete(manifestPath);
 
-			container.RegisterSingleton<IDrinkRepository, AzureBlobDrinkRepository>();
+			return drinks;
 		}
 	}
 }
