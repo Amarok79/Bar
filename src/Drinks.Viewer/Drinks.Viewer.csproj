@@ -20,7 +20,7 @@
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <GenerateAppInstallerFile>True</GenerateAppInstallerFile>
     <PackageCertificateThumbprint>3AD76E3A2A3A49AC55DFB15D12D5AF31163A657B</PackageCertificateThumbprint>
-    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>x86</AppxBundlePlatforms>
