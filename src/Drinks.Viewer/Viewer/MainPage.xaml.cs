@@ -23,6 +23,7 @@
 */
 
 using System;
+using System.Linq;
 using Drinks.Model;
 using Unity;
 using Windows.UI.Xaml;
@@ -55,7 +56,7 @@ namespace Drinks.Viewer
 				var drinks = await this.DrinkRepository.GetAll()
 					.ConfigureAwait(true);
 
-				foreach (var drink in drinks)
+				foreach (var drink in drinks.OrderBy(x => x.Name))
 				{
 					var imageUri = await this.ImageRepository.GetById(drink.ImageId)
 						.ConfigureAwait(true);
