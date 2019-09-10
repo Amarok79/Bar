@@ -6,44 +6,44 @@
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   IgnorableNamespaces="uap mp">
 
-  <Identity
-    Name="Drinks.Viewer.24CA5266ECA14B1A8BCA0B124E40197"
-    Publisher="CN=Anton Paar GmbH, OU=purchasing department, O=Anton Paar GmbH, L=Graz-Strassgang, S=Steiermark, C=AT"
-    Version="1.0.1.0" />
+	<mp:PhoneIdentity PhoneProductId="b009ccb4-d4b8-469b-a02a-e1e8465f979f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
-  <mp:PhoneIdentity PhoneProductId="b009ccb4-d4b8-469b-a02a-e1e8465f979f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+	<Identity
+		  Name="Drinks.Viewer.24CA5266ECA14B1A8BCA0B124E40197"
+		  Publisher="CN=Amarok, O=Private, C=AT"
+		  Version="1.0.0.0" />
 
-  <Properties>
-    <DisplayName>Drinks.Viewer</DisplayName>
-    <PublisherDisplayName>olafk</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
-  </Properties>
+	<Properties>
+		<DisplayName>KroKo bar</DisplayName>
+		<PublisherDisplayName>olafk</PublisherDisplayName>
+		<Logo>Assets\StoreLogo.png</Logo>
+	</Properties>
 
-  <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
-  </Dependencies>
+	<Dependencies>
+		<TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+	</Dependencies>
 
-  <Resources>
-    <Resource Language="x-generate"/>
-  </Resources>
+	<Resources>
+		<Resource Language="x-generate"/>
+	</Resources>
 
-  <Applications>
-    <Application Id="App"
-      Executable="$targetnametoken$.exe"
-      EntryPoint="Drinks.Viewer.App">
-      <uap:VisualElements
-        DisplayName="Drinks.Viewer"
-        Square150x150Logo="Assets\Square150x150Logo.png"
-        Square44x44Logo="Assets\Square44x44Logo.png"
-        BackgroundColor="transparent"
-        Description="Drinks.Viewer">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
-      </uap:VisualElements>
-    </Application>
-  </Applications>
+	<Applications>
+		<Application Id="App"
+		  Executable="$targetnametoken$.exe"
+		  EntryPoint="Drinks.Viewer.App">
+			<uap:VisualElements
+			  DisplayName="KroKo Bar"
+			  Square150x150Logo="Assets\Square150x150Logo.png"
+			  Square44x44Logo="Assets\Square44x44Logo.png"
+			  BackgroundColor="transparent"
+			  Description="The KroKo House Bar">
+				<uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+				<uap:SplashScreen Image="Assets\SplashScreen.png" />
+			</uap:VisualElements>
+		</Application>
+	</Applications>
 
-  <Capabilities>
-    <Capability Name="internetClient" />
-  </Capabilities>
+	<Capabilities>
+		<Capability Name="internetClient" />
+	</Capabilities>
 </Package>

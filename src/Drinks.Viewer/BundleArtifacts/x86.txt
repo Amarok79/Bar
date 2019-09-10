@@ -1,0 +1,2 @@
+MainPackage=D:\Bar\bin\app\Drinks.Viewer\Drinks.Viewer_1.0.0.0_x86_Debug.msix
+SymbolPackage=D:\Bar\src\Drinks.Viewer\obj\x86\Debug\Symbols\Drinks.Viewer_1.0.0.0_x86_Debug.appxsym
