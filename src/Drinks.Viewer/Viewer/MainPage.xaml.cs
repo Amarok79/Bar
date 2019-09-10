@@ -23,49 +23,52 @@
 */
 
 using System;
-using System.IO;
-using System.Linq;
-using Drinks.Services.DrinkRepository;
-using Windows.ApplicationModel;
+using Drinks.Model;
+using Unity;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
 namespace Drinks.Viewer
 {
-	/// <summary>
-	/// An empty page that can be used on its own or navigated to within a Frame.
-	/// </summary>
 	public sealed partial class MainPage : Page
 	{
+		public MainPageViewModel ViewModel => (MainPageViewModel)base.DataContext;
+
+
+		[Dependency]
+		public IDrinkRepository DrinkRepository { get; set; }
+		[Dependency]
+		public IImageRepository ImageRepository { get; set; }
+
+
 		public MainPage()
 		{
 			this.InitializeComponent();
-
-			this.Loading += this.MainPage_Loading;
+			this.Loading += _HandleOnLoading;
 		}
 
-		private async void MainPage_Loading(FrameworkElement sender, Object args)
+		private async void _HandleOnLoading(FrameworkElement sender, Object args)
 		{
 			try
 			{
-				var assetsDirectory = await Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
-				var repository = new LocalDrinkRepository(assetsDirectory.Path);
-				var drinks = await repository.GetAll();
+				var drinks = await this.DrinkRepository.GetAll()
+					.ConfigureAwait(true);
 
-				foreach(var drink in drinks)
+				foreach (var drink in drinks)
 				{
-					//var imagePath = Path.Combine(assetsDirectory.Path, drink.Image);
-					//var image = new BitmapImage(new Uri(imagePath));
-					var viewModel = (MainPageViewModel)this.DataContext;
+					var imageUri = await this.ImageRepository.GetById(drink.ImageId)
+						.ConfigureAwait(true);
 
-					viewModel.Cocktails.Add(new Drink {
+					var image = new BitmapImage(imageUri);
+
+					var item = new DrinkViewModel {
 						Name = drink.Name,
 						Teaser = drink.Teaser,
-						//Image = image,
-					});
+						Image = image,
+					};
+
+					ViewModel.Drinks.Add(item);
 				}
 			}
 			catch (Exception exception)

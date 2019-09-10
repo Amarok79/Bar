@@ -22,19 +22,13 @@
  * SOFTWARE.
 */
 
-using System;
 using System.Collections.ObjectModel;
-using Windows.UI.Xaml.Media.Imaging;
+
 
 namespace Drinks.Viewer
 {
-	public class MainPageViewModel
+	public sealed class MainPageViewModel
 	{
-		public ObservableCollection<Drink> Cocktails { get; set; } = new ObservableCollection<Drink>();
-
-
-		public MainPageViewModel()
-		{
-		}
+		public ObservableCollection<DrinkViewModel> Drinks { get; } = new ObservableCollection<DrinkViewModel>();
 	}
 }

@@ -28,7 +28,7 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Drinks.Viewer
 {
-	public sealed class Drink
+	public sealed class DrinkViewModel
 	{
 		public String Name
 		{

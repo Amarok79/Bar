@@ -61,7 +61,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Viewer\Cocktail.cs" />
+    <Compile Include="Viewer\DrinkViewModel.cs" />
     <Compile Include="Viewer\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

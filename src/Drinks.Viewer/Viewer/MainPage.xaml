@@ -38,21 +38,9 @@
 				Padding="20"
 				HorizontalScrollBarVisibility="Visible"
 				VerticalScrollBarVisibility="Disabled">
-				<GridView
-					AllowFocusOnInteraction="False"
-					IsDoubleTapEnabled="False"
-					IsHoldingEnabled="False"
-					IsMultiSelectCheckBoxEnabled="False"
-					IsRightTapEnabled="False"
-					IsSwipeEnabled="False"
-					IsTapEnabled="False"
-					IsTextScaleFactorEnabled="False"
-					IsZoomedInView="False"
-					ItemsSource="{Binding Cocktails}"
-					SelectionMode="None"
-					UseSystemFocusVisuals="False">
+				<GridView ItemsSource="{Binding Drinks}">
 					<GridView.ItemTemplate>
-						<DataTemplate x:Name="DrinkTemplate" x:DataType="local:Drink">
+						<DataTemplate x:Name="DrinkTemplate" x:DataType="local:DrinkViewModel">
 							<Grid Margin="0,0,10,10">
 								<Grid.RowDefinitions>
 									<RowDefinition Height="333" />
@@ -86,7 +74,7 @@
 									HorizontalAlignment="Left"
 									VerticalAlignment="Center"
 									Foreground="#FFB3B3B3"
-									Text="{Binding Description}"
+									Text="{Binding Teaser}"
 									TextWrapping="Wrap" />
 
 							</Grid>

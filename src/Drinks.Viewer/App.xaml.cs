@@ -26,6 +26,7 @@ using Drinks.Model;
 using Drinks.Services.DrinkRepository;
 using Drinks.Services.ImageRepository;
 using Unity;
+using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 
@@ -35,6 +36,8 @@ namespace Drinks.Viewer
 	public sealed partial class App : Application
 	{
 		public IUnityContainer Container { get; }
+
+		public static new App Current => (App)Application.Current;
 
 
 		public App()
@@ -49,7 +52,7 @@ namespace Drinks.Viewer
 
 			_RegisterServices(this.Container);
 
-			Window.Current.Content = new MainPage();
+			Window.Current.Content = this.Container.Resolve<MainPage>();
 			Window.Current.Activate();
 		}
 
@@ -57,7 +60,10 @@ namespace Drinks.Viewer
 		private static void _RegisterServices(IUnityContainer container)
 		{
 			container.RegisterSingleton<IImageRepository, AzureImageRepository>();
-			container.RegisterSingleton<IDrinkRepository, LocalDrinkRepository>();
+
+			var assetsDirectory = Package.Current.InstalledLocation.GetFolderAsync(@"Assets").GetResults();
+			var repository = new LocalDrinkRepository(assetsDirectory.Path);
+			container.RegisterInstance<IDrinkRepository>(repository);
 		}
 	}
 }
