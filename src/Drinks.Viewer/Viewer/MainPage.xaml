@@ -26,7 +26,7 @@
 			<TextBlock
 				VerticalAlignment="Center"
 				FontSize="36"
-				Text="Kroko Hausbar" />
+				Text="KroKo Bar" />
 		</Grid>
 
 		<Grid

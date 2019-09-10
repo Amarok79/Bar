@@ -7,7 +7,7 @@
 	<Application.Resources>
 
 		<LinearGradientBrush x:Key="BackgroundGradientBrush" StartPoint="0,0" EndPoint="0,1">
-			<GradientStop Offset="0.0" Color="#FF303030" />
+			<GradientStop Offset="0.0" Color="#FF181818" />
 			<GradientStop Offset="1.0" Color="#FF181818" />
 		</LinearGradientBrush>
 
