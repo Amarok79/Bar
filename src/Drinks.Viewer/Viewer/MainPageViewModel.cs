@@ -23,12 +23,22 @@
 */
 
 using System.Collections.ObjectModel;
-
+using Windows.ApplicationModel;
 
 namespace Drinks.Viewer
 {
 	public sealed class MainPageViewModel
 	{
 		public ObservableCollection<DrinkViewModel> Drinks { get; } = new ObservableCollection<DrinkViewModel>();
+
+
+		public MainPageViewModel()
+		{
+			if (DesignMode.DesignModeEnabled)
+			{
+				Drinks.Add(new DrinkViewModel { Name = "dd" });
+			}
+		}
+
 	}
 }
