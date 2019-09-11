@@ -63,6 +63,11 @@ namespace Drinks.Viewer
 
 					var image = new BitmapImage(imageUri);
 
+					image.ImageFailed += (_sender, _e) =>
+					{
+						image.UriSource = new Uri("/Assets/{00000000-0000-0000-0000-000000000000}.jpg");
+					};
+
 					var item = new DrinkViewModel {
 						Name = drink.Name,
 						Teaser = drink.Teaser,

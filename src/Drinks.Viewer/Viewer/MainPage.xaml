@@ -34,13 +34,13 @@
 		<Grid
 			x:Name="DrinksArea"
 			Grid.Row="1"
-			Padding="60"
+			Padding="20"
 			Background="{StaticResource BackgroundGradientBrush}">
 
 			<GridView ItemsSource="{Binding Drinks}" SelectionMode="None">
 				<GridView.ItemTemplate>
 					<DataTemplate x:Name="DrinkTemplate" x:DataType="local:DrinkViewModel">
-						<Grid Margin="0,0,50,50">
+						<Grid>
 							<Grid.RowDefinitions>
 								<RowDefinition Height="300" />
 								<RowDefinition Height="25" />
@@ -82,7 +82,11 @@
 						</Grid>
 					</DataTemplate>
 				</GridView.ItemTemplate>
-
+				<GridView.ItemContainerStyle>
+					<Style TargetType="GridViewItem">
+						<Setter Property="Margin" Value="30" />
+					</Style>
+				</GridView.ItemContainerStyle>
 			</GridView>
 
 		</Grid>
