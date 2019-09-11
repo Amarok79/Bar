@@ -40,46 +40,61 @@
 			<GridView ItemsSource="{Binding Drinks}" SelectionMode="None">
 				<GridView.ItemTemplate>
 					<DataTemplate x:Name="DrinkTemplate" x:DataType="local:DrinkViewModel">
-						<Grid>
-							<Grid.RowDefinitions>
-								<RowDefinition Height="300" />
-								<RowDefinition Height="25" />
-								<RowDefinition Height="50" />
-							</Grid.RowDefinitions>
+						<Border BorderBrush="#FF181818" BorderThickness="1">
+							<Grid>
+								<Grid.RowDefinitions>
+									<RowDefinition Height="171.25" />
+									<RowDefinition Height="128.75" />
+									<RowDefinition Height="25" />
+									<RowDefinition Height="50" />
+								</Grid.RowDefinitions>
 
-							<Image
-								Grid.Row="0"
-								Width="225"
-								Height="300"
-								Source="{Binding Image}"
-								Stretch="UniformToFill" />
+								<Image
+									Grid.Row="0"
+									Grid.RowSpan="2"
+									Width="225"
+									Height="300"
+									Source="{Binding Image}"
+									Stretch="UniformToFill" />
 
-							<TextBlock
-								Grid.Row="1"
-								Width="225"
-								Height="25"
-								Margin="0,10,0,0"
-								HorizontalAlignment="Left"
-								VerticalAlignment="Center"
-								FontSize="16"
-								FontWeight="Bold"
-								Foreground="White"
-								Text="{Binding Name}"
-								TextTrimming="CharacterEllipsis"
-								TextWrapping="NoWrap" />
+								<TextBlock
+									Grid.Row="2"
+									Grid.RowSpan="2"
+									Width="225"
+									Height="25"
+									Margin="0,5,0,0"
+									HorizontalAlignment="Center"
+									VerticalAlignment="Top"
+									FontSize="16"
+									FontWeight="Bold"
+									Foreground="White"
+									Text="{Binding Name}"
+									TextTrimming="CharacterEllipsis"
+									TextWrapping="NoWrap" />
 
-							<TextBlock
-								Grid.Row="2"
-								Width="225"
-								Height="50"
-								Margin="0,5,0,0"
-								HorizontalAlignment="Left"
-								VerticalAlignment="Center"
-								Foreground="#FFB3B3B3"
-								Text="{Binding Teaser}"
-								TextWrapping="Wrap" />
+								<TextBlock
+									Grid.Row="3"
+									Width="225"
+									Height="50"
+									Margin="0,2.8,0,0"
+									HorizontalAlignment="Center"
+									VerticalAlignment="Top"
+									Foreground="#FFB3B3B3"
+									Text="{Binding Teaser}"
+									TextWrapping="Wrap" />
 
-						</Grid>
+								<TextBlock
+									Grid.Row="0"
+									Margin="0,138,0,0"
+									HorizontalAlignment="Center"
+									VerticalAlignment="Top"
+									FontSize="18"
+									Foreground="#FFB3B3B3"
+									Text="Loading..."
+									Visibility="{Binding IsImageLoading}" />
+
+							</Grid>
+						</Border>
 					</DataTemplate>
 				</GridView.ItemTemplate>
 				<GridView.ItemContainerStyle>

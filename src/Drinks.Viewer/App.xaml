@@ -13,6 +13,8 @@
 
 		<SolidColorBrush x:Key="BackgroundSolidBrush" Color="#FF121212" />
 
+
+
 	</Application.Resources>
 
 </Application>

@@ -61,20 +61,28 @@ namespace Drinks.Viewer
 					var imageUri = await this.ImageRepository.GetById(drink.ImageId)
 						.ConfigureAwait(true);
 
-					var image = new BitmapImage(imageUri);
-
-					image.ImageFailed += (_sender, _e) =>
-					{
-						image.UriSource = new Uri("/Assets/{00000000-0000-0000-0000-000000000000}.jpg");
-					};
+					var image = new BitmapImage();
+					image.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
+					image.UriSource = imageUri;
 
 					var item = new DrinkViewModel {
 						Name = drink.Name,
 						Teaser = drink.Teaser,
 						Image = image,
+						IsImageLoading = Visibility.Visible,
 					};
 
 					ViewModel.Drinks.Add(item);
+
+					image.ImageFailed += (_sender, _e) =>
+					{
+						image.UriSource = new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg");
+					};
+
+					image.ImageOpened += (_sender, _e) =>
+					{
+						item.IsImageLoading = Visibility.Collapsed;
+					};
 				}
 			}
 			catch (Exception exception)

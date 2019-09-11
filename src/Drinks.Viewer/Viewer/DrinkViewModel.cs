@@ -23,12 +23,15 @@
 */
 
 using System;
+using System.ComponentModel;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media.Imaging;
 
 
 namespace Drinks.Viewer
 {
-	public sealed class DrinkViewModel
+	public sealed class DrinkViewModel :
+		INotifyPropertyChanged
 	{
 		public String Name
 		{
@@ -46,6 +49,28 @@ namespace Drinks.Viewer
 		{
 			get;
 			set;
+		}
+
+		private Visibility mIsImageLoading;
+
+		public Visibility IsImageLoading
+		{
+			get
+			{
+				return mIsImageLoading;
+			}
+			set
+			{
+				mIsImageLoading = value;
+				RaisePropertyChanged(nameof(IsImageLoading));
+			}
+		}
+
+		public event PropertyChangedEventHandler PropertyChanged;
+
+		protected void RaisePropertyChanged(String propertyName)
+		{
+			this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}
 	}
 }
