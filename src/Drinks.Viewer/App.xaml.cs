@@ -26,7 +26,6 @@ using Drinks.Model;
 using Drinks.Services.DrinkRepository;
 using Drinks.Services.ImageRepository;
 using Unity;
-using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 
@@ -60,11 +59,6 @@ namespace Drinks.Viewer
 		private static void _RegisterServices(IUnityContainer container)
 		{
 			container.RegisterSingleton<IImageRepository, AzureImageRepository>();
-
-			//var assetsDirectory = Package.Current.InstalledLocation.GetFolderAsync(@"Assets").GetResults();
-			//var repository = new LocalDrinkRepository(assetsDirectory.Path);
-			//container.RegisterInstance<IDrinkRepository>(repository);
-
 			container.RegisterSingleton<IDrinkRepository, AzureBlobDrinkRepository>();
 		}
 	}

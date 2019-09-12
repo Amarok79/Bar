@@ -21,7 +21,7 @@
 			x:Name="HeaderArea"
 			Grid.Row="0"
 			Padding="20"
-			Background="{StaticResource BackgroundSolidBrush}">
+			Background="{StaticResource HeaderBackgroundBrush}">
 
 			<TextBlock
 				HorizontalAlignment="Left"
@@ -35,7 +35,7 @@
 			x:Name="DrinksArea"
 			Grid.Row="1"
 			Padding="20"
-			Background="{StaticResource BackgroundGradientBrush}">
+			Background="{StaticResource ContentBackgroundBrush}">
 
 			<GridView ItemsSource="{Binding Drinks}" SelectionMode="None">
 				<GridView.ItemTemplate>
