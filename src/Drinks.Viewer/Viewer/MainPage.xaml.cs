@@ -30,12 +30,12 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 
+
 namespace Drinks.Viewer
 {
 	public sealed partial class MainPage : Page
 	{
-		public MainPageViewModel ViewModel => (MainPageViewModel)base.DataContext;
-
+		public MainPageViewModel ViewModel { get; } = new MainPageViewModel();
 
 		[Dependency]
 		public IDrinkRepository DrinkRepository { get; set; }
@@ -65,7 +65,7 @@ namespace Drinks.Viewer
 					image.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
 					image.UriSource = imageUri;
 
-					var item = new DrinkViewModel {
+					var item = new DrinkItemViewModel {
 						Name = drink.Name,
 						Teaser = drink.Teaser,
 						Image = image,

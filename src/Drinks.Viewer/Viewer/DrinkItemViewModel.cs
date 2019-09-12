@@ -23,54 +23,27 @@
 */
 
 using System;
-using System.ComponentModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media.Imaging;
 
 
 namespace Drinks.Viewer
 {
-	public sealed class DrinkViewModel :
-		INotifyPropertyChanged
+	public sealed class DrinkItemViewModel : BindableBase
 	{
-		public String Name
-		{
-			get;
-			set;
-		}
-
-		public String Teaser
-		{
-			get;
-			set;
-		}
-
-		public BitmapImage Image
-		{
-			get;
-			set;
-		}
-
 		private Visibility mIsImageLoading;
+
+
+		public String Name { get; set; }
+
+		public String Teaser { get; set; }
+
+		public BitmapImage Image { get; set; }
 
 		public Visibility IsImageLoading
 		{
-			get
-			{
-				return mIsImageLoading;
-			}
-			set
-			{
-				mIsImageLoading = value;
-				RaisePropertyChanged(nameof(IsImageLoading));
-			}
-		}
-
-		public event PropertyChangedEventHandler PropertyChanged;
-
-		protected void RaisePropertyChanged(String propertyName)
-		{
-			this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+			get => mIsImageLoading;
+			set => SetProperty(ref mIsImageLoading, value);
 		}
 	}
 }

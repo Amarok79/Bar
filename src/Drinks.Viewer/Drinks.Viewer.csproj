@@ -63,7 +63,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Viewer\DrinkViewModel.cs" />
+    <Compile Include="Viewer\BindableBase.cs" />
+    <Compile Include="Viewer\DrinkItemViewModel.cs" />
     <Compile Include="Viewer\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
