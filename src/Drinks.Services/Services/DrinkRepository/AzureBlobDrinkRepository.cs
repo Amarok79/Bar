@@ -34,6 +34,7 @@ using Drinks.Model;
 namespace Drinks.Services.DrinkRepository
 {
 	/// <summary>
+	/// An implementation that loads drinks from a file downloaded from Azure.
 	/// </summary>
 	public sealed class AzureBlobDrinkRepository :
 		IDrinkRepository
@@ -43,16 +44,37 @@ namespace Drinks.Services.DrinkRepository
 		/// </summary>
 		public async Task<IEnumerable<Drink>> GetAll()
 		{
-			var manifestPath = Path.GetTempFileName();
+			String manifestPath = null;
+			try
+			{
+				manifestPath = Path.GetTempFileName();
+
+				await _DownloadManifest(manifestPath)
+					.ConfigureAwait(false);
+
+				return _LoadFromManifest(manifestPath);
+			}
+			finally
+			{
+				if (manifestPath != null)
+					File.Delete(manifestPath);
+			}
+		}
+
+
+		private async Task _DownloadManifest(String manifestPath)
+		{
+			const String __url = "https://amarok.blob.core.windows.net/drinks/drinks.xml";
 
 			using (var client = new WebClient())
 			{
-				await client.DownloadFileTaskAsync(
-					"https://amarok.blob.core.windows.net/drinks/drinks.xml",
-					manifestPath)
+				await client.DownloadFileTaskAsync(__url, manifestPath)
 					.ConfigureAwait(false);
 			}
+		}
 
+		private List<Drink> _LoadFromManifest(String manifestPath)
+		{
 			var doc = XDocument.Load(manifestPath);
 
 			var drinks = new List<Drink>();
@@ -69,8 +91,6 @@ namespace Drinks.Services.DrinkRepository
 
 				drinks.Add(drink);
 			}
-
-			File.Delete(manifestPath);
 
 			return drinks;
 		}
