@@ -30,6 +30,11 @@
 		<teaser>Kaffeelikör, Baileys, Grand Manier</teaser>
 		<image>{BFF1FC54-B5B3-4F19-B517-1D77130A27A1}</image>
 	</drink>
+	<drink>
+		<name>Caipirinha</name>
+		<teaser>Limette, Rohrzucker, Cachaça</teaser>
+		<image>{A6652EC4-99C8-4A96-B5DC-10831E208217}</image>
+	</drink>
 
 
 	<!-- 
@@ -41,11 +46,6 @@
 	<drink>
 		<name>Batida de Maracuja</name>
 		<teaser>Passionsfrucht, Kokosmilch, Cachaca</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
-	</drink>
-	<drink>
-		<name>Caipirinha</name>
-		<teaser>Limette, Cachaca</teaser>
 		<image>{00000000-0000-0000-0000-000000000000}</image>
 	</drink>
 	<drink>
