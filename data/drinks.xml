@@ -25,17 +25,17 @@
 		<teaser>Limettensaft, Wodka, Cointreau, Cranberrysaft</teaser>
 		<image>{C5C04892-97F7-4C01-B799-B1ECACB7384B}</image>
 	</drink>
+	<drink>
+		<name>B52</name>
+		<teaser>Kaffeelikör, Baileys, Grand Manier</teaser>
+		<image>{BFF1FC54-B5B3-4F19-B517-1D77130A27A1}</image>
+	</drink>
 
 
 	<!-- 
 	<drink>
 		<name>Americano</name>
 		<teaser>Campari, Vermouth, Soda</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
-	</drink>
-	<drink>
-		<name>B52</name>
-		<teaser>Kahlua, Baileys, Grand Manier</teaser>
 		<image>{00000000-0000-0000-0000-000000000000}</image>
 	</drink>
 	<drink>
