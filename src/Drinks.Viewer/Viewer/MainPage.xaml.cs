@@ -69,7 +69,7 @@ namespace Drinks.Viewer
 						Name = drink.Name,
 						Teaser = drink.Teaser,
 						Image = image,
-						IsImageLoading = Visibility.Visible,
+						IsImageLoading = true,
 					};
 
 					ViewModel.Drinks.Add(item);
@@ -77,11 +77,12 @@ namespace Drinks.Viewer
 					image.ImageFailed += (_sender, _e) =>
 					{
 						image.UriSource = new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg");
+						item.IsImageLoading = false;
 					};
 
 					image.ImageOpened += (_sender, _e) =>
 					{
-						item.IsImageLoading = Visibility.Collapsed;
+						item.IsImageLoading = false;
 					};
 				}
 			}

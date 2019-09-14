@@ -36,61 +36,55 @@
 			<GridView ItemsSource="{x:Bind ViewModel.Drinks}" SelectionMode="None">
 				<GridView.ItemTemplate>
 					<DataTemplate x:Name="DrinkTemplate" x:DataType="local:DrinkItemViewModel">
-						<Border BorderBrush="#FF181818" BorderThickness="1">
-							<Grid>
-								<Grid.RowDefinitions>
-									<RowDefinition Height="171.25" />
-									<RowDefinition Height="128.75" />
-									<RowDefinition Height="25" />
-									<RowDefinition Height="50" />
-								</Grid.RowDefinitions>
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="346" />
+								<RowDefinition Height="32" />
+								<RowDefinition Height="54" />
+							</Grid.RowDefinitions>
 
+							<Border BorderBrush="#FF2A2A2A" BorderThickness="1">
 								<Image
 									Grid.Row="0"
-									Grid.RowSpan="2"
-									Width="225"
-									Height="300"
+									Width="260"
+									Height="356"
 									Source="{x:Bind Image}"
 									Stretch="UniformToFill" />
+							</Border>
 
-								<TextBlock
-									Grid.Row="2"
-									Grid.RowSpan="2"
-									Width="225"
-									Height="25"
-									Margin="0,5,0,0"
-									HorizontalAlignment="Center"
-									VerticalAlignment="Top"
-									FontSize="16"
-									FontWeight="Bold"
-									Foreground="White"
-									Text="{x:Bind Name}"
-									TextTrimming="CharacterEllipsis"
-									TextWrapping="NoWrap" />
+							<TextBlock
+								Grid.Row="1"
+								Width="260"
+								Height="28"
+								Margin="0,8,0,0"
+								HorizontalAlignment="Center"
+								VerticalAlignment="Top"
+								FontSize="18"
+								FontWeight="Bold"
+								Foreground="White"
+								Text="{x:Bind Name}"
+								TextTrimming="CharacterEllipsis"
+								TextWrapping="NoWrap" />
 
-								<TextBlock
-									Grid.Row="3"
-									Width="225"
-									Height="50"
-									Margin="0,2.8,0,0"
-									HorizontalAlignment="Center"
-									VerticalAlignment="Top"
-									Foreground="#FFB3B3B3"
-									Text="{x:Bind Teaser}"
-									TextWrapping="Wrap" />
+							<TextBlock
+								Grid.Row="2"
+								Width="260"
+								Height="54"
+								Margin="0,4,0,0"
+								HorizontalAlignment="Center"
+								VerticalAlignment="Top"
+								FontSize="16"
+								Foreground="#FFB3B3B3"
+								Text="{x:Bind Teaser}"
+								TextWrapping="Wrap" />
 
-								<TextBlock
-									Grid.Row="0"
-									Margin="0,138,0,0"
-									HorizontalAlignment="Center"
-									VerticalAlignment="Top"
-									FontSize="18"
-									Foreground="#FFB3B3B3"
-									Text="Loading..."
-									Visibility="{x:Bind IsImageLoading, Mode=OneWay}" />
+							<ProgressRing
+								Grid.Row="0"
+								HorizontalAlignment="Center"
+								VerticalAlignment="Center"
+								IsActive="{x:Bind IsImageLoading, Mode=OneWay}" />
 
-							</Grid>
-						</Border>
+						</Grid>
 					</DataTemplate>
 				</GridView.ItemTemplate>
 				<GridView.ItemContainerStyle>

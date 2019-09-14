@@ -31,7 +31,7 @@ namespace Drinks.Viewer
 {
 	public sealed class DrinkItemViewModel : BindableBase
 	{
-		private Visibility mIsImageLoading;
+		private Boolean mIsImageLoading;
 
 
 		public String Name { get; set; }
@@ -40,7 +40,7 @@ namespace Drinks.Viewer
 
 		public BitmapImage Image { get; set; }
 
-		public Visibility IsImageLoading
+		public Boolean IsImageLoading
 		{
 			get => mIsImageLoading;
 			set => SetProperty(ref mIsImageLoading, value);
