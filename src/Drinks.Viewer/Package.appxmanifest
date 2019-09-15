@@ -11,10 +11,10 @@
 	<Identity
 		  Name="Drinks.Viewer.24CA5266ECA14B1A8BCA0B124E40197"
 		  Publisher="CN=Amarok, O=Private, C=AT"
-		  Version="1.0.8.0" />
+		  Version="1.0.9.0" />
 
 	<Properties>
-		<DisplayName>KroKo bar</DisplayName>
+		<DisplayName>Die KroKo Hausbar</DisplayName>
 		<PublisherDisplayName>olafk</PublisherDisplayName>
 		<Logo>Assets\StoreLogo.png</Logo>
 	</Properties>
@@ -32,13 +32,16 @@
 		  Executable="$targetnametoken$.exe"
 		  EntryPoint="Drinks.Viewer.App">
 			<uap:VisualElements
-			  DisplayName="KroKo Bar"
+			  DisplayName="Die KroKo Hausbar"
 			  Square150x150Logo="Assets\Square150x150Logo.png"
 			  Square44x44Logo="Assets\Square44x44Logo.png"
 			  BackgroundColor="transparent"
-			  Description="The KroKo House Bar">
-				<uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+			  Description="Die KroKo Hausbar - Cocktails and andere Getränke">
+				<uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
 				<uap:SplashScreen Image="Assets\SplashScreen.png" />
+				<uap:LockScreen BadgeLogo="Assets\BadgeLogo.png" Notification="badge"/>
+				<uap:InitialRotationPreference>
+					<uap:Rotation Preference="landscape"/></uap:InitialRotationPreference>
 			</uap:VisualElements>
 		</Application>
 	</Applications>
