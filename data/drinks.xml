@@ -35,78 +35,74 @@
 		<teaser>Limette, Rohrzucker, Cachaça</teaser>
 		<image>{A6652EC4-99C8-4A96-B5DC-10831E208217}</image>
 	</drink>
-
-
-	<!-- 
-	<drink>
-		<name>Americano</name>
-		<teaser>Campari, Vermouth, Soda</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
-	</drink>
-	<drink>
-		<name>Batida de Maracuja</name>
-		<teaser>Passionsfrucht, Kokosmilch, Cachaca</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
-	</drink>
 	<drink>
 		<name>Cuba Libre</name>
 		<teaser>Limette, Rum, Cola</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
-	</drink>
-	<drink>
-		<name>Dark &amp; Stormy</name>
-		<teaser>Limette, Rum, Ginger Beer</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
-	</drink>
-	<drink>
-		<name>Gin Fizz</name>
-		<teaser>Zitrone, Gin, Soda</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
-	</drink>
-	<drink>
-		<name>Mai Tai</name>
-		<teaser>Limette, Rum, Cointreau, Mandel, Muskatnuss</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
+		<image>{021F9377-6B6D-4C77-9273-44A9D8DD23B9}</image>
 	</drink>
 	<drink>
 		<name>Mojito</name>
-		<teaser>Limette, Rum, Minze, Soda</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
+		<teaser>Limettensaft, Rum, Minze, Soda</teaser>
+		<image>{A1863D10-D675-4A35-8E0D-AF26115A24D9}</image>
 	</drink>
 	<drink>
 		<name>Negroni</name>
 		<teaser>Campari, Vermouth, Gin</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
+		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
 	</drink>
 	<drink>
-		<name>Old Fashioned</name>
-		<teaser>Bourbon, Bitters</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
+		<name>Americano</name>
+		<teaser>Campari, Vermouth, Soda</teaser>
+		<image>{5F0D01F0-B2CD-496F-BA3E-79BB0D564D9C}</image>
 	</drink>
 	<drink>
-		<name>Ramazotti Sour</name>
-		<teaser>Zitrone, Ramazotti, Orange</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
+		<name>Dark &amp; Stormy</name>
+		<teaser>Limettensaft, Rum, Ginger Beer</teaser>
+		<image>{9009BC99-9427-4940-BCA2-B6CDA4151DA7}</image>
 	</drink>
 	<drink>
-		<name>Straits Sling</name>
-		<teaser>Limette, Gin, Kirschlikör, Cointreau</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
+		<name>Mai Tai</name>
+		<teaser>Limettensaft, Rum, Cointreau, Mandellikör, Muskatnuss</teaser>
+		<image>{893B7036-36A2-41B5-9283-15830C0E1F92}</image>
+	</drink>
+	<drink>
+		<name>Batida de Maracuja</name>
+		<teaser>Passionsfrucht, Kokosmilch, Cachaça</teaser>
+		<image>{013A08A2-8958-4287-9AE1-759431D6F57B}</image>
+	</drink>
+	<drink>
+		<name>Gin &amp; Tonic</name>
+		<teaser>Gin, Tonic Water</teaser>
+		<image>{18EF0752-8D39-4A58-9D93-FC99BA35AF5E}</image>
 	</drink>
 	<drink>
 		<name>Zombie</name>
-		<teaser>Limette, Falernum, Maraschino, Rum, Rum, Rum</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
+		<teaser>Limettensaft, Falernum, Maraschino, Rum, Rum, Rum</teaser>
+		<image>{D34B1939-F5D4-497B-A6DD-AF839308E285}</image>
 	</drink>
 	<drink>
-		<name>Alexander (Gin)</name>
-		<teaser>Gin, Creme de Cacao, Sahne, Muskatnuss</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
+		<name>Old Fashioned</name>
+		<teaser>Bourbon Whiskey, Bitters</teaser>
+		<image>{49F4ADEF-FE11-4BE4-B397-4978B9515163}</image>
 	</drink>
 	<drink>
-		<name>Alexander (Brandy)</name>
-		<teaser>Brandy, ?, Sahne, Muskatnuss</teaser>
-		<image>{00000000-0000-0000-0000-000000000000}</image>
+		<name>Rosa Lady</name>
+		<teaser>Wodka, Vanillelikör, Bananenlikör, Sahne, Maracujasaft, Ananassaft</teaser>
+		<image>{871629C3-362F-4565-9AB8-02DE0452D06C}</image>
 	</drink>
--->
+	<drink>
+		<name>Pina Colada</name>
+		<teaser>Rum, Sahne, Creme of Coconut, Ananassaft</teaser>
+		<image>{A065DC95-1DD9-4CCB-A9F6-3336AB835236}</image>
+	</drink>
+	<drink>
+		<name>Kahluha Kiss</name>
+		<teaser>Amaretto, Baileys, Kahluha, Creme of Coconut</teaser>
+		<image>{C001A4F2-EFEC-4E30-B57F-FCC50F63E023}</image>
+	</drink>
+	<drink>
+		<name>Prince</name>
+		<teaser>Tequilla, Vanillelikör, Sahne, Creme of Coconut, Maracujasaft</teaser>
+		<image>{5C12D764-FE88-48BA-A4BD-9FDF0945EEAB}</image>
+	</drink>
 </drinks>
