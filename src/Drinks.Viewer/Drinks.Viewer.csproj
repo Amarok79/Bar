@@ -63,6 +63,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Viewer\BindableBase.cs" />
     <Compile Include="Viewer\DrinkItemViewModel.cs" />
     <Compile Include="Viewer\MainPage.xaml.cs">

@@ -22,6 +22,9 @@
  * SOFTWARE.
 */
 
+#pragma warning disable S1075 // URIs should not be hardcoded
+#pragma warning disable CRR0033 // The void async method should be in a try/catch block
+
 using System;
 using System.Linq;
 using Drinks.Model;
@@ -49,46 +52,40 @@ namespace Drinks.Viewer
 			this.Loading += _HandleOnLoading;
 		}
 
+
 		private async void _HandleOnLoading(FrameworkElement sender, Object args)
 		{
-			try
+			var drinks = await this.DrinkRepository.GetAll()
+				.ConfigureAwait(true);
+
+			foreach (var drink in drinks.OrderBy(x => x.Name))
 			{
-				var drinks = await this.DrinkRepository.GetAll()
+				var imageUri = await this.ImageRepository.GetById(drink.ImageId)
 					.ConfigureAwait(true);
 
-				foreach (var drink in drinks.OrderBy(x => x.Name))
+				var image = new BitmapImage();
+				image.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
+				image.UriSource = imageUri;
+
+				var item = new DrinkItemViewModel {
+					Name = drink.Name,
+					Teaser = drink.Teaser,
+					Image = image,
+					IsImageLoading = true,
+				};
+
+				ViewModel.Drinks.Add(item);
+
+				image.ImageFailed += (_sender, _e) =>
 				{
-					var imageUri = await this.ImageRepository.GetById(drink.ImageId)
-						.ConfigureAwait(true);
+					image.UriSource = new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg");
+					item.IsImageLoading = false;
+				};
 
-					var image = new BitmapImage();
-					image.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
-					image.UriSource = imageUri;
-
-					var item = new DrinkItemViewModel {
-						Name = drink.Name,
-						Teaser = drink.Teaser,
-						Image = image,
-						IsImageLoading = true,
-					};
-
-					ViewModel.Drinks.Add(item);
-
-					image.ImageFailed += (_sender, _e) =>
-					{
-						image.UriSource = new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg");
-						item.IsImageLoading = false;
-					};
-
-					image.ImageOpened += (_sender, _e) =>
-					{
-						item.IsImageLoading = false;
-					};
-				}
-			}
-			catch (Exception exception)
-			{
-				// TODO
+				image.ImageOpened += (_sender, _e) =>
+				{
+					item.IsImageLoading = false;
+				};
 			}
 		}
 	}
