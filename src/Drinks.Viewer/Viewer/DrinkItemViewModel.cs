@@ -23,7 +23,6 @@
 */
 
 using System;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media.Imaging;
 
 
@@ -31,14 +30,13 @@ namespace Drinks.Viewer
 {
 	public sealed class DrinkItemViewModel : BindableBase
 	{
-		private Boolean mIsImageLoading;
-
-
 		public String Name { get; set; }
 
 		public String Teaser { get; set; }
 
 		public BitmapImage Image { get; set; }
+
+		private Boolean mIsImageLoading;
 
 		public Boolean IsImageLoading
 		{

@@ -7,6 +7,7 @@
 	<Application.Resources>
 		<SolidColorBrush x:Key="HeaderBackgroundBrush" Color="#FF121212" />
 		<SolidColorBrush x:Key="ContentBackgroundBrush" Color="#FF181818" />
+		<SolidColorBrush x:Key="DrinkItemBorderBrush" Color="#FF2A2A2A" />
 	</Application.Resources>
 
 </Application>

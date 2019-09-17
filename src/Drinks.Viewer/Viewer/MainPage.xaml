@@ -16,15 +16,31 @@
 		<Grid
 			x:Name="HeaderArea"
 			Grid.Row="0"
-			Padding="20"
+			Padding="0,20,0,20"
 			Background="{StaticResource HeaderBackgroundBrush}">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="80" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+
+			<Image
+				x:Name="HeaderImage"
+				Grid.Column="0"
+				RenderTransformOrigin="0.5,0.5"
+				Source="/Assets/cocktail.png">
+				<Image.RenderTransform>
+					<CompositeTransform TranslateY="-8" />
+				</Image.RenderTransform>
+			</Image>
 
 			<TextBlock
+				x:Name="HeaderText"
+				Grid.Column="1"
 				HorizontalAlignment="Left"
 				VerticalAlignment="Center"
 				FontFamily="Arial Rounded MT Bold"
 				FontSize="36"
-				Text="The KroKo Bar" />
+				Text="Die KroKo Hausbar" />
 		</Grid>
 
 		<Grid
@@ -43,7 +59,7 @@
 								<RowDefinition Height="54" />
 							</Grid.RowDefinitions>
 
-							<Border BorderBrush="#FF2A2A2A" BorderThickness="1">
+							<Border BorderBrush="{StaticResource DrinkItemBorderBrush}" BorderThickness="1">
 								<Image
 									Grid.Row="0"
 									Width="260"
@@ -83,7 +99,6 @@
 								HorizontalAlignment="Center"
 								VerticalAlignment="Center"
 								IsActive="{x:Bind IsImageLoading, Mode=OneWay}" />
-
 						</Grid>
 					</DataTemplate>
 				</GridView.ItemTemplate>
@@ -95,6 +110,5 @@
 			</GridView>
 
 		</Grid>
-
 	</Grid>
 </Page>

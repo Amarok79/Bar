@@ -52,7 +52,7 @@ namespace Drinks.Services.DrinkRepository
 				Check.That(drink.Description)
 					.IsNull();
 				Check.That(drink.Id)
-					.IsNotEqualTo(default(DrinkId));
+					.IsNotEqualTo(default);
 				Check.That(drink.Name)
 					.Not.IsEmpty();
 				Check.That(drink.Teaser)
