@@ -2,7 +2,7 @@
 <drinks>
 	<drink>
 		<name>Amaretto Sour</name>
-		<teaser>Zitronensaft, Amaretto, Orangensaft</teaser>
+		<teaser>Zitronensaft, Amaretto, Limettensirup, Orangensaft</teaser>
 		<image>{AB485B95-363F-4365-8FCD-1E2F7BF3BF7C}</image>
 	</drink>
 	<drink>
@@ -17,7 +17,7 @@
 	</drink>
 	<drink>
 		<name>Caipirinha &amp; Passion</name>
-		<teaser>Limette, Cachaça, Passionsfrucht</teaser>
+		<teaser>Limette, Rohrzucker, Cachaça, Passionsfrucht</teaser>
 		<image>{ECEB76C2-C992-4054-99AC-F6384404F90B}</image>
 	</drink>
 	<drink>
@@ -42,7 +42,7 @@
 	</drink>
 	<drink>
 		<name>Mojito</name>
-		<teaser>Limettensaft, Rum, Minze, Soda</teaser>
+		<teaser>Limettensaft, Weißer Rum, Minze, Soda</teaser>
 		<image>{A1863D10-D675-4A35-8E0D-AF26115A24D9}</image>
 	</drink>
 	<drink>
