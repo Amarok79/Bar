@@ -36,6 +36,12 @@
 		<image>{A6652EC4-99C8-4A96-B5DC-10831E208217}</image>
 	</drink>
 	<drink>
+		<name>Gin &amp; Tonic</name>
+		<teaser>Gin, Tonic Water</teaser>
+		<image>{18EF0752-8D39-4A58-9D93-FC99BA35AF5E}</image>
+	</drink>
+
+	<drink>
 		<name>Cuba Libre</name>
 		<teaser>Limette, Rum, Cola</teaser>
 		<image>{021F9377-6B6D-4C77-9273-44A9D8DD23B9}</image>
@@ -69,11 +75,6 @@
 		<name>Batida de Maracuja</name>
 		<teaser>Passionsfrucht, Kokosmilch, Cachaça</teaser>
 		<image>{013A08A2-8958-4287-9AE1-759431D6F57B}</image>
-	</drink>
-	<drink>
-		<name>Gin &amp; Tonic</name>
-		<teaser>Gin, Tonic Water</teaser>
-		<image>{18EF0752-8D39-4A58-9D93-FC99BA35AF5E}</image>
 	</drink>
 	<drink>
 		<name>Zombie</name>
