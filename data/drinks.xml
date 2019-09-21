@@ -55,16 +55,10 @@
 		<teaser>Limettensaft, Rum, Cointreau, Mandellikör, Muskatnuss</teaser>
 		<image>{893B7036-36A2-41B5-9283-15830C0E1F92}</image>
 	</drink>
-
 	<drink>
-		<name>Cuba Libre</name>
-		<teaser>Limette, Rum, Cola</teaser>
-		<image>{021F9377-6B6D-4C77-9273-44A9D8DD23B9}</image>
-	</drink>
-	<drink>
-		<name>Mojito</name>
-		<teaser>Limettensaft, Weißer Rum, Minze, Soda</teaser>
-		<image>{A1863D10-D675-4A35-8E0D-AF26115A24D9}</image>
+		<name>Americano</name>
+		<teaser>Campari, Vermouth, Soda</teaser>
+		<image>{5F0D01F0-B2CD-496F-BA3E-79BB0D564D9C}</image>
 	</drink>
 	<drink>
 		<name>Negroni</name>
@@ -72,9 +66,16 @@
 		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
 	</drink>
 	<drink>
-		<name>Americano</name>
-		<teaser>Campari, Vermouth, Soda</teaser>
-		<image>{5F0D01F0-B2CD-496F-BA3E-79BB0D564D9C}</image>
+		<name>Cuba Libre</name>
+		<teaser>Limette, Rum, Cola</teaser>
+		<image>{021F9377-6B6D-4C77-9273-44A9D8DD23B9}</image>
+	</drink>
+
+
+	<drink>
+		<name>Mojito</name>
+		<teaser>Limettensaft, Weißer Rum, Minze, Soda</teaser>
+		<image>{A1863D10-D675-4A35-8E0D-AF26115A24D9}</image>
 	</drink>
 	<drink>
 		<name>Dark &amp; Stormy</name>
