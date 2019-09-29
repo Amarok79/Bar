@@ -1,4 +1,4 @@
-MainPackage=D:\Bar\bin\app\Drinks.Viewer\Drinks.Viewer_1.0.13.0_x86.msix
-SymbolPackage=D:\Bar\src\Drinks.Viewer\obj\x86\Release\Symbols\Drinks.Viewer_1.0.13.0_x86.appxsym
-ResourcePack=D:\Bar\bin\app\Drinks.Viewer\Drinks.Viewer_1.0.13.0_scale-100.msix
-ResourcePack=D:\Bar\bin\app\Drinks.Viewer\Drinks.Viewer_1.0.13.0_scale-400.msix
+MainPackage=D:\Bar\bin\app\Drinks.Viewer\Drinks.Viewer_1.0.15.0_x86.msix
+SymbolPackage=D:\Bar\src\Drinks.Viewer\obj\x86\Release\Symbols\Drinks.Viewer_1.0.15.0_x86.appxsym
+ResourcePack=D:\Bar\bin\app\Drinks.Viewer\Drinks.Viewer_1.0.15.0_scale-100.msix
+ResourcePack=D:\Bar\bin\app\Drinks.Viewer\Drinks.Viewer_1.0.15.0_scale-400.msix
