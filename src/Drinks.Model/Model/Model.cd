@@ -14,5 +14,19 @@
       <FileName>Model\Drink.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Interface Name="Drinks.Model.IImageRepository">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Model\IImageRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Drinks.Model.IDrinkRepository">
+    <Position X="3.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Model\IDrinkRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
