@@ -87,11 +87,13 @@ namespace Drinks.Services.DrinkRepository
 				var name = drinkNode.Element("name").Value;
 				var teaser = drinkNode.Element("teaser").Value;
 				var image = Guid.Parse(drinkNode.Element("image").Value);
+				var desc = drinkNode.Element("description")?.Value;
 
 				var drink = new Drink(new DrinkId(Guid.NewGuid()), new BarId())
 					.SetName(name)
 					.SetTeaser(teaser)
-					.SetImage(new ImageId(image));
+					.SetImage(new ImageId(image))
+					.SetDescription(desc ?? String.Empty);
 
 				var recipeNode = drinkNode.Element("recipe");
 

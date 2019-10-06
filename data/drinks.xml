@@ -4,6 +4,11 @@
 		<name>Amaretto Sour</name>
 		<teaser>Zitronensaft, Amaretto, Limettensirup, Orangensaft</teaser>
 		<image>{AB485B95-363F-4365-8FCD-1E2F7BF3BF7C}</image>
+		<description>
+Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem Grundprinzip Spirituose + Süßungsmittel + saurer Zitrussaft aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. Die bekanntesten Sours, die die Gattungsbezeichnung auch im Namen tragen, sind Whiskey Sour, Pisco Sour und Amaretto Sour.
+
+Amaretto ist eine Geschmacksrichtung für ursprünglich aus Italien stammende Liköre mit einem nussigen Aroma, das an Marzipan erinnert. Die Bezeichnung „Amaretto“ ist eine Verkleinerungsform des italienischen Wortes amaro, was so viel bedeutet wie „bitter“. Ursprünglich wurden Bittermandeln (italienisch mandorla amara) oder Aprikosenkerne, teilweise auch süße Mandeln zur Aromatisierung verwendet.
+		</description>
 		<recipe>
 			<ingredient amount="3" unit="cl" substance="Zitronensaft"/>
 			<ingredient amount="6" unit="cl" substance="Amaretto"/>

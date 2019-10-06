@@ -38,6 +38,8 @@ namespace Drinks.Viewer
 
 		public String Teaser => this.Drink.Teaser;
 
+		public String Description => this.Drink.Description;
+
 		public BitmapImage Image { get; set; }
 
 		public ObservableCollection<IngredientItemViewModel> Ingredients { get; } = new ObservableCollection<IngredientItemViewModel>();

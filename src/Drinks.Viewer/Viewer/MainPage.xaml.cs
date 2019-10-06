@@ -50,7 +50,9 @@ namespace Drinks.Viewer
 		{
 			this.InitializeComponent();
 			this.Loading += _HandleOnLoading;
+
 			DrinksGridView.ItemClick += _HandleDrinkItemClick;
+			DrinkInfoPopupCloseButton.Click += _HandleDrinkInfoPopupClose;
 		}
 
 
@@ -113,6 +115,11 @@ namespace Drinks.Viewer
 			DrinkInfoView.Height = DrinksArea.ActualHeight - 120;
 
 			DrinkInfoPopup.IsOpen = true;
+		}
+
+		private void _HandleDrinkInfoPopupClose(Object sender, RoutedEventArgs e)
+		{
+			DrinkInfoPopup.IsOpen = false;
 		}
 	}
 }
