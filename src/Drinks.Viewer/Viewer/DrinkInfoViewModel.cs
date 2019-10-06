@@ -23,13 +23,14 @@
 */
 
 using System;
+using System.Collections.ObjectModel;
 using Drinks.Model;
 using Windows.UI.Xaml.Media.Imaging;
 
 
 namespace Drinks.Viewer
 {
-	public sealed class DrinkItemViewModel : BindableBase
+	public sealed class DrinkInfoViewModel : BindableBase
 	{
 		public Drink Drink { get; set; }
 
@@ -39,11 +40,6 @@ namespace Drinks.Viewer
 
 		public BitmapImage Image { get; set; }
 
-		private Boolean mIsImageLoading;
-		public Boolean IsImageLoading
-		{
-			get => mIsImageLoading;
-			set => SetProperty(ref mIsImageLoading, value);
-		}
+		public ObservableCollection<IngredientItemViewModel> Ingredients { get; } = new ObservableCollection<IngredientItemViewModel>();
 	}
 }

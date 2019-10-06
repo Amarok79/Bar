@@ -22,28 +22,19 @@
  * SOFTWARE.
 */
 
-using System;
-using Drinks.Model;
-using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Controls;
 
 
 namespace Drinks.Viewer
 {
-	public sealed class DrinkItemViewModel : BindableBase
+	public sealed partial class DrinkInfoView : UserControl
 	{
-		public Drink Drink { get; set; }
+		public DrinkInfoViewModel ViewModel { get; } = new DrinkInfoViewModel();
 
-		public String Name => this.Drink.Name;
 
-		public String Teaser => this.Drink.Teaser;
-
-		public BitmapImage Image { get; set; }
-
-		private Boolean mIsImageLoading;
-		public Boolean IsImageLoading
+		public DrinkInfoView()
 		{
-			get => mIsImageLoading;
-			set => SetProperty(ref mIsImageLoading, value);
+			this.InitializeComponent();
 		}
 	}
 }

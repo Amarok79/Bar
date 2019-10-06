@@ -66,11 +66,16 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Viewer\BindableBase.cs" />
+    <Compile Include="Viewer\IngredientItemViewModel.cs" />
+    <Compile Include="Viewer\DrinkInfoViewModel.cs" />
     <Compile Include="Viewer\DrinkItemViewModel.cs" />
     <Compile Include="Viewer\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Viewer\MainPageViewModel.cs" />
+    <Compile Include="Viewer\DrinkInfoView.xaml.cs">
+      <DependentUpon>DrinkInfoView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -125,6 +130,10 @@
     <Page Include="Viewer\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Viewer\DrinkInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

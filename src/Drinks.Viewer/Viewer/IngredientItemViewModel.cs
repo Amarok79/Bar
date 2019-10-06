@@ -23,27 +23,20 @@
 */
 
 using System;
+using System.Globalization;
 using Drinks.Model;
-using Windows.UI.Xaml.Media.Imaging;
 
 
 namespace Drinks.Viewer
 {
-	public sealed class DrinkItemViewModel : BindableBase
+	public sealed class IngredientItemViewModel : BindableBase
 	{
-		public Drink Drink { get; set; }
+		public Ingredient Ingredient { get; set; }
 
-		public String Name => this.Drink.Name;
+		public String Amount => this.Ingredient.Amount.ToString(CultureInfo.CurrentCulture);
 
-		public String Teaser => this.Drink.Teaser;
+		public String Unit => this.Ingredient.Unit;
 
-		public BitmapImage Image { get; set; }
-
-		private Boolean mIsImageLoading;
-		public Boolean IsImageLoading
-		{
-			get => mIsImageLoading;
-			set => SetProperty(ref mIsImageLoading, value);
-		}
+		public String Substance => this.Ingredient.Substance;
 	}
 }

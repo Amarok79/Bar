@@ -50,6 +50,7 @@ namespace Drinks.Viewer
 		{
 			this.InitializeComponent();
 			this.Loading += _HandleOnLoading;
+			DrinksGridView.ItemClick += _HandleDrinkItemClick;
 		}
 
 
@@ -67,9 +68,8 @@ namespace Drinks.Viewer
 				image.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
 				image.UriSource = imageUri;
 
-				var item = new DrinkItemViewModel {
-					Name = drink.Name,
-					Teaser = drink.Teaser,
+				var item = new DrinkItemViewModel() {
+					Drink = drink,
 					Image = image,
 					IsImageLoading = true,
 				};
@@ -87,6 +87,32 @@ namespace Drinks.Viewer
 					item.IsImageLoading = false;
 				};
 			}
+		}
+
+		private void _HandleDrinkItemClick(Object sender, ItemClickEventArgs e)
+		{
+			var drinkViewModel = (DrinkItemViewModel)e.ClickedItem;
+			var drink = drinkViewModel.Drink;
+
+			if (drink.Recipe == null)
+				return;
+
+			DrinkInfoView.ViewModel.Drink = drink;
+			DrinkInfoView.ViewModel.Image = drinkViewModel.Image;
+
+			DrinkInfoView.ViewModel.Ingredients.Clear();
+
+			foreach (var ingredient in drink.Recipe.Ingredients)
+			{
+				DrinkInfoView.ViewModel.Ingredients.Add(new IngredientItemViewModel {
+					Ingredient = ingredient
+				});
+			}
+
+			DrinkInfoView.Width = DrinksArea.ActualWidth - 240;
+			DrinkInfoView.Height = DrinksArea.ActualHeight - 120;
+
+			DrinkInfoPopup.IsOpen = true;
 		}
 	}
 }

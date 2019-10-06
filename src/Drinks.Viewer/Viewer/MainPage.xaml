@@ -46,10 +46,14 @@
 		<Grid
 			x:Name="DrinksArea"
 			Grid.Row="1"
-			Padding="20"
 			Background="{StaticResource ContentBackgroundBrush}">
 
-			<GridView ItemsSource="{x:Bind ViewModel.Drinks}" SelectionMode="None">
+			<GridView
+				x:Name="DrinksGridView"
+				Margin="20"
+				IsItemClickEnabled="True"
+				ItemsSource="{x:Bind ViewModel.Drinks}"
+				SelectionMode="None">
 				<GridView.ItemTemplate>
 					<DataTemplate x:Name="DrinkTemplate" x:DataType="local:DrinkItemViewModel">
 						<Grid>
@@ -109,6 +113,17 @@
 				</GridView.ItemContainerStyle>
 			</GridView>
 
+			<Popup x:Name="DrinkInfoPopup" IsLightDismissEnabled="True">
+				<Border Background="#E0121212" IsHitTestVisible="False">
+					<local:DrinkInfoView
+						x:Name="DrinkInfoView"
+						Margin="120,60,120,60"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center" />
+				</Border>
+			</Popup>
+
 		</Grid>
+
 	</Grid>
 </Page>
