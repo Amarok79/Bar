@@ -26,7 +26,9 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -90,6 +92,21 @@ namespace Drinks.Services.DrinkRepository
 					.SetName(name)
 					.SetTeaser(teaser)
 					.SetImage(new ImageId(image));
+
+				var recipeNode = drinkNode.Element("recipe");
+
+				if (recipeNode != null)
+				{
+					var ingredients = recipeNode.Elements("ingredient")
+						.Select(x => new Ingredient(
+							Double.Parse(x.Attribute("amount").Value, CultureInfo.InvariantCulture),
+							x.Attribute("unit").Value,
+							x.Attribute("substance").Value
+						))
+						.ToList();
+
+					drink.SetRecipe(new Recipe(ingredients));
+				}
 
 				drinks.Add(drink);
 			}
