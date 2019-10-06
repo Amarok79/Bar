@@ -29,7 +29,7 @@ using Amarok.Contracts;
 namespace Drinks.Model
 {
 	/// <summary>
-	/// This type represents a single ingredient in a recipe, e.g. "5 cl Light Rum".
+	/// This type represents a single Ingredient in a Recipe, e.g. "5 cl Light Rum".
 	/// </summary>
 	public sealed class Ingredient
 	{

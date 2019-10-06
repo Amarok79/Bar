@@ -57,9 +57,6 @@ namespace Drinks.Model
 			Check.That(drink.Recipe)
 				.IsNull();
 
-			Check.That(drink.Validate().IsValid)
-				.IsFalse();
-
 			// act
 			drink
 				.SetName("Mai Tai")
@@ -68,138 +65,20 @@ namespace Drinks.Model
 				.SetRecipe(recipe);
 
 			// assert
-			Check.That(drink.Validate().IsValid)
-				.IsTrue();
-		}
-
-		[Test]
-		public void Name()
-		{
-			// arrange
-			var drinkId = new DrinkId(Guid.NewGuid());
-			var barId = new BarId(Guid.NewGuid());
-			var drink = new Drink(drinkId, barId);
-
-			drink
-				.SetTeaser("Lime, Orgeat, Rum")
-				.SetDescription("The Mai Tai is a cocktail based on rum...");
-
-			// act / assert
-			Check.ThatCode(() => drink.SetName(null))
-				.ThrowsAny();
-			Check.ThatCode(() => drink.SetName(""))
-				.ThrowsAny();
-
-			drink.SetName("Mai Tai");
-
-			Check.That(drink.Validate().IsValid)
-				.IsTrue();
-
-			drink.SetName(new String('A', 256));
-
-			Check.That(drink.Validate().IsValid)
-				.IsTrue();
-
-			drink.SetName(new String('A', 257));
-
-			Check.That(drink.Validate().IsValid)
-				.IsFalse();
-		}
-
-		[Test]
-		public void Teaser()
-		{
-			// arrange
-			var drinkId = new DrinkId(Guid.NewGuid());
-			var barId = new BarId(Guid.NewGuid());
-			var drink = new Drink(drinkId, barId);
-
-			drink
-				.SetName("Mai Tai")
-				.SetDescription("The Mai Tai is a cocktail based on rum...");
-
-			// act / assert
-			Check.ThatCode(() => drink.SetTeaser(null))
-				.ThrowsAny();
-
-			drink.SetTeaser("");
-
-			Check.That(drink.Validate().IsValid)
-				.IsTrue();
-
-			drink.SetTeaser("Lime, Orgeat, Rum");
-
-			Check.That(drink.Validate().IsValid)
-				.IsTrue();
-
-			drink.SetTeaser(new String('A', 256));
-
-			Check.That(drink.Validate().IsValid)
-				.IsTrue();
-
-			drink.SetTeaser(new String('A', 257));
-
-			Check.That(drink.Validate().IsValid)
-				.IsFalse();
-		}
-
-		[Test]
-		public void Description()
-		{
-			// arrange
-			var drinkId = new DrinkId(Guid.NewGuid());
-			var barId = new BarId(Guid.NewGuid());
-			var drink = new Drink(drinkId, barId);
-
-			drink
-				.SetName("Mai Tai")
-				.SetTeaser("Lime, Orgeat, Rum");
-
-			// act / assert
-			Check.ThatCode(() => drink.SetDescription(null))
-				.ThrowsAny();
-
-			drink.SetDescription("");
-
-			Check.That(drink.Validate().IsValid)
-				.IsTrue();
-
-			drink.SetDescription("The Mai Tai is a cocktail based on rum...");
-
-			Check.That(drink.Validate().IsValid)
-				.IsTrue();
-
-			drink.SetDescription(new String('A', 5000));
-
-			Check.That(drink.Validate().IsValid)
-				.IsTrue();
-
-			drink.SetDescription(new String('A', 5001));
-
-			Check.That(drink.Validate().IsValid)
-				.IsFalse();
-		}
-
-		[Test]
-		public void ImageId()
-		{
-			// arrange
-			var drinkId = new DrinkId(Guid.NewGuid());
-			var barId = new BarId(Guid.NewGuid());
-			var drink = new Drink(drinkId, barId);
-
-			drink
-				.SetName("Mai Tai")
-				.SetTeaser("Lime, Orgeat, Rum")
-				.SetDescription("The Mai Tai is a cocktail based on rum...");
-
-			// act / assert
-			drink.SetImage(default);
-
-			Check.That(drink.Validate().IsValid)
-				.IsTrue();
-
-			drink.SetImage(new ImageId(Guid.NewGuid()));
+			Check.That(drink.Id)
+				.IsEqualTo(drinkId);
+			Check.That(drink.BarId)
+				.IsEqualTo(barId);
+			Check.That(drink.Name)
+				.IsEqualTo("Mai Tai");
+			Check.That(drink.Teaser)
+				.IsEqualTo("Lime, Orgeat, Rum");
+			Check.That(drink.Description)
+				.IsEqualTo("The Mai Tai is a cocktail based on rum...");
+			Check.That(drink.ImageId)
+				.IsEqualTo(new ImageId());
+			Check.That(drink.Recipe)
+				.IsSameReferenceAs(recipe);
 		}
 	}
 }

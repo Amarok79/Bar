@@ -24,8 +24,6 @@
 
 using System;
 using Amarok.Contracts;
-using FluentValidation;
-using FluentValidation.Results;
 
 
 namespace Drinks.Model
@@ -142,33 +140,6 @@ namespace Drinks.Model
 			Verify.NotNull(recipe, nameof(recipe));
 			this.Recipe = recipe;
 			return this;
-		}
-
-
-		/// <summary>
-		/// Validates the Entity.
-		/// </summary>
-		public override ValidationResult Validate()
-		{
-			var validator = new DrinkValidator();
-			return validator.Validate(this);
-		}
-
-
-		/// <summary>
-		/// A validator for Drink.
-		/// </summary>
-		public sealed class DrinkValidator : AbstractValidator<Drink>
-		{
-			/// <summary>
-			/// Initializes a new instance.
-			/// </summary>
-			public DrinkValidator()
-			{
-				RuleFor(x => x.Name).NotEmpty().Length(0, 256);
-				RuleFor(x => x.Teaser).NotNull().Length(0, 256);
-				RuleFor(x => x.Description).NotNull().Length(0, 5000);
-			}
 		}
 	}
 }

@@ -18,12 +18,19 @@
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<WarningsAsErrors />
 		<NoWarn>1701;1702</NoWarn>
+		<RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+		<RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<OutputPath>..\..\bin\libs\Drinks.Model</OutputPath>
 		<DocumentationFile>..\..\bin\libs\Drinks.Model\Drinks.Model.xml</DocumentationFile>
+		<GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<WarningsAsErrors />
 		<NoWarn>1701;1702</NoWarn>
+		<RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+		<RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -33,7 +40,6 @@
 
 	<ItemGroup>
 		<PackageReference Include="Amarok.Contracts" Version="1.0.0" />
-		<PackageReference Include="FluentValidation" Version="8.5.0" />
 	</ItemGroup>
 
 	<Choose>

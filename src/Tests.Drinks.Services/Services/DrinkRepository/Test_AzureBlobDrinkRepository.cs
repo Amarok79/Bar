@@ -49,8 +49,8 @@ namespace Drinks.Services.DrinkRepository
 			{
 				Check.That(drink.BarId)
 					.IsEqualTo(default(BarId));
-				Check.That(drink.Description)
-					.IsNull();
+				//Check.That(drink.Description)
+				//	.IsNull();
 				Check.That(drink.Id)
 					.IsNotEqualTo(default);
 				Check.That(drink.Name)

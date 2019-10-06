@@ -22,7 +22,7 @@
  * SOFTWARE.
 */
 
-using FluentValidation.Results;
+#pragma warning disable S1694 // An abstract class should have both abstract and concrete methods
 
 
 namespace Drinks.Model
@@ -45,11 +45,5 @@ namespace Drinks.Model
 		{
 			this.Id = id;
 		}
-
-
-		/// <summary>
-		/// Validates the Entity.
-		/// </summary>
-		public abstract ValidationResult Validate();
 	}
 }
