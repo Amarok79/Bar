@@ -39,6 +39,7 @@ namespace Drinks.Model
 			var drinkId = new DrinkId(Guid.NewGuid());
 			var barId = new BarId(Guid.NewGuid());
 			var drink = new Drink(drinkId, barId);
+			var recipe = new Recipe(Array.Empty<Ingredient>());
 
 			// assert
 			Check.That(drink.Id)
@@ -53,6 +54,8 @@ namespace Drinks.Model
 				.IsNull();
 			Check.That(drink.ImageId)
 				.IsEqualTo(new ImageId());
+			Check.That(drink.Recipe)
+				.IsNull();
 
 			Check.That(drink.Validate().IsValid)
 				.IsFalse();
@@ -61,7 +64,8 @@ namespace Drinks.Model
 			drink
 				.SetName("Mai Tai")
 				.SetTeaser("Lime, Orgeat, Rum")
-				.SetDescription("The Mai Tai is a cocktail based on rum...");
+				.SetDescription("The Mai Tai is a cocktail based on rum...")
+				.SetRecipe(recipe);
 
 			// assert
 			Check.That(drink.Validate().IsValid)

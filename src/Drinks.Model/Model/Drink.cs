@@ -64,6 +64,11 @@ namespace Drinks.Model
 		/// </summary>
 		public ImageId ImageId { get; private set; }
 
+		/// <summary>
+		/// Gets the Recipe of the Drink.
+		/// </summary>
+		public Recipe Recipe { get; private set; }
+
 
 		/// <summary>
 		/// Initializes a new instance.
@@ -123,6 +128,19 @@ namespace Drinks.Model
 		public Drink SetImage(ImageId image)
 		{
 			this.ImageId = image;
+			return this;
+		}
+
+		/// <summary>
+		/// Sets the Recipe of the Drink.
+		/// </summary>
+		/// 
+		/// <param name="recipe">
+		/// The Recipe of the Drink. Null is not allowed.</param>
+		public Drink SetRecipe(Recipe recipe)
+		{
+			Verify.NotNull(recipe, nameof(recipe));
+			this.Recipe = recipe;
 			return this;
 		}
 

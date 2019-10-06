@@ -10,9 +10,12 @@
       </Class>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAABAAACgAAAAAAACCAUAAAAAAAEAAAAAQAAAAgA=</HashCode>
+      <HashCode>AAQAAABAAACgAAAAAAACCAUAAAAAAAEAAAAAQAAAAgA=</HashCode>
       <FileName>Model\Drink.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Recipe" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Drinks.Model.Ingredient">
     <Position X="4.75" Y="5.25" Width="1.5" />
@@ -24,7 +27,7 @@
   <Class Name="Drinks.Model.Recipe">
     <Position X="1.75" Y="5.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Recipe.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
