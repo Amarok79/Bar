@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Drinks.Model.Drink">
+    <Position X="1.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAAAAgAAAAAAACCAUAAAAAAAEAAAAAQAAAAgA=</HashCode>
+      <FileName>Model\Drink.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Recipe" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Drinks.Model.Ingredient">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAEIAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Ingredient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Drinks.Model.Recipe">
+    <Position X="1.75" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Recipe.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Ingredients" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Interface Name="Drinks.Model.IImageRepository">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Model\IImageRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Drinks.Model.IDrinkRepository">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Model\IDrinkRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
