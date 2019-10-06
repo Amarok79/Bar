@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Drinks.Model.Drink">
-    <Position X="0.5" Y="0.75" Width="1.75" />
+    <Position X="1.75" Y="0.5" Width="1.75" />
     <NestedTypes>
       <Class Name="Drinks.Model.Drink.DrinkValidator" Collapsed="true">
         <TypeIdentifier>
@@ -15,14 +15,14 @@
     </TypeIdentifier>
   </Class>
   <Interface Name="Drinks.Model.IImageRepository">
-    <Position X="3.25" Y="0.75" Width="1.5" />
+    <Position X="4.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Model\IImageRepository.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Drinks.Model.IDrinkRepository">
-    <Position X="3.25" Y="2.25" Width="1.5" />
+    <Position X="4.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>Model\IDrinkRepository.cs</FileName>
