@@ -30,7 +30,7 @@
 			<!--  Ingredients  -->
 
 			<ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
-				<StackPanel Margin="40,30,40,30" Orientation="Vertical">
+				<StackPanel Margin="50,40,50,30" Orientation="Vertical">
 
 					<TextBlock
 						Height="80"
@@ -75,6 +75,7 @@
 					<!--  Description  -->
 
 					<TextBlock
+						Margin="0,30,0,0"
 						FontSize="18"
 						FontWeight="Normal"
 						Foreground="#FFB3B3B3"
@@ -87,7 +88,7 @@
 			<Button
 				x:Name="ClosePopupButton"
 				Grid.Column="1"
-				Margin="10"
+				Margin="20"
 				HorizontalAlignment="Right"
 				VerticalAlignment="Top"
 				Content="x" />

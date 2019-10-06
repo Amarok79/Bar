@@ -30,6 +30,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Drinks.Model;
@@ -87,13 +88,13 @@ namespace Drinks.Services.DrinkRepository
 				var name = drinkNode.Element("name").Value;
 				var teaser = drinkNode.Element("teaser").Value;
 				var image = Guid.Parse(drinkNode.Element("image").Value);
-				var desc = drinkNode.Element("description")?.Value?.Trim();
+				var desc = drinkNode.Element("description")?.Value;
 
 				var drink = new Drink(new DrinkId(Guid.NewGuid()), new BarId())
 					.SetName(name)
 					.SetTeaser(teaser)
 					.SetImage(new ImageId(image))
-					.SetDescription(desc ?? String.Empty);
+					.SetDescription(_TrimDescription(desc));
 
 				var recipeNode = drinkNode.Element("recipe");
 
@@ -114,6 +115,25 @@ namespace Drinks.Services.DrinkRepository
 			}
 
 			return drinks;
+		}
+
+		private static String _TrimDescription(String text)
+		{
+			if (text == null)
+				return String.Empty;
+
+			var lines = text.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+
+			var sb = new StringBuilder();
+			foreach (var line in lines)
+			{
+				if (sb.Length > 0)
+					sb.AppendLine();
+
+				sb.AppendLine(line.Trim());
+			}
+
+			return sb.ToString();
 		}
 	}
 }
