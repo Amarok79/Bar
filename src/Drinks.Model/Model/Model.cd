@@ -14,6 +14,23 @@
       <FileName>Model\Drink.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Drinks.Model.Ingredient">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAEIAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Ingredient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Drinks.Model.Recipe">
+    <Position X="1.75" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Recipe.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Ingredients" />
+    </ShowAsCollectionAssociation>
+  </Class>
   <Interface Name="Drinks.Model.IImageRepository">
     <Position X="4.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>

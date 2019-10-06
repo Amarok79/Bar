@@ -22,29 +22,53 @@
  * SOFTWARE.
 */
 
-using NFluent;
-using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Amarok.Contracts;
 
 
 namespace Drinks.Model
 {
-	[TestFixture]
-	public class Test_Ingredient
+	/// <summary>
+	/// This type represents a Recipe for a Drink.
+	/// 
+	/// A Recipe consists of a list of Ingredients and a list of Instructions.
+	/// </summary>
+	public sealed class Recipe
 	{
-		[Test]
-		public void Construction()
+		/// <summary>
+		/// A list of Ingredients needed for this Recipe.
+		/// </summary>
+		public IReadOnlyList<Ingredient> Ingredients { get; }
+
+
+		/// <summary>
+		/// Initializes a new instance.
+		/// </summary>
+		public Recipe(IReadOnlyList<Ingredient> ingredients)
 		{
-			var ing = new Ingredient(5, "cl", "Light Rum");
+			Verify.NotNull(ingredients, nameof(ingredients));
+			this.Ingredients = ingredients;
+		}
 
-			Check.That(ing.Amount)
-				.IsEqualTo(5.0);
-			Check.That(ing.Unit)
-				.IsEqualTo("cl");
-			Check.That(ing.Substance)
-				.IsEqualTo("Light Rum");
 
-			Check.That(ing.ToString())
-				.IsEqualTo("5 cl Light Rum");
+		/// <summary>
+		/// Returns a string that represents the current instance.
+		/// </summary>
+		///
+		/// <returns>
+		/// A string that represents the current instance.</returns>
+		public override String ToString()
+		{
+			var sb = new StringBuilder();
+			foreach (var ingredient in this.Ingredients)
+			{
+				if (sb.Length > 0)
+					sb.Append(", ");
+				sb.Append(ingredient.ToString());
+			}
+			return sb.ToString();
 		}
 	}
 }

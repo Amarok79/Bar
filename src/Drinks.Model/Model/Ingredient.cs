@@ -72,7 +72,7 @@ namespace Drinks.Model
 		/// A string that represents the current instance.</returns>
 		public override String ToString()
 		{
-			return $"{Amount:F1} {Unit} {Substance}";
+			return $"{Amount} {Unit} {Substance}";
 		}
 	}
 }

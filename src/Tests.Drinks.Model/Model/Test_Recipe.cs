@@ -29,22 +29,32 @@ using NUnit.Framework;
 namespace Drinks.Model
 {
 	[TestFixture]
-	public class Test_Ingredient
+	public class Test_Recipe
 	{
 		[Test]
 		public void Construction()
 		{
-			var ing = new Ingredient(5, "cl", "Light Rum");
+			var ing1 = new Ingredient(5, "cl", "Light Rum");
+			var ing2 = new Ingredient(2, "tea spoon", "Sugar");
 
-			Check.That(ing.Amount)
-				.IsEqualTo(5.0);
-			Check.That(ing.Unit)
+			var rec = new Recipe(new[] { ing1, ing2 });
+
+			Check.That(rec.Ingredients[0].Amount)
+				.IsEqualTo(5);
+			Check.That(rec.Ingredients[0].Unit)
 				.IsEqualTo("cl");
-			Check.That(ing.Substance)
+			Check.That(rec.Ingredients[0].Substance)
 				.IsEqualTo("Light Rum");
 
-			Check.That(ing.ToString())
-				.IsEqualTo("5 cl Light Rum");
+			Check.That(rec.Ingredients[1].Amount)
+				.IsEqualTo(2);
+			Check.That(rec.Ingredients[1].Unit)
+				.IsEqualTo("tea spoon");
+			Check.That(rec.Ingredients[1].Substance)
+				.IsEqualTo("Sugar");
+
+			Check.That(rec.ToString())
+				.IsEqualTo("5 cl Light Rum, 2 tea spoon Sugar");
 		}
 	}
 }
