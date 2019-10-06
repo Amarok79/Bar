@@ -5,9 +5,9 @@
 		<teaser>Zitronensaft, Amaretto, Limettensirup, Orangensaft</teaser>
 		<image>{AB485B95-363F-4365-8FCD-1E2F7BF3BF7C}</image>
 		<description>
-Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem Grundprinzip Spirituose + Süßungsmittel + saurer Zitrussaft aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. Die bekanntesten Sours, die die Gattungsbezeichnung auch im Namen tragen, sind Whiskey Sour, Pisco Sour und Amaretto Sour.
+			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem Grundprinzip Spirituose + Süßungsmittel + saurer Zitrussaft aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. Die bekanntesten Sours, die die Gattungsbezeichnung auch im Namen tragen, sind Whiskey Sour, Pisco Sour und Amaretto Sour.
 
-Amaretto ist eine Geschmacksrichtung für ursprünglich aus Italien stammende Liköre mit einem nussigen Aroma, das an Marzipan erinnert. Die Bezeichnung „Amaretto“ ist eine Verkleinerungsform des italienischen Wortes amaro, was so viel bedeutet wie „bitter“. Ursprünglich wurden Bittermandeln (italienisch mandorla amara) oder Aprikosenkerne, teilweise auch süße Mandeln zur Aromatisierung verwendet.
+			Amaretto ist eine Geschmacksrichtung für ursprünglich aus Italien stammende Liköre mit einem nussigen Aroma, das an Marzipan erinnert. Die Bezeichnung „Amaretto“ ist eine Verkleinerungsform des italienischen Wortes amaro, was so viel bedeutet wie „bitter“. Ursprünglich wurden Bittermandeln (italienisch mandorla amara) oder Aprikosenkerne, teilweise auch süße Mandeln zur Aromatisierung verwendet.
 		</description>
 		<recipe>
 			<ingredient amount="3" unit="cl" substance="Zitronensaft"/>
@@ -32,7 +32,21 @@ Amaretto ist eine Geschmacksrichtung für ursprünglich aus Italien stammende Li
 		<name>Americano</name>
 		<teaser>Campari, Vermouth Rosso, Soda</teaser>
 		<image>{5F0D01F0-B2CD-496F-BA3E-79BB0D564D9C}</image>
+		<description>
+			Der Americano ist ein klassischer Aperitifcocktail. Zubereitet wird er aus Campari und Vermouth rosso. Als Garnierung werden Orange und Zitrone verwendet.
+
+			Bekanntheit erlangte der Americano nicht zuletzt auch durch Ian Flemings James Bond, der in Casino Royale, dem allerersten Band der Romanserie, als ersten Drink einen Americano bestellt.
+
+			Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
+		</description>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Vermouth Rosso"/>
+			<ingredient amount="3" unit="cl" substance="Camparia"/>
+			<ingredient amount="3" unit="cl" substance="Soda"/>
+		</recipe>
 	</drink>
+
+
 	<drink>
 		<name>B52</name>
 		<teaser>Kaffeelikör, Baileys, Grand Manier</teaser>

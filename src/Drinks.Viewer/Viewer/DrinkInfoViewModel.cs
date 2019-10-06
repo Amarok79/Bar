@@ -32,7 +32,35 @@ namespace Drinks.Viewer
 {
 	public sealed class DrinkInfoViewModel : BindableBase
 	{
-		public Drink Drink { get; set; }
+		private readonly ObservableCollection<IngredientItemViewModel> mIngredients = new ObservableCollection<IngredientItemViewModel>();
+		private Drink mDrink;
+		private BitmapImage mImage;
+
+
+		public Drink Drink
+		{
+			get
+			{
+				return mDrink;
+			}
+			set
+			{
+				mDrink = value;
+
+				mIngredients.Clear();
+				foreach (var ingredient in mDrink.Recipe.Ingredients)
+				{
+					mIngredients.Add(new IngredientItemViewModel() {
+						Ingredient = ingredient
+					});
+				}
+
+				OnPropertyChanged(nameof(Name));
+				OnPropertyChanged(nameof(Teaser));
+				OnPropertyChanged(nameof(Description));
+				OnPropertyChanged(nameof(Ingredients));
+			}
+		}
 
 		public String Name => this.Drink.Name;
 
@@ -40,8 +68,12 @@ namespace Drinks.Viewer
 
 		public String Description => this.Drink.Description;
 
-		public BitmapImage Image { get; set; }
+		public ObservableCollection<IngredientItemViewModel> Ingredients => mIngredients;
 
-		public ObservableCollection<IngredientItemViewModel> Ingredients { get; } = new ObservableCollection<IngredientItemViewModel>();
+		public BitmapImage Image
+		{
+			get => mImage;
+			set => SetProperty(ref mImage, value);
+		}
 	}
 }

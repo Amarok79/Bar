@@ -40,6 +40,7 @@ namespace Drinks.Viewer
 		public BitmapImage Image { get; set; }
 
 		private Boolean mIsImageLoading;
+
 		public Boolean IsImageLoading
 		{
 			get => mIsImageLoading;

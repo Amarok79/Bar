@@ -52,7 +52,7 @@ namespace Drinks.Viewer
 			this.Loading += _HandleOnLoading;
 
 			DrinksGridView.ItemClick += _HandleDrinkItemClick;
-			DrinkInfoPopupCloseButton.Click += _HandleDrinkInfoPopupClose;
+			DrinkInfoView.CloseButton.Click += _HandleDrinkInfoPopupClose;
 		}
 
 
@@ -101,15 +101,6 @@ namespace Drinks.Viewer
 
 			DrinkInfoView.ViewModel.Drink = drink;
 			DrinkInfoView.ViewModel.Image = drinkViewModel.Image;
-
-			DrinkInfoView.ViewModel.Ingredients.Clear();
-
-			foreach (var ingredient in drink.Recipe.Ingredients)
-			{
-				DrinkInfoView.ViewModel.Ingredients.Add(new IngredientItemViewModel {
-					Ingredient = ingredient
-				});
-			}
 
 			DrinkInfoView.Width = DrinksArea.ActualWidth - 240;
 			DrinkInfoView.Height = DrinksArea.ActualHeight - 120;

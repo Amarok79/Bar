@@ -31,7 +31,24 @@ namespace Drinks.Viewer
 {
 	public sealed class IngredientItemViewModel : BindableBase
 	{
-		public Ingredient Ingredient { get; set; }
+		private Ingredient mIngredient;
+
+		public Ingredient Ingredient
+		{
+			get
+			{
+				return mIngredient;
+			}
+			set
+			{
+				mIngredient = value;
+
+				OnPropertyChanged(nameof(Amount));
+				OnPropertyChanged(nameof(Unit));
+				OnPropertyChanged(nameof(Substance));
+			}
+		}
+
 
 		public String Amount => this.Ingredient.Amount.ToString(CultureInfo.CurrentCulture);
 

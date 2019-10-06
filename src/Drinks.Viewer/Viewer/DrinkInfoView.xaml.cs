@@ -31,6 +31,8 @@ namespace Drinks.Viewer
 	{
 		public DrinkInfoViewModel ViewModel { get; } = new DrinkInfoViewModel();
 
+		public Button CloseButton => this.ClosePopupButton;
+
 
 		public DrinkInfoView()
 		{

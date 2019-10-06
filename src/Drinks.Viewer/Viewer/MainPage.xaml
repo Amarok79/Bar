@@ -122,12 +122,7 @@
 							HorizontalAlignment="Center"
 							VerticalAlignment="Center" />
 
-						<Button
-							x:Name="DrinkInfoPopupCloseButton"
-							Margin="10"
-							HorizontalAlignment="Right"
-							VerticalAlignment="Top"
-							Content="x" />
+
 
 					</Grid>
 				</Border>

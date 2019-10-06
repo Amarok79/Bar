@@ -18,12 +18,16 @@
 				<ColumnDefinition Width="2*" />
 			</Grid.ColumnDefinitions>
 
+			<!--  Image  -->
+
 			<Border
 				Grid.Column="0"
 				BorderBrush="{StaticResource DrinkItemBorderBrush}"
 				BorderThickness="0,0,1,0">
-				<Image Source="{x:Bind ViewModel.Image}" Stretch="UniformToFill" />
+				<Image Source="{x:Bind ViewModel.Image, Mode=OneWay}" Stretch="UniformToFill" />
 			</Border>
+
+			<!--  Ingredients  -->
 
 			<ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
 				<StackPanel Margin="40,30,40,30" Orientation="Vertical">
@@ -34,7 +38,7 @@
 						VerticalAlignment="Center"
 						FontFamily="Arial Rounded MT Bold"
 						FontSize="36"
-						Text="{x:Bind ViewModel.Name}" />
+						Text="{x:Bind ViewModel.Name, Mode=OneWay}" />
 
 					<ListView IsHitTestVisible="False" ItemsSource="{x:Bind ViewModel.Ingredients}">
 						<ListView.ItemTemplate>
@@ -50,33 +54,43 @@
 										FontSize="20"
 										FontWeight="Bold"
 										Foreground="#FFB3B3B3"
-										Text="{x:Bind Amount}" />
+										Text="{x:Bind Amount, Mode=OneWay}" />
 									<TextBlock
 										Grid.Column="1"
 										FontSize="18"
 										FontWeight="Normal"
 										Foreground="#FFB3B3B3"
-										Text="{x:Bind Unit}" />
+										Text="{x:Bind Unit, Mode=OneWay}" />
 									<TextBlock
 										Grid.Column="2"
 										FontSize="20"
 										FontWeight="Normal"
 										Foreground="#FFB3B3B3"
-										Text="{x:Bind Substance}" />
+										Text="{x:Bind Substance, Mode=OneWay}" />
 								</Grid>
 							</DataTemplate>
 						</ListView.ItemTemplate>
 					</ListView>
 
+					<!--  Description  -->
+
 					<TextBlock
 						FontSize="18"
 						FontWeight="Normal"
 						Foreground="#FFB3B3B3"
-						Text="{x:Bind ViewModel.Description}"
+						Text="{x:Bind ViewModel.Description, Mode=OneWay}"
 						TextWrapping="WrapWholeWords" />
 
 				</StackPanel>
 			</ScrollViewer>
+
+			<Button
+				x:Name="ClosePopupButton"
+				Grid.Column="1"
+				Margin="10"
+				HorizontalAlignment="Right"
+				VerticalAlignment="Top"
+				Content="x" />
 		</Grid>
 
 	</Border>
