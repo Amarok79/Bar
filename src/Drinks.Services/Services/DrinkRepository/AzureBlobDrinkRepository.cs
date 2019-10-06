@@ -87,7 +87,7 @@ namespace Drinks.Services.DrinkRepository
 				var name = drinkNode.Element("name").Value;
 				var teaser = drinkNode.Element("teaser").Value;
 				var image = Guid.Parse(drinkNode.Element("image").Value);
-				var desc = drinkNode.Element("description")?.Value;
+				var desc = drinkNode.Element("description")?.Value?.Trim();
 
 				var drink = new Drink(new DrinkId(Guid.NewGuid()), new BarId())
 					.SetName(name)
