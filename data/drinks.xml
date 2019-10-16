@@ -104,6 +104,27 @@
 		</recipe>
 	</drink>
 
+	<drink>
+		<name>Caipirinha &amp; Passion</name>
+		<teaser>Limette, Rohrzucker, Cachaça, Passionsfrucht</teaser>
+		<image>{ECEB76C2-C992-4054-99AC-F6384404F90B}</image>
+		<description>
+			Dies ist eine Abwandlung des Caipirinha unter Zugabe von Passionsfrucht.
+
+			Caipirinha ist ein aus Brasilien stammender Cocktail, der mittlerweile weltweit verbreitet ist. Er wird auch – in Anlehnung an die portugiesische weibliche Form (a caipirinha) – als die Caipirinha bezeichnet. Im deutschen Sprachraum ist auch die Kurzbezeichnung (der) Caipi verbreitet.
+
+			Die Passionsfrucht ist meist auch unter dem Namen Maracuja bekannt wobei sich bei der Maracuja um eine gelbe Variante der Passionsfrucht handelt. Die biologischen Verwandten der Passionsfrucht gehen auch zu den Weiden, Pappeln oder Veilchen zurück. Die Passionsfrucht stammt von der Passionsblume ab und ist eine essbare Art.
+
+			Cachaça – man spricht Kaschassa – ist eine brasilianische Spirituose aus Zuckerrohrsaft, die früher und hochsprachlich als Aguardente (= heiß brennendes Wasser oder „Feuerwasser“) und umgangssprachlich oft als Pinga (= Fusel) bezeichnet wird. Ähnlich wie Rum wird Cachaça aus Zuckerrohrsaft hergestellt, wobei hier die Verarbeitungsschritte anders sind.
+		</description>
+		<recipe>
+			<ingredient amount="1" unit="" substance="Passionsfrucht"/>
+			<ingredient amount="1" unit="" substance="Limette"/>
+			<ingredient amount="1" unit="BL" substance="Weißer Rohrzucker"/>
+			<ingredient amount="1.5" unit="cl" substance="Maracujarnektar"/>
+			<ingredient amount="6" unit="cl" substance="Cachaça"/>
+		</recipe>
+	</drink>
 
 
 	<drink>
@@ -119,11 +140,7 @@
 	</drink>
 
 
-	<drink>
-		<name>Caipirinha &amp; Passion</name>
-		<teaser>Limette, Rohrzucker, Cachaça, Passionsfrucht</teaser>
-		<image>{ECEB76C2-C992-4054-99AC-F6384404F90B}</image>
-	</drink>
+
 	<drink>
 		<name>Cosmopolitan</name>
 		<teaser>Limettensaft, Wodka, Cointreau, Cranberrysaft</teaser>
