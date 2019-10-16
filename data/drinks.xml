@@ -86,7 +86,25 @@
 		</recipe>
 	</drink>
 
-	
+	<drink>
+		<name>Caipirinha</name>
+		<teaser>Limette, Rohrzucker, Cachaça</teaser>
+		<image>{A6652EC4-99C8-4A96-B5DC-10831E208217}</image>
+		<description>
+			Caipirinha ist ein aus Brasilien stammender Cocktail, der mittlerweile weltweit verbreitet ist. Er wird auch – in Anlehnung an die portugiesische weibliche Form (a caipirinha) – als die Caipirinha bezeichnet. Im deutschen Sprachraum ist auch die Kurzbezeichnung (der) Caipi verbreitet.
+
+			Die Bezeichnung Caipirinha ist die Verkleinerungsform des brasilianischen Caipira, das soviel wie „Landei“ bedeutet. Trotz des Namens war Caipirinha ursprünglich ein Cocktail der ländlichen Oberschicht und verbreitete sich nach Ende des Ersten Weltkrieges in den Großstädten, während im Landesinneren der Zuckerrohrschnaps meistens pur genossen wird.
+
+			Cachaça – man spricht Kaschassa – ist eine brasilianische Spirituose aus Zuckerrohrsaft, die früher und hochsprachlich als Aguardente (= heiß brennendes Wasser oder „Feuerwasser“) und umgangssprachlich oft als Pinga (= Fusel) bezeichnet wird. Ähnlich wie Rum wird Cachaça aus Zuckerrohrsaft hergestellt, wobei hier die Verarbeitungsschritte anders sind.
+		</description>
+		<recipe>
+			<ingredient amount="1" unit="" substance="Limette"/>
+			<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
+			<ingredient amount="6" unit="cl" substance="Cachaça"/>
+		</recipe>
+	</drink>
+
+
 
 	<drink>
 		<name>Alexander (Gin)</name>
@@ -100,11 +118,7 @@
 		<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
 	</drink>
 
-	<drink>
-		<name>Caipirinha</name>
-		<teaser>Limette, Rohrzucker, Cachaça</teaser>
-		<image>{A6652EC4-99C8-4A96-B5DC-10831E208217}</image>
-	</drink>
+
 	<drink>
 		<name>Caipirinha &amp; Passion</name>
 		<teaser>Limette, Rohrzucker, Cachaça, Passionsfrucht</teaser>
