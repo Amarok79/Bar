@@ -121,9 +121,6 @@
 							Margin="120,60,120,60"
 							HorizontalAlignment="Center"
 							VerticalAlignment="Center" />
-
-
-
 					</Grid>
 				</Border>
 			</Popup>
