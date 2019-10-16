@@ -17,17 +17,6 @@
 		</recipe>
 	</drink>
 
-
-
-
-
-
-	<drink>
-		<name>Alexander (Gin)</name>
-		<teaser>Gin, Creme de Cacaco, Sahne, Muskatnuss</teaser>
-		<image>{8AFFEC5A-A659-460F-8BE4-438C1F17F638}</image>
-	</drink>
-
 	<drink>
 		<name>Americano</name>
 		<teaser>Campari, Vermouth Rosso, Soda</teaser>
@@ -41,10 +30,22 @@
 		</description>
 		<recipe>
 			<ingredient amount="3" unit="cl" substance="Vermouth Rosso"/>
-			<ingredient amount="3" unit="cl" substance="Camparia"/>
+			<ingredient amount="3" unit="cl" substance="Campari"/>
 			<ingredient amount="3" unit="cl" substance="Soda"/>
 		</recipe>
 	</drink>
+
+
+
+
+
+	<drink>
+		<name>Alexander (Gin)</name>
+		<teaser>Gin, Creme de Cacaco, Sahne, Muskatnuss</teaser>
+		<image>{8AFFEC5A-A659-460F-8BE4-438C1F17F638}</image>
+	</drink>
+
+
 
 
 	<drink>
