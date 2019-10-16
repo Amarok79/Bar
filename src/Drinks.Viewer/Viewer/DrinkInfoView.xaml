@@ -88,10 +88,14 @@
 			<Button
 				x:Name="ClosePopupButton"
 				Grid.Column="1"
+				Width="40"
+				Height="40"
 				Margin="20"
 				HorizontalAlignment="Right"
 				VerticalAlignment="Top"
-				Content="x" />
+				HorizontalContentAlignment="Center"
+				VerticalContentAlignment="Center"
+				Content="X" />
 		</Grid>
 
 	</Border>
