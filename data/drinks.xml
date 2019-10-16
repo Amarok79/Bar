@@ -35,6 +35,23 @@
 		</recipe>
 	</drink>
 
+	<drink>
+		<name>B52</name>
+		<teaser>Kaffeelikör, Baileys, Grand Manier</teaser>
+		<image>{BFF1FC54-B5B3-4F19-B517-1D77130A27A1}</image>
+		<description>
+			Der B52 (auch „Bifi“) ist ein Cocktail (Kurzer), dessen Bestandteile im Glas drei – auch optisch – klar abgegrenzte Schichten ergeben.
+
+			Der B52 wurde der Legende nach im berühmten Alice's Restaurant in Malibu (Kalifornien) kreiert. Der Name bezieht sich auf den US-Langstreckenbomber Boeing B-52. Dieser Bomber wurde unter anderem im Vietnamkrieg zum Abwurf von Brandbomben verwendet. Gerüchteweise entstand in Anlehnung daran die heute gängige flambierte Variante des Cocktails.
+
+			Getrunken wird der B52 von unten weg mit einem Trinkhalm, wobei der Grand Marnier vom Barkeeper kurz vorher entzündet wird. Da der Trinkhalm nicht hitzebeständig ist, muss der Cocktail möglichst schnell getrunken werden.
+		</description>
+		<recipe>
+			<ingredient amount="2" unit="cl" substance="Kahlua"/>
+			<ingredient amount="2" unit="cl" substance="Baileys"/>
+			<ingredient amount="2" unit="cl" substance="Grand Manier"/>
+		</recipe>
+	</drink>
 
 
 
@@ -48,11 +65,7 @@
 
 
 
-	<drink>
-		<name>B52</name>
-		<teaser>Kaffeelikör, Baileys, Grand Manier</teaser>
-		<image>{BFF1FC54-B5B3-4F19-B517-1D77130A27A1}</image>
-	</drink>
+
 	<drink>
 		<name>Batida de Maracuja</name>
 		<teaser>Passionsfrucht, Kokosmilch, Cachaça</teaser>
