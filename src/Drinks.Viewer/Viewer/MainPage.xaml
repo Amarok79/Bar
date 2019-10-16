@@ -64,12 +64,23 @@
 							</Grid.RowDefinitions>
 
 							<Border BorderBrush="{StaticResource DrinkItemBorderBrush}" BorderThickness="1">
-								<Image
-									Grid.Row="0"
-									Width="260"
-									Height="356"
-									Source="{x:Bind Image}"
-									Stretch="UniformToFill" />
+								<Canvas Grid.Row="0">
+									<Image
+										Width="260"
+										Height="356"
+										Source="{x:Bind Image}"
+										Stretch="UniformToFill" />
+
+									<Image
+										Width="25"
+										Height="25"
+										Margin="15"
+										HorizontalAlignment="Left"
+										VerticalAlignment="Top"
+										Source="/Assets/info.png"
+										Stretch="UniformToFill"
+										Visibility="{x:Bind HasDescription}" />
+								</Canvas>
 							</Border>
 
 							<TextBlock

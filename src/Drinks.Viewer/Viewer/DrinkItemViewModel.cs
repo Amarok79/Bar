@@ -37,6 +37,8 @@ namespace Drinks.Viewer
 
 		public String Teaser => this.Drink.Teaser;
 
+		public Boolean HasDescription => !String.IsNullOrEmpty(this.Drink.Description);
+
 		public BitmapImage Image { get; set; }
 
 		private Boolean mIsImageLoading;
