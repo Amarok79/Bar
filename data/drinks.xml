@@ -71,7 +71,22 @@
 		</recipe>
 	</drink>
 
+	<drink>
+		<name>Bramble</name>
+		<teaser>Zitronensaft, Gin, Brombeerlikör</teaser>
+		<image>{41E7903D-086C-4E4B-A4BA-869248A2DB25}</image>
+		<description>
+			Der Bramble (Englisch für Brombeere) ist ein Cocktail aus Gin, Zitronensaft, Zuckersirup und dem namensgebenden Brombeerlikör. Er wird auf Eiswürfeln geschüttelt und dann in einem Old-Fashioned-Glas auf Crushed Ice (zerstoßenem Eis) serviert, dekoriert mit einer Zitronenscheibe und einer frischen Brombeere.
+		</description>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Zitronensaft"/>
+			<ingredient amount="4.5" unit="cl" substance="Gin"/>
+			<ingredient amount="1.5" unit="cl" substance="Läuterzucker"/>
+			<ingredient amount="2" unit="BL" substance="Brombeerlikör"/>
+		</recipe>
+	</drink>
 
+	
 
 	<drink>
 		<name>Alexander (Gin)</name>
@@ -84,11 +99,7 @@
 		<teaser>Rum, Cointreau, Limettensirup, Creme of Coconut, Ananassaft</teaser>
 		<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
 	</drink>
-	<drink>
-		<name>Bramble</name>
-		<teaser>Zitronensaft, Gin, Brombeerlikör</teaser>
-		<image>{41E7903D-086C-4E4B-A4BA-869248A2DB25}</image>
-	</drink>
+
 	<drink>
 		<name>Caipirinha</name>
 		<teaser>Limette, Rohrzucker, Cachaça</teaser>
