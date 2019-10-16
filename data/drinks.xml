@@ -156,7 +156,7 @@
 		<recipe>
 			<ingredient amount="1" unit="" substance="Limette"/>
 			<ingredient amount="5" unit="cl" substance="Rum"/>
-			<ingredient amount="" unit="" substance="Coca Cola"/>
+			<ingredient amount="10" unit="cl" substance="Coca Cola"/>
 		</recipe>
 	</drink>
 
