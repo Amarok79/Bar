@@ -29,7 +29,10 @@
 
 			<!--  Ingredients  -->
 
-			<ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
+			<ScrollViewer
+				x:Name="ScrollViewer"
+				Grid.Column="1"
+				VerticalScrollBarVisibility="Auto">
 				<StackPanel Margin="50,40,50,30" Orientation="Vertical">
 
 					<TextBlock

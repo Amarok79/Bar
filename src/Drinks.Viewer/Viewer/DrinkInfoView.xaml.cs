@@ -38,5 +38,11 @@ namespace Drinks.Viewer
 		{
 			this.InitializeComponent();
 		}
+
+
+		public void ScrollToTop()
+		{
+			ScrollViewer.ChangeView(null, 0.0, null, true);
+		}
 	}
 }

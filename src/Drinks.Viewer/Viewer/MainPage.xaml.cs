@@ -104,12 +104,14 @@ namespace Drinks.Viewer
 
 			DrinkInfoView.Width = DrinksArea.ActualWidth - 240;
 			DrinkInfoView.Height = DrinksArea.ActualHeight - 120;
+			DrinkInfoView.ScrollToTop();
 
 			DrinkInfoPopup.IsOpen = true;
 		}
 
 		private void _HandleDrinkInfoPopupClose(Object sender, RoutedEventArgs e)
 		{
+			DrinkInfoView.ScrollToTop();
 			DrinkInfoPopup.IsOpen = false;
 		}
 	}
