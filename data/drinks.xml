@@ -216,6 +216,110 @@
 		</recipe>
 	</drink>
 
+	<drink>
+		<name>Negroni</name>
+		<teaser>Campari, Vermouth Rosso, Gin</teaser>
+		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
+		<description>
+			Der Negroni ist ein klassischer, aus Italien stammender Cocktail mit bitter-süßem Geschmack.
+
+			Der Negroni wurde in Florenz im Caffè Casoni (heute Caffè Giacosa) in der Via de′ Tornabuoni erfunden. Er ist nach dem Grafen Camillo Negroni benannt, der beim Barkeeper (Fosco Scarselli) zwischen 1919 und 1920 zum ersten Mal einen mit Gin verlängerten Americano bestellte.
+
+			Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
+		</description>
+		<recipe>
+			<ingredient amount="2" unit="cl" substance="Gin"/>
+			<ingredient amount="2" unit="cl" substance="Vermouth Rosso"/>
+			<ingredient amount="2" unit="cl" substance="Campari"/>
+		</recipe>
+	</drink>
+
+	<drink>
+		<name>Old Fashioned</name>
+		<teaser>Bourbon Whiskey, Bitters</teaser>
+		<image>{49F4ADEF-FE11-4BE4-B397-4978B9515163}</image>
+		<description>
+			Ein Old Fashioned (von englisch old-fashioned für altmodisch, althergebracht) ist einer der wichtigsten klassischen Cocktails. Im 19. Jahrhundert zunächst als Whiskey Cocktail, später Old Fashioned Whiskey Cocktail, bezeichnet, entspricht der Shortdrink noch heute weitgehend der Urform eines „Cocktails“ in seiner ursprünglichen Definition, besteht also aus einer Spirituose, Zucker, Wasser bzw. Eis sowie Cocktailbitter.
+
+			Serviert werden Old Fashioneds meist in einem kleinen Becherglas, das auch Old-Fashioned-Glas genannt wird.
+		</description>
+		<recipe>
+			<ingredient amount="1" unit="" substance="Zuckerwürfel"/>
+			<ingredient amount="2" unit="dash" substance="Angostura Bitter"/>
+			<ingredient amount="2" unit="dash" substance="Orange Bitter"/>
+			<ingredient amount="1" unit="BL" substance="Soda"/>
+			<ingredient amount="6" unit="cl" substance="Bourbon Whiskey"/>
+		</recipe>
+	</drink>
+
+	<drink>
+		<name>Ramazotti Sour</name>
+		<teaser>Zitronensaft, Ramazotti, Limettensirup, Orangensaft</teaser>
+		<image>{643AD007-EC64-4D68-AECF-C62695AA1DE7}</image>
+		<description>
+			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem Grundprinzip Spirituose + Süßungsmittel + saurer Zitrussaft aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. Die bekanntesten Sours, die die Gattungsbezeichnung auch im Namen tragen, sind Whiskey Sour, Pisco Sour und Amaretto Sour.
+
+			Das Herstellungsverfahren von Ramazotti ist das gleiche wie 1815. Die Rezeptur umfasst 33 Kräuter und Pflanzen, unter anderem süße und bittere Orangenschalen, Chinarinde, Engelwurz, Kaiserwurz, Rosenblüten, Vanille und Sternanis. Diese werden extrahiert und pulverisiert. Dann werden Zucker, Alkohol und weitere Zutaten hinzugefügt. Die entstandene Flüssigkeit wird anschließend filtriert.
+		</description>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Zitronensaft"/>
+			<ingredient amount="4.5" unit="cl" substance="Ramazotti"/>
+			<ingredient amount="1.5" unit="cl" substance="Läuterzucker"/>
+			<ingredient amount="3" unit="cl" substance="Orangensaft"/>
+		</recipe>
+	</drink>
+
+	<drink>
+		<name>Singapore Sling</name>
+		<teaser>Limettensaft, Gin, Kirschlikör, Cointreau, Benedictine, Ananassaft</teaser>
+		<image>{50B3EA34-2FE3-47D2-8498-C956687DE2FB}</image>
+		<description>
+			Singapore Sling ist ein fruchtig-aromatischer Cocktail aus Gin, Kirschlikör, Bénédictine und weiteren Zutaten.
+
+			Die Slings bilden eine sehr alte Gruppe von Mixgetränken und bestanden ursprünglich – nach einer Definition von 1675 – aus einer Spirituose, Zucker und Wasser, sowie optional etwas Muskatnuss. Dementsprechend wurde auch 1806 das damals noch neue Wort „Cocktail“ als „bittered sling“ definiert, also als ein mit Cocktailbitter gewürzter Sling.
+
+			Die herbere Vorgängervariante des Singapore Sling ist der Straits Sling. Hier wird der Ananassaft weggelassen. Dadurch wird der Cocktail weniger fruchtig.
+		</description>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Limettensaft"/>
+			<ingredient amount="4.5" unit="cl" substance="Gin"/>
+			<ingredient amount="2" unit="cl" substance="Cherry Brandy"/>
+			<ingredient amount="1" unit="cl" substance="Cointreau"/>
+			<ingredient amount="1" unit="cl" substance="Benedictine"/>
+			<ingredient amount="1" unit="cl" substance="Grenadine"/>
+			<ingredient amount="2" unit="dash" substance="Bitter"/>
+			<ingredient amount="8" unit="cl" substance="Ananassaft"/>
+		</recipe>
+	</drink>
+
+	<drink>
+		<name>Zombie</name>
+		<teaser>Limettensaft, Falernum, Maraschino, Rum, Rum, Rum</teaser>
+		<image>{D34B1939-F5D4-497B-A6DD-AF839308E285}</image>
+		<description>
+			Der Zombie (ursprünglich auch Zombie Punch) ist ein sehr starker Cocktail aus Rum und Fruchtsäften, der nach seiner Wirkung auf den Konsumenten benannt wurde und zu den bekanntesten Tiki-Drinks zählt.
+
+			Erstmals tauchte der Zombie als Zombie Punch in den 1930er-Jahren auf und geht auf Donn Beach (eigentlich Ernest Raymond Beaumont-Gannt) zurück, einen Unternehmer, der unter anderem das Restaurant Don the Beachcomber in Hollywood besaß.
+
+			Angeblich mixte er ihn im Jahr 1934 eines Nachmittags für einen verkaterten Freund, der vor seinem Abflug nach San Francisco in diesem Restaurant vorbeischaute. Nachdem er drei Zombies zu sich genommen hatte, ging er wieder. Als er mehrere Tage später zurückkam, sagte er, er habe sich während des ganzen Flugs wie ein Untoter gefühlt, daher der Name Zombie.
+
+			Aufgrund des hohen Alkoholgehaltes beschränkte das Don the Beachcomber den Ausschank seines Zombie Drinks jahrelang auf zwei Stück pro Gast.
+		</description>
+		<recipe>
+			<ingredient amount="2.5" unit="cl" substance="Limettensaft"/>
+			<ingredient amount="2" unit="cl" substance="Grapefruchtsaft"/>
+			<ingredient amount="4.5" unit="cl" substance="Rum (Gold)"/>
+			<ingredient amount="4.5" unit="cl" substance="Rum (Dark)"/>
+			<ingredient amount="3" unit="cl" substance="Overproof Rum"/>
+			<ingredient amount="2" unit="cl" substance="Falernum (Velvet)"/>
+			<ingredient amount="2" unit="cl" substance="Falernum (Gold)"/>
+			<ingredient amount="2" unit="cl" substance="Maraschino"/>
+			<ingredient amount="1.5" unit="cl" substance="Zimtläuterzucker"/>
+			<ingredient amount="2" unit="dash" substance="Absinth"/>
+			<ingredient amount="2" unit="dash" substance="Bitter"/>
+		</recipe>
+	</drink>
+
 
 
 	<drink>
@@ -230,12 +334,11 @@
 		<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
 	</drink>
 
-
-
-
-
-
-
+	<drink>
+		<name>Long Island Iced Tea</name>
+		<teaser>Limettensaft, Vodka, Gin, Tequilla, Rum, Triple Sec, Cola</teaser>
+		<image>{37944174-35CE-4895-B9F2-A2DF02749857}</image>
+	</drink>
 
 	<drink>
 		<name>Gin &amp; Tonic</name>
@@ -248,16 +351,8 @@
 		<image>{C001A4F2-EFEC-4E30-B57F-FCC50F63E023}</image>
 	</drink>
 
-	<drink>
-		<name>Negroni</name>
-		<teaser>Campari, Vermouth Rosso, Gin</teaser>
-		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
-	</drink>
-	<drink>
-		<name>Old Fashioned</name>
-		<teaser>Bourbon Whiskey, Bitters</teaser>
-		<image>{49F4ADEF-FE11-4BE4-B397-4978B9515163}</image>
-	</drink>
+
+
 	<drink>
 		<name>Pina Colada</name>
 		<teaser>Rum, Sahne, Creme of Coconut, Ananassaft</teaser>
@@ -273,14 +368,6 @@
 		<teaser>Wodka, Vanillelikör, Bananenlikör, Sahne, Maracujasaft, Ananassaft</teaser>
 		<image>{871629C3-362F-4565-9AB8-02DE0452D06C}</image>
 	</drink>
-	<drink>
-		<name>Singapore Sling</name>
-		<teaser>Limettensaft, Gin, Kirschlikör, Cointreau, Benedictine, Ananassaft</teaser>
-		<image>{50B3EA34-2FE3-47D2-8498-C956687DE2FB}</image>
-	</drink>
-	<drink>
-		<name>Zombie</name>
-		<teaser>Limettensaft, Falernum, Maraschino, Rum, Rum, Rum</teaser>
-		<image>{D34B1939-F5D4-497B-A6DD-AF839308E285}</image>
-	</drink>
+
+
 </drinks>
