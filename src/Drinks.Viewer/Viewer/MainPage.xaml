@@ -59,7 +59,7 @@
 						<Grid>
 							<Grid.RowDefinitions>
 								<RowDefinition Height="346" />
-								<RowDefinition Height="32" />
+								<RowDefinition Height="40" />
 								<RowDefinition Height="54" />
 							</Grid.RowDefinitions>
 
@@ -87,7 +87,7 @@
 								Grid.Row="1"
 								Width="260"
 								Height="28"
-								Margin="0,8,0,0"
+								Margin="0,12,0,0"
 								HorizontalAlignment="Center"
 								VerticalAlignment="Top"
 								FontSize="18"
