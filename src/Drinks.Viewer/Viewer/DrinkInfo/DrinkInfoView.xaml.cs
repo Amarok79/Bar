@@ -25,7 +25,7 @@
 using Windows.UI.Xaml.Controls;
 
 
-namespace Drinks.Viewer
+namespace Drinks.Viewer.DrinkInfo
 {
 	public sealed partial class DrinkInfoView : UserControl
 	{

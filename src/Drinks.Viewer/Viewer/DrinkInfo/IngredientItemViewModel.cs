@@ -23,57 +23,37 @@
 */
 
 using System;
-using System.Collections.ObjectModel;
+using System.Globalization;
 using Drinks.Model;
-using Windows.UI.Xaml.Media.Imaging;
 
 
-namespace Drinks.Viewer
+namespace Drinks.Viewer.DrinkInfo
 {
-	public sealed class DrinkInfoViewModel : BindableBase
+	public sealed class IngredientItemViewModel : BindableBase
 	{
-		private readonly ObservableCollection<IngredientItemViewModel> mIngredients = new ObservableCollection<IngredientItemViewModel>();
-		private Drink mDrink;
-		private BitmapImage mImage;
+		private Ingredient mIngredient;
 
-
-		public Drink Drink
+		public Ingredient Ingredient
 		{
 			get
 			{
-				return mDrink;
+				return mIngredient;
 			}
 			set
 			{
-				mDrink = value;
+				mIngredient = value;
 
-				mIngredients.Clear();
-				foreach (var ingredient in mDrink.Recipe.Ingredients)
-				{
-					mIngredients.Add(new IngredientItemViewModel() {
-						Ingredient = ingredient
-					});
-				}
-
-				OnPropertyChanged(nameof(Name));
-				OnPropertyChanged(nameof(Teaser));
-				OnPropertyChanged(nameof(Description));
-				OnPropertyChanged(nameof(Ingredients));
+				OnPropertyChanged(nameof(Amount));
+				OnPropertyChanged(nameof(Unit));
+				OnPropertyChanged(nameof(Substance));
 			}
 		}
 
-		public String Name => this.Drink.Name;
 
-		public String Teaser => this.Drink.Teaser;
+		public String Amount => this.Ingredient.Amount.ToString(CultureInfo.CurrentCulture);
 
-		public String Description => this.Drink.Description;
+		public String Unit => this.Ingredient.Unit;
 
-		public ObservableCollection<IngredientItemViewModel> Ingredients => mIngredients;
-
-		public BitmapImage Image
-		{
-			get => mImage;
-			set => SetProperty(ref mImage, value);
-		}
+		public String Substance => this.Ingredient.Substance;
 	}
 }

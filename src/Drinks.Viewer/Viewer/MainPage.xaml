@@ -2,6 +2,7 @@
 	x:Class="Drinks.Viewer.MainPage"
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:DrinkInfo="using:Drinks.Viewer.DrinkInfo"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:local="using:Drinks.Viewer"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -127,7 +128,7 @@
 			<Popup x:Name="DrinkInfoPopup">
 				<Border Background="#E0121212">
 					<Grid>
-						<local:DrinkInfoView
+						<DrinkInfo:DrinkInfoView
 							x:Name="DrinkInfoView"
 							Margin="120,60,120,60"
 							HorizontalAlignment="Center"
