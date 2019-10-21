@@ -28,6 +28,7 @@
 using System;
 using System.Linq;
 using Drinks.Model;
+using Drinks.Viewer.DrinkInfo;
 using Unity;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -52,7 +53,6 @@ namespace Drinks.Viewer
 			this.Loading += _HandleOnLoading;
 
 			DrinksGridView.ItemClick += _HandleDrinkItemClick;
-			DrinkInfoView.CloseButton.Click += _HandleDrinkInfoPopupClose;
 		}
 
 
@@ -99,20 +99,23 @@ namespace Drinks.Viewer
 			if (drink.Recipe == null)
 				return;
 
-			DrinkInfoView.ViewModel.Drink = drink;
-			DrinkInfoView.ViewModel.Image = drinkViewModel.Image;
+			var infoView = new DrinkInfoView();
+			infoView.ViewModel.Drink = drink;
+			infoView.ViewModel.Image = drinkViewModel.Image;
+			infoView.ViewModel.CloseButtonCommand = new DelegateCommand(_HandleDrinkInfoPopupClose);
 
-			DrinkInfoView.Width = DrinksArea.ActualWidth - 240;
-			DrinkInfoView.Height = DrinksArea.ActualHeight - 120;
-			DrinkInfoView.ScrollToTop();
+			infoView.Width = DrinksArea.ActualWidth - 240;
+			infoView.Height = DrinksArea.ActualHeight - 120;
+
+			DrinkInfoViewHost.Content = infoView;
 
 			DrinkInfoPopup.IsOpen = true;
 		}
 
-		private void _HandleDrinkInfoPopupClose(Object sender, RoutedEventArgs e)
+		private void _HandleDrinkInfoPopupClose()
 		{
-			DrinkInfoView.ScrollToTop();
 			DrinkInfoPopup.IsOpen = false;
+			DrinkInfoViewHost.Content = null;
 		}
 	}
 }

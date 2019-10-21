@@ -22,19 +22,36 @@
  * SOFTWARE.
 */
 
-using Windows.UI.Xaml.Controls;
+using System;
+using System.Windows.Input;
 
 
-namespace Drinks.Viewer.DrinkInfo
+namespace Drinks.Viewer
 {
-	public sealed partial class DrinkInfoView : UserControl
+	public sealed class DelegateCommand :
+		ICommand
 	{
-		public DrinkInfoViewModel ViewModel { get; } = new DrinkInfoViewModel();
+		// data
+		private readonly Action mCallback;
 
 
-		public DrinkInfoView()
+		public event EventHandler CanExecuteChanged;
+
+
+		public DelegateCommand(Action callback)
 		{
-			this.InitializeComponent();
+			mCallback = callback;
+		}
+
+
+		public Boolean CanExecute(Object parameter)
+		{
+			return true;
+		}
+
+		public void Execute(Object parameter)
+		{
+			mCallback();
 		}
 	}
 }

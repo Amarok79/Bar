@@ -22,19 +22,25 @@
  * SOFTWARE.
 */
 
-using Windows.UI.Xaml.Controls;
+using System;
+using System.Globalization;
+using Windows.UI.Xaml.Data;
 
 
-namespace Drinks.Viewer.DrinkInfo
+namespace Drinks.Viewer.Converter
 {
-	public sealed partial class DrinkInfoView : UserControl
+	public sealed class AmountConverter :
+		IValueConverter
 	{
-		public DrinkInfoViewModel ViewModel { get; } = new DrinkInfoViewModel();
-
-
-		public DrinkInfoView()
+		public Object Convert(Object value, Type targetType, Object parameter, String language)
 		{
-			this.InitializeComponent();
+			var doubleValue = (Double)value;
+			return doubleValue.ToString(CultureInfo.CurrentCulture);
+		}
+
+		public Object ConvertBack(Object value, Type targetType, Object parameter, String language)
+		{
+			throw new NotSupportedException();
 		}
 	}
 }

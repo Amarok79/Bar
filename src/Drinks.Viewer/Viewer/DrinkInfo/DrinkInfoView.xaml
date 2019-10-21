@@ -45,7 +45,7 @@
 
 					<ListView IsHitTestVisible="False" ItemsSource="{x:Bind ViewModel.Ingredients}">
 						<ListView.ItemTemplate>
-							<DataTemplate x:DataType="local:IngredientItemViewModel">
+							<DataTemplate x:DataType="local:IngredientViewModel">
 								<Grid>
 									<Grid.ColumnDefinitions>
 										<ColumnDefinition Width="50" />
@@ -57,7 +57,7 @@
 										FontSize="20"
 										FontWeight="Bold"
 										Foreground="#FFB3B3B3"
-										Text="{x:Bind Amount, Mode=OneWay}" />
+										Text="{x:Bind Amount, Mode=OneWay, Converter={StaticResource AmountConverter}}" />
 									<TextBlock
 										Grid.Column="1"
 										FontSize="18"
@@ -98,6 +98,7 @@
 				VerticalAlignment="Top"
 				HorizontalContentAlignment="Center"
 				VerticalContentAlignment="Center"
+				Command="{x:Bind ViewModel.CloseButtonCommand}"
 				Content="X" />
 		</Grid>
 

@@ -23,7 +23,8 @@
 */
 
 using System;
-using System.Collections.ObjectModel;
+using System.Linq;
+using System.Windows.Input;
 using Drinks.Model;
 using Windows.UI.Xaml.Media.Imaging;
 
@@ -32,9 +33,11 @@ namespace Drinks.Viewer.DrinkInfo
 {
 	public sealed class DrinkInfoViewModel : BindableBase
 	{
-		private readonly ObservableCollection<IngredientItemViewModel> mIngredients = new ObservableCollection<IngredientItemViewModel>();
+		// state
+		private IngredientViewModel[] mIngredients;
 		private Drink mDrink;
 		private BitmapImage mImage;
+		private ICommand mCloseButtonCommand;
 
 
 		public Drink Drink
@@ -47,13 +50,9 @@ namespace Drinks.Viewer.DrinkInfo
 			{
 				mDrink = value;
 
-				mIngredients.Clear();
-				foreach (var ingredient in mDrink.Recipe.Ingredients)
-				{
-					mIngredients.Add(new IngredientItemViewModel() {
-						Ingredient = ingredient
-					});
-				}
+				mIngredients = mDrink.Recipe.Ingredients
+					.Select(x => new IngredientViewModel() { Ingredient = x })
+					.ToArray();
 
 				OnPropertyChanged(nameof(Name));
 				OnPropertyChanged(nameof(Teaser));
@@ -68,12 +67,18 @@ namespace Drinks.Viewer.DrinkInfo
 
 		public String Description => this.Drink.Description;
 
-		public ObservableCollection<IngredientItemViewModel> Ingredients => mIngredients;
+		public IngredientViewModel[] Ingredients => mIngredients;
 
 		public BitmapImage Image
 		{
 			get => mImage;
 			set => SetProperty(ref mImage, value);
+		}
+
+		public ICommand CloseButtonCommand
+		{
+			get => mCloseButtonCommand;
+			set => SetProperty(ref mCloseButtonCommand, value);
 		}
 	}
 }

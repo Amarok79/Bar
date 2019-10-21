@@ -23,15 +23,16 @@
 */
 
 using System;
-using System.Globalization;
 using Drinks.Model;
 
 
 namespace Drinks.Viewer.DrinkInfo
 {
-	public sealed class IngredientItemViewModel : BindableBase
+	public sealed class IngredientViewModel : BindableBase
 	{
+		// state
 		private Ingredient mIngredient;
+
 
 		public Ingredient Ingredient
 		{
@@ -50,7 +51,7 @@ namespace Drinks.Viewer.DrinkInfo
 		}
 
 
-		public String Amount => this.Ingredient.Amount.ToString(CultureInfo.CurrentCulture);
+		public Double Amount => this.Ingredient.Amount;
 
 		public String Unit => this.Ingredient.Unit;
 
