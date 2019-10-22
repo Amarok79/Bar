@@ -21,9 +21,7 @@
 			<!--  Image  -->
 
 			<Border
-			  Grid.Column="0"
-			  BorderBrush="{StaticResource BarContentBorderBrush}"
-			  BorderThickness="0,0,1,0">
+			  Grid.Column="0">
 				<Image
 				  Source="{x:Bind ViewModel.Image, Mode=OneWay}"
 				  Stretch="Uniform" />

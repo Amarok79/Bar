@@ -1,11 +1,11 @@
 ﻿<Page
-	x:Class="Drinks.Viewer.MainPage"
-	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	xmlns:local="using:Drinks.Viewer"
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	mc:Ignorable="d">
+  x:Class="Drinks.Viewer.MainPage"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:local="using:Drinks.Viewer"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d">
 
 	<Grid x:Name="Root">
 		<Grid.RowDefinitions>
@@ -13,47 +13,43 @@
 			<RowDefinition Height="*" />
 		</Grid.RowDefinitions>
 
-		<Grid
-			x:Name="HeaderArea"
-			Grid.Row="0"
-			Padding="0,20,0,20"
-			Background="{StaticResource HeaderBackgroundBrush}">
+		<Grid x:Name="HeaderArea"
+		  Grid.Row="0"
+		  Padding="0,20,0,20"
+		  Background="{StaticResource HeaderBackgroundBrush}">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="80" />
 				<ColumnDefinition Width="*" />
 			</Grid.ColumnDefinitions>
 
-			<Image
-				x:Name="HeaderImage"
-				Grid.Column="0"
-				RenderTransformOrigin="0.5,0.5"
-				Source="/Assets/cocktail.png">
+			<Image x:Name="HeaderImage"
+			  Grid.Column="0"
+			  RenderTransformOrigin="0.5,0.5"
+			  Source="/Assets/cocktail.png">
 				<Image.RenderTransform>
-					<CompositeTransform TranslateY="-8" />
+					<CompositeTransform
+					  TranslateY="-8" />
 				</Image.RenderTransform>
 			</Image>
 
-			<TextBlock
-				x:Name="HeaderText"
-				Grid.Column="1"
-				HorizontalAlignment="Left"
-				VerticalAlignment="Center"
-				FontFamily="Arial Rounded MT Bold"
-				FontSize="36"
-				Text="Die KroKo Hausbar" />
+			<TextBlock x:Name="HeaderText"
+			  Grid.Column="1"
+			  HorizontalAlignment="Left"
+			  VerticalAlignment="Center"
+			  FontFamily="Arial Rounded MT Bold"
+			  FontSize="36"
+			  Text="Die KroKo Hausbar" />
 		</Grid>
 
-		<Grid
-			x:Name="DrinksArea"
-			Grid.Row="1"
-			Background="{StaticResource ContentBackgroundBrush}">
+		<Grid x:Name="DrinksArea"
+		  Grid.Row="1"
+		  Background="{StaticResource ContentBackgroundBrush}">
 
-			<GridView
-				x:Name="DrinksGridView"
-				Margin="20"
-				IsItemClickEnabled="True"
-				ItemsSource="{x:Bind ViewModel.Drinks}"
-				SelectionMode="None">
+			<GridView x:Name="DrinksGridView"
+			  Margin="20"
+			  IsItemClickEnabled="True"
+			  ItemsSource="{x:Bind ViewModel.Drinks}"
+			  SelectionMode="None">
 				<GridView.ItemTemplate>
 					<DataTemplate x:Name="DrinkTemplate" x:DataType="local:DrinkItemViewModel">
 						<Grid>
@@ -63,57 +59,60 @@
 								<RowDefinition Height="54" />
 							</Grid.RowDefinitions>
 
-							<Border BorderBrush="{StaticResource DrinkItemBorderBrush}" BorderThickness="1">
-								<Canvas Grid.Row="0">
+							<Border
+							  BorderBrush="{StaticResource DrinkItemBorderBrush}"
+							  BorderThickness="1">
+								<Canvas
+								  Grid.Row="0">
 									<Image
-										Width="260"
-										Height="356"
-										Source="{x:Bind Image}"
-										Stretch="UniformToFill" />
+									  Width="260"
+									  Height="356"
+									  Source="{x:Bind Image}"
+									  Stretch="UniformToFill" />
 
 									<Image
-										Width="25"
-										Height="25"
-										Margin="15"
-										HorizontalAlignment="Left"
-										VerticalAlignment="Top"
-										Source="/Assets/info.png"
-										Stretch="UniformToFill"
-										Visibility="{x:Bind HasDescription}" />
+									  Width="25"
+									  Height="25"
+									  Margin="15"
+									  HorizontalAlignment="Left"
+									  VerticalAlignment="Top"
+									  Source="/Assets/info.png"
+									  Stretch="UniformToFill"
+									  Visibility="{x:Bind HasDescription}" />
 								</Canvas>
 							</Border>
 
 							<TextBlock
-								Grid.Row="1"
-								Width="260"
-								Height="28"
-								Margin="0,12,0,0"
-								HorizontalAlignment="Center"
-								VerticalAlignment="Top"
-								FontSize="18"
-								FontWeight="Bold"
-								Foreground="White"
-								Text="{x:Bind Name}"
-								TextTrimming="CharacterEllipsis"
-								TextWrapping="NoWrap" />
+							  Grid.Row="1"
+							  Width="260"
+							  Height="28"
+							  Margin="0,12,0,0"
+							  HorizontalAlignment="Center"
+							  VerticalAlignment="Top"
+							  FontSize="18"
+							  FontWeight="Bold"
+							  Foreground="White"
+							  Text="{x:Bind Name}"
+							  TextTrimming="CharacterEllipsis"
+							  TextWrapping="NoWrap" />
 
 							<TextBlock
-								Grid.Row="2"
-								Width="260"
-								Height="54"
-								Margin="0,4,0,0"
-								HorizontalAlignment="Center"
-								VerticalAlignment="Top"
-								FontSize="16"
-								Foreground="#FFB3B3B3"
-								Text="{x:Bind Teaser}"
-								TextWrapping="Wrap" />
+							  Grid.Row="2"
+							  Width="260"
+							  Height="54"
+							  Margin="0,4,0,0"
+							  HorizontalAlignment="Center"
+							  VerticalAlignment="Top"
+							  FontSize="16"
+							  Foreground="#FFB3B3B3"
+							  Text="{x:Bind Teaser}"
+							  TextWrapping="Wrap" />
 
 							<ProgressRing
-								Grid.Row="0"
-								HorizontalAlignment="Center"
-								VerticalAlignment="Center"
-								IsActive="{x:Bind IsImageLoading, Mode=OneWay}" />
+							  Grid.Row="0"
+							  HorizontalAlignment="Center"
+							  VerticalAlignment="Center"
+							  IsActive="{x:Bind IsImageLoading, Mode=OneWay}" />
 						</Grid>
 					</DataTemplate>
 				</GridView.ItemTemplate>
@@ -125,13 +124,12 @@
 			</GridView>
 
 			<Popup x:Name="DrinkInfoPopup">
-				<Border Background="#E0121212">
+				<Border
+				  Background="#E0121212">
 					<Grid>
-						<ContentControl
-							x:Name="DrinkInfoViewHost"
-							Margin="120,60,120,60"
-							HorizontalAlignment="Center"
-							VerticalAlignment="Center" />
+						<ContentControl x:Name="DrinkInfoViewHost"
+						  HorizontalAlignment="Center"
+						  VerticalAlignment="Center" />
 					</Grid>
 				</Border>
 			</Popup>
