@@ -39,13 +39,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Amarok.Contracts" Version="1.0.0" />
+		<PackageReference Include="Amarok.Contracts" Version="2.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\Drinks.Model\Drinks.Model.csproj" />
 		<PackageReference Include="SonarAnalyzer.CSharp">
-			<Version>7.17.0.9346</Version>
+			<Version>8.0.0.9566</Version>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>

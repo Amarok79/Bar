@@ -64,10 +64,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="Viewer\BindableBase.cs" />
+    <Compile Include="Viewer\Common\BindableBase.cs" />
     <Compile Include="Viewer\Converter\AmountConverter.cs" />
-    <Compile Include="Viewer\DelegateCommand.cs" />
+    <Compile Include="Viewer\Common\DelegateCommand.cs" />
     <Compile Include="Viewer\DrinkInfo\IngredientViewModel.cs" />
     <Compile Include="Viewer\DrinkInfo\DrinkInfoViewModel.cs" />
     <Compile Include="Viewer\DrinkItemViewModel.cs" />
