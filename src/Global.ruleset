@@ -735,6 +735,7 @@
   </Rules>
   <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp.Features" RuleNamespace="Microsoft.CodeAnalysis.CSharp.Features">
     <Rule Id="IDE0015" Action="None" />
+    <Rule Id="IDE0058" Action="None" />
   </Rules>
   <Rules AnalyzerId="Microsoft.CodeAnalysis.VisualBasic.Features" RuleNamespace="Microsoft.CodeAnalysis.VisualBasic.Features">
     <Rule Id="IDE0001" Action="None" />
