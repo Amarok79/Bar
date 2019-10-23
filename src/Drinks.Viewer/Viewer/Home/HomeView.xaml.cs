@@ -35,11 +35,12 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 
 
-namespace Drinks.Viewer
+namespace Drinks.Viewer.Home
 {
-	public sealed partial class MainPage : Page
+	public sealed partial class HomeView : Page
 	{
-		public MainPageViewModel ViewModel { get; } = new MainPageViewModel();
+		public HomeViewModel ViewModel { get; } = new HomeViewModel();
+
 
 		[Dependency]
 		public IDrinkRepository DrinkRepository { get; set; }
@@ -47,12 +48,11 @@ namespace Drinks.Viewer
 		public IImageRepository ImageRepository { get; set; }
 
 
-		public MainPage()
+		public HomeView()
 		{
 			this.InitializeComponent();
 			this.Loading += _HandleOnLoading;
-
-			DrinksGridView.ItemClick += _HandleDrinkItemClick;
+			this.DrinksGridView.ItemClick += _HandleDrinkItemClick;
 		}
 
 
@@ -70,7 +70,7 @@ namespace Drinks.Viewer
 				image.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
 				image.UriSource = imageUri;
 
-				var item = new DrinkItemViewModel() {
+				var item = new DrinkViewModel() {
 					Drink = drink,
 					Image = image,
 					IsImageLoading = true,
@@ -93,7 +93,7 @@ namespace Drinks.Viewer
 
 		private void _HandleDrinkItemClick(Object sender, ItemClickEventArgs e)
 		{
-			var drinkViewModel = (DrinkItemViewModel)e.ClickedItem;
+			var drinkViewModel = (DrinkViewModel)e.ClickedItem;
 			var drink = drinkViewModel.Drink;
 
 			if (drink.Recipe == null)

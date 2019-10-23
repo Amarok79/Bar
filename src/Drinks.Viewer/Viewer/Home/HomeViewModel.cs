@@ -22,13 +22,16 @@
  * SOFTWARE.
 */
 
+using System;
 using System.Collections.ObjectModel;
 
 
-namespace Drinks.Viewer
+namespace Drinks.Viewer.Home
 {
-	public sealed class MainPageViewModel
+	public sealed class HomeViewModel
 	{
-		public ObservableCollection<DrinkItemViewModel> Drinks { get; } = new ObservableCollection<DrinkItemViewModel>();
+		public String Title { get; set; } = "Die KroKo Hausbar";
+
+		public ObservableCollection<DrinkViewModel> Drinks { get; } = new ObservableCollection<DrinkViewModel>();
 	}
 }

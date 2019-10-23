@@ -25,6 +25,7 @@
 using Drinks.Model;
 using Drinks.Services.DrinkRepository;
 using Drinks.Services.ImageRepository;
+using Drinks.Viewer.Home;
 using Unity;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
@@ -51,7 +52,7 @@ namespace Drinks.Viewer
 
 			_RegisterServices(this.Container);
 
-			Window.Current.Content = this.Container.Resolve<MainPage>();
+			Window.Current.Content = this.Container.Resolve<HomeView>();
 			Window.Current.Activate();
 		}
 

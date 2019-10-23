@@ -69,11 +69,11 @@
     <Compile Include="Viewer\Common\DelegateCommand.cs" />
     <Compile Include="Viewer\DrinkInfo\IngredientViewModel.cs" />
     <Compile Include="Viewer\DrinkInfo\DrinkInfoViewModel.cs" />
-    <Compile Include="Viewer\DrinkItemViewModel.cs" />
-    <Compile Include="Viewer\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="Viewer\Home\DrinkViewModel.cs" />
+    <Compile Include="Viewer\Home\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Viewer\MainPageViewModel.cs" />
+    <Compile Include="Viewer\Home\HomeViewModel.cs" />
     <Compile Include="Viewer\DrinkInfo\DrinkInfoView.xaml.cs">
       <DependentUpon>DrinkInfoView.xaml</DependentUpon>
     </Compile>
@@ -129,7 +129,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Viewer\MainPage.xaml">
+    <Page Include="Viewer\Home\HomeView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -1,9 +1,9 @@
 ﻿<Page
-  x:Class="Drinks.Viewer.MainPage"
+  x:Class="Drinks.Viewer.Home.HomeView"
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-  xmlns:local="using:Drinks.Viewer"
+  xmlns:local="using:Drinks.Viewer.Home"
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
   mc:Ignorable="d">
 
@@ -13,16 +13,18 @@
 			<RowDefinition Height="*" />
 		</Grid.RowDefinitions>
 
-		<Grid x:Name="HeaderArea"
+		<!--  Header  -->
+
+		<Grid
 		  Grid.Row="0"
 		  Padding="0,20,0,20"
-		  Background="{StaticResource HeaderBackgroundBrush}">
+		  Background="{StaticResource BarHeaderBackgroundBrush}">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="80" />
 				<ColumnDefinition Width="*" />
 			</Grid.ColumnDefinitions>
 
-			<Image x:Name="HeaderImage"
+			<Image
 			  Grid.Column="0"
 			  RenderTransformOrigin="0.5,0.5"
 			  Source="/Assets/cocktail.png">
@@ -32,18 +34,17 @@
 				</Image.RenderTransform>
 			</Image>
 
-			<TextBlock x:Name="HeaderText"
+			<TextBlock
 			  Grid.Column="1"
-			  HorizontalAlignment="Left"
-			  VerticalAlignment="Center"
-			  FontFamily="Arial Rounded MT Bold"
-			  FontSize="36"
-			  Text="Die KroKo Hausbar" />
+			  Style="{StaticResource BarTitleTextStyle}"
+			  Text="{x:Bind ViewModel.Title}" />
 		</Grid>
+
+		<!--  Drinks Collection  -->
 
 		<Grid x:Name="DrinksArea"
 		  Grid.Row="1"
-		  Background="{StaticResource ContentBackgroundBrush}">
+		  Background="{StaticResource BarContentBackgroundBrush}">
 
 			<GridView x:Name="DrinksGridView"
 			  Margin="20"
@@ -51,7 +52,7 @@
 			  ItemsSource="{x:Bind ViewModel.Drinks}"
 			  SelectionMode="None">
 				<GridView.ItemTemplate>
-					<DataTemplate x:Name="DrinkTemplate" x:DataType="local:DrinkItemViewModel">
+					<DataTemplate x:Name="DrinkTemplate" x:DataType="local:DrinkViewModel">
 						<Grid>
 							<Grid.RowDefinitions>
 								<RowDefinition Height="346" />
@@ -60,7 +61,7 @@
 							</Grid.RowDefinitions>
 
 							<Border
-							  BorderBrush="{StaticResource DrinkItemBorderBrush}"
+							  BorderBrush="{StaticResource BarContentBorderBrush}"
 							  BorderThickness="1">
 								<Canvas
 								  Grid.Row="0">
@@ -87,26 +88,16 @@
 							  Width="260"
 							  Height="28"
 							  Margin="0,12,0,0"
-							  HorizontalAlignment="Center"
-							  VerticalAlignment="Top"
-							  FontSize="18"
-							  FontWeight="Bold"
-							  Foreground="White"
-							  Text="{x:Bind Name}"
-							  TextTrimming="CharacterEllipsis"
-							  TextWrapping="NoWrap" />
+							  Style="{StaticResource BarDrinkNameTextStyle}"
+							  Text="{x:Bind Name}" />
 
 							<TextBlock
 							  Grid.Row="2"
 							  Width="260"
 							  Height="54"
 							  Margin="0,4,0,0"
-							  HorizontalAlignment="Center"
-							  VerticalAlignment="Top"
-							  FontSize="16"
-							  Foreground="#FFB3B3B3"
-							  Text="{x:Bind Teaser}"
-							  TextWrapping="Wrap" />
+							  Style="{StaticResource BarDrinkTeaserTextStyle}"
+							  Text="{x:Bind Teaser}" />
 
 							<ProgressRing
 							  Grid.Row="0"
@@ -123,9 +114,11 @@
 				</GridView.ItemContainerStyle>
 			</GridView>
 
+			<!--  Drink Info Popup  -->
+
 			<Popup x:Name="DrinkInfoPopup">
 				<Border
-				  Background="#E0121212">
+				  Background="{StaticResource BarPopupBackgroundBrush}">
 					<Grid>
 						<ContentControl x:Name="DrinkInfoViewHost"
 						  HorizontalAlignment="Center"

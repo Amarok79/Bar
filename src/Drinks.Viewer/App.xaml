@@ -6,12 +6,6 @@
   RequestedTheme="Dark">
 	<Application.Resources>
 
-
-		<SolidColorBrush x:Key="HeaderBackgroundBrush" Color="#FF121212" />
-		<SolidColorBrush x:Key="ContentBackgroundBrush" Color="#FF181818" />
-		<SolidColorBrush x:Key="DrinkItemBorderBrush" Color="#FF2A2A2A" />
-
-
 		<!--  CONVERTERS  -->
 
 		<converter:AmountConverter x:Key="AmountConverter" />
@@ -19,9 +13,11 @@
 
 		<!--  BRUSHES  -->
 
+		<SolidColorBrush x:Key="BarHeaderBackgroundBrush" Color="#FF121212" />
 		<SolidColorBrush x:Key="BarContentBackgroundBrush" Color="#FF181818" />
 		<SolidColorBrush x:Key="BarContentBorderBrush" Color="#FF2A2A2A" />
 		<SolidColorBrush x:Key="BarTextBrush" Color="#FFB3B3B3" />
+		<SolidColorBrush x:Key="BarPopupBackgroundBrush" Color="#E0121212" />
 
 
 		<!--  TEXTBLOCK STYLES  -->
@@ -32,6 +28,29 @@
 				<Setter Property="FontSize" Value="36" />
 				<Setter Property="HorizontalAlignment" Value="Left" />
 				<Setter Property="VerticalAlignment" Value="Center" />
+			</Style.Setters>
+		</Style>
+
+		<Style x:Key="BarDrinkNameTextStyle" TargetType="TextBlock">
+			<Style.Setters>
+				<Setter Property="FontSize" Value="18" />
+				<Setter Property="HorizontalTextAlignment" Value="Left" />
+				<Setter Property="VerticalAlignment" Value="Center" />
+				<Setter Property="FontWeight" Value="Bold" />
+				<Setter Property="Foreground" Value="White" />
+				<Setter Property="TextTrimming" Value="CharacterEllipsis" />
+				<Setter Property="TextWrapping" Value="NoWrap" />
+			</Style.Setters>
+		</Style>
+
+		<Style x:Key="BarDrinkTeaserTextStyle" TargetType="TextBlock">
+			<Style.Setters>
+				<Setter Property="FontSize" Value="16" />
+				<Setter Property="HorizontalTextAlignment" Value="Left" />
+				<Setter Property="VerticalAlignment" Value="Center" />
+				<Setter Property="Foreground" Value="#FFB3B3B3" />
+				<Setter Property="TextTrimming" Value="CharacterEllipsis" />
+				<Setter Property="TextWrapping" Value="Wrap" />
 			</Style.Setters>
 		</Style>
 

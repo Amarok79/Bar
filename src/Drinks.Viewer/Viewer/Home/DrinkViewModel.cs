@@ -27,11 +27,16 @@ using Drinks.Model;
 using Windows.UI.Xaml.Media.Imaging;
 
 
-namespace Drinks.Viewer
+namespace Drinks.Viewer.Home
 {
-	public sealed class DrinkItemViewModel : BindableBase
+	public sealed class DrinkViewModel : BindableBase
 	{
+		// state
+		private Boolean mIsImageLoading;
+
+
 		public Drink Drink { get; set; }
+
 
 		public String Name => this.Drink.Name;
 
@@ -40,8 +45,6 @@ namespace Drinks.Viewer
 		public Boolean HasDescription => !String.IsNullOrEmpty(this.Drink.Description);
 
 		public BitmapImage Image { get; set; }
-
-		private Boolean mIsImageLoading;
 
 		public Boolean IsImageLoading
 		{
