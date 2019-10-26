@@ -59,6 +59,7 @@ steps:
                   /p:AppxBundlePlatforms="x86"
                   /p:AppxBundle=Always
                   /p:AppxPackageSigningEnabled=true
+                  /p:AppxPackageDir=bin\app\apppackage
                   /p:PackageCertificateKeyFile="$(viewerCertificate.filename)"
                   /p:PackageCertificatePassword="$(pfx.password)"'
     platform: '$(buildPlatform)'
