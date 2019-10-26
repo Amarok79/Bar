@@ -26,7 +26,7 @@ steps:
     script: |
       Write-Host "Start adding the PFX file to the certificate store."
 
-      $pfxpath = '$(viewerCertificate.filename)'
+      $pfxpath = '$(viewerCertificate.secureFilePath)'
       $password = '$(pfx.password)'
       
       Add-Type -AssemblyName System.Security
