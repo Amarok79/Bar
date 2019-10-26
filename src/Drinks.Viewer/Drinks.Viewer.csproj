@@ -156,6 +156,7 @@
     <None Include="..\Bar.licenseheader">
       <Link>Bar.licenseheader</Link>
     </None>
+    <None Include="amarok.pfx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Drinks.Model\Drinks.Model.csproj">
