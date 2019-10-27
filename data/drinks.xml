@@ -165,14 +165,14 @@
 		<teaser>Limettensaft, Rum, Ginger Beer</teaser>
 		<image>{9009BC99-9427-4940-BCA2-B6CDA4151DA7}</image>
 		<description>
-			Der Erste Dark and Stormy soll einer Legende nach an der Bar des Royal Bermuda Yacht Club in Hamilton gemixt worden sein, wo man Gosling’s Rum mit etwas Sodawasser aufzuspritzen pflegte. Eines Tages habe ein Barkeeper versehentlich Ginger Beer gezapft und erst nachträglich den dunkelbraun gefärbten Rum darüber gegeben, worauf ein Segler an der Theke anmerkte, unter einer so dunklen und stürmischen Wolke würde doch niemand, der bei Trost sei, segeln wollen. Damit hatte die neue Mixtur ihren Namen und wurde angeblich bald zum Lieblingsgetränk britischer Seeleute auf den Bermuda-Inseln.
+			Der erste Dark and Stormy soll einer Legende nach an der Bar des Royal Bermuda Yacht Club in Hamilton gemixt worden sein, wo man Gosling’s Rum mit etwas Sodawasser aufzuspritzen pflegte. Eines Tages habe ein Barkeeper versehentlich Ginger Beer gezapft und erst nachträglich den dunkelbraun gefärbten Rum darüber gegeben, worauf ein Segler an der Theke anmerkte, unter einer so dunklen und stürmischen Wolke würde doch niemand, der bei Trost sei, segeln wollen. Damit hatte die neue Mixtur ihren Namen und wurde angeblich bald zum Lieblingsgetränk britischer Seeleute auf den Bermuda-Inseln.
 
-			Ginger Beer (engl. für Ingwerbier) ist ein kohlensäurehaltiges, meist alkoholfreies Erfrischungsgetränk mit kräftigem Ingwergeschmack. Der Softdrink Ginger Beer ähnelt insoweit dem Ginger Ale, enthält jedoch mehr Ingwer und schmeckt darum intensiver, würziger und schärfer und enthält oft zusätzlich Zitrussäfte. Oft ist Ginger Beer, im Gegensatz zu Ginger Ale, auch trüb. Anders als der Name vermuten lässt, handelt es sich bei Ginger Beer nicht um Bier, sondern meist um Limonaden. Nach wie vor werden aber auch alkoholhaltige Ginger Beers angeboten.
+			Ginger Beer (engl. für Ingwerbier) ist ein kohlensäurehaltiges, meist alkoholfreies Erfrischungsgetränk mit kräftigem Ingwergeschmack. Der Softdrink Ginger Beer ähnelt insoweit dem Ginger Ale, enthält jedoch mehr Ingwer und schmeckt darum intensiver, würziger und schärfer und enthält oft zusätzlich Zitrussäfte. Oft ist Ginger Beer, im Gegensatz zu Ginger Ale, auch trüb. Anders als der Name vermuten lässt, handelt es sich bei Ginger Beer nicht um Bier, sondern meist um Limonaden.
 		</description>
 		<recipe>
-			<ingredient amount="2" unit="cl" substance="Limettensaft"/>
-			<ingredient amount="5" unit="cl" substance="Rum"/>
-			<ingredient amount="10" unit="cl" substance="Ginger Beer"/>
+			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
+			<ingredient amount="6" unit="cl" substance="Plantation Barbados X.O. Rum 20th Anniversary"/>
+			<ingredient amount="12" unit="cl" substance="Fentimas Ginger Beer"/>
 		</recipe>
 	</drink>
 
