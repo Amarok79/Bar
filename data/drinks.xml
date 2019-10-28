@@ -171,14 +171,14 @@
 		</description>
 		<recipe>
 			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="6" unit="cl" substance="Plantation Barbados X.O. Rum 20th Anniversary"/>
+			<ingredient amount="6" unit="cl" substance="Appleton Estate Jamaica Rum"/>
 			<ingredient amount="12" unit="cl" substance="Fentimas Ginger Beer"/>
 		</recipe>
 	</drink>
 
 	<drink>
 		<name>Mai Tai</name>
-		<teaser>Limettensaft, Rum, Cointreau, Mandellikör, Muskatnuss</teaser>
+		<teaser>Limettensaft, Rum, Cointreau, Orgeat, Muskatnuss</teaser>
 		<image>{893B7036-36A2-41B5-9283-15830C0E1F92}</image>
 		<description>
 			Mai Tai ist ein klassischer Rum-Cocktail und gehört zu den weltweit erfolgreichsten Drinks. Victor Bergeron alias Trader Vic nahm für sich in Anspruch, den Mai Tai 1944 erfunden zu haben. Angeblich mixte er den ersten Mai Tai für zwei gute Freunde aus Tahiti, Carrie und Eastham Guild, die daraufhin ausgerufen haben sollen: Mai Tai Roa Ae, was in etwa heißt: „Nicht von dieser Welt – Das Beste“.
@@ -188,12 +188,11 @@
 			Orgeat ist ein Sirup mit Mandelgeschmack, der oft mit Orangenblütenwasser oder Rosenwasser verfeinert wird. Er findet vor allem an der Bar für die Zubereitung von Cocktails Verwendung. Der Sirup geht geschmacklich in Richtung Marzipan und ist milchig-trüb.
 		</description>
 		<recipe>
-			<ingredient amount="3" unit="cl" substance="Limettensaft"/>
-			<ingredient amount="2" unit="cl" substance="Rum Martinique"/>
-			<ingredient amount="3" unit="cl" substance="Rum Jamaican"/>
+			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
+			<ingredient amount="2" unit="cl" substance="Clément Rhum Blanc"/>
+			<ingredient amount="3" unit="cl" substance="Appleton Estate Jamaica Rum"/>
 			<ingredient amount="2" unit="cl" substance="Cointreau"/>
 			<ingredient amount="2" unit="cl" substance="Orgeat"/>
-			<ingredient amount="1" unit="BL" substance="Overproof Rum"/>
 			<ingredient amount="1" unit="dash" substance="Muskatnuss"/>
 		</recipe>
 	</drink>
