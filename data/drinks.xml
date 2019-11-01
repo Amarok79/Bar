@@ -11,8 +11,8 @@
 			Amaretto ist eine Geschmacksrichtung für ursprünglich aus Italien stammende Liköre mit einem nussigen Aroma, das an Marzipan erinnert. Die Bezeichnung „Amaretto“ ist eine Verkleinerungsform des italienischen Wortes amaro, was so viel bedeutet wie „bitter“. Ursprünglich wurden Bittermandeln (italienisch mandorla amara) oder Aprikosenkerne, teilweise auch süße Mandeln zur Aromatisierung verwendet.
 		</description>
 		<recipe>
-			<ingredient amount="3" unit="cl" substance="Zitronensaft"/>
-			<ingredient amount="6" unit="cl" substance="Amaretto"/>
+			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
+			<ingredient amount="6" unit="cl" substance="Amaretto Disaronno Originale"/>
 			<ingredient amount="1.5" unit="cl" substance="Limettensirup"/>
 			<ingredient amount="3" unit="cl" substance="Orangensaft"/>
 		</recipe>
