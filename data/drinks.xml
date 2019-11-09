@@ -22,6 +22,25 @@
 		</recipe>
 	</drink>
 
+	<drink>
+		<name>Negroni</name>
+		<teaser>Gin, Campari, Vermouth Rosso</teaser>
+		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
+		<description>
+			Der Negroni ist ein klassischer, aus Italien stammender Cocktail mit bitter-süßem Geschmack.
+
+			Der Negroni wurde in Florenz im Caffè Casoni (heute Caffè Giacosa) in der Via de′ Tornabuoni erfunden. Er ist nach dem Grafen Camillo Negroni benannt, der beim Barkeeper (Fosco Scarselli) zwischen 1919 und 1920 zum ersten Mal einen mit Gin verlängerten Americano bestellte.
+
+			Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
+
+			(Wikipedia)
+		</description>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Beefeather 24 London Dry Gin"/>
+			<ingredient amount="3" unit="cl" substance="Campari"/>
+			<ingredient amount="3" unit="cl" substance="Martini Vermouth Rosso"/>
+		</recipe>
+	</drink>
 
 
 
@@ -223,23 +242,6 @@
 		</recipe>
 	</drink>
 
-	<drink>
-		<name>Negroni</name>
-		<teaser>Campari, Vermouth Rosso, Gin</teaser>
-		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
-		<description>
-			Der Negroni ist ein klassischer, aus Italien stammender Cocktail mit bitter-süßem Geschmack.
-
-			Der Negroni wurde in Florenz im Caffè Casoni (heute Caffè Giacosa) in der Via de′ Tornabuoni erfunden. Er ist nach dem Grafen Camillo Negroni benannt, der beim Barkeeper (Fosco Scarselli) zwischen 1919 und 1920 zum ersten Mal einen mit Gin verlängerten Americano bestellte.
-
-			Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
-		</description>
-		<recipe>
-			<ingredient amount="2" unit="cl" substance="Gin"/>
-			<ingredient amount="2" unit="cl" substance="Vermouth Rosso"/>
-			<ingredient amount="2" unit="cl" substance="Campari"/>
-		</recipe>
-	</drink>
 
 	<drink>
 		<name>Old Fashioned</name>
