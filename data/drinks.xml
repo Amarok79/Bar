@@ -37,7 +37,7 @@
 		</description>
 		<recipe>
 			<ingredient amount="3" unit="cl" substance="Beefeather 24 London Dry Gin"/>
-			<ingredient amount="3" unit="cl" substance="Campari"/>
+			<ingredient amount="3" unit="cl" substance="Campari Bitterlikör"/>
 			<ingredient amount="3" unit="cl" substance="Martini Vermouth Rosso"/>
 		</recipe>
 	</drink>
@@ -57,7 +57,7 @@
 		</description>
 		<recipe>
 			<ingredient amount="4.5" unit="cl" substance="Martini Vermouth Rosso"/>
-			<ingredient amount="4.5" unit="cl" substance="Campari"/>
+			<ingredient amount="4.5" unit="cl" substance="Campari Bitterlikör"/>
 			<ingredient amount="7.5" unit="cl" substance="Soda"/>
 		</recipe>
 	</drink>
