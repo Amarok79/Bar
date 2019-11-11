@@ -29,7 +29,7 @@ using Drinks.Viewer.Home;
 using Unity;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
-
+using Windows.UI.Xaml.Controls;
 
 namespace Drinks.Viewer
 {
@@ -52,7 +52,10 @@ namespace Drinks.Viewer
 
 			_RegisterServices(this.Container);
 
-			Window.Current.Content = this.Container.Resolve<HomeView>();
+			var frame = new Frame();
+			frame.Content = this.Container.Resolve<HomeView>();
+
+			Window.Current.Content = frame;
 			Window.Current.Activate();
 		}
 
