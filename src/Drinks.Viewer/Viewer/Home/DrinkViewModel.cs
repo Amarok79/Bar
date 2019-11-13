@@ -49,7 +49,7 @@ namespace Drinks.Viewer.Home
 		public Boolean IsImageLoading
 		{
 			get => mIsImageLoading;
-			set => SetProperty(ref mIsImageLoading, value);
+			set => Set(ref mIsImageLoading, value);
 		}
 	}
 }

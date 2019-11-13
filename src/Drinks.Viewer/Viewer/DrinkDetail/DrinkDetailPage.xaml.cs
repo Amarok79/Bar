@@ -22,51 +22,42 @@
  * SOFTWARE.
 */
 
+using System;
 using Drinks.Model;
-using Drinks.Services.DrinkRepository;
-using Drinks.Services.ImageRepository;
-using Drinks.Viewer.Home;
-using Unity;
-using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Navigation;
 
 
-namespace Drinks.Viewer
+namespace Drinks.Viewer.DrinkDetail
 {
-	public sealed partial class App : Application
+	/// <summary>
+	/// An empty page that can be used on its own or navigated to within a Frame.
+	/// </summary>
+	public sealed partial class DrinkDetailPage : Page
 	{
-		public IUnityContainer Container { get; }
-
-		public Frame Frame { get; private set; }
-
-		public static new App Current => (App)Application.Current;
-
-
-		public App()
+		public DrinkDetailPage()
 		{
-			this.Container = new UnityContainer();
 			this.InitializeComponent();
 		}
 
-		protected override void OnLaunched(LaunchActivatedEventArgs args)
+
+		protected override void OnNavigatedTo(NavigationEventArgs e)
 		{
-			base.OnLaunched(args);
+			var args = (Tuple<Drink, BitmapImage>)e.Parameter;
 
-			_RegisterServices(this.Container);
+			this.DataContext = new DrinkDetailPageViewModel {
+				Drink = args.Item1,
+				Image = args.Item2
+			};
 
-			Frame = new Frame();
-			Frame.Navigate(typeof(HomeView));
-
-			Window.Current.Content = Frame;
-			Window.Current.Activate();
 		}
 
-
-		private static void _RegisterServices(IUnityContainer container)
+		private void _HandleBackButtonClick(Object sender, RoutedEventArgs e)
 		{
-			container.RegisterSingleton<IImageRepository, AzureImageRepository>();
-			container.RegisterSingleton<IDrinkRepository, AzureBlobDrinkRepository>();
+			if (App.Current.Frame.CanGoBack)
+				App.Current.Frame.GoBack();
 		}
 	}
 }

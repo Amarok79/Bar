@@ -28,12 +28,13 @@
 using System;
 using System.Linq;
 using Drinks.Model;
+using Drinks.Viewer.DrinkDetail;
 using Drinks.Viewer.DrinkInfo;
 using Unity;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
-
+using Windows.UI.Xaml.Navigation;
 
 namespace Drinks.Viewer.Home
 {
@@ -50,6 +51,8 @@ namespace Drinks.Viewer.Home
 
 		public HomeView()
 		{
+			base.NavigationCacheMode = NavigationCacheMode.Required;
+
 			this.InitializeComponent();
 			this.Loading += _HandleOnLoading;
 			this.DrinksGridView.ItemClick += _HandleDrinkItemClick;
@@ -58,6 +61,8 @@ namespace Drinks.Viewer.Home
 
 		private async void _HandleOnLoading(FrameworkElement sender, Object args)
 		{
+			App.Current.Container.BuildUp(typeof(HomeView), this);
+
 			var drinks = await this.DrinkRepository.GetAll()
 				.ConfigureAwait(true);
 
@@ -99,17 +104,22 @@ namespace Drinks.Viewer.Home
 			if (drink.Recipe == null)
 				return;
 
-			var infoView = new DrinkInfoView();
-			infoView.ViewModel.Drink = drink;
-			infoView.ViewModel.Image = drinkViewModel.Image;
-			infoView.ViewModel.CloseButtonCommand = new DelegateCommand(_HandleDrinkInfoPopupClose);
+			App.Current.Frame.Navigate(
+				typeof(DrinkDetailPage), 
+				Tuple.Create(drink, drinkViewModel.Image)
+			);
 
-			infoView.Width = DrinksArea.ActualWidth - 240;
-			infoView.Height = DrinksArea.ActualHeight - 120;
+			//var infoView = new DrinkInfoView();
+			//infoView.ViewModel.Drink = drink;
+			//infoView.ViewModel.Image = drinkViewModel.Image;
+			//infoView.ViewModel.CloseButtonCommand = new DelegateCommand(_HandleDrinkInfoPopupClose);
 
-			DrinkInfoViewHost.Content = infoView;
+			//infoView.Width = DrinksArea.ActualWidth - 240;
+			//infoView.Height = DrinksArea.ActualHeight - 120;
 
-			DrinkInfoPopup.IsOpen = true;
+			//DrinkInfoViewHost.Content = infoView;
+
+			//DrinkInfoPopup.IsOpen = true;
 		}
 
 		private void _HandleDrinkInfoPopupClose()

@@ -22,51 +22,39 @@
  * SOFTWARE.
 */
 
+using System;
 using Drinks.Model;
-using Drinks.Services.DrinkRepository;
-using Drinks.Services.ImageRepository;
-using Drinks.Viewer.Home;
-using Unity;
-using Windows.ApplicationModel.Activation;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
 
 
-namespace Drinks.Viewer
+namespace Drinks.Viewer.DrinkDetail
 {
-	public sealed partial class App : Application
+	public sealed class IngredientViewModel : BindableBase
 	{
-		public IUnityContainer Container { get; }
-
-		public Frame Frame { get; private set; }
-
-		public static new App Current => (App)Application.Current;
+		// state
+		private Ingredient mIngredient;
 
 
-		public App()
+		public Ingredient Ingredient
 		{
-			this.Container = new UnityContainer();
-			this.InitializeComponent();
-		}
+			get
+			{
+				return mIngredient;
+			}
+			set
+			{
+				mIngredient = value;
 
-		protected override void OnLaunched(LaunchActivatedEventArgs args)
-		{
-			base.OnLaunched(args);
-
-			_RegisterServices(this.Container);
-
-			Frame = new Frame();
-			Frame.Navigate(typeof(HomeView));
-
-			Window.Current.Content = Frame;
-			Window.Current.Activate();
+				OnPropertyChanged(nameof(Amount));
+				OnPropertyChanged(nameof(Unit));
+				OnPropertyChanged(nameof(Substance));
+			}
 		}
 
 
-		private static void _RegisterServices(IUnityContainer container)
-		{
-			container.RegisterSingleton<IImageRepository, AzureImageRepository>();
-			container.RegisterSingleton<IDrinkRepository, AzureBlobDrinkRepository>();
-		}
+		public Double Amount => this.Ingredient.Amount;
+
+		public String Unit => this.Ingredient.Unit;
+
+		public String Substance => this.Ingredient.Substance;
 	}
 }

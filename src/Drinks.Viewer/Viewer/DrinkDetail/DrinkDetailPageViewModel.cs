@@ -29,9 +29,9 @@ using Drinks.Model;
 using Windows.UI.Xaml.Media.Imaging;
 
 
-namespace Drinks.Viewer.DrinkInfo
+namespace Drinks.Viewer.DrinkDetail
 {
-	public sealed class DrinkInfoViewModel : BindableBase
+	public class DrinkDetailPageViewModel : BindableBase
 	{
 		// state
 		private IngredientViewModel[] mIngredients;
@@ -79,6 +79,32 @@ namespace Drinks.Viewer.DrinkInfo
 		{
 			get => mCloseButtonCommand;
 			set => Set(ref mCloseButtonCommand, value);
+		}
+	}
+
+	public class SampleDrinkDetailPageViewModel : DrinkDetailPageViewModel
+	{
+		public SampleDrinkDetailPageViewModel()
+		{
+			var recipe = new Recipe(new[] {
+					new Ingredient(3, "cl", "Campari"),
+					new Ingredient(3, "cl", "Vermouth Rosso"),
+					new Ingredient(3, "cl", "London Dry Gin"),
+				});
+
+			var drink = new Drink(default, default)
+				.SetDescription(
+@"Der Cosmopolitan (kurz „Cosmo“) ist ein herb-süßer, erfrischender Cocktail, dessen moderne Rezeptur aus aromatisiertem Wodka, Orangenlikör, Limetten- und Cranberrysaft besteht. Erstmals erwähnt wird ein Shortdrink dieses Namens in einem Barbuch von 1934, in seiner heutigen Form ist der Cosmopolitan aber erst seit den 1990er Jahren weltweit verbreitet. Er steht sinnbildlich für die moderne, design-orientierte Bar, die der Barboom der 1990er Jahre hervorbrachte.
+
+Ende der 1990er Jahre erlangte der Cosmopolitan einen Bekanntheitsschub durch die Fernsehserie Sex and the City, in der er das Lieblingsgetränk der Hauptfiguren war.
+
+(Wikipedia)")
+				.SetTeaser("Wodka, Triple Sec, Cranberrysaft, Limettensaft")
+				.SetName("Sample Drink")
+				.SetRecipe(recipe);
+
+			this.Drink = drink;
+			this.Image = new BitmapImage(new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg"));
 		}
 	}
 }
