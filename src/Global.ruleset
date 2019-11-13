@@ -804,7 +804,6 @@
     <Rule Id="S3215" Action="Warning" />
     <Rule Id="S3216" Action="Warning" />
     <Rule Id="S3234" Action="Warning" />
-    <Rule Id="S3235" Action="Warning" />
     <Rule Id="S3242" Action="Warning" />
     <Rule Id="S3253" Action="Warning" />
     <Rule Id="S3257" Action="Warning" />
