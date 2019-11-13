@@ -72,6 +72,7 @@
     </Compile>
     <Compile Include="Viewer\DrinkDetail\DrinkDetailPageViewModel.cs" />
     <Compile Include="Viewer\DrinkDetail\IngredientViewModel.cs" />
+    <Compile Include="Viewer\DrinkDetail\SampleDrinkDetailPageViewModel.cs" />
     <Compile Include="Viewer\DrinkInfo\IngredientViewModel.cs" />
     <Compile Include="Viewer\DrinkInfo\DrinkInfoViewModel.cs" />
     <Compile Include="Viewer\Home\DrinkViewModel.cs" />
