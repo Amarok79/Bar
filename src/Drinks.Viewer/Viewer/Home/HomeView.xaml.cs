@@ -29,7 +29,6 @@ using System;
 using System.Linq;
 using Drinks.Model;
 using Drinks.Viewer.DrinkDetail;
-using Drinks.Viewer.DrinkInfo;
 using Unity;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
