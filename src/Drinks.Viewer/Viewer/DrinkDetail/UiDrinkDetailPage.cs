@@ -30,10 +30,10 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Drinks.Viewer.DrinkDetail
 {
-	public class DrinkDetailPageViewModel : BindableBase
+	public class UiDrinkDetailPage : BindableBase
 	{
 		// state
-		private IngredientViewModel[] mIngredients;
+		private UiIngredient[] mIngredients;
 		private Drink mDrink;
 		private BitmapImage mImage;
 
@@ -55,7 +55,7 @@ namespace Drinks.Viewer.DrinkDetail
 				mDrink = value;
 
 				mIngredients = mDrink.Recipe.Ingredients
-					.Select(x => new IngredientViewModel() { Ingredient = x })
+					.Select(x => new UiIngredient() { Ingredient = x })
 					.ToArray();
 
 				OnPropertyChanged(nameof(Name));
@@ -75,6 +75,6 @@ namespace Drinks.Viewer.DrinkDetail
 
 		public String IngredientsHeader => "Rezeptur";
 
-		public IngredientViewModel[] Ingredients => mIngredients;
+		public UiIngredient[] Ingredients => mIngredients;
 	}
 }

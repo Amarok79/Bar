@@ -45,7 +45,7 @@ namespace Drinks.Viewer.DrinkDetail
 		{
 			var args = (DrinkDetailPageArgs)e.Parameter;
 
-			this.DataContext = new DrinkDetailPageViewModel() {
+			this.DataContext = new UiDrinkDetailPage() {
 				Drink = args.Drink,
 				Image = args.Image
 			};

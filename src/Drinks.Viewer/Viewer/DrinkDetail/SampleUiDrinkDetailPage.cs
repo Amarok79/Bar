@@ -29,9 +29,9 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Drinks.Viewer.DrinkDetail
 {
-	public class SampleDrinkDetailPageViewModel : DrinkDetailPageViewModel
+	public class SampleUiDrinkDetailPage : UiDrinkDetailPage
 	{
-		public SampleDrinkDetailPageViewModel()
+		public SampleUiDrinkDetailPage()
 		{
 			var recipe = new Recipe(new[] {
 					new Ingredient(1.5, "cl", "Frischer Limettensaft"),

@@ -28,7 +28,7 @@ using Drinks.Model;
 
 namespace Drinks.Viewer.DrinkDetail
 {
-	public class IngredientViewModel : BindableBase
+	public class UiIngredient : BindableBase
 	{
 		// state
 		private Ingredient mIngredient;

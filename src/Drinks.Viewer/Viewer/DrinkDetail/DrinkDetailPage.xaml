@@ -5,7 +5,7 @@
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
   xmlns:vm="using:Drinks.Viewer.DrinkDetail"
-  d:DataContext="{d:DesignInstance vm:SampleDrinkDetailPageViewModel,
+  d:DataContext="{d:DesignInstance vm:SampleUiDrinkDetailPage,
                                    IsDesignTimeCreatable=True}"
   Background="{StaticResource BarHeaderBackgroundBrush}"
   mc:Ignorable="d">
@@ -76,7 +76,7 @@
 					  ItemsSource="{Binding Ingredients, Mode=OneWay}"
 					  SelectionMode="None">
 						<ListView.ItemTemplate>
-							<DataTemplate x:DataType="vm:IngredientViewModel">
+							<DataTemplate x:DataType="vm:UiIngredient">
 								<Grid>
 									<Grid.ColumnDefinitions>
 										<ColumnDefinition Width="60" />

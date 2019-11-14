@@ -71,9 +71,9 @@
     <Compile Include="Viewer\DrinkDetail\DrinkDetailPage.xaml.cs">
       <DependentUpon>DrinkDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Viewer\DrinkDetail\DrinkDetailPageViewModel.cs" />
-    <Compile Include="Viewer\DrinkDetail\IngredientViewModel.cs" />
-    <Compile Include="Viewer\DrinkDetail\SampleDrinkDetailPageViewModel.cs" />
+    <Compile Include="Viewer\DrinkDetail\UiDrinkDetailPage.cs" />
+    <Compile Include="Viewer\DrinkDetail\UiIngredient.cs" />
+    <Compile Include="Viewer\DrinkDetail\SampleUiDrinkDetailPage.cs" />
     <Compile Include="Viewer\DrinkInfo\IngredientViewModel.cs" />
     <Compile Include="Viewer\DrinkInfo\DrinkInfoViewModel.cs" />
     <Compile Include="Viewer\Home\DrinkViewModel.cs" />
