@@ -22,40 +22,23 @@
  * SOFTWARE.
 */
 
-using System;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Navigation;
+using Drinks.Model;
+using Windows.UI.Xaml.Media.Imaging;
 
 
 namespace Drinks.Viewer.DrinkDetail
 {
-	/// <summary>
-	/// An empty page that can be used on its own or navigated to within a Frame.
-	/// </summary>
-	public sealed partial class DrinkDetailPage : Page
+	public sealed class DrinkDetailPageArgs
 	{
-		public DrinkDetailPage()
+		public Drink Drink { get; }
+
+		public BitmapImage Image { get; }
+
+
+		public DrinkDetailPageArgs(Drink drink, BitmapImage image)
 		{
-			this.InitializeComponent();
-		}
-
-
-		protected override void OnNavigatedTo(NavigationEventArgs e)
-		{
-			var args = (DrinkDetailPageArgs)e.Parameter;
-
-			this.DataContext = new DrinkDetailPageViewModel() {
-				Drink = args.Drink,
-				Image = args.Image
-			};
-
-		}
-
-		private void _HandleBackButtonClick(Object sender, RoutedEventArgs e)
-		{
-			if (App.Current.Frame.CanGoBack)
-				App.Current.Frame.GoBack();
+			this.Drink = drink;
+			this.Image = image;
 		}
 	}
 }

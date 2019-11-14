@@ -106,7 +106,7 @@ namespace Drinks.Viewer.Home
 
 			App.Current.Frame.Navigate(
 				typeof(DrinkDetailPage), 
-				Tuple.Create(drink, drinkViewModel.Image)
+				new DrinkDetailPageArgs(drink, drinkViewModel.Image)
 			);
 
 			//var infoView = new DrinkInfoView();
