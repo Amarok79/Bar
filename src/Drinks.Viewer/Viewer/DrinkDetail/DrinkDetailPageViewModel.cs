@@ -69,7 +69,11 @@ namespace Drinks.Viewer.DrinkDetail
 
 		public String Teaser => this.Drink.Teaser;
 
+		public String DescriptionHeader => "Beschreibung";
+
 		public String Description => this.Drink.Description;
+
+		public String IngredientsHeader => "Rezeptur";
 
 		public IngredientViewModel[] Ingredients => mIngredients;
 	}

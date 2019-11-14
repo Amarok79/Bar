@@ -31,6 +31,15 @@
 			</Style.Setters>
 		</Style>
 
+		<Style x:Key="BarSubTitleTextStyle" TargetType="TextBlock">
+			<Style.Setters>
+				<Setter Property="FontFamily" Value="Arial Rounded MT Bold" />
+				<Setter Property="FontSize" Value="24" />
+				<Setter Property="HorizontalAlignment" Value="Left" />
+				<Setter Property="VerticalAlignment" Value="Center" />
+			</Style.Setters>
+		</Style>
+
 		<Style x:Key="BarDrinkNameTextStyle" TargetType="TextBlock">
 			<Style.Setters>
 				<Setter Property="FontSize" Value="18" />

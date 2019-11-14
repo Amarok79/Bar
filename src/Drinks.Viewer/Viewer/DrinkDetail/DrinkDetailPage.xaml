@@ -33,7 +33,7 @@
 
 			<TextBlock
 			  Style="{StaticResource BarTitleTextStyle}"
-			  Text="{Binding Name, Mode=OneTime}" />
+			  Text="{Binding Name, Mode=OneWay}" />
 
 		</StackPanel>
 
@@ -62,10 +62,15 @@
 			  Grid.Column="1"
 			  VerticalScrollBarVisibility="Auto">
 				<StackPanel
-				  Margin="52,40,52,40"
+				  Margin="64,52,64,52"
 				  Orientation="Vertical">
 
 					<!--  Ingredients  -->
+
+					<TextBlock
+					  Margin="0,0,0,4"
+					  Style="{StaticResource BarSubTitleTextStyle}"
+					  Text="{Binding IngredientsHeader, Mode=OneWay}" />
 
 					<ListView
 					  ItemsSource="{Binding Ingredients, Mode=OneWay}"
@@ -98,7 +103,11 @@
 					<!--  Description  -->
 
 					<TextBlock
-					  Margin="0,40,0,0"
+					  Margin="0,52,0,4"
+					  Style="{StaticResource BarSubTitleTextStyle}"
+					  Text="{Binding DescriptionHeader, Mode=OneWay}" />
+
+					<TextBlock
 					  Style="{StaticResource BarDescriptionTextStyle}"
 					  Text="{Binding Description, Mode=OneWay}" />
 
