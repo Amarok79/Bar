@@ -29,7 +29,7 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Drinks.Viewer.Home
 {
-	public sealed class DrinkViewModel : BindableBase
+	public class UiDrink : BindableBase
 	{
 		// state
 		private Boolean mIsImageLoading;

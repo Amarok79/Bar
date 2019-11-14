@@ -56,7 +56,7 @@ namespace Drinks.Viewer
 			_RegisterServices(this.Container);
 
 			Frame = new Frame();
-			Frame.Navigate(typeof(HomeView));
+			Frame.Navigate(typeof(HomePage));
 
 			Window.Current.Content = Frame;
 			Window.Current.Activate();

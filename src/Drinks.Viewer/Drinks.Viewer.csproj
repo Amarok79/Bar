@@ -74,11 +74,12 @@
     <Compile Include="Viewer\DrinkDetail\UiDrinkDetailPage.cs" />
     <Compile Include="Viewer\DrinkDetail\UiIngredient.cs" />
     <Compile Include="Viewer\DrinkDetail\SampleUiDrinkDetailPage.cs" />
-    <Compile Include="Viewer\Home\DrinkViewModel.cs" />
-    <Compile Include="Viewer\Home\HomeView.xaml.cs">
-      <DependentUpon>HomeView.xaml</DependentUpon>
+    <Compile Include="Viewer\Home\UiDrink.cs" />
+    <Compile Include="Viewer\Home\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Viewer\Home\HomeViewModel.cs" />
+    <Compile Include="Viewer\Home\SampleUiHomePage.cs" />
+    <Compile Include="Viewer\Home\UiHomePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -135,7 +136,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Viewer\Home\HomeView.xaml">
+    <Page Include="Viewer\Home\HomePage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
