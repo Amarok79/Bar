@@ -30,7 +30,6 @@ using System.Linq;
 using Drinks.Model;
 using Drinks.Viewer.DrinkDetail;
 using Unity;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
@@ -47,18 +46,20 @@ namespace Drinks.Viewer.Home
 
 		public HomePage()
 		{
+			App.Current.Container.BuildUp(typeof(HomePage), this);
+
 			base.NavigationCacheMode = NavigationCacheMode.Required;
 			this.DataContext = new UiHomePage();
 
 			this.InitializeComponent();
-			this.Loading += _HandleOnLoading;
 			this.DrinksGridView.ItemClick += _HandleDrinkItemClick;
 		}
 
 
-		private async void _HandleOnLoading(FrameworkElement sender, Object args)
+		protected override async void OnNavigatedTo(NavigationEventArgs e)
 		{
-			App.Current.Container.BuildUp(typeof(HomePage), this);
+			if (e.NavigationMode != NavigationMode.New)
+				return;
 
 			var drinks = await this.DrinkRepository.GetAll()
 				.ConfigureAwait(true);
