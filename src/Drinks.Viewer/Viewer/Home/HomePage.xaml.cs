@@ -35,6 +35,7 @@ using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
+
 namespace Drinks.Viewer.Home
 {
 	public sealed partial class HomePage : Page
