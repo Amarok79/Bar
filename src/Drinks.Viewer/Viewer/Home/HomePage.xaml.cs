@@ -28,36 +28,44 @@
 using System;
 using System.Linq;
 using Drinks.Model;
-using Drinks.Viewer.DrinkInfo;
+using Drinks.Services;
+using Drinks.Viewer.DrinkDetail;
 using Unity;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Navigation;
 
 
 namespace Drinks.Viewer.Home
 {
-	public sealed partial class HomeView : Page
+	public sealed partial class HomePage : Page
 	{
-		public HomeViewModel ViewModel { get; } = new HomeViewModel();
-
-
+		[Dependency]
+		public INavigationService NavigationService { get; set; }
 		[Dependency]
 		public IDrinkRepository DrinkRepository { get; set; }
 		[Dependency]
 		public IImageRepository ImageRepository { get; set; }
 
 
-		public HomeView()
+		public HomePage()
 		{
+			App.Current.Container.BuildUp(typeof(HomePage), this);
+
+			base.NavigationCacheMode = NavigationCacheMode.Required;
+			this.DataContext = new UiHomePage();
+
 			this.InitializeComponent();
-			this.Loading += _HandleOnLoading;
 			this.DrinksGridView.ItemClick += _HandleDrinkItemClick;
 		}
 
 
-		private async void _HandleOnLoading(FrameworkElement sender, Object args)
+		protected override async void OnNavigatedTo(NavigationEventArgs e)
 		{
+			if (e.NavigationMode != NavigationMode.New)
+				return;
+
 			var drinks = await this.DrinkRepository.GetAll()
 				.ConfigureAwait(true);
 
@@ -70,13 +78,13 @@ namespace Drinks.Viewer.Home
 				image.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
 				image.UriSource = imageUri;
 
-				var item = new DrinkViewModel() {
+				var item = new UiDrink() {
 					Drink = drink,
 					Image = image,
 					IsImageLoading = true,
 				};
 
-				ViewModel.Drinks.Add(item);
+				((UiHomePage)DataContext).Drinks.Add(item);
 
 				image.ImageFailed += (_sender, _e) =>
 				{
@@ -93,29 +101,17 @@ namespace Drinks.Viewer.Home
 
 		private void _HandleDrinkItemClick(Object sender, ItemClickEventArgs e)
 		{
-			var drinkViewModel = (DrinkViewModel)e.ClickedItem;
+			var drinkViewModel = (UiDrink)e.ClickedItem;
 			var drink = drinkViewModel.Drink;
 
 			if (drink.Recipe == null)
 				return;
 
-			var infoView = new DrinkInfoView();
-			infoView.ViewModel.Drink = drink;
-			infoView.ViewModel.Image = drinkViewModel.Image;
-			infoView.ViewModel.CloseButtonCommand = new DelegateCommand(_HandleDrinkInfoPopupClose);
-
-			infoView.Width = DrinksArea.ActualWidth - 240;
-			infoView.Height = DrinksArea.ActualHeight - 120;
-
-			DrinkInfoViewHost.Content = infoView;
-
-			DrinkInfoPopup.IsOpen = true;
-		}
-
-		private void _HandleDrinkInfoPopupClose()
-		{
-			DrinkInfoPopup.IsOpen = false;
-			DrinkInfoViewHost.Content = null;
+			NavigationService.Navigate(
+				typeof(DrinkDetailPage),
+				new DrinkDetailPageArgs(drink, drinkViewModel.Image),
+				new DrillInNavigationTransitionInfo()
+			);
 		}
 	}
 }

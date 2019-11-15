@@ -64,19 +64,23 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Services\INavigationService.cs" />
     <Compile Include="Viewer\Common\BindableBase.cs" />
     <Compile Include="Viewer\Converter\AmountConverter.cs" />
     <Compile Include="Viewer\Common\DelegateCommand.cs" />
-    <Compile Include="Viewer\DrinkInfo\IngredientViewModel.cs" />
-    <Compile Include="Viewer\DrinkInfo\DrinkInfoViewModel.cs" />
-    <Compile Include="Viewer\Home\DrinkViewModel.cs" />
-    <Compile Include="Viewer\Home\HomeView.xaml.cs">
-      <DependentUpon>HomeView.xaml</DependentUpon>
+    <Compile Include="Viewer\DrinkDetail\DrinkDetailPageArgs.cs" />
+    <Compile Include="Viewer\DrinkDetail\DrinkDetailPage.xaml.cs">
+      <DependentUpon>DrinkDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Viewer\Home\HomeViewModel.cs" />
-    <Compile Include="Viewer\DrinkInfo\DrinkInfoView.xaml.cs">
-      <DependentUpon>DrinkInfoView.xaml</DependentUpon>
+    <Compile Include="Viewer\DrinkDetail\UiDrinkDetailPage.cs" />
+    <Compile Include="Viewer\DrinkDetail\UiIngredient.cs" />
+    <Compile Include="Viewer\DrinkDetail\SampleUiDrinkDetailPage.cs" />
+    <Compile Include="Viewer\Home\UiDrink.cs" />
+    <Compile Include="Viewer\Home\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Viewer\Home\SampleUiHomePage.cs" />
+    <Compile Include="Viewer\Home\UiHomePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -129,13 +133,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Viewer\Home\HomeView.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Viewer\DrinkDetail\DrinkDetailPage.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Viewer\DrinkInfo\DrinkInfoView.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Viewer\Home\HomePage.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

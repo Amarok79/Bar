@@ -22,34 +22,23 @@
  * SOFTWARE.
 */
 
-using System;
 using Drinks.Model;
 using Windows.UI.Xaml.Media.Imaging;
 
 
-namespace Drinks.Viewer.Home
+namespace Drinks.Viewer.DrinkDetail
 {
-	public sealed class DrinkViewModel : BindableBase
+	public sealed class DrinkDetailPageArgs
 	{
-		// state
-		private Boolean mIsImageLoading;
+		public Drink Drink { get; }
+
+		public BitmapImage Image { get; }
 
 
-		public Drink Drink { get; set; }
-
-
-		public String Name => this.Drink.Name;
-
-		public String Teaser => this.Drink.Teaser;
-
-		public Boolean HasDescription => !String.IsNullOrEmpty(this.Drink.Description);
-
-		public BitmapImage Image { get; set; }
-
-		public Boolean IsImageLoading
+		public DrinkDetailPageArgs(Drink drink, BitmapImage image)
 		{
-			get => mIsImageLoading;
-			set => SetProperty(ref mIsImageLoading, value);
+			this.Drink = drink;
+			this.Image = image;
 		}
 	}
 }

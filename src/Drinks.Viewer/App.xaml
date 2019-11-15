@@ -31,6 +31,15 @@
 			</Style.Setters>
 		</Style>
 
+		<Style x:Key="BarSubTitleTextStyle" TargetType="TextBlock">
+			<Style.Setters>
+				<Setter Property="FontFamily" Value="Arial Rounded MT Bold" />
+				<Setter Property="FontSize" Value="24" />
+				<Setter Property="HorizontalAlignment" Value="Left" />
+				<Setter Property="VerticalAlignment" Value="Center" />
+			</Style.Setters>
+		</Style>
+
 		<Style x:Key="BarDrinkNameTextStyle" TargetType="TextBlock">
 			<Style.Setters>
 				<Setter Property="FontSize" Value="18" />
@@ -85,6 +94,101 @@
 				<Setter Property="Foreground" Value="{StaticResource BarTextBrush}" />
 				<Setter Property="TextWrapping" Value="WrapWholeWords" />
 			</Style.Setters>
+		</Style>
+
+		<!--  BUTTON STYLES  -->
+
+		<Style x:Key="NavigationBackButtonNormalStyle" TargetType="Button">
+			<Setter Property="Background" Value="{ThemeResource NavigationViewBackButtonBackground}" />
+			<Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseHighBrush}" />
+			<Setter Property="FontFamily" Value="{ThemeResource SymbolThemeFontFamily}" />
+			<Setter Property="FontSize" Value="36" />
+			<Setter Property="Height" Value="{ThemeResource NavigationBackButtonHeight}" />
+			<Setter Property="Width" Value="{ThemeResource NavigationBackButtonWidth}" />
+			<Setter Property="HorizontalContentAlignment" Value="Center" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+			<Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
+			<Setter Property="Content" Value="&#xE830;" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid x:Name="RootGrid"
+						  Background="{TemplateBinding Background}">
+							<FontIcon x:Name="Content"
+							  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+							  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+							  AutomationProperties.AccessibilityView="Raw"
+							  FontFamily="{TemplateBinding FontFamily}"
+							  FontSize="{TemplateBinding FontSize}"
+							  Foreground="{TemplateBinding Foreground}"
+							  Glyph="{TemplateBinding Content}"
+							  MirroredWhenRightToLeft="True" />
+
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal" />
+
+									<VisualState x:Name="PointerOver">
+
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames
+											  Storyboard.TargetName="RootGrid"
+											  Storyboard.TargetProperty="Background">
+												<DiscreteObjectKeyFrame
+												  KeyTime="0"
+												  Value="{ThemeResource SystemControlHighlightListLowBrush}" />
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames
+											  Storyboard.TargetName="Content"
+											  Storyboard.TargetProperty="Foreground">
+												<DiscreteObjectKeyFrame
+												  KeyTime="0"
+												  Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}" />
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+
+									<VisualState x:Name="Pressed">
+
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames
+											  Storyboard.TargetName="RootGrid"
+											  Storyboard.TargetProperty="Background">
+												<DiscreteObjectKeyFrame
+												  KeyTime="0"
+												  Value="{ThemeResource SystemControlHighlightListMediumBrush}" />
+											</ObjectAnimationUsingKeyFrames>
+											<ObjectAnimationUsingKeyFrames
+											  Storyboard.TargetName="Content"
+											  Storyboard.TargetProperty="Foreground">
+												<DiscreteObjectKeyFrame
+												  KeyTime="0"
+												  Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}" />
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+
+									<VisualState x:Name="Disabled">
+
+										<Storyboard>
+											<ObjectAnimationUsingKeyFrames
+											  Storyboard.TargetName="Content"
+											  Storyboard.TargetProperty="Foreground">
+												<DiscreteObjectKeyFrame
+												  KeyTime="0"
+												  Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}" />
+											</ObjectAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+
+								</VisualStateGroup>
+
+							</VisualStateManager.VisualStateGroups>
+						</Grid>
+
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
 		</Style>
 
 	</Application.Resources>

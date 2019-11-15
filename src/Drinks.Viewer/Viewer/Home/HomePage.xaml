@@ -1,10 +1,12 @@
 ﻿<Page
-  x:Class="Drinks.Viewer.Home.HomeView"
+  x:Class="Drinks.Viewer.Home.HomePage"
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-  xmlns:local="using:Drinks.Viewer.Home"
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:vm="using:Drinks.Viewer.Home"
+  d:DataContext="{d:DesignInstance vm:SampleUiHomePage,
+                                   IsDesignTimeCreatable=True}"
   mc:Ignorable="d">
 
 	<Grid x:Name="Root">
@@ -37,7 +39,7 @@
 			<TextBlock
 			  Grid.Column="1"
 			  Style="{StaticResource BarTitleTextStyle}"
-			  Text="{x:Bind ViewModel.Title}" />
+			  Text="{Binding Title, Mode=OneWay}" />
 		</Grid>
 
 		<!--  Drinks Collection  -->
@@ -49,10 +51,10 @@
 			<GridView x:Name="DrinksGridView"
 			  Margin="20"
 			  IsItemClickEnabled="True"
-			  ItemsSource="{x:Bind ViewModel.Drinks}"
+			  ItemsSource="{Binding Drinks, Mode=OneWay}"
 			  SelectionMode="None">
 				<GridView.ItemTemplate>
-					<DataTemplate x:Name="DrinkTemplate" x:DataType="local:DrinkViewModel">
+					<DataTemplate x:Name="DrinkTemplate" x:DataType="vm:UiDrink">
 						<Grid>
 							<Grid.RowDefinitions>
 								<RowDefinition Height="346" />
@@ -68,7 +70,7 @@
 									<Image
 									  Width="260"
 									  Height="356"
-									  Source="{x:Bind Image}"
+									  Source="{Binding Image, Mode=OneWay}"
 									  Stretch="UniformToFill" />
 
 									<Image
@@ -79,7 +81,7 @@
 									  VerticalAlignment="Top"
 									  Source="/Assets/info.png"
 									  Stretch="UniformToFill"
-									  Visibility="{x:Bind HasDescription}" />
+									  Visibility="{Binding HasDescription, Mode=OneWay}" />
 								</Canvas>
 							</Border>
 
@@ -89,7 +91,7 @@
 							  Height="28"
 							  Margin="0,12,0,0"
 							  Style="{StaticResource BarDrinkNameTextStyle}"
-							  Text="{x:Bind Name}" />
+							  Text="{Binding Name, Mode=OneWay}" />
 
 							<TextBlock
 							  Grid.Row="2"
@@ -97,13 +99,13 @@
 							  Height="54"
 							  Margin="0,4,0,0"
 							  Style="{StaticResource BarDrinkTeaserTextStyle}"
-							  Text="{x:Bind Teaser}" />
+							  Text="{Binding Teaser, Mode=OneWay}" />
 
 							<ProgressRing
 							  Grid.Row="0"
 							  HorizontalAlignment="Center"
 							  VerticalAlignment="Center"
-							  IsActive="{x:Bind IsImageLoading, Mode=OneWay}" />
+							  IsActive="{Binding IsImageLoading, Mode=OneWay}" />
 						</Grid>
 					</DataTemplate>
 				</GridView.ItemTemplate>

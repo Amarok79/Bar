@@ -22,20 +22,27 @@
  * SOFTWARE.
 */
 
+using System;
 using Drinks.Model;
+using Drinks.Services;
 using Drinks.Services.DrinkRepository;
 using Drinks.Services.ImageRepository;
 using Drinks.Viewer.Home;
 using Unity;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Animation;
 
 
 namespace Drinks.Viewer
 {
-	public sealed partial class App : Application
+	public sealed partial class App : Application,
+		INavigationService
 	{
 		public IUnityContainer Container { get; }
+
+		public Frame Frame { get; private set; }
 
 		public static new App Current => (App)Application.Current;
 
@@ -50,17 +57,39 @@ namespace Drinks.Viewer
 		{
 			base.OnLaunched(args);
 
-			_RegisterServices(this.Container);
+			_RegisterServices(this.Container, this);
 
-			Window.Current.Content = this.Container.Resolve<HomeView>();
+			Frame = new Frame();
+			Frame.Navigate(typeof(HomePage), null, new EntranceNavigationTransitionInfo());
+
+			Window.Current.Content = Frame;
 			Window.Current.Activate();
 		}
 
 
-		private static void _RegisterServices(IUnityContainer container)
+		private static void _RegisterServices(IUnityContainer container, App me)
 		{
 			container.RegisterSingleton<IImageRepository, AzureImageRepository>();
 			container.RegisterSingleton<IDrinkRepository, AzureBlobDrinkRepository>();
+			container.RegisterInstance<INavigationService>(me);
+		}
+
+		public Boolean Navigate(Type pageType, Object args, NavigationTransitionInfo transitionInfo)
+		{
+			return this.Frame.Navigate(pageType, args, transitionInfo);
+		}
+
+		public Boolean GoBack()
+		{
+			if (this.Frame.CanGoBack)
+			{
+				this.Frame.GoBack();
+				return true;
+			}
+			else
+			{
+				return false;
+			}
 		}
 	}
 }

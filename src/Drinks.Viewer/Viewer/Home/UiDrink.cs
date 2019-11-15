@@ -23,62 +23,33 @@
 */
 
 using System;
-using System.Linq;
-using System.Windows.Input;
 using Drinks.Model;
 using Windows.UI.Xaml.Media.Imaging;
 
 
-namespace Drinks.Viewer.DrinkInfo
+namespace Drinks.Viewer.Home
 {
-	public sealed class DrinkInfoViewModel : BindableBase
+	public class UiDrink : BindableBase
 	{
 		// state
-		private IngredientViewModel[] mIngredients;
-		private Drink mDrink;
-		private BitmapImage mImage;
-		private ICommand mCloseButtonCommand;
+		private Boolean mIsImageLoading;
 
 
-		public Drink Drink
-		{
-			get
-			{
-				return mDrink;
-			}
-			set
-			{
-				mDrink = value;
+		public Drink Drink { get; set; }
 
-				mIngredients = mDrink.Recipe.Ingredients
-					.Select(x => new IngredientViewModel() { Ingredient = x })
-					.ToArray();
-
-				OnPropertyChanged(nameof(Name));
-				OnPropertyChanged(nameof(Teaser));
-				OnPropertyChanged(nameof(Description));
-				OnPropertyChanged(nameof(Ingredients));
-			}
-		}
 
 		public String Name => this.Drink.Name;
 
 		public String Teaser => this.Drink.Teaser;
 
-		public String Description => this.Drink.Description;
+		public Boolean HasDescription => !String.IsNullOrEmpty(this.Drink.Description);
 
-		public IngredientViewModel[] Ingredients => mIngredients;
+		public BitmapImage Image { get; set; }
 
-		public BitmapImage Image
+		public Boolean IsImageLoading
 		{
-			get => mImage;
-			set => SetProperty(ref mImage, value);
-		}
-
-		public ICommand CloseButtonCommand
-		{
-			get => mCloseButtonCommand;
-			set => SetProperty(ref mCloseButtonCommand, value);
+			get => mIsImageLoading;
+			set => Set(ref mIsImageLoading, value);
 		}
 	}
 }

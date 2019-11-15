@@ -28,10 +28,10 @@ using System.Collections.ObjectModel;
 
 namespace Drinks.Viewer.Home
 {
-	public sealed class HomeViewModel
+	public class UiHomePage
 	{
-		public String Title { get; set; } = "Die KroKo Hausbar";
+		public String Title => "Die \"KroKo\" Hausbar";
 
-		public ObservableCollection<DrinkViewModel> Drinks { get; } = new ObservableCollection<DrinkViewModel>();
+		public ObservableCollection<UiDrink> Drinks { get; } = new ObservableCollection<UiDrink>();
 	}
 }

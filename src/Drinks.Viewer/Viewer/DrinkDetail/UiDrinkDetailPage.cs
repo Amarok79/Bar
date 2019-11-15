@@ -23,38 +23,58 @@
 */
 
 using System;
+using System.Linq;
 using Drinks.Model;
+using Windows.UI.Xaml.Media.Imaging;
 
 
-namespace Drinks.Viewer.DrinkInfo
+namespace Drinks.Viewer.DrinkDetail
 {
-	public sealed class IngredientViewModel : BindableBase
+	public class UiDrinkDetailPage : BindableBase
 	{
 		// state
-		private Ingredient mIngredient;
+		private UiIngredient[] mIngredients;
+		private Drink mDrink;
+		private BitmapImage mImage;
 
 
-		public Ingredient Ingredient
+		public BitmapImage Image
+		{
+			get => mImage;
+			set => Set(ref mImage, value);
+		}
+
+		public Drink Drink
 		{
 			get
 			{
-				return mIngredient;
+				return mDrink;
 			}
 			set
 			{
-				mIngredient = value;
+				mDrink = value;
 
-				OnPropertyChanged(nameof(Amount));
-				OnPropertyChanged(nameof(Unit));
-				OnPropertyChanged(nameof(Substance));
+				mIngredients = mDrink.Recipe.Ingredients
+					.Select(x => new UiIngredient() { Ingredient = x })
+					.ToArray();
+
+				OnPropertyChanged(nameof(Name));
+				OnPropertyChanged(nameof(Teaser));
+				OnPropertyChanged(nameof(Description));
+				OnPropertyChanged(nameof(Ingredients));
 			}
 		}
 
+		public String Name => this.Drink.Name;
 
-		public Double Amount => this.Ingredient.Amount;
+		public String Teaser => this.Drink.Teaser;
 
-		public String Unit => this.Ingredient.Unit;
+		public String DescriptionHeader => "Beschreibung";
 
-		public String Substance => this.Ingredient.Substance;
+		public String Description => this.Drink.Description;
+
+		public String IngredientsHeader => "Rezeptur";
+
+		public UiIngredient[] Ingredients => mIngredients;
 	}
 }

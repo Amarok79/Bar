@@ -22,19 +22,39 @@
  * SOFTWARE.
 */
 
-using Windows.UI.Xaml.Controls;
+using System;
+using Drinks.Model;
 
 
-namespace Drinks.Viewer.DrinkInfo
+namespace Drinks.Viewer.DrinkDetail
 {
-	public sealed partial class DrinkInfoView : UserControl
+	public class UiIngredient : BindableBase
 	{
-		public DrinkInfoViewModel ViewModel { get; } = new DrinkInfoViewModel();
+		// state
+		private Ingredient mIngredient;
 
 
-		public DrinkInfoView()
+		public Ingredient Ingredient
 		{
-			this.InitializeComponent();
+			get
+			{
+				return mIngredient;
+			}
+			set
+			{
+				mIngredient = value;
+
+				OnPropertyChanged(nameof(Amount));
+				OnPropertyChanged(nameof(Unit));
+				OnPropertyChanged(nameof(Substance));
+			}
 		}
+
+
+		public Double Amount => this.Ingredient.Amount;
+
+		public String Unit => this.Ingredient.Unit;
+
+		public String Substance => this.Ingredient.Substance;
 	}
 }

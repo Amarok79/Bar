@@ -23,15 +23,45 @@
 */
 
 using System;
-using System.Reflection;
-using System.Runtime.InteropServices;
+using Drinks.Services;
+using Unity;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 
 
-// Assembly Configuration
-[assembly: CLSCompliant(false)]
+namespace Drinks.Viewer.DrinkDetail
+{
+	/// <summary>
+	/// An empty page that can be used on its own or navigated to within a Frame.
+	/// </summary>
+	public sealed partial class DrinkDetailPage : Page
+	{
+		[Dependency]
+		public INavigationService NavigationService { get; set; }
 
-// COM Configuration
-[assembly: ComVisible(false)]
-[assembly: Guid("AECD0F2A-0FD3-4966-BAA0-6E8ABAE22826")]
-[assembly: AssemblyVersion("2.0.0.0")]
-[assembly: AssemblyFileVersion("2.0.0.0")]
+
+		public DrinkDetailPage()
+		{
+			App.Current.Container.BuildUp(typeof(DrinkDetailPage), this);
+			this.InitializeComponent();
+		}
+
+
+		protected override void OnNavigatedTo(NavigationEventArgs e)
+		{
+			var args = (DrinkDetailPageArgs)e.Parameter;
+
+			this.DataContext = new UiDrinkDetailPage() {
+				Drink = args.Drink,
+				Image = args.Image
+			};
+
+		}
+
+		private void _HandleBackButtonClick(Object sender, RoutedEventArgs e)
+		{
+			this.NavigationService.GoBack();
+		}
+	}
+}
