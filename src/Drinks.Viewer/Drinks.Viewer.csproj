@@ -64,6 +64,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Services\INavigationService.cs" />
     <Compile Include="Viewer\Common\BindableBase.cs" />
     <Compile Include="Viewer\Converter\AmountConverter.cs" />
     <Compile Include="Viewer\Common\DelegateCommand.cs" />

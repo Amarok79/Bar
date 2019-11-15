@@ -28,6 +28,7 @@
 using System;
 using System.Linq;
 using Drinks.Model;
+using Drinks.Services;
 using Drinks.Viewer.DrinkDetail;
 using Unity;
 using Windows.UI.Xaml.Controls;
@@ -40,6 +41,8 @@ namespace Drinks.Viewer.Home
 {
 	public sealed partial class HomePage : Page
 	{
+		[Dependency]
+		public INavigationService NavigationService { get; set; }
 		[Dependency]
 		public IDrinkRepository DrinkRepository { get; set; }
 		[Dependency]
@@ -104,7 +107,7 @@ namespace Drinks.Viewer.Home
 			if (drink.Recipe == null)
 				return;
 
-			App.Current.Frame.Navigate(
+			NavigationService.Navigate(
 				typeof(DrinkDetailPage),
 				new DrinkDetailPageArgs(drink, drinkViewModel.Image),
 				new DrillInNavigationTransitionInfo()

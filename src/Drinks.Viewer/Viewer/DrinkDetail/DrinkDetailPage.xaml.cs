@@ -23,6 +23,8 @@
 */
 
 using System;
+using Drinks.Services;
+using Unity;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -35,8 +37,13 @@ namespace Drinks.Viewer.DrinkDetail
 	/// </summary>
 	public sealed partial class DrinkDetailPage : Page
 	{
+		[Dependency]
+		public INavigationService NavigationService { get; set; }
+
+
 		public DrinkDetailPage()
 		{
+			App.Current.Container.BuildUp(typeof(DrinkDetailPage), this);
 			this.InitializeComponent();
 		}
 
@@ -54,8 +61,7 @@ namespace Drinks.Viewer.DrinkDetail
 
 		private void _HandleBackButtonClick(Object sender, RoutedEventArgs e)
 		{
-			if (App.Current.Frame.CanGoBack)
-				App.Current.Frame.GoBack();
+			this.NavigationService.GoBack();
 		}
 	}
 }
