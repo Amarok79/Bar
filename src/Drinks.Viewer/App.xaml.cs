@@ -30,7 +30,7 @@ using Unity;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-
+using Windows.UI.Xaml.Media.Animation;
 
 namespace Drinks.Viewer
 {
@@ -56,7 +56,7 @@ namespace Drinks.Viewer
 			_RegisterServices(this.Container);
 
 			Frame = new Frame();
-			Frame.Navigate(typeof(HomePage));
+			Frame.Navigate(typeof(HomePage), null, new EntranceNavigationTransitionInfo());
 
 			Window.Current.Content = Frame;
 			Window.Current.Activate();

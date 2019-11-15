@@ -31,6 +31,7 @@ using Drinks.Model;
 using Drinks.Viewer.DrinkDetail;
 using Unity;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
@@ -104,7 +105,8 @@ namespace Drinks.Viewer.Home
 
 			App.Current.Frame.Navigate(
 				typeof(DrinkDetailPage),
-				new DrinkDetailPageArgs(drink, drinkViewModel.Image)
+				new DrinkDetailPageArgs(drink, drinkViewModel.Image),
+				new DrillInNavigationTransitionInfo()
 			);
 		}
 	}
