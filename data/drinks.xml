@@ -2,43 +2,25 @@
 <drinks>
 
 	<drink>
-		<name>Cosmopolitan</name>
-		<teaser>Wodka, Triple Sec, Cranberrysaft, Limettensaft</teaser>
-		<image>{C5C04892-97F7-4C01-B799-B1ECACB7384B}</image>
-		<description>
-			Der Cosmopolitan (kurz „Cosmo“) ist ein herb-süßer, erfrischender Cocktail, dessen moderne Rezeptur aus aromatisiertem Wodka, Orangenlikör, Limetten- und Cranberrysaft besteht. Erstmals erwähnt wird ein Shortdrink dieses Namens in einem Barbuch von 1934, in seiner heutigen Form ist der Cosmopolitan aber erst seit den 1990er Jahren weltweit verbreitet. Er steht sinnbildlich für die moderne, design-orientierte Bar, die der Barboom der 1990er Jahre hervorbrachte.
-
-			Ende der 1990er Jahre erlangte der Cosmopolitan einen Bekanntheitsschub durch die Fernsehserie Sex and the City, in der er das Lieblingsgetränk der Hauptfiguren war.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="3" unit="cl" substance="Absolut Citron Wodka"/>
-			<ingredient amount="3" unit="cl" substance="Triple Sec"/>
-			<ingredient amount="3" unit="cl" substance="dmBio Cranberrysaft, 100% Muttersaft"/>
-			<ingredient amount="1.5" unit="cl" substance="Zuckersirup 2:1"/>
-			<ingredient amount="1" unit="dash" substance="The Bitter Truth Orange Bitter"/>
-		</recipe>
+		<name>Alexander (Gin)</name>
+		<teaser>Gin, Creme de Cacaco, Sahne, Muskatnuss</teaser>
+		<image>{8AFFEC5A-A659-460F-8BE4-438C1F17F638}</image>
 	</drink>
 
 	<drink>
-		<name>Negroni</name>
-		<teaser>Gin, Campari, Vermouth Rosso</teaser>
-		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
+		<name>Amaretto Sour</name>
+		<teaser>Zitronensaft, Amaretto, Limettensirup, Orangensaft</teaser>
+		<image>{AB485B95-363F-4365-8FCD-1E2F7BF3BF7C}</image>
 		<description>
-			Der Negroni ist ein klassischer, aus Italien stammender Cocktail mit bitter-süßem Geschmack.
+			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem Grundprinzip Spirituose + Süßungsmittel + saurer Zitrussaft aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. Die bekanntesten Sours, die die Gattungsbezeichnung auch im Namen tragen, sind Whiskey Sour, Pisco Sour und Amaretto Sour.
 
-			Der Negroni wurde in Florenz im Caffè Casoni (heute Caffè Giacosa) in der Via de′ Tornabuoni erfunden. Er ist nach dem Grafen Camillo Negroni benannt, der beim Barkeeper (Fosco Scarselli) zwischen 1919 und 1920 zum ersten Mal einen mit Gin verlängerten Americano bestellte.
-
-			Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
-
-			(Wikipedia)
+			Amaretto ist eine Geschmacksrichtung für ursprünglich aus Italien stammende Liköre mit einem nussigen Aroma, das an Marzipan erinnert. Die Bezeichnung „Amaretto“ ist eine Verkleinerungsform des italienischen Wortes amaro, was so viel bedeutet wie „bitter“. Ursprünglich wurden Bittermandeln (italienisch mandorla amara) oder Aprikosenkerne, teilweise auch süße Mandeln zur Aromatisierung verwendet.
 		</description>
 		<recipe>
-			<ingredient amount="3" unit="cl" substance="Beefeather 24 London Dry Gin"/>
-			<ingredient amount="3" unit="cl" substance="Campari Bitterlikör"/>
-			<ingredient amount="3" unit="cl" substance="Martini Vermouth Rosso"/>
+			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
+			<ingredient amount="6" unit="cl" substance="Amaretto Disaronno Originale"/>
+			<ingredient amount="1.5" unit="cl" substance="Limettensirup"/>
+			<ingredient amount="3" unit="cl" substance="Orangensaft"/>
 		</recipe>
 	</drink>
 
@@ -59,26 +41,6 @@
 			<ingredient amount="4.5" unit="cl" substance="Martini Vermouth Rosso"/>
 			<ingredient amount="4.5" unit="cl" substance="Campari Bitterlikör"/>
 			<ingredient amount="7.5" unit="cl" substance="Soda"/>
-		</recipe>
-	</drink>
-
-
-
-
-	<drink>
-		<name>Amaretto Sour</name>
-		<teaser>Zitronensaft, Amaretto, Limettensirup, Orangensaft</teaser>
-		<image>{AB485B95-363F-4365-8FCD-1E2F7BF3BF7C}</image>
-		<description>
-			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem Grundprinzip Spirituose + Süßungsmittel + saurer Zitrussaft aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. Die bekanntesten Sours, die die Gattungsbezeichnung auch im Namen tragen, sind Whiskey Sour, Pisco Sour und Amaretto Sour.
-
-			Amaretto ist eine Geschmacksrichtung für ursprünglich aus Italien stammende Liköre mit einem nussigen Aroma, das an Marzipan erinnert. Die Bezeichnung „Amaretto“ ist eine Verkleinerungsform des italienischen Wortes amaro, was so viel bedeutet wie „bitter“. Ursprünglich wurden Bittermandeln (italienisch mandorla amara) oder Aprikosenkerne, teilweise auch süße Mandeln zur Aromatisierung verwendet.
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
-			<ingredient amount="6" unit="cl" substance="Amaretto Disaronno Originale"/>
-			<ingredient amount="1.5" unit="cl" substance="Limettensirup"/>
-			<ingredient amount="3" unit="cl" substance="Orangensaft"/>
 		</recipe>
 	</drink>
 
@@ -130,6 +92,12 @@
 			<ingredient amount="2" unit="cl" substance="Maracujanektar"/>
 			<ingredient amount="8" unit="cl" substance="Kokosmilch"/>
 		</recipe>
+	</drink>
+
+	<drink>
+		<name>Bellevue</name>
+		<teaser>Rum, Cointreau, Limettensirup, Creme of Coconut, Ananassaft</teaser>
+		<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
 	</drink>
 
 	<drink>
@@ -187,6 +155,26 @@
 		</recipe>
 	</drink>
 
+	<drink>
+		<name>Cosmopolitan</name>
+		<teaser>Wodka, Triple Sec, Cranberrysaft, Limettensaft</teaser>
+		<image>{C5C04892-97F7-4C01-B799-B1ECACB7384B}</image>
+		<description>
+			Der Cosmopolitan (kurz „Cosmo“) ist ein herb-süßer, erfrischender Cocktail, dessen moderne Rezeptur aus aromatisiertem Wodka, Orangenlikör, Limetten- und Cranberrysaft besteht. Erstmals erwähnt wird ein Shortdrink dieses Namens in einem Barbuch von 1934, in seiner heutigen Form ist der Cosmopolitan aber erst seit den 1990er Jahren weltweit verbreitet. Er steht sinnbildlich für die moderne, design-orientierte Bar, die der Barboom der 1990er Jahre hervorbrachte.
+
+			Ende der 1990er Jahre erlangte der Cosmopolitan einen Bekanntheitsschub durch die Fernsehserie Sex and the City, in der er das Lieblingsgetränk der Hauptfiguren war.
+
+			(Wikipedia)
+		</description>
+		<recipe>
+			<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
+			<ingredient amount="3" unit="cl" substance="Absolut Citron Wodka"/>
+			<ingredient amount="3" unit="cl" substance="Triple Sec"/>
+			<ingredient amount="3" unit="cl" substance="dmBio Cranberrysaft, 100% Muttersaft"/>
+			<ingredient amount="1.5" unit="cl" substance="Zuckersirup 2:1"/>
+			<ingredient amount="1" unit="dash" substance="The Bitter Truth Orange Bitter"/>
+		</recipe>
+	</drink>
 
 	<drink>
 		<name>Cuba Libre</name>
@@ -218,6 +206,24 @@
 			<ingredient amount="6" unit="cl" substance="Appleton Estate Jamaica Rum"/>
 			<ingredient amount="12" unit="cl" substance="Fentimas Ginger Beer"/>
 		</recipe>
+	</drink>
+
+	<drink>
+		<name>Gin &amp; Tonic</name>
+		<teaser>Gin, Tonic Water</teaser>
+		<image>{18EF0752-8D39-4A58-9D93-FC99BA35AF5E}</image>
+	</drink>
+
+	<drink>
+		<name>Kahluha Kiss</name>
+		<teaser>Amaretto, Baileys, Kahluha, Creme of Coconut</teaser>
+		<image>{C001A4F2-EFEC-4E30-B57F-FCC50F63E023}</image>
+	</drink>
+
+	<drink>
+		<name>Long Island Iced Tea</name>
+		<teaser>Limettensaft, Vodka, Gin, Tequilla, Rum, Triple Sec, Cola</teaser>
+		<image>{37944174-35CE-4895-B9F2-A2DF02749857}</image>
 	</drink>
 
 	<drink>
@@ -259,6 +265,25 @@
 		</recipe>
 	</drink>
 
+	<drink>
+		<name>Negroni</name>
+		<teaser>Gin, Campari, Vermouth Rosso</teaser>
+		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
+		<description>
+			Der Negroni ist ein klassischer, aus Italien stammender Cocktail mit bitter-süßem Geschmack.
+
+			Der Negroni wurde in Florenz im Caffè Casoni (heute Caffè Giacosa) in der Via de′ Tornabuoni erfunden. Er ist nach dem Grafen Camillo Negroni benannt, der beim Barkeeper (Fosco Scarselli) zwischen 1919 und 1920 zum ersten Mal einen mit Gin verlängerten Americano bestellte.
+
+			Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
+
+			(Wikipedia)
+		</description>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Beefeather 24 London Dry Gin"/>
+			<ingredient amount="3" unit="cl" substance="Campari Bitterlikör"/>
+			<ingredient amount="3" unit="cl" substance="Martini Vermouth Rosso"/>
+		</recipe>
+	</drink>
 
 	<drink>
 		<name>Old Fashioned</name>
@@ -279,6 +304,18 @@
 	</drink>
 
 	<drink>
+		<name>Pina Colada</name>
+		<teaser>Rum, Sahne, Creme of Coconut, Ananassaft</teaser>
+		<image>{A065DC95-1DD9-4CCB-A9F6-3336AB835236}</image>
+	</drink>
+
+	<drink>
+		<name>Prince</name>
+		<teaser>Tequilla, Vanillelikör, Creme of Coconut, Sahne, Maracujasaft</teaser>
+		<image>{5C12D764-FE88-48BA-A4BD-9FDF0945EEAB}</image>
+	</drink>
+
+	<drink>
 		<name>Ramazotti Sour</name>
 		<teaser>Zitronensaft, Ramazotti, Limettensirup, Orangensaft</teaser>
 		<image>{643AD007-EC64-4D68-AECF-C62695AA1DE7}</image>
@@ -292,6 +329,28 @@
 			<ingredient amount="4.5" unit="cl" substance="Ramazotti"/>
 			<ingredient amount="1.5" unit="cl" substance="Läuterzucker"/>
 			<ingredient amount="3" unit="cl" substance="Orangensaft"/>
+		</recipe>
+	</drink>
+
+	<drink>
+		<name>Rosa Lady</name>
+		<teaser>Wodka, Vanillelikör, Bananenlikör, Sahne, Maracujasaft, Ananassaft</teaser>
+		<image>{871629C3-362F-4565-9AB8-02DE0452D06C}</image>
+	</drink>
+
+	<drink>
+		<name>Saturn</name>
+		<teaser>Limettensaft, Gin, Falerum, Orgeat, Passionsfruchtsirup</teaser>
+		<image>{4A9196C2-8C9C-4850-B777-7C237085D694}</image>
+		<description>
+			Ein Tiki-inspirierter Gin Sour mit Passionsfrucht und Mandel.
+		</description>
+		<recipe>
+			<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
+			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+			<ingredient amount="0.75" unit="cl" substance="Falernum (Velvet)"/>
+			<ingredient amount="0.75" unit="cl" substance="Orgeat"/>
+			<ingredient amount="0.75" unit="cl" substance="Maracujasirup"/>
 		</recipe>
 	</drink>
 
@@ -345,72 +404,5 @@
 			<ingredient amount="2" unit="dash" substance="Bitter"/>
 		</recipe>
 	</drink>
-
-
-	<drink>
-		<name>Saturn</name>
-		<teaser>Limettensaft, Gin, Falerum, Orgeat, Passionsfruchtsirup</teaser>
-		<image>{4A9196C2-8C9C-4850-B777-7C237085D694}</image>
-		<description>
-			Ein Tiki-inspirierter Gin Sour mit Passionsfrucht und Mandel.
-		</description>
-		<recipe>
-			<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-			<ingredient amount="0.75" unit="cl" substance="Falernum (Velvet)"/>
-			<ingredient amount="0.75" unit="cl" substance="Orgeat"/>
-			<ingredient amount="0.75" unit="cl" substance="Maracujasirup"/>
-		</recipe>
-	</drink>
-
-
-
-	<drink>
-		<name>Alexander (Gin)</name>
-		<teaser>Gin, Creme de Cacaco, Sahne, Muskatnuss</teaser>
-		<image>{8AFFEC5A-A659-460F-8BE4-438C1F17F638}</image>
-	</drink>
-
-	<drink>
-		<name>Bellevue</name>
-		<teaser>Rum, Cointreau, Limettensirup, Creme of Coconut, Ananassaft</teaser>
-		<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
-	</drink>
-
-	<drink>
-		<name>Long Island Iced Tea</name>
-		<teaser>Limettensaft, Vodka, Gin, Tequilla, Rum, Triple Sec, Cola</teaser>
-		<image>{37944174-35CE-4895-B9F2-A2DF02749857}</image>
-	</drink>
-
-	<drink>
-		<name>Gin &amp; Tonic</name>
-		<teaser>Gin, Tonic Water</teaser>
-		<image>{18EF0752-8D39-4A58-9D93-FC99BA35AF5E}</image>
-	</drink>
-	<drink>
-		<name>Kahluha Kiss</name>
-		<teaser>Amaretto, Baileys, Kahluha, Creme of Coconut</teaser>
-		<image>{C001A4F2-EFEC-4E30-B57F-FCC50F63E023}</image>
-	</drink>
-
-
-
-	<drink>
-		<name>Pina Colada</name>
-		<teaser>Rum, Sahne, Creme of Coconut, Ananassaft</teaser>
-		<image>{A065DC95-1DD9-4CCB-A9F6-3336AB835236}</image>
-	</drink>
-	<drink>
-		<name>Prince</name>
-		<teaser>Tequilla, Vanillelikör, Creme of Coconut, Sahne, Maracujasaft</teaser>
-		<image>{5C12D764-FE88-48BA-A4BD-9FDF0945EEAB}</image>
-	</drink>
-	<drink>
-		<name>Rosa Lady</name>
-		<teaser>Wodka, Vanillelikör, Bananenlikör, Sahne, Maracujasaft, Ananassaft</teaser>
-		<image>{871629C3-362F-4565-9AB8-02DE0452D06C}</image>
-	</drink>
-
 
 </drinks>
