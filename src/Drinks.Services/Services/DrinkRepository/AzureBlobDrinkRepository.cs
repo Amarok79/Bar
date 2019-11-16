@@ -101,11 +101,20 @@ namespace Drinks.Services.DrinkRepository
 				if (recipeNode != null)
 				{
 					var ingredients = recipeNode.Elements("ingredient")
-						.Select(x => new Ingredient(
-							Double.Parse(x.Attribute("amount").Value, CultureInfo.InvariantCulture),
-							x.Attribute("unit").Value,
-							x.Attribute("substance").Value
-						))
+						.Select(x =>
+						{
+							var amount = x.Attribute("amount")?.Value;
+							var unit = x.Attribute("unit")?.Value;
+							var substance = x.Attribute("substance").Value;
+
+							if (amount == null && unit == null)
+								return new Ingredient(substance);
+							else
+								return new Ingredient(
+									Double.Parse(amount, CultureInfo.InvariantCulture),
+									unit,
+									substance);
+						})
 						.ToList();
 
 					drink.SetRecipe(new Recipe(ingredients));
