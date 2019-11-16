@@ -53,7 +53,6 @@ namespace Drinks.Viewer.Home
 		{
 			App.Current.Container.BuildUp(typeof(HomePage), this);
 
-			base.NavigationCacheMode = NavigationCacheMode.Required;
 			this.DataContext = new UiHomePage();
 
 			this.InitializeComponent();
