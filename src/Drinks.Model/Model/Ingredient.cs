@@ -36,7 +36,7 @@ namespace Drinks.Model
 		/// <summary>
 		/// Gets the amount of the ingredient, e.g. "5".
 		/// </summary>
-		public Double Amount { get; }
+		public Double? Amount { get; }
 
 		/// <summary>
 		/// Gets the unit used for the amount of the ingredient, e.g. "cl".
@@ -63,6 +63,18 @@ namespace Drinks.Model
 			this.Substance = substance;
 		}
 
+		/// <summary>
+		/// Initializes a new instance.
+		/// </summary>
+		public Ingredient(String substance)
+		{
+			Verify.NotEmpty(substance, nameof(substance));
+
+			this.Amount = null;
+			this.Unit = null;
+			this.Substance = substance;
+		}
+
 
 		/// <summary>
 		/// Returns a string that represents the current instance.
@@ -72,7 +84,10 @@ namespace Drinks.Model
 		/// A string that represents the current instance.</returns>
 		public override String ToString()
 		{
-			return $"{Amount} {Unit} {Substance}";
+			if (Amount.HasValue)
+				return $"{Amount} {Unit} {Substance}";
+			else
+				return Substance;
 		}
 	}
 }

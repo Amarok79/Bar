@@ -46,5 +46,21 @@ namespace Drinks.Model
 			Check.That(ing.ToString())
 				.IsEqualTo("5 cl Light Rum");
 		}
+
+		[Test]
+		public void Construction_WithoutAmountAndUnit()
+		{
+			var ing = new Ingredient("Muskatnuss");
+
+			Check.That(ing.Amount)
+				.IsEqualTo(null);
+			Check.That(ing.Unit)
+				.IsEqualTo(null);
+			Check.That(ing.Substance)
+				.IsEqualTo("Muskatnuss");
+
+			Check.That(ing.ToString())
+				.IsEqualTo("Muskatnuss");
+		}
 	}
 }
