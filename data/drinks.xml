@@ -82,7 +82,20 @@
 		</recipe>
 	</drink>
 
-
+	<drink>
+		<name>Averna Sour</name>
+		<teaser>Zitronensaft, Averna, Zuckersirup, Orangensaft</teaser>
+		<image>{521394D8-A663-44AA-9385-4C626BD8586B}</image>
+		<description>
+			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem Grundprinzip Spirituose + Süßungsmittel + saurer Zitrussaft aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. Die bekanntesten Sours, die die Gattungsbezeichnung auch im Namen tragen, sind Whiskey Sour, Pisco Sour und Amaretto Sour.
+		</description>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
+			<ingredient amount="5" unit="cl" substance="Averna"/>
+			<ingredient amount="1" unit="cl" substance="Zuckersirup"/>
+			<ingredient amount="2" unit="cl" substance="Orangensaft"/>
+		</recipe>
+	</drink>
 
 	<drink>
 		<name>B52</name>
