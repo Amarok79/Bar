@@ -34,8 +34,12 @@ namespace Drinks.Viewer.Converter
 	{
 		public Object Convert(Object value, Type targetType, Object parameter, String language)
 		{
-			var doubleValue = (Double)value;
-			return doubleValue.ToString(CultureInfo.CurrentCulture);
+			var doubleValue = (Double?)value;
+
+			if (doubleValue.HasValue)
+				return doubleValue.Value.ToString(CultureInfo.CurrentCulture);
+			else
+				return String.Empty;
 		}
 
 		public Object ConvertBack(Object value, Type targetType, Object parameter, String language)

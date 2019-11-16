@@ -51,7 +51,7 @@ namespace Drinks.Viewer.DrinkDetail
 		}
 
 
-		public Double Amount => this.Ingredient.Amount;
+		public Double? Amount => this.Ingredient.Amount;
 
 		public String Unit => this.Ingredient.Unit;
 
