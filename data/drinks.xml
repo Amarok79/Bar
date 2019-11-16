@@ -88,9 +88,11 @@
 			Der B52 wurde der Legende nach im berühmten Alice's Restaurant in Malibu (Kalifornien) kreiert. Der Name bezieht sich auf den US-Langstreckenbomber Boeing B-52. Dieser Bomber wurde unter anderem im Vietnamkrieg zum Abwurf von Brandbomben verwendet. Gerüchteweise entstand in Anlehnung daran die heute gängige flambierte Variante des Cocktails.
 
 			Getrunken wird der B52 von unten weg mit einem Trinkhalm, wobei der Grand Marnier vom Barkeeper kurz vorher entzündet wird. Da der Trinkhalm nicht hitzebeständig ist, muss der Cocktail möglichst schnell getrunken werden.
+
+			(Wikipedia)
 		</description>
 		<recipe>
-			<ingredient amount="2" unit="cl" substance="Kahlua"/>
+			<ingredient amount="2" unit="cl" substance="Kahlua Kaffeelikör"/>
 			<ingredient amount="2" unit="cl" substance="Baileys"/>
 			<ingredient amount="2" unit="cl" substance="Grand Manier"/>
 		</recipe>
