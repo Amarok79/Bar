@@ -280,14 +280,31 @@
 			<ingredient substance="  • Fever Tree Mediterranean"/>
 			<ingredient substance="  • 1724"/>
 			<ingredient substance="  • Schweppes Premium"/>
-			<ingredient substance="  • Gents"/>
+			<ingredient substance="  • Gents Swiss Roots"/>
 		</recipe>
 	</drink>
 
 	<drink>
 		<name>Long Island Iced Tea</name>
-		<teaser>Limettensaft, Vodka, Gin, Tequilla, Rum, Triple Sec, Cola</teaser>
+		<teaser>Vodka, Gin, Tequilla, Rum, Triple Sec, Limettensaft, Cola</teaser>
 		<image>{37944174-35CE-4895-B9F2-A2DF02749857}</image>
+		<description>
+			Der Long Island Iced Tea ist ein weit verbreiteter Cocktail auf Basis mehrerer hochprozentiger Spirituosen. Obwohl sein Name dies andeutet, enthält er keinen Tee, sieht aber wegen der enthaltenen Cola wie Eistee aus. Wegen seines Alkoholvolumens zählt der Drink zu den Longdrinks.
+
+			Es gibt zahlreiche Legenden zum Ursprung des Cocktails. So soll er zur Zeit der Alkoholprohibition in den USA (1919–1932) entstanden sein, da Aussehen und Name über seinen recht beträchtlichen Alkoholgehalt hinwegtäuschten. Anderen Versionen zufolge soll er von einer reichen, gelangweilten Hausfrau auf Long Island im US-Bundesstaat New York erfunden worden sein. Diese habe beim heimlichen Griff in die Hausbar von jeder Flasche nur eine geringe Menge entnommen, da ihr Mann davon nichts bemerken sollte. Zur Tarnung habe sie den Drink mit Cola aufgefüllt. Auch von Studenten, die sich mit jeweils kleinen Mengen aus den Flaschen ihrer Eltern bedienten, wird erzählt.
+
+			(Wikipedia)
+		</description>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
+			<ingredient amount="1.5" unit="cl" substance="Wodka"/>
+			<ingredient amount="1.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+			<ingredient amount="2" unit="cl" substance="Sierra Milenario Blanco Tequila"/>
+			<ingredient amount="1.5" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
+			<ingredient amount="2" unit="cl" substance="Cointreau"/>
+			<ingredient amount="1.5" unit="cl" substance="Zuckersirup 2:1"/>
+			<ingredient substance="Coca Cola, Original Taste"/>
+		</recipe>
 	</drink>
 
 	<drink>
