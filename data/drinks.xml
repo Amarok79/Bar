@@ -22,7 +22,7 @@
 
 	<drink>
 		<name>Amaretto Sour</name>
-		<teaser>Zitronensaft, Amaretto, Limettensirup, Orangensaft</teaser>
+		<teaser>Amaretto, Zitronensaft, Limettensirup, Orangensaft</teaser>
 		<image>{AB485B95-363F-4365-8FCD-1E2F7BF3BF7C}</image>
 		<description>
 			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem Grundprinzip Spirituose + Süßungsmittel + saurer Zitrussaft aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. Die bekanntesten Sours, die die Gattungsbezeichnung auch im Namen tragen, sind Whiskey Sour, Pisco Sour und Amaretto Sour.
@@ -61,7 +61,7 @@
 
 	<drink>
 		<name>Averna Sour</name>
-		<teaser>Zitronensaft, Averna, Zuckersirup, Orangensaft</teaser>
+		<teaser>Averna, Zitronensaft, Orangensaft</teaser>
 		<image>{521394D8-A663-44AA-9385-4C626BD8586B}</image>
 		<description>
 			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem Grundprinzip Spirituose + Süßungsmittel + saurer Zitrussaft aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. Die bekanntesten Sours, die die Gattungsbezeichnung auch im Namen tragen, sind Whiskey Sour, Pisco Sour und Amaretto Sour.
@@ -100,7 +100,7 @@
 
 	<drink>
 		<name>Batida de Maracuja</name>
-		<teaser>Passionsfrucht, Cachaça, Kokosmilch</teaser>
+		<teaser>Cachaça, Passionsfrucht, Kokosmilch</teaser>
 		<image>{013A08A2-8958-4287-9AE1-759431D6F57B}</image>
 		<description>
 			Batida ist die portugiesisch-brasilianische Bezeichnung für eine Gruppe von alkoholischen Cocktails. Das Wort leitet sich von Portugiesisch „bater“ (schlagen) ab. Ein Batida besteht immer aus Cachaça (weißem Zuckerrohrschnaps), Fruchtsaft oder Fruchtmark, Rohrzucker und meist auch etwas Wasser.
