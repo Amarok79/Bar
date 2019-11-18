@@ -223,6 +223,8 @@
 			Der Name soll entstanden sein, als nach Ende des Spanisch-Amerikanischen Krieges US-amerikanische Soldaten mit der Kombination aus Coca-Cola, Rum und Limettensaft auf die Befreiung Kubas von der spanischen Kolonialherrschaft anstießen (Viva Cuba libre, zu dt.: „Es lebe das freie Kuba“).
 
 			Wie bei nahezu jedem Cocktail gibt es auch beim Cuba Libre viele verschiedene und anerkannte Varianten (Art des Rums, Marke der Cola, mit und ohne Limettensaft). Klassischerweise wird Coca-Cola und ein weißer kubanischer Rum verwendet. Eine andere Version dieses Longdrinks ist der so genannte Cubata, der mit braunem anstatt mit weißem Rum gemixt wird.
+
+			(Wikipedia)
 		</description>
 		<recipe>
 			<ingredient amount="1" unit="" substance="Limette"/>
@@ -233,12 +235,14 @@
 
 	<drink>
 		<name>Dark &amp; Stormy</name>
-		<teaser>Limettensaft, Rum, Ginger Beer</teaser>
+		<teaser>Rum, Ginger Beer, Limettensaft</teaser>
 		<image>{9009BC99-9427-4940-BCA2-B6CDA4151DA7}</image>
 		<description>
 			Der erste Dark and Stormy soll einer Legende nach an der Bar des Royal Bermuda Yacht Club in Hamilton gemixt worden sein, wo man Gosling’s Rum mit etwas Sodawasser aufzuspritzen pflegte. Eines Tages habe ein Barkeeper versehentlich Ginger Beer gezapft und erst nachträglich den dunkelbraun gefärbten Rum darüber gegeben, worauf ein Segler an der Theke anmerkte, unter einer so dunklen und stürmischen Wolke würde doch niemand, der bei Trost sei, segeln wollen. Damit hatte die neue Mixtur ihren Namen und wurde angeblich bald zum Lieblingsgetränk britischer Seeleute auf den Bermuda-Inseln.
 
 			Ginger Beer (engl. für Ingwerbier) ist ein kohlensäurehaltiges, meist alkoholfreies Erfrischungsgetränk mit kräftigem Ingwergeschmack. Der Softdrink Ginger Beer ähnelt insoweit dem Ginger Ale, enthält jedoch mehr Ingwer und schmeckt darum intensiver, würziger und schärfer und enthält oft zusätzlich Zitrussäfte. Oft ist Ginger Beer, im Gegensatz zu Ginger Ale, auch trüb. Anders als der Name vermuten lässt, handelt es sich bei Ginger Beer nicht um Bier, sondern meist um Limonaden.
+
+			(Wikipedia)
 		</description>
 		<recipe>
 			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
