@@ -148,7 +148,7 @@
 
 	<drink>
 		<name>Caipirinha</name>
-		<teaser>Limette, Rohrzucker, Cachaça</teaser>
+		<teaser>Cachaça, Limette, Rohrzucker</teaser>
 		<image>{A6652EC4-99C8-4A96-B5DC-10831E208217}</image>
 		<description>
 			Caipirinha ist ein aus Brasilien stammender Cocktail, der mittlerweile weltweit verbreitet ist. Er wird auch – in Anlehnung an die portugiesische weibliche Form (a caipirinha) – als die Caipirinha bezeichnet. Im deutschen Sprachraum ist auch die Kurzbezeichnung (der) Caipi verbreitet.
@@ -160,13 +160,13 @@
 		<recipe>
 			<ingredient amount="1" unit="" substance="Limette"/>
 			<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
-			<ingredient amount="6" unit="cl" substance="Cachaça"/>
+			<ingredient amount="6" unit="cl" substance="Germana da Palha Premium Cachaca"/>
 		</recipe>
 	</drink>
 
 	<drink>
 		<name>Caipirinha &amp; Passion</name>
-		<teaser>Limette, Rohrzucker, Cachaça, Passionsfrucht</teaser>
+		<teaser>Cachaça, Limette, Passionsfrucht, Rohrzucker</teaser>
 		<image>{ECEB76C2-C992-4054-99AC-F6384404F90B}</image>
 		<description>
 			Dies ist eine Abwandlung des Caipirinha unter Zugabe von Passionsfrucht.
@@ -181,8 +181,8 @@
 			<ingredient amount="1" unit="" substance="Passionsfrucht"/>
 			<ingredient amount="1" unit="" substance="Limette"/>
 			<ingredient amount="1" unit="BL" substance="Weißer Rohrzucker"/>
-			<ingredient amount="1.5" unit="cl" substance="Maracujarnektar"/>
-			<ingredient amount="6" unit="cl" substance="Cachaça"/>
+			<ingredient amount="1.5" unit="cl" substance="Maracuja Fruchtpüree"/>
+			<ingredient amount="6" unit="cl" substance="Germana da Palha Premium Cachaca"/>
 		</recipe>
 	</drink>
 
