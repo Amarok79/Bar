@@ -110,7 +110,7 @@
 		<recipe>
 			<ingredient amount="1" unit="" substance="Passionsfrucht"/>
 			<ingredient amount="5" unit="cl" substance="Germana da Palha Premium Cachaca"/>
-			<ingredient amount="2" unit="cl" substance="Maracujanektar"/>
+			<ingredient amount="2" unit="cl" substance="Maracuja Fruchtpüree"/>
 			<ingredient amount="8" unit="cl" substance="Kokosmilch"/>
 		</recipe>
 	</drink>
@@ -133,15 +133,15 @@
 
 	<drink>
 		<name>Bramble</name>
-		<teaser>Zitronensaft, Gin, Brombeerlikör</teaser>
+		<teaser>Gin, Zitronensaft, Brombeerlikör</teaser>
 		<image>{41E7903D-086C-4E4B-A4BA-869248A2DB25}</image>
 		<description>
 			Der Bramble (Englisch für Brombeere) ist ein Cocktail aus Gin, Zitronensaft, Zuckersirup und dem namensgebenden Brombeerlikör. Er wird auf Eiswürfeln geschüttelt und dann in einem Old-Fashioned-Glas auf Crushed Ice (zerstoßenem Eis) serviert, dekoriert mit einer Zitronenscheibe und einer frischen Brombeere.
 		</description>
 		<recipe>
-			<ingredient amount="3" unit="cl" substance="Zitronensaft"/>
-			<ingredient amount="4.5" unit="cl" substance="Gin"/>
-			<ingredient amount="1.5" unit="cl" substance="Läuterzucker"/>
+			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
+			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+			<ingredient amount="1.5" unit="cl" substance="Zuckersirup 2:1"/>
 			<ingredient amount="2" unit="BL" substance="Brombeerlikör"/>
 		</recipe>
 	</drink>
