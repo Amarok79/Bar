@@ -317,6 +317,8 @@
 			Der Mai Tai ist einer der klassischen Tiki-Drinks, zu denen auch der Zombie gehört. Typisch für die Tiki-Ära war, dass die Barkeeper ihre Rezepte als ihr „Kapital“ ansahen und daher nicht verrieten oder veröffentlichten. Dementsprechend hielt sich auch Bergeron mit der Veröffentlichung des Mai-Tai-Rezeptes lange zurück.
 
 			Orgeat ist ein Sirup mit Mandelgeschmack, der oft mit Orangenblütenwasser oder Rosenwasser verfeinert wird. Er findet vor allem an der Bar für die Zubereitung von Cocktails Verwendung. Der Sirup geht geschmacklich in Richtung Marzipan und ist milchig-trüb.
+
+			(Wikipedia)
 		</description>
 		<recipe>
 			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
@@ -330,18 +332,20 @@
 
 	<drink>
 		<name>Mojito</name>
-		<teaser>Limettensaft, Weißer Rum, Minze, Soda</teaser>
+		<teaser>Weißer Rum, Limettensaft, Minze, Soda</teaser>
 		<image>{A1863D10-D675-4A35-8E0D-AF26115A24D9}</image>
 		<description>
 			Der Mojito ist ein ursprünglich kubanischer Drink, über die Entstehung seines Namens kursieren jedoch verschiedene Erklärungen. Einer zufolge soll die Bezeichnung vom westafrikanischen Wort mojo abgeleitet sein, einem Stoffbeutel mit magischen Gewürzen und Zaubergegenständen. Die verniedlichende Form dieses Lehnwortes würde mojito folglich „kleiner Zauber“ bedeuten.
 
 			Der Mojito geht auf eine lange Tradition von Rum-Getränken in der Karibik zurück. So soll bereits im 16. Jahrhundert der britische Freibeuter Francis Drake ein Getränk aus Zucker, echten Limetten, Aguardiente de Caña (ein einfacher Zuckerrohrschnaps) und Minze gegen seine Magenbeschwerden konsumiert haben. Von den Spaniern wurde Drake gefürchtet und erhielt den Spitznamen „El Draque“ (span. der Drache) und so nannte man auch das Getränk, das später mit Rum gemischt wurde, als sich dessen Herstellung in der Karibik verbreitete.
+
+			(Wikipedia)
 		</description>
 		<recipe>
-			<ingredient amount="5" unit="" substance="Minzzweige"/>
-			<ingredient amount="3" unit="cl" substance="Limettensaft"/>
+			<ingredient substance="Minzzweige"/>
+			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
 			<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
-			<ingredient amount="6" unit="cl" substance="Weißer Rum"/>
+			<ingredient amount="6" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
 			<ingredient amount="3" unit="cl" substance="Soda"/>
 		</recipe>
 	</drink>
