@@ -217,7 +217,7 @@
 
 	<drink>
 		<name>Cuba Libre</name>
-		<teaser>Limette, Rum, Coca Cola</teaser>
+		<teaser>Rum, Limette, Coca Cola</teaser>
 		<image>{021F9377-6B6D-4C77-9273-44A9D8DD23B9}</image>
 		<description>
 			Der Name soll entstanden sein, als nach Ende des Spanisch-Amerikanischen Krieges US-amerikanische Soldaten mit der Kombination aus Coca-Cola, Rum und Limettensaft auf die Befreiung Kubas von der spanischen Kolonialherrschaft anstießen (Viva Cuba libre, zu dt.: „Es lebe das freie Kuba“).
@@ -226,8 +226,8 @@
 		</description>
 		<recipe>
 			<ingredient amount="1" unit="" substance="Limette"/>
-			<ingredient amount="5" unit="cl" substance="Rum"/>
-			<ingredient amount="10" unit="cl" substance="Coca Cola"/>
+			<ingredient amount="5" unit="cl" substance="Santiago de Cuba Anejo Rum"/>
+			<ingredient amount="10" unit="cl" substance="Coca Cola, Original Taste"/>
 		</recipe>
 	</drink>
 
