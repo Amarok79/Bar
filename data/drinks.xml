@@ -255,6 +255,33 @@
 		<name>Gin &amp; Tonic</name>
 		<teaser>Gin, Tonic Water</teaser>
 		<image>{18EF0752-8D39-4A58-9D93-FC99BA35AF5E}</image>
+		<description>
+			Gin Tonic (engl. gin and tonic) ist ein klassischer Longdrink aus Gin und Tonic Water. Das Mischverhältnis variiert je nach Geschmack von 1:1 bis 1:3 oder höher.
+
+			Der Gin Tonic kommt wahrscheinlich aus dem British Empire, als in Indien zum Schutz vor Malaria das chininhaltige, damals sehr bittere Indian Tonic Water getrunken wurde, welches zugefügter Gin geschmacklich verbesserte.
+
+			Unter ultraviolettem Licht („Schwarzlicht“) fluoresziert Gin Tonic wegen des Chiningehalts im Tonic Water leicht bläulich.
+
+			(Wikipedia)
+		</description>
+		<recipe>
+			<ingredient amount="5" unit="cl" substance="Gin"/>
+			<ingredient substance="  • Aeijst Styrian Pale London Dry Gin"/>
+			<ingredient substance="  • The STIN Styrian Dry Gin"/>
+			<ingredient substance="  • Burleigh's London Dry Gin"/>
+			<ingredient substance="  • The Duke Munich Dry Gin"/>
+			<ingredient substance="  • HOLY Gin Marille"/>
+			<ingredient amount="20" unit="cl" substance="Tonic Water"/>
+			<ingredient substance="  • Le Tribute"/>
+			<ingredient substance="  • Thomas Henry"/>
+			<ingredient substance="  • Thomas Henry Elderflower"/>
+			<ingredient substance="  • Fentimans Premium Indian"/>
+			<ingredient substance="  • Fever Tree Premium Indian"/>
+			<ingredient substance="  • Fever Tree Mediterranean"/>
+			<ingredient substance="  • 1724"/>
+			<ingredient substance="  • Schweppes Premium"/>
+			<ingredient substance="  • Gents"/>
+		</recipe>
 	</drink>
 
 	<drink>
