@@ -119,6 +119,16 @@
 		<name>Bellevue</name>
 		<teaser>Rum, Cointreau, Limettensirup, Creme of Coconut, Ananassaft</teaser>
 		<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
+		<description>
+			Ein süßer und cremiger Cocktail der nach Kokosnuss und Ananas schmeckt. Freunde von Pina Coladas werden den Bellevue ebenfalls mögen.
+		</description>
+		<recipe>
+			<ingredient amount="4" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
+			<ingredient amount="2" unit="cl" substance="Cointreau"/>
+			<ingredient amount="1" unit="cl" substance="Limettensirup"/>
+			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
+			<ingredient amount="6" unit="cl" substance="Ananassaft"/>
+		</recipe>
 	</drink>
 
 	<drink>
