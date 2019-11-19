@@ -414,6 +414,16 @@
 		<name>Prince</name>
 		<teaser>Tequilla, Vanillelikör, Creme of Coconut, Sahne, Maracujasaft</teaser>
 		<image>{5C12D764-FE88-48BA-A4BD-9FDF0945EEAB}</image>
+		<description>
+			Ein süßer-cremiger Cocktail mit feinem Vanille- und Maracujageschmack.
+		</description>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Sierra Milenario Blanco Tequila"/>
+			<ingredient amount="2" unit="cl" substance="Likör 43"/>
+			<ingredient amount="2" unit="cl" substance="Sahne"/>
+			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
+			<ingredient amount="10" unit="cl" substance="Maracujasaft"/>
+		</recipe>
 	</drink>
 
 	<drink>
