@@ -378,13 +378,15 @@
 			Ein Old Fashioned (von englisch old-fashioned für altmodisch, althergebracht) ist einer der wichtigsten klassischen Cocktails. Im 19. Jahrhundert zunächst als Whiskey Cocktail, später Old Fashioned Whiskey Cocktail, bezeichnet, entspricht der Shortdrink noch heute weitgehend der Urform eines „Cocktails“ in seiner ursprünglichen Definition, besteht also aus einer Spirituose, Zucker, Wasser bzw. Eis sowie Cocktailbitter.
 
 			Serviert werden Old Fashioneds meist in einem kleinen Becherglas, das auch Old-Fashioned-Glas genannt wird.
+
+			(Wikipedia)
 		</description>
 		<recipe>
 			<ingredient amount="1" unit="" substance="Zuckerwürfel"/>
-			<ingredient amount="2" unit="dash" substance="Angostura Bitter"/>
-			<ingredient amount="2" unit="dash" substance="Orange Bitter"/>
 			<ingredient amount="1" unit="BL" substance="Soda"/>
-			<ingredient amount="6" unit="cl" substance="Bourbon Whiskey"/>
+			<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
+			<ingredient amount="1" unit="dash" substance="The Bitter Truth Orange Bitter"/>
+			<ingredient amount="6" unit="cl" substance="Four Roses Single Barrel Bourbon Whiskey"/>
 		</recipe>
 	</drink>
 
