@@ -449,6 +449,19 @@
 		<name>Rosa Lady</name>
 		<teaser>Wodka, Vanillelikör, Bananenlikör, Sahne, Maracujasaft, Ananassaft</teaser>
 		<image>{871629C3-362F-4565-9AB8-02DE0452D06C}</image>
+		<description>
+			Ein süß-cremiger Cocktail, der bei seiner rosa Farbe geschmacklich automatisch an Erdbeere erinnert, obwohl Bananennektar enthalten ist.
+		</description>
+		<recipe>
+			<ingredient amount="2" unit="cl" substance="Wodka"/>
+			<ingredient amount="4" unit="cl" substance="Likör 43"/>
+			<ingredient amount="2" unit="cl" substance="Bananensirup"/>
+			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
+			<ingredient amount="2" unit="cl" substance="Sahne"/>
+			<ingredient amount="8" unit="cl" substance="Maracujasirup"/>
+			<ingredient amount="4" unit="cl" substance="Ananassaft"/>
+			<ingredient amount="1" unit="cl" substance="Grenadine"/>
+		</recipe>
 	</drink>
 
 	<drink>
