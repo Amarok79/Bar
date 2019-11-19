@@ -428,17 +428,19 @@
 
 	<drink>
 		<name>Ramazotti Sour</name>
-		<teaser>Zitronensaft, Ramazotti, Limettensirup, Orangensaft</teaser>
+		<teaser>Ramazotti, Zitronensaft, Limettensirup, Orangensaft</teaser>
 		<image>{643AD007-EC64-4D68-AECF-C62695AA1DE7}</image>
 		<description>
 			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem Grundprinzip Spirituose + Süßungsmittel + saurer Zitrussaft aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. Die bekanntesten Sours, die die Gattungsbezeichnung auch im Namen tragen, sind Whiskey Sour, Pisco Sour und Amaretto Sour.
 
 			Das Herstellungsverfahren von Ramazotti ist das gleiche wie 1815. Die Rezeptur umfasst 33 Kräuter und Pflanzen, unter anderem süße und bittere Orangenschalen, Chinarinde, Engelwurz, Kaiserwurz, Rosenblüten, Vanille und Sternanis. Diese werden extrahiert und pulverisiert. Dann werden Zucker, Alkohol und weitere Zutaten hinzugefügt. Die entstandene Flüssigkeit wird anschließend filtriert.
+
+			(Wikipedia)
 		</description>
 		<recipe>
-			<ingredient amount="3" unit="cl" substance="Zitronensaft"/>
+			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
 			<ingredient amount="4.5" unit="cl" substance="Ramazotti"/>
-			<ingredient amount="1.5" unit="cl" substance="Läuterzucker"/>
+			<ingredient amount="1.5" unit="cl" substance="Zuckersirup 2:1"/>
 			<ingredient amount="3" unit="cl" substance="Orangensaft"/>
 		</recipe>
 	</drink>
