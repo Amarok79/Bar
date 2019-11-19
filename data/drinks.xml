@@ -394,6 +394,20 @@
 		<name>Pina Colada</name>
 		<teaser>Rum, Sahne, Creme of Coconut, Ananassaft</teaser>
 		<image>{A065DC95-1DD9-4CCB-A9F6-3336AB835236}</image>
+		<description>
+			Die Piña Colada (von span. piña ‚Ananas‘ und colar ‚durchsieben‘) ist ein süßer, cremiger Cocktail aus Rum, Kokosnusscreme und Ananassaft. Sie ist namensgebend für eine ganze Gruppe von Cocktails, den Coladas. Die Piña Colada wurde in den 1950er Jahren populär und gehört zu den weltweit bekanntesten Cocktails.
+
+			Die Piña Colada wird zu den einflussreichsten Cocktails gezählt und hat, ähnlich wie der Martini, wenn auch in völlig entgegengesetzter Hinsicht, Bedeutung weit über die Bar hinaus erlangt. Eine Piña Colada symbolisiert Urlaub, Strand, Sonne, ein tropisches Lebensgefühl und die Karibik schlechthin. Am 17. Juli 1978 erklärte Gouverneur Rafael Hernández Colón die Piña Colada zum Nationalgetränk von Puerto Rico.
+
+			(Wikipedia)
+		</description>
+		<recipe>
+			<ingredient amount="5" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
+			<ingredient amount="2" unit="cl" substance="Baileys"/>
+			<ingredient amount="2" unit="cl" substance="Sahne"/>
+			<ingredient amount="4" unit="cl" substance="Creme of Coconut"/>
+			<ingredient amount="8" unit="cl" substance="Ananassaft"/>
+		</recipe>
 	</drink>
 
 	<drink>
