@@ -474,7 +474,7 @@
 		<recipe>
 			<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
 			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-			<ingredient amount="0.75" unit="cl" substance="Falernum (Velvet)"/>
+			<ingredient amount="0.75" unit="cl" substance="Taylor's Velvet Falernum"/>
 			<ingredient amount="0.75" unit="cl" substance="Orgeat (selbstgemacht)"/>
 			<ingredient amount="0.75" unit="cl" substance="Maracujasirup"/>
 		</recipe>
@@ -507,7 +507,7 @@
 
 	<drink>
 		<name>Zombie</name>
-		<teaser>Limettensaft, Falernum, Maraschino, Rum, Rum, Rum</teaser>
+		<teaser>Rum, Limettensaft, Falernum, Maraschino</teaser>
 		<image>{D34B1939-F5D4-497B-A6DD-AF839308E285}</image>
 		<description>
 			Der Zombie (ursprünglich auch Zombie Punch) ist ein sehr starker Cocktail aus Rum und Fruchtsäften, der nach seiner Wirkung auf den Konsumenten benannt wurde und zu den bekanntesten Tiki-Drinks zählt.
@@ -517,19 +517,21 @@
 			Angeblich mixte er ihn im Jahr 1934 eines Nachmittags für einen verkaterten Freund, der vor seinem Abflug nach San Francisco in diesem Restaurant vorbeischaute. Nachdem er drei Zombies zu sich genommen hatte, ging er wieder. Als er mehrere Tage später zurückkam, sagte er, er habe sich während des ganzen Flugs wie ein Untoter gefühlt, daher der Name Zombie.
 
 			Aufgrund des hohen Alkoholgehaltes beschränkte das Don the Beachcomber den Ausschank seines Zombie Drinks jahrelang auf zwei Stück pro Gast.
+
+			(Wikipedia)
 		</description>
 		<recipe>
-			<ingredient amount="2.5" unit="cl" substance="Limettensaft"/>
-			<ingredient amount="2" unit="cl" substance="Grapefruchtsaft"/>
-			<ingredient amount="4.5" unit="cl" substance="Rum (Gold)"/>
-			<ingredient amount="4.5" unit="cl" substance="Rum (Dark)"/>
-			<ingredient amount="3" unit="cl" substance="Overproof Rum"/>
-			<ingredient amount="2" unit="cl" substance="Falernum (Velvet)"/>
-			<ingredient amount="2" unit="cl" substance="Falernum (Gold)"/>
+			<ingredient amount="2.5" unit="cl" substance="Frischer Limettensaft"/>
+			<ingredient amount="2" unit="cl" substance="Frischer Grapefruitsaft"/>
+			<ingredient amount="4.5" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
+			<ingredient amount="4.5" unit="cl" substance="Appleton Estate Jamaica Rum"/>
+			<ingredient amount="3" unit="cl" substance="Plantation OFTD Overproof"/>
+			<ingredient amount="2" unit="cl" substance="Taylor's Velvet Falernum"/>
+			<ingredient amount="2" unit="cl" substance="The Bitter Truth Golden Falernum"/>
 			<ingredient amount="2" unit="cl" substance="Maraschino"/>
-			<ingredient amount="1.5" unit="cl" substance="Zimtläuterzucker"/>
+			<ingredient amount="1.5" unit="cl" substance="Zimt-Zuckersirup"/>
 			<ingredient amount="2" unit="dash" substance="Absinth"/>
-			<ingredient amount="2" unit="dash" substance="Bitter"/>
+			<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
 		</recipe>
 	</drink>
 
