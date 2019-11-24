@@ -466,7 +466,7 @@
 
 	<drink>
 		<name>Saturn</name>
-		<teaser>Limettensaft, Gin, Falerum, Orgeat, Passionsfruchtsirup</teaser>
+		<teaser>Gin, Limettensaft, Falerum, Orgeat, Passionsfruchtsirup</teaser>
 		<image>{4A9196C2-8C9C-4850-B777-7C237085D694}</image>
 		<description>
 			Ein Tiki-inspirierter Gin Sour mit Passionsfrucht und Mandel.
@@ -475,7 +475,7 @@
 			<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
 			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
 			<ingredient amount="0.75" unit="cl" substance="Falernum (Velvet)"/>
-			<ingredient amount="0.75" unit="cl" substance="Orgeat"/>
+			<ingredient amount="0.75" unit="cl" substance="Orgeat (selbstgemacht)"/>
 			<ingredient amount="0.75" unit="cl" substance="Maracujasirup"/>
 		</recipe>
 	</drink>
