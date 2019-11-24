@@ -119,7 +119,7 @@
 
 	<drink>
 		<name>Bellevue</name>
-		<teaser>Rum, Cointreau, Limettensirup, Creme of Coconut, Ananassaft</teaser>
+		<teaser>Rum, Cointreau, Creme of Coconut, Ananassaft</teaser>
 		<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
 		<description>
 			Ein süßer und cremiger Cocktail der nach Kokosnuss und Ananas schmeckt. Freunde von Pina Coladas werden den Bellevue ebenfalls mögen.
@@ -271,6 +271,8 @@
 			<ingredient substance="  • Burleigh's London Dry Gin"/>
 			<ingredient substance="  • The Duke Munich Dry Gin"/>
 			<ingredient substance="  • HOLY Gin Marille"/>
+			<ingredient substance="  • See Destillerie Toplitz Gin"/>
+			<ingredient substance="  • See Destillerie Gletscher Gin"/>
 			<ingredient amount="20" unit="cl" substance="Tonic Water"/>
 			<ingredient substance="  • Le Tribute"/>
 			<ingredient substance="  • Thomas Henry"/>
@@ -450,7 +452,7 @@
 		<teaser>Wodka, Vanillelikör, Bananenlikör, Sahne, Maracujasaft, Ananassaft</teaser>
 		<image>{871629C3-362F-4565-9AB8-02DE0452D06C}</image>
 		<description>
-			Ein süß-cremiger Cocktail, der bei seiner rosa Farbe geschmacklich automatisch an Erdbeere erinnert, obwohl Bananennektar enthalten ist.
+			Ein süß-cremiger Cocktail, der bei seiner rosa Farbe geschmacklich automatisch an Erdbeere erinnert, obwohl Bananensirup enthalten ist.
 		</description>
 		<recipe>
 			<ingredient amount="2" unit="cl" substance="Wodka"/>
@@ -466,7 +468,7 @@
 
 	<drink>
 		<name>Saturn</name>
-		<teaser>Gin, Limettensaft, Falerum, Orgeat, Passionsfruchtsirup</teaser>
+		<teaser>Gin, Limettensaft, Falerum, Orgeat, Maracujasirup</teaser>
 		<image>{4A9196C2-8C9C-4850-B777-7C237085D694}</image>
 		<description>
 			Ein Tiki-inspirierter Gin Sour mit Passionsfrucht und Mandel.
