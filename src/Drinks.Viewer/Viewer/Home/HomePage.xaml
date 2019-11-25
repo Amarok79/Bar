@@ -50,7 +50,7 @@
 		  Background="{StaticResource BarContentBackgroundBrush}">
 
 			<GridView x:Name="DrinksGridView"
-			  Margin="20"
+			  Margin="40"
 			  IsItemClickEnabled="True"
 			  ItemsSource="{Binding Drinks, Mode=OneWay}"
 			  SelectionMode="None">
@@ -100,23 +100,10 @@
 				</GridView.ItemTemplate>
 				<GridView.ItemContainerStyle>
 					<Style TargetType="GridViewItem">
-						<Setter Property="Margin" Value="30" />
+						<Setter Property="Margin" Value="20" />
 					</Style>
 				</GridView.ItemContainerStyle>
 			</GridView>
-
-			<!--  Drink Info Popup  -->
-
-			<Popup x:Name="DrinkInfoPopup">
-				<Border
-				  Background="{StaticResource BarPopupBackgroundBrush}">
-					<Grid>
-						<ContentControl x:Name="DrinkInfoViewHost"
-						  HorizontalAlignment="Center"
-						  VerticalAlignment="Center" />
-					</Grid>
-				</Border>
-			</Popup>
 
 		</Grid>
 

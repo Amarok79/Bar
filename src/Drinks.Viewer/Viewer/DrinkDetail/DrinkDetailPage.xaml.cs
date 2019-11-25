@@ -45,8 +45,15 @@ namespace Drinks.Viewer.DrinkDetail
 		{
 			App.Current.Container.BuildUp(typeof(DrinkDetailPage), this);
 			this.InitializeComponent();
+
+			this.SizeChanged += this.DrinkDetailPage_SizeChanged;
 		}
 
+		private void DrinkDetailPage_SizeChanged(Object sender, SizeChangedEventArgs e)
+		{
+			var width = ContentGrid.ActualHeight / 1.333;
+			ContentGrid.ColumnDefinitions[0].MaxWidth = width;
+		}
 
 		protected override void OnNavigatedTo(NavigationEventArgs e)
 		{
@@ -56,7 +63,6 @@ namespace Drinks.Viewer.DrinkDetail
 				Drink = args.Drink,
 				Image = args.Image
 			};
-
 		}
 
 		private void _HandleBackButtonClick(Object sender, RoutedEventArgs e)

@@ -14,7 +14,10 @@
 		<!--  BRUSHES  -->
 
 		<SolidColorBrush x:Key="BarHeaderBackgroundBrush" Color="#FF121212" />
-		<SolidColorBrush x:Key="BarContentBackgroundBrush" Color="#FF181818" />
+		<LinearGradientBrush x:Key="BarContentBackgroundBrush" StartPoint="0.0,0.0" EndPoint="0.0,1.0">
+			<GradientStop Offset="0.0" Color="#FF181818" />
+			<GradientStop Offset="1.0" Color="#FF080808" />
+		</LinearGradientBrush>
 		<SolidColorBrush x:Key="BarContentBorderBrush" Color="#FF2A2A2A" />
 		<SolidColorBrush x:Key="BarTextBrush" Color="#FFB3B3B3" />
 		<SolidColorBrush x:Key="BarPopupBackgroundBrush" Color="#E0121212" />

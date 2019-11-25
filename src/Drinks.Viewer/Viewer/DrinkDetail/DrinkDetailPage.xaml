@@ -40,12 +40,12 @@
 
 		<!--  Content  -->
 
-		<Grid
+		<Grid x:Name="ContentGrid"
 		  Grid.Row="1"
 		  Background="{StaticResource BarContentBackgroundBrush}">
 			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="2*" />
-				<ColumnDefinition Width="5*" />
+				<ColumnDefinition Width="0.35*" />
+				<ColumnDefinition Width="0.65*" />
 			</Grid.ColumnDefinitions>
 
 			<!--  Image  -->
