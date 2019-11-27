@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="drinks">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" name="drink">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string" />
+							<xs:element name="teaser" type="xs:string" />
+							<xs:element name="image" type="xs:string" />
+							<xs:element name="tags" >
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="((bitter|sour|sweet|salty|umami|fruity|herbal|floral|tropical|exotic|creamy|prickling|strong);?)*"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="description" type="xs:string" />
+							<xs:element name="recipe">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="ingredient">
+											<xs:complexType>
+												<xs:attribute name="amount" type="xs:decimal" use="optional" />
+												<xs:attribute name="unit" type="xs:string" use="optional" />
+												<xs:attribute name="substance" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
