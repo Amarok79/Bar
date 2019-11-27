@@ -23,21 +23,12 @@
 */
 
 using System;
-using System.Collections.ObjectModel;
-using Microsoft.Toolkit.Uwp.UI;
+
 
 namespace Drinks.Viewer.Home
 {
-	public class UiHomePage
+	public class UiDrinkStyle : BindableBase
 	{
-		public String Title => "Die \"KroKo\" Hausbar";
-
-		public ObservableCollection<UiDrink> Drinks { get; } = new ObservableCollection<UiDrink>();
-
-		public AdvancedCollectionView DrinksView { get; } = new AdvancedCollectionView();
-
-		public ObservableCollection<UiDrinkStyle> Styles { get; } = new ObservableCollection<UiDrinkStyle>();
-
-		public UiDrinkStyle SelectedStyle { get; set; }
+		public String Name { get; set; }
 	}
 }

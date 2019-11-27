@@ -53,10 +53,20 @@ namespace Drinks.Viewer.Home
 		{
 			App.Current.Container.BuildUp(typeof(HomePage), this);
 
-			this.DataContext = new UiHomePage();
+			var viewModel = new UiHomePage();
+			_InitializeStyles(viewModel);
+			this.DataContext = viewModel;
 
 			this.InitializeComponent();
 			this.DrinksGridView.ItemClick += _HandleDrinkItemClick;
+		}
+
+		private void _InitializeStyles(UiHomePage viewModel)
+		{
+			viewModel.Styles.Add(new UiDrinkStyle { Name = "Alle" });
+			viewModel.Styles.Add(new UiDrinkStyle { Name = "Sauer & Süß" });
+			viewModel.Styles.Add(new UiDrinkStyle { Name = "Stark" });
+			viewModel.SelectedStyle = viewModel.Styles.FirstOrDefault();
 		}
 
 
@@ -96,6 +106,8 @@ namespace Drinks.Viewer.Home
 					item.IsImageLoading = false;
 				};
 			}
+
+			((UiHomePage)DataContext).DrinksView.Source = ((UiHomePage)DataContext).Drinks.ToList();
 		}
 
 		private void _HandleDrinkItemClick(Object sender, ItemClickEventArgs e)
@@ -111,6 +123,23 @@ namespace Drinks.Viewer.Home
 				new DrinkDetailPageArgs(drink, drinkViewModel.Image),
 				new DrillInNavigationTransitionInfo()
 			);
+		}
+
+		private void ComboBox_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+		{
+			var vm = ((UiHomePage)DataContext);
+
+			if (vm.SelectedStyle.Name == "Alle")
+				vm.DrinksView.Filter = x => true;
+
+			if (vm.SelectedStyle.Name == "Sauer & Süß")
+				vm.DrinksView.Filter = x =>
+				{
+					var drink = (UiDrink)x;
+					return drink.Drink.Tags.Contains("sour");
+				};
+
+			vm.DrinksView.RefreshFilter();
 		}
 	}
 }

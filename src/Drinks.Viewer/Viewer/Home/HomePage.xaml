@@ -25,6 +25,7 @@
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="80" />
 				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="200" />
 			</Grid.ColumnDefinitions>
 
 			<Image
@@ -41,6 +42,17 @@
 			  Grid.Column="1"
 			  Style="{StaticResource BarTitleTextStyle}"
 			  Text="{Binding Title, Mode=OneWay}" />
+
+			<ComboBox
+			  Grid.Column="2"
+			  Margin="20,0,20,0"
+			  HorizontalAlignment="Stretch"
+			  DisplayMemberPath="Name"
+			  IsEditable="False"
+			  ItemsSource="{Binding Styles}"
+			  SelectedItem="{Binding SelectedStyle, Mode=TwoWay}"
+			  SelectionChanged="ComboBox_SelectionChanged">
+			</ComboBox>
 		</Grid>
 
 		<!--  Drinks Collection  -->
@@ -52,7 +64,7 @@
 			<GridView x:Name="DrinksGridView"
 			  Margin="40"
 			  IsItemClickEnabled="True"
-			  ItemsSource="{Binding Drinks, Mode=OneWay}"
+			  ItemsSource="{Binding DrinksView, Mode=OneWay}"
 			  SelectionMode="None">
 				<GridView.ItemTemplate>
 					<DataTemplate x:Name="DrinkTemplate" x:DataType="vm:UiDrink">
