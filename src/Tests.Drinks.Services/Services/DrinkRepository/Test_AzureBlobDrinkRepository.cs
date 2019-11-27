@@ -57,6 +57,8 @@ namespace Drinks.Services.DrinkRepository
 					.Not.IsEmpty();
 				Check.That(drink.Teaser)
 					.Not.IsEmpty();
+				Check.That(drink.Tags)
+					.Not.IsEmpty();
 			}
 		}
 	}

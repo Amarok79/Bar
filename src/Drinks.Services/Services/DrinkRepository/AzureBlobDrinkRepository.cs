@@ -89,12 +89,14 @@ namespace Drinks.Services.DrinkRepository
 				var teaser = drinkNode.Element("teaser").Value;
 				var image = Guid.Parse(drinkNode.Element("image").Value);
 				var desc = drinkNode.Element("description")?.Value;
+				var tags = drinkNode.Element("tags")?.Value;
 
 				var drink = new Drink(new DrinkId(Guid.NewGuid()), new BarId())
 					.SetName(name)
 					.SetTeaser(teaser)
 					.SetImage(new ImageId(image))
-					.SetDescription(_TrimDescription(desc));
+					.SetDescription(_TrimDescription(desc))
+					.SetTags(_SplitAndTrimTags(tags));
 
 				var recipeNode = drinkNode.Element("recipe");
 
@@ -143,6 +145,19 @@ namespace Drinks.Services.DrinkRepository
 			}
 
 			return sb.ToString();
+		}
+
+		private static String[] _SplitAndTrimTags(String text)
+		{
+			if (text == null)
+				return Array.Empty<String>();
+
+			var tags = text
+				.Split(new[] { '|', ';', ',' }, StringSplitOptions.RemoveEmptyEntries)
+				.Select(x => x.Trim())
+				.ToArray();
+
+			return tags;
 		}
 	}
 }
