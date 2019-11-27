@@ -56,13 +56,16 @@ namespace Drinks.Model
 				.IsEqualTo(new ImageId());
 			Check.That(drink.Recipe)
 				.IsNull();
+			Check.That(drink.Tags)
+				.IsEmpty();
 
 			// act
 			drink
 				.SetName("Mai Tai")
 				.SetTeaser("Lime, Orgeat, Rum")
 				.SetDescription("The Mai Tai is a cocktail based on rum...")
-				.SetRecipe(recipe);
+				.SetRecipe(recipe)
+				.SetTags(new[] { "sweet", "exotic" });
 
 			// assert
 			Check.That(drink.Id)
@@ -79,6 +82,8 @@ namespace Drinks.Model
 				.IsEqualTo(new ImageId());
 			Check.That(drink.Recipe)
 				.IsSameReferenceAs(recipe);
+			Check.That(drink.Tags)
+				.ContainsExactly("sweet", "exotic");
 		}
 	}
 }

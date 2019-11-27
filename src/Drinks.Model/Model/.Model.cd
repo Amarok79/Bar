@@ -3,7 +3,7 @@
   <Class Name="Drinks.Model.Drink">
     <Position X="1.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAQAAABAAAAgAAAAAAACCAUAAAAAAAEAAAAAQAAAAgA=</HashCode>
+      <HashCode>AAQAAABEAAAgAAAAAAACCAUAAAAAAEEAAAAAQAAAAgA=</HashCode>
       <FileName>Model\Drink.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

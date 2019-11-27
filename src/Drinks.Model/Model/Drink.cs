@@ -1,4 +1,4 @@
-﻿/* MIT License
+/* MIT License
  * 
  * Copyright (c) 2019, Olaf Kober
  * https://bitbucket.org/Amarok/bar
@@ -23,6 +23,8 @@
 */
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Amarok.Contracts;
 
 
@@ -66,6 +68,11 @@ namespace Drinks.Model
 		/// Gets the Recipe of the Drink.
 		/// </summary>
 		public Recipe Recipe { get; private set; }
+
+		/// <summary>
+		/// Gets a collection of Tags associated with the Drink.
+		/// </summary>
+		public IReadOnlyCollection<String> Tags { get; private set; } = Array.Empty<String>();
 
 
 		/// <summary>
@@ -139,6 +146,19 @@ namespace Drinks.Model
 		{
 			Verify.NotNull(recipe, nameof(recipe));
 			this.Recipe = recipe;
+			return this;
+		}
+
+		/// <summary>
+		/// Sets the Tags of the Drink.
+		/// </summary>
+		/// 
+		/// <param name="tags">
+		/// The tags of the drink. Null is not allowed.</param>
+		public Drink SetTags(IEnumerable<String> tags)
+		{
+			Verify.NotNull(tags, nameof(tags));
+			this.Tags = tags.ToArray();
 			return this;
 		}
 	}
