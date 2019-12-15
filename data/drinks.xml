@@ -282,11 +282,15 @@
 			<ingredient amount="5" unit="cl" substance="Gin"/>
 			<ingredient substance="  • Aeijst Styrian Pale London Dry Gin"/>
 			<ingredient substance="  • The STIN Styrian Dry Gin"/>
+			<ingredient substance="  • The Good Gin"/>
 			<ingredient substance="  • Burleigh's London Dry Gin"/>
 			<ingredient substance="  • The Duke Munich Dry Gin"/>
 			<ingredient substance="  • HOLY Gin Marille"/>
 			<ingredient substance="  • See Destillerie Toplitz Gin"/>
 			<ingredient substance="  • See Destillerie Gletscher Gin"/>
+			<ingredient substance="  • Hayman's Old Tom Gin"/>
+			<ingredient substance="  • Beefeater 24 London Dry Gin"/>
+			<ingredient substance="  • Plymouth Dry Gin"/>
 			<ingredient amount="20" unit="cl" substance="Tonic Water"/>
 			<ingredient substance="  • Le Tribute"/>
 			<ingredient substance="  • Thomas Henry"/>
@@ -297,6 +301,7 @@
 			<ingredient substance="  • 1724"/>
 			<ingredient substance="  • Schweppes Premium"/>
 			<ingredient substance="  • Gents Swiss Roots"/>
+			<ingredient substance="  • Golden Monaco Extra Dry"/>
 		</recipe>
 	</drink>
 
