@@ -26,6 +26,7 @@ using System;
 using System.Collections.ObjectModel;
 using Microsoft.Toolkit.Uwp.UI;
 
+
 namespace Drinks.Viewer.Home
 {
 	public class UiHomePage

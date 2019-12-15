@@ -48,6 +48,8 @@ namespace Drinks.Viewer.Home
 		[Dependency]
 		public IImageRepository ImageRepository { get; set; }
 
+		public UiHomePage ViewModel => (UiHomePage)this.DataContext;
+
 
 		public HomePage()
 		{
@@ -58,14 +60,16 @@ namespace Drinks.Viewer.Home
 			this.DataContext = viewModel;
 
 			this.InitializeComponent();
-			this.DrinksGridView.ItemClick += _HandleDrinkItemClick;
 		}
 
 		private void _InitializeStyles(UiHomePage viewModel)
 		{
-			viewModel.Styles.Add(new UiDrinkStyle { Name = "Alle" });
-			viewModel.Styles.Add(new UiDrinkStyle { Name = "Sauer & Süß" });
-			viewModel.Styles.Add(new UiDrinkStyle { Name = "Stark" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "ALL", Name = "Alle" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "SOUR", Name = "Sauer-Süß" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "BITTER", Name = "Bitter-Süß" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "CREAMY", Name = "Cremig-Süß" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "EXOTIC", Name = "Exotisch-Tropisch" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "STRONG", Name = "Stark" });
 			viewModel.SelectedStyle = viewModel.Styles.FirstOrDefault();
 		}
 
@@ -87,7 +91,7 @@ namespace Drinks.Viewer.Home
 				image.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
 				image.UriSource = imageUri;
 
-				var item = new UiDrink() {
+				var item = new UiDrink {
 					Drink = drink,
 					Image = image,
 					IsImageLoading = true,
@@ -125,21 +129,54 @@ namespace Drinks.Viewer.Home
 			);
 		}
 
-		private void ComboBox_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+		private void _HandleDrinkStyleSelectionChanged(Object sender, SelectionChangedEventArgs e)
 		{
-			var vm = ((UiHomePage)DataContext);
+			var vm = this.ViewModel;
 
-			if (vm.SelectedStyle.Name == "Alle")
+			var validTags = getValidTags(vm.SelectedStyle.Id);
+
+			if (validTags == null)
+			{
 				vm.DrinksView.Filter = x => true;
-
-			if (vm.SelectedStyle.Name == "Sauer & Süß")
+			}
+			else
+			{
 				vm.DrinksView.Filter = x =>
 				{
 					var drink = (UiDrink)x;
-					return drink.Drink.Tags.Contains("sour");
+
+					foreach (var validTag in validTags)
+					{
+						if (drink.Drink.Tags.Contains(validTag, StringComparer.OrdinalIgnoreCase))
+							return true;
+					}
+
+					return false;
 				};
+			}
 
 			vm.DrinksView.RefreshFilter();
+
+
+			String[] getValidTags(String id)
+			{
+				switch (id)
+				{
+					case "SOUR":
+						return new[] { "sour" };
+					case "BITTER":
+						return new[] { "bitter", "herbal" };
+					case "CREAMY":
+						return new[] { "creamy" };
+					case "EXOTIC":
+						return new[] { "exotic", "tropical" };
+					case "STRONG":
+						return new[] { "strong" };
+					case "ALL":
+					default:
+						return null;
+				}
+			}
 		}
 	}
 }

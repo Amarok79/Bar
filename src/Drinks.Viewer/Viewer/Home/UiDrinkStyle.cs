@@ -29,6 +29,8 @@ namespace Drinks.Viewer.Home
 {
 	public class UiDrinkStyle : BindableBase
 	{
+		public String Id { get; set; }
+
 		public String Name { get; set; }
 	}
 }

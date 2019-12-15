@@ -25,7 +25,7 @@
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="80" />
 				<ColumnDefinition Width="*" />
-				<ColumnDefinition Width="200" />
+				<ColumnDefinition Width="250" />
 			</Grid.ColumnDefinitions>
 
 			<Image
@@ -34,7 +34,7 @@
 			  Source="/Assets/cocktail.png">
 				<Image.RenderTransform>
 					<CompositeTransform
-					  TranslateY="-8" />
+					  TranslateY="-2" />
 				</Image.RenderTransform>
 			</Image>
 
@@ -51,7 +51,7 @@
 			  IsEditable="False"
 			  ItemsSource="{Binding Styles}"
 			  SelectedItem="{Binding SelectedStyle, Mode=TwoWay}"
-			  SelectionChanged="ComboBox_SelectionChanged">
+			  SelectionChanged="_HandleDrinkStyleSelectionChanged">
 			</ComboBox>
 		</Grid>
 
@@ -62,13 +62,15 @@
 		  Background="{StaticResource BarContentBackgroundBrush}">
 
 			<GridView x:Name="DrinksGridView"
-			  Margin="40"
+			  Margin="40,16,40,16"
 			  IsItemClickEnabled="True"
+			  ItemClick="_HandleDrinkItemClick"
 			  ItemsSource="{Binding DrinksView, Mode=OneWay}"
 			  SelectionMode="None">
 				<GridView.ItemTemplate>
 					<DataTemplate x:Name="DrinkTemplate" x:DataType="vm:UiDrink">
-						<Grid>
+						<Grid
+						  Margin="12">
 							<Grid.RowDefinitions>
 								<RowDefinition Height="346" />
 								<RowDefinition Height="40" />
@@ -112,7 +114,7 @@
 				</GridView.ItemTemplate>
 				<GridView.ItemContainerStyle>
 					<Style TargetType="GridViewItem">
-						<Setter Property="Margin" Value="20" />
+						<Setter Property="Margin" Value="12" />
 					</Style>
 				</GridView.ItemContainerStyle>
 			</GridView>
