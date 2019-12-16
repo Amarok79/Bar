@@ -26,7 +26,9 @@
 #pragma warning disable CRR0033 // The void async method should be in a try/catch block
 
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Drinks.Model;
 using Drinks.Services;
 using Drinks.Viewer.DrinkDetail;
@@ -79,40 +81,58 @@ namespace Drinks.Viewer.Home
 			if (e.NavigationMode != NavigationMode.New)
 				return;
 
-			var drinks = await this.DrinkRepository.GetAll()
-				.ConfigureAwait(true);
+			await _Loading()
+				.ConfigureAwait(false);
+		}
 
-			foreach (var drink in drinks.OrderBy(x => x.Name))
+
+		private async Task _Loading()
+		{
+			try
 			{
-				var imageUri = await this.ImageRepository.GetById(drink.ImageId)
+				ViewModel.IsDrinksLoading = true;
+
+				var drinks = await this.DrinkRepository.GetAll()
 					.ConfigureAwait(true);
 
-				var image = new BitmapImage();
-				image.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
-				image.UriSource = imageUri;
-
-				var item = new UiDrink {
-					Drink = drink,
-					Image = image,
-					IsImageLoading = true,
-				};
-
-				((UiHomePage)DataContext).Drinks.Add(item);
-
-				image.ImageFailed += (_sender, _e) =>
+				var uiDrinks = new List<UiDrink>();
+				foreach (var drink in drinks.OrderBy(x => x.Name))
 				{
-					image.UriSource = new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg");
-					item.IsImageLoading = false;
-				};
+					var imageUri = await this.ImageRepository.GetById(drink.ImageId)
+						.ConfigureAwait(true);
 
-				image.ImageOpened += (_sender, _e) =>
-				{
-					item.IsImageLoading = false;
-				};
+					var image = new BitmapImage();
+					image.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
+					image.UriSource = imageUri;
+
+					var item = new UiDrink {
+						Drink = drink,
+						Image = image,
+						IsImageLoading = true,
+					};
+
+					uiDrinks.Add(item);
+
+					image.ImageFailed += (_sender, _e) =>
+					{
+						image.UriSource = new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg");
+						item.IsImageLoading = false;
+					};
+
+					image.ImageOpened += (_sender, _e) =>
+					{
+						item.IsImageLoading = false;
+					};
+				}
+
+				ViewModel.DrinksView.Source = uiDrinks.ToList();
 			}
-
-			((UiHomePage)DataContext).DrinksView.Source = ((UiHomePage)DataContext).Drinks.ToList();
+			finally
+			{
+				ViewModel.IsDrinksLoading = false;
+			}
 		}
+
 
 		private void _HandleDrinkItemClick(Object sender, ItemClickEventArgs e)
 		{

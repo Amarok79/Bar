@@ -29,11 +29,19 @@ using Microsoft.Toolkit.Uwp.UI;
 
 namespace Drinks.Viewer.Home
 {
-	public class UiHomePage
+	public class UiHomePage : BindableBase
 	{
-		public String Title => "Die \"KroKo\" Hausbar";
+		// state
+		private Boolean mIsDrinksLoading;
 
-		public ObservableCollection<UiDrink> Drinks { get; } = new ObservableCollection<UiDrink>();
+
+		public Boolean IsDrinksLoading
+		{
+			get => mIsDrinksLoading;
+			set => Set(ref mIsDrinksLoading, value);
+		}
+
+		public String Title => "Die \"KroKo\" Hausbar";
 
 		public AdvancedCollectionView DrinksView { get; } = new AdvancedCollectionView();
 

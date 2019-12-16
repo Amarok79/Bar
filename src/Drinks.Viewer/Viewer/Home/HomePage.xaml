@@ -119,6 +119,11 @@
 				</GridView.ItemContainerStyle>
 			</GridView>
 
+			<ProgressRing
+			  HorizontalAlignment="Center"
+			  VerticalAlignment="Center"
+			  IsActive="{Binding IsDrinksLoading, Mode=OneWay}" />
+
 		</Grid>
 
 	</Grid>
