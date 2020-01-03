@@ -34,11 +34,11 @@ namespace Drinks.Viewer
 		// data
 		private readonly Action mCallback;
 
+#pragma warning disable 0067
+        public event EventHandler CanExecuteChanged;
+#pragma warning restore 0067
 
-		public event EventHandler CanExecuteChanged;
-
-
-		public DelegateCommand(Action callback)
+        public DelegateCommand(Action callback)
 		{
 			mCallback = callback;
 		}
