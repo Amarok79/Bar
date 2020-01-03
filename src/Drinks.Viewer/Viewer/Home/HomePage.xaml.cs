@@ -67,10 +67,10 @@ namespace Drinks.Viewer.Home
 		private void _InitializeStyles(UiHomePage viewModel)
 		{
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "ALL", Name = "Alle" });
-			viewModel.Styles.Add(new UiDrinkStyle { Id = "SOUR", Name = "Sauer-Süß" });
-			viewModel.Styles.Add(new UiDrinkStyle { Id = "BITTER", Name = "Bitter-Süß" });
-			viewModel.Styles.Add(new UiDrinkStyle { Id = "CREAMY", Name = "Cremig-Süß" });
-			viewModel.Styles.Add(new UiDrinkStyle { Id = "EXOTIC", Name = "Exotisch-Tropisch" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "SOUR", Name = "Sauer" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "BITTER", Name = "Bitter" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "CREAMY", Name = "Cremig" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "EXOTIC", Name = "Exotisch" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "STRONG", Name = "Stark" });
 			viewModel.SelectedStyle = viewModel.Styles.FirstOrDefault();
 		}
