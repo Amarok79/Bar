@@ -27,7 +27,7 @@
 		<image>{AB485B95-363F-4365-8FCD-1E2F7BF3BF7C}</image>
 		<tags>sour;sweet</tags>
 		<description>
-			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine
+			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge.
 
 			Amaretto ist eine Geschmacksrichtung für ursprünglich aus Italien stammende Liköre mit einem nussigen Aroma, das an Marzipan erinnert. Die Bezeichnung „Amaretto“ ist eine Verkleinerungsform des italienischen Wortes amaro, was so viel bedeutet wie „bitter“. Ursprünglich wurden Bittermandeln (italienisch mandorla amara) oder Aprikosenkerne, teilweise auch süße Mandeln zur Aromatisierung verwendet.
 
@@ -38,10 +38,10 @@
 		<ice kind="small">7</ice>
 		<ice kind="large">6</ice>
 		<recipe>
-			<ingredient amount="2" unit="cl" substance="Frischer Zitronensaft"/>
-			<ingredient amount="4" unit="cl" substance="Amaretto Disaronno Originale"/>
+			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
+			<ingredient amount="4.5" unit="cl" substance="Amaretto Disaronno Originale"/>
 			<ingredient amount="0.5" unit="cl" substance="Zuckersirup 1.5:1"/>
-			<ingredient amount="2" unit="cl" substance="Rauch Happy Day Orange"/>
+			<ingredient amount="3" unit="cl" substance="Rauch Happy Day Orange"/>
 			<ingredient amount="2" unit="dash" substance="The Bitter Truth Orange Bitter"/>
 		</recipe>
 	</drink>
