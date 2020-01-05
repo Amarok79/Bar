@@ -277,6 +277,26 @@
 	</drink>
 
 	<drink>
+		<name>Gamble</name>
+		<teaser>Sloe Gin, Graipefruitsaft, Kirschlikör</teaser>
+		<image>{1A409062-F852-4EDD-BEB8-BF22BC191E9A}</image>
+		<tags>sour;sweet</tags>
+		<description>
+			Eine Abwandlung des Bramble mit Schlehenbeeren Gin (Sloe Gin), Graipefruitsaft und Kirschlikör. Sauer, süß, erfrischend, anders, lecker.
+		</description>
+		<glass>Old Fashioned (250 ml)</glass>
+		<garnish>Graipefruitscheibe</garnish>
+		<ice kind="large">8</ice>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Frischer Graipefruitsaft"/>
+			<ingredient amount="3" unit="cl" substance="The Stin Sloe Gin"/>
+			<ingredient amount="3" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+			<ingredient amount="1" unit="cl" substance="Zuckersirup 1.5:1"/>
+			<ingredient amount="1.5" unit="cl" substance="Heering Kirschlikör"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>Gin &amp; Tonic</name>
 		<teaser>Gin, Tonic Water</teaser>
 		<image>{18EF0752-8D39-4A58-9D93-FC99BA35AF5E}</image>
