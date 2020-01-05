@@ -120,15 +120,18 @@
 		<description>
 			Batida ist die portugiesisch-brasilianische Bezeichnung für eine Gruppe von alkoholischen Cocktails. Das Wort leitet sich von Portugiesisch „bater“ (schlagen) ab. Ein Batida besteht immer aus Cachaça (weißem Zuckerrohrschnaps), Fruchtsaft oder Fruchtmark, Rohrzucker und meist auch etwas Wasser.
 
-			Die Passionsfrucht ist meist auch unter dem Namen Maracuja bekannt wobei sich bei der Maracuja um eine gelbe Variante der Passionsfrucht handelt. Die biologischen Verwandten der Passionsfrucht gehen auch zu den Weiden, Pappeln oder Veilchen zurück. Die Passionsfrucht stammt von der Passionsblume ab und ist eine essbare Art.
+			Die Passionsfrucht ist meist auch unter dem Namen Maracuja bekannt wobei sich bei der Maracuja um eine gelbe Variante der Passionsfrucht handelt. Die biologischen Verwandten der Passionsfrucht gehen zu den Weiden, Pappeln oder Veilchen zurück. Die Passionsfrucht stammt von der Passionsblume ab und ist eine essbare Art.
 
 			(Wikipedia)
 		</description>
+		<glass>Caipirinha (300 ml)</glass>
+		<garnish>Rote Ribisel, Erdbeere</garnish>
+		<ice kind="small">8</ice>
 		<recipe>
-			<ingredient amount="1" unit="" substance="Passionsfrucht"/>
+			<ingredient amount="2" unit="" substance="Passionsfrucht"/>
 			<ingredient amount="5" unit="cl" substance="Germana da Palha Premium Cachaca"/>
-			<ingredient amount="2" unit="cl" substance="Maracuja Fruchtpüree"/>
-			<ingredient amount="8" unit="cl" substance="Kokosmilch"/>
+			<ingredient amount="2" unit="cl" substance="Monin Maracuja Fruchtpüree"/>
+			<ingredient amount="6" unit="cl" substance="Alnatura Kokosmilch"/>
 		</recipe>
 	</drink>
 
