@@ -73,17 +73,21 @@
 		<image>{521394D8-A663-44AA-9385-4C626BD8586B}</image>
 		<tags>sour;herbal</tags>
 		<description>
-			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem Grundprinzip Spirituose + Süßungsmittel + saurer Zitrussaft aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. Die bekanntesten Sours, die die Gattungsbezeichnung auch im Namen tragen, sind Whiskey Sour, Pisco Sour und Amaretto Sour.
+			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge.
 
 			Averna (Amaro Siciliano) ist ein sizilianischer Bitterlikör, hergestellt aus verschiedenen Kräutern, Wurzeln und ätherischen Ölen aus Bitterorangen und Zitronen. Der Geschmack von Averna ist bittersüß mit Anklängen von Orange und Süßholz sowie Noten von Myrte, Wacholderbeeren, Rosmarin und Salbei.
 
 			(Wikipedia)
 		</description>
+		<glass>Old Fashioned (250 ml)</glass>
+		<garnish>Zitronenscheibe</garnish>
+		<ice kind="small">8</ice>
+		<ice kind="large">6</ice>
 		<recipe>
 			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
 			<ingredient amount="5" unit="cl" substance="Averna Bitterlikör"/>
-			<ingredient amount="1" unit="cl" substance="Zuckersirup 2:1"/>
-			<ingredient amount="2" unit="cl" substance="Orangensaft"/>
+			<ingredient amount="1" unit="cl" substance="Zuckersirup 1.5:1"/>
+			<ingredient amount="2" unit="cl" substance="Rauch Happy Day Orange"/>
 		</recipe>
 	</drink>
 
