@@ -367,7 +367,7 @@
 
 	<drink>
 		<name>Mai Tai</name>
-		<teaser>Rum, Cointreau, Orgeat, Limettensaft, Muskatnuss</teaser>
+		<teaser>Rum, Cointreau, Mandellikör, Limettensaft, Muskatnuss</teaser>
 		<image>{893B7036-36A2-41B5-9283-15830C0E1F92}</image>
 		<tags>sour;sweet;exotic</tags>
 		<description>
@@ -379,6 +379,10 @@
 
 			(Wikipedia)
 		</description>
+		<glass>Tikibecher (400 ml)</glass>
+		<garnish>Limettenhälfte, Amarenakirsche, Minze</garnish>
+		<ice kind="small">0</ice>
+		<ice kind="large">16</ice>
 		<recipe>
 			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
 			<ingredient amount="2" unit="cl" substance="Clément Rhum Blanc"/>
