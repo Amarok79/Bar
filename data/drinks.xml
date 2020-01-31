@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <drinks>
 
 	<drink>
@@ -41,7 +41,7 @@
 			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
 			<ingredient amount="4.5" unit="cl" substance="Amaretto Disaronno Originale"/>
 			<ingredient amount="0.5" unit="cl" substance="Zuckersirup 1.5:1"/>
-			<ingredient amount="3" unit="cl" substance="Rauch Happy Day Orange"/>
+			<ingredient amount="3" unit="cl" substance="Rauch Happy Day Orange Mild"/>
 			<ingredient amount="2" unit="dash" substance="The Bitter Truth Orange Bitter"/>
 		</recipe>
 	</drink>
