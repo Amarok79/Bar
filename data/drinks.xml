@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <drinks>
 
 	<drink>
@@ -428,8 +428,12 @@
 
 			(Wikipedia)
 		</description>
+		<glass>Old Fashioned (250 ml)</glass>
+		<garnish>Orangenzeste</garnish>
+		<ice kind="small">8</ice>
+		<ice kind="large">6</ice>
 		<recipe>
-			<ingredient amount="3" unit="cl" substance="Beefeather 24 London Dry Gin"/>
+			<ingredient amount="3" unit="cl" substance="Plymouth Dry Gin"/>
 			<ingredient amount="3" unit="cl" substance="Campari Bitterlikör"/>
 			<ingredient amount="3" unit="cl" substance="Martini Vermouth Rosso"/>
 		</recipe>
