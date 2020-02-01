@@ -578,6 +578,30 @@
 	</drink>
 
 	<drink>
+		<name>White Russian</name>
+		<teaser>Wodka, Kaffeelikör, Sahne</teaser>
+		<image>{B0EF4AC3-03A4-49C4-8450-E2C48E6A23A3}</image>
+		<tags>creamy;sweet</tags>
+		<description>
+			White Russian (englisch für "Weißer Russe") ist ein Cocktail aus Wodka, Kaffeelikör und Sahne oder Milch. Aufgrund seiner süßen und cremigen Bestandteile (Likör und Sahne) zählt der Shortdrink zu den After-Dinner-Drinks. Die Variante ohne Sahne und Milch heißt Black Russian ("Schwarzer Russe").
+
+			Der White Russian ist das Lieblingsgetränk der Hauptfigur in dem von den Coen-Brüdern gedrehten Spielfilm "The Big Lebowski".
+
+			(Wikipedia)
+		</description>
+		<glass>Old Fashioned (250 ml)</glass>
+		<garnish>Muskatnuss</garnish>
+		<ice kind="small">0</ice>
+		<ice kind="large">4</ice>
+		<recipe>
+			<ingredient amount="6" unit="cl" substance="Wodka"/>
+			<ingredient amount="3" unit="cl" substance="Kahlua Kaffeelikör"/>
+			<ingredient amount="3" unit="cl" substance="Leicht geschlagene Sahne"/>
+			<ingredient substance="Muskatnuss"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>Zombie</name>
 		<teaser>Rum, Limettensaft, Falernum, Maraschino</teaser>
 		<image>{D34B1939-F5D4-497B-A6DD-AF839308E285}</image>
