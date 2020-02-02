@@ -72,6 +72,9 @@ namespace Drinks.Viewer.Home
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "CREAMY", Name = "Cremig" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "EXOTIC", Name = "Exotisch" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "STRONG", Name = "Stark" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "1STAR", Name = "1 Stern Bewertung" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "2STAR", Name = "2 Sterne Bewertung" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "3STAR", Name = "3 Sterne Bewertung" });
 			viewModel.SelectedStyle = viewModel.Styles.FirstOrDefault();
 		}
 
@@ -192,6 +195,12 @@ namespace Drinks.Viewer.Home
 						return new[] { "exotic", "tropical" };
 					case "STRONG":
 						return new[] { "strong" };
+					case "1STAR":
+						return new[] { "1-star" };
+					case "2STAR":
+						return new[] { "2-star" };
+					case "3STAR":
+						return new[] { "3-star" };
 					case "ALL":
 					default:
 						return null;
