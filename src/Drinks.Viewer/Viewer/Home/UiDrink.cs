@@ -23,6 +23,7 @@
 */
 
 using System;
+using System.Linq;
 using Drinks.Model;
 using Windows.UI.Xaml.Media.Imaging;
 
@@ -43,6 +44,22 @@ namespace Drinks.Viewer.Home
 		public String Teaser => this.Drink.Teaser;
 
 		public Boolean HasDescription => !String.IsNullOrEmpty(this.Drink.Description);
+
+		public Int32 Rating
+		{
+			get
+			{
+				if (Drink.Tags.Contains("3-star"))
+					return 3;
+				if (Drink.Tags.Contains("2-star"))
+					return 2;
+				if (Drink.Tags.Contains("1-star"))
+					return 1;
+				return -1;
+			}
+		}
+
+		public Boolean RatingVisible => this.Rating > 0;
 
 		public BitmapImage Image { get; set; }
 

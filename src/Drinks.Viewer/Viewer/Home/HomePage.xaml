@@ -88,13 +88,30 @@
 								  Stretch="UniformToFill" />
 							</Border>
 
-							<TextBlock
+							<Grid
 							  Grid.Row="1"
 							  Width="260"
-							  Height="28"
-							  Margin="0,12,0,0"
-							  Style="{StaticResource BarDrinkNameTextStyle}"
-							  Text="{Binding Name, Mode=OneWay}" />
+							  Height="32">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*" />
+									<ColumnDefinition Width="Auto" />
+								</Grid.ColumnDefinitions>
+
+								<TextBlock
+								  Grid.Column="0"
+								  Margin="0,12,0,0"
+								  Style="{StaticResource BarDrinkNameTextStyle}"
+								  Text="{Binding Name, Mode=OneWay}" />
+
+								<RatingControl
+								  Grid.Column="1"
+								  Margin="0,8,0,0"
+								  IsReadOnly="True"
+								  MaxRating="3"
+								  Visibility="{Binding RatingVisible, Mode=OneWay}"
+								  Value="{Binding Rating, Mode=OneWay}" />
+
+							</Grid>
 
 							<TextBlock
 							  Grid.Row="2"
