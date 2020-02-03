@@ -420,7 +420,7 @@
 		<name>Negroni</name>
 		<teaser>Gin, Campari, Vermouth Rosso</teaser>
 		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
-		<tags>bitter</tags>
+		<tags>3-star;bitter</tags>
 		<description>
 			Der Negroni ist ein klassischer, aus Italien stammender Cocktail mit bitter-süßem Geschmack.
 
@@ -432,7 +432,7 @@
 		</description>
 		<glass>Old Fashioned (250 ml)</glass>
 		<garnish>Orangenzeste</garnish>
-		<ice kind="small">8</ice>
+		<ice kind="small">0</ice>
 		<ice kind="large">6</ice>
 		<recipe>
 			<ingredient amount="3" unit="cl" substance="Plymouth Dry Gin"/>
