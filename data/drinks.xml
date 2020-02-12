@@ -371,6 +371,30 @@
 	</drink>
 
 	<drink>
+		<name>Horse's Neck with a Kick</name>
+		<teaser>Bourbon Whiskey, Ginger Ale</teaser>
+		<image>{333B7D62-E8CD-4449-8B13-F48538E63F7F}</image>
+		<tags>2-star;sour;sweet</tags>
+		<description>
+			Horse's Neck (englisch etwa Pferdehals) ist ein klassischer Cocktail, der Ende des 19. Jahrhunderts entstand und als typischer Highball zu den Longdrinks gehört. Er wird aus Weinbrand bzw. Cognac und Ingwerlimonade (Ginger Ale) zubereitet. Sehr häufig wird als Basis-Spirituose auch Bourbon Whiskey verwendet. Seinen Namen verdankt das Getränk einer dünn geschnittenen, langen Zitronenspirale, deren Ende aus dem Glas ragt und dadurch entfernt an einen Pferdekopf erinnern soll.
+
+			Ginger Ale ist ein kohlensäurehaltiges Erfrischungsgetränk, das seinen Geschmack und seinen Namen dem Zusatz von natürlichem Ingwer verdankt.
+
+			(Wikipedia)
+		</description>
+		<glass>Longdrink (300 ml)</glass>
+		<garnish>Zitronenspirale</garnish>
+		<ice kind="small">8</ice>
+		<ice kind="large">0</ice>
+		<recipe>
+			<!-- 18 cl -->
+			<ingredient amount="6" unit="cl" substance="Four Roses Single Barrel Bourbon Whiskey"/>
+			<ingredient amount="3" unit="dash" substance="Angostura Bitter"/>
+			<ingredient amount="12" unit="cl" substance="Ginger Ale oder Ginger Beer"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>Long Island Iced Tea</name>
 		<teaser>Vodka, Gin, Tequilla, Rum, Triple Sec, Limettensaft, Cola</teaser>
 		<image>{37944174-35CE-4895-B9F2-A2DF02749857}</image>
