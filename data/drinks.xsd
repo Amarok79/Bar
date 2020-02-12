@@ -12,7 +12,7 @@
 							<xs:element name="tags" >
 								<xs:simpleType>
 									<xs:restriction base="xs:string">
-										<xs:pattern value="((bitter|sour|sweet|salty|umami|fruity|herbal|floral|tropical|exotic|creamy|prickling|strong|1-star|2-star|3-star);?)*"/>
+										<xs:pattern value="((bitter|sour|sweet|salty|umami|fruity|herbal|floral|tropical|exotic|creamy|prickling|strong|0-star|1-star|2-star|3-star|in-testing);?)*"/>
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>

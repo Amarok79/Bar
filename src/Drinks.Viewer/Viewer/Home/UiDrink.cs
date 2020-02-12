@@ -55,11 +55,17 @@ namespace Drinks.Viewer.Home
 					return 2;
 				if (Drink.Tags.Contains("1-star"))
 					return 1;
+				if (Drink.Tags.Contains("0-star"))
+					return 0;
 				return -1;
 			}
 		}
 
-		public Boolean RatingVisible => this.Rating > 0;
+		public Boolean RatingVisible => this.Rating >= 0;
+
+		public Boolean InTesting => Drink.Tags.Contains("in-testing");
+
+		public String InTestingLabel => "In Erprobung";
 
 		public BitmapImage Image { get; set; }
 
