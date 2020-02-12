@@ -117,7 +117,7 @@
 							<Grid
 							  Grid.Row="1"
 							  Width="260"
-							  Height="32">
+							  Height="36">
 								<Grid.ColumnDefinitions>
 									<ColumnDefinition Width="*" />
 									<ColumnDefinition Width="Auto" />
