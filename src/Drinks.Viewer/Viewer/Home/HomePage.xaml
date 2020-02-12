@@ -4,6 +4,7 @@
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:tk="using:Microsoft.Toolkit.Uwp.UI.Controls"
   xmlns:vm="using:Drinks.Viewer.Home"
   d:DataContext="{d:DesignInstance vm:SampleUiHomePage,
                                    IsDesignTimeCreatable=True}"
@@ -88,22 +89,30 @@
 								  Stretch="UniformToFill" />
 							</Border>
 
-							<TextBlock
+							<Canvas
 							  Grid.Row="0"
-							  HorizontalAlignment="Center"
-							  VerticalAlignment="Center"
-							  FontFamily="Stencil"
-							  FontSize="38"
-							  Foreground="White"
-							  Text="{Binding InTestingLabel, Mode=OneWay}"
+							  HorizontalAlignment="Stretch"
+							  VerticalAlignment="Stretch"
 							  Visibility="{Binding InTesting, Mode=OneWay}">
-								<TextBlock.RenderTransform>
+								<Canvas.RenderTransform>
 									<CompositeTransform
 									  Rotation="-52"
-									  TranslateX="40"
-									  TranslateY="120" />
-								</TextBlock.RenderTransform>
-							</TextBlock>
+									  TranslateX="20"
+									  TranslateY="280" />
+								</Canvas.RenderTransform>
+								<tk:DropShadowPanel Color="Black"
+								  BlurRadius="4.0"
+								  OffsetX="4.0"
+								  OffsetY="4.0"
+								  ShadowOpacity="0.70">
+									<TextBlock
+									  FontFamily="Stencil"
+									  FontSize="44"
+									  Foreground="White"
+									  Text="{Binding InTestingLabel, Mode=OneWay}">
+									</TextBlock>
+								</tk:DropShadowPanel>
+							</Canvas>
 
 							<Grid
 							  Grid.Row="1"
