@@ -69,6 +69,32 @@
 	</drink>
 
 	<drink>
+		<name>Aviation</name>
+		<teaser>Gin, Zitronensaft, Maraschino, Creme de Violette</teaser>
+		<image>{136D550D-DEA2-445C-BF40-0890D0BD6920}</image>
+		<tags>in-testing;sour;floral</tags>
+		<description>
+			Der Aviation ist ein klassischer Cocktail aus Gin, Maraschino-Likör, Crème de Violette (Veilchenlikör) und Zitronensaft. Durch die Kombination einer Basisspirituose mit Zitrussaft und einer Zuckerquelle – hier den Likören – ist der Shortdrink in der Gruppe der Sours einzuordnen. Seinen Namen verdankt der Cocktail wahrscheinlich seiner zart silbrig-grauen Färbung durch den Veilchenlikör, der an den Himmel und die zu seiner Entstehungszeit Anfang des 20. Jahrhunderts aufkommende Luftfahrt (engl. „aviation“) erinnert.
+
+			Der Aviation Cocktail ist ein leichter, floraler Drink aus lediglich vier Zutaten, die jedoch nicht leicht miteinander in Einklang zu bringen sind. Zum Einen dürfe das Süße-Säure-Verhältnis zwischen dem Zitronensaft und den verwendeten Likören nicht kippen, zum anderen gleite der Geschmack des Drinks allzu leicht ins Seifige, wenn man zu viel Veilchenlikör verwende.
+
+			(Wikipedia)
+		</description>
+		<glass>Martini (200 ml)</glass>
+		<garnish>Zitronenzeste, Cocktailkirsche</garnish>
+		<ice kind="small"></ice>
+		<ice kind="large">6</ice>
+		<recipe>
+			<!-- 9 cl -->
+			<ingredient amount="1.5" unit="cl" substance="Frischer Zitronensaft"/>
+			<ingredient amount="5.25" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+			<ingredient amount="1.5" unit="cl" substance="Luxardo Maraschino"/>
+			<ingredient amount="1" unit="cl" substance="Creme de Violette"/>
+			<ingredient amount="0.75" unit="cl" substance="Gekühltes Wasser"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>Averna Sour</name>
 		<teaser>Averna, Zitronensaft, Orangensaft</teaser>
 		<image>{521394D8-A663-44AA-9385-4C626BD8586B}</image>
