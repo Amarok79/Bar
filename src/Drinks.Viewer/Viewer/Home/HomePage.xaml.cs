@@ -68,12 +68,14 @@ namespace Drinks.Viewer.Home
 		{
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "ALL", Name = "Alle" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "SOUR", Name = "Sauer" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "SWEET", Name = "Süß" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "BITTER", Name = "Bitter" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "FRUITY", Name = "Fruchtig" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "DRY", Name = "Trocken" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "CREAMY", Name = "Cremig" });
-			viewModel.Styles.Add(new UiDrinkStyle { Id = "EXOTIC", Name = "Exotisch" });
-			viewModel.Styles.Add(new UiDrinkStyle { Id = "STRONG", Name = "Stark" });
-			viewModel.Styles.Add(new UiDrinkStyle { Id = "1STAR", Name = "1 Stern Bewertung" });
-			viewModel.Styles.Add(new UiDrinkStyle { Id = "2STAR", Name = "2 Sterne Bewertung" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "SPICY", Name = "Würzig" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "1STAR", Name = "1+ Sterne Bewertung" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "2STAR", Name = "2+ Sterne Bewertung" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "3STAR", Name = "3 Sterne Bewertung" });
 			viewModel.SelectedStyle = viewModel.Styles.FirstOrDefault();
 		}
@@ -187,18 +189,22 @@ namespace Drinks.Viewer.Home
 				{
 					case "SOUR":
 						return new[] { "sour" };
+					case "SWEET":
+						return new[] { "sweet" };
 					case "BITTER":
 						return new[] { "bitter", "herbal" };
+					case "DRY":
+						return new[] { "dry", "floral" };
+					case "FRUITY":
+						return new[] { "fruity" };
 					case "CREAMY":
 						return new[] { "creamy" };
-					case "EXOTIC":
-						return new[] { "exotic", "tropical" };
-					case "STRONG":
-						return new[] { "strong" };
+					case "SPICY":
+						return new[] { "spicy" };
 					case "1STAR":
-						return new[] { "1-star" };
+						return new[] { "1-star", "2-star", "3-star" };
 					case "2STAR":
-						return new[] { "2-star" };
+						return new[] { "2-star", "3-star" };
 					case "3STAR":
 						return new[] { "3-star" };
 					case "ALL":
