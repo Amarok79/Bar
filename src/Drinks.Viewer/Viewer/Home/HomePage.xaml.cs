@@ -72,6 +72,7 @@ namespace Drinks.Viewer.Home
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "BITTER", Name = "Bitter" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "FRUITY", Name = "Fruchtig" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "DRY", Name = "Trocken" });
+			viewModel.Styles.Add(new UiDrinkStyle { Id = "FRESH", Name = "Erfrischend" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "CREAMY", Name = "Cremig" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "SPICY", Name = "Würzig" });
 			viewModel.Styles.Add(new UiDrinkStyle { Id = "1STAR", Name = "1+ Sterne Bewertung" });
@@ -195,6 +196,8 @@ namespace Drinks.Viewer.Home
 						return new[] { "bitter", "herbal" };
 					case "DRY":
 						return new[] { "dry", "floral" };
+					case "FRESH":
+						return new[] { "fresh" };
 					case "FRUITY":
 						return new[] { "fruity" };
 					case "CREAMY":
