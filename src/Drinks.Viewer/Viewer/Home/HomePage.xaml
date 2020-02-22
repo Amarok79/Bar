@@ -101,12 +101,12 @@
 									  TranslateY="280" />
 								</Canvas.RenderTransform>
 								<tk:DropShadowPanel Color="Black"
-								  BlurRadius="4.0"
-								  OffsetX="4.0"
-								  OffsetY="4.0"
+								  BlurRadius="2.0"
+								  OffsetX="2.0"
+								  OffsetY="2.0"
 								  ShadowOpacity="0.70">
 									<TextBlock
-									  FontFamily="Stencil"
+									  FontFamily="./fonts/#Stencil"
 									  FontSize="44"
 									  Foreground="White"
 									  Text="{Binding InTestingLabel, Mode=OneWay}">
