@@ -53,6 +53,27 @@
 	</drink>
 
 	<drink>
+		<name>B52</name>
+		<teaser>Kaffeelikör, Baileys, Grand Manier</teaser>
+		<image>{BFF1FC54-B5B3-4F19-B517-1D77130A27A1}</image>
+		<tags>sweet;strong;3-star</tags>
+		<description>
+			Der B52 (auch „Bifi“) ist ein Cocktail (Kurzer), dessen Bestandteile im Glas drei – auch optisch – klar abgegrenzte Schichten ergeben.
+
+			Der B52 wurde der Legende nach im berühmten Alice's Restaurant in Malibu (Kalifornien) kreiert. Der Name bezieht sich auf den US-Langstreckenbomber Boeing B-52. Dieser Bomber wurde unter anderem im Vietnamkrieg zum Abwurf von Brandbomben verwendet. Gerüchteweise entstand in Anlehnung daran die heute gängige flambierte Variante des Cocktails.
+
+			Getrunken wird der B52 von unten weg mit einem Trinkhalm, wobei der Grand Marnier vom Barkeeper kurz vorher entzündet wird. Da der Trinkhalm nicht hitzebeständig ist, muss der Cocktail möglichst schnell getrunken werden.
+
+			(Wikipedia)
+		</description>
+		<recipe>
+			<ingredient amount="2" unit="cl" substance="Kahlua Kaffeelikör"/>
+			<ingredient amount="2" unit="cl" substance="Baileys"/>
+			<ingredient amount="2" unit="cl" substance="Grand Manier"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>Bellevue</name>
 		<teaser>Rum, Cointreau, Creme of Coconut, Ananassaft</teaser>
 		<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
@@ -381,26 +402,7 @@
 	</drink>
 
 
-	<drink>
-		<name>B52</name>
-		<teaser>Kaffeelikör, Baileys, Grand Manier</teaser>
-		<image>{BFF1FC54-B5B3-4F19-B517-1D77130A27A1}</image>
-		<tags>strong</tags>
-		<description>
-			Der B52 (auch „Bifi“) ist ein Cocktail (Kurzer), dessen Bestandteile im Glas drei – auch optisch – klar abgegrenzte Schichten ergeben.
 
-			Der B52 wurde der Legende nach im berühmten Alice's Restaurant in Malibu (Kalifornien) kreiert. Der Name bezieht sich auf den US-Langstreckenbomber Boeing B-52. Dieser Bomber wurde unter anderem im Vietnamkrieg zum Abwurf von Brandbomben verwendet. Gerüchteweise entstand in Anlehnung daran die heute gängige flambierte Variante des Cocktails.
-
-			Getrunken wird der B52 von unten weg mit einem Trinkhalm, wobei der Grand Marnier vom Barkeeper kurz vorher entzündet wird. Da der Trinkhalm nicht hitzebeständig ist, muss der Cocktail möglichst schnell getrunken werden.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="2" unit="cl" substance="Kahlua Kaffeelikör"/>
-			<ingredient amount="2" unit="cl" substance="Baileys"/>
-			<ingredient amount="2" unit="cl" substance="Grand Manier"/>
-		</recipe>
-	</drink>
 
 	<drink>
 		<name>Batida de Maracuja</name>
