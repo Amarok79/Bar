@@ -178,6 +178,28 @@
 	</drink>
 
 	<drink>
+		<name>Prince</name>
+		<teaser>Tequilla, Vanillelikör, Creme of Coconut, Sahne, Maracujasaft</teaser>
+		<image>{5C12D764-FE88-48BA-A4BD-9FDF0945EEAB}</image>
+		<tags>sweet;tropical;creamy;2-star</tags>
+		<description>
+			Ein süßer-cremiger Cocktail mit feinem Vanille- und Maracujageschmack.
+		</description>
+		<glass>Longdrink (300 ml)</glass>
+		<garnish>Amarenakirsche</garnish>
+		<ice kind="small">10</ice>
+		<ice kind="large">6</ice>
+		<recipe>
+			<!-- 19cl -->
+			<ingredient amount="3" unit="cl" substance="Sierra Milenario Blanco Tequila"/>
+			<ingredient amount="2" unit="cl" substance="Likör 43"/>
+			<ingredient amount="2" unit="cl" substance="Sahne"/>
+			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
+			<ingredient amount="10" unit="cl" substance="Rauch Happy Day Maracujasaft"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>Ramazotti Sour</name>
 		<teaser>Ramazotti, Zitronensaft, Orangensaft</teaser>
 		<image>{643AD007-EC64-4D68-AECF-C62695AA1DE7}</image>
@@ -256,27 +278,6 @@
 		</recipe>
 	</drink>
 
-	<drink>
-		<name>Prince</name>
-		<teaser>Tequilla, Vanillelikör, Creme of Coconut, Sahne, Maracujasaft</teaser>
-		<image>{5C12D764-FE88-48BA-A4BD-9FDF0945EEAB}</image>
-		<!-- sour;sweet;bitter;dry;fresh;spicy;creamy;fruity;herbal;floral;tropical;exotic;0-star;1-star;2-star;3-star;in-testing -->
-		<tags>sweet;tropical;creamy</tags>
-		<description>
-			Ein süßer-cremiger Cocktail mit feinem Vanille- und Maracujageschmack.
-		</description>
-		<glass>Fancy (300 ml)</glass>
-		<garnish>Amarenakirsche, Minze</garnish>
-		<ice kind="small">8</ice>
-		<ice kind="large">6</ice>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Sierra Milenario Blanco Tequila"/>
-			<ingredient amount="2" unit="cl" substance="Likör 43"/>
-			<ingredient amount="2" unit="cl" substance="Sahne"/>
-			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
-			<ingredient amount="10" unit="cl" substance="Maracujasaft"/>
-		</recipe>
-	</drink>
 
 	<drink>
 		<name>Rosa Lady</name>
