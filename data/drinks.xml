@@ -225,6 +225,30 @@
 	</drink>
 
 	<drink>
+		<name>Rosa Lady</name>
+		<teaser>Wodka, Vanillelikör, Bananenlikör, Sahne, Maracujasaft, Ananassaft</teaser>
+		<image>{871629C3-362F-4565-9AB8-02DE0452D06C}</image>
+		<tags>sweet;tropical;creamy</tags>
+		<description>
+			Ein süß-cremiger Cocktail, der bei seiner rosa Farbe geschmacklich automatisch an Erdbeere erinnert, obwohl Bananensirup enthalten ist.
+		</description>
+		<glass>Fancy (300 ml)</glass>
+		<garnish>Amarenakirsche</garnish>
+		<ice kind="small">10</ice>
+		<ice kind="large">6</ice>
+		<recipe>
+			<ingredient amount="2" unit="cl" substance="Wodka"/>
+			<ingredient amount="4" unit="cl" substance="Likör 43"/>
+			<ingredient amount="2" unit="cl" substance="Bananensirup"/>
+			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
+			<ingredient amount="2" unit="cl" substance="Sahne"/>
+			<ingredient amount="8" unit="cl" substance="Rauch Happy Day Maracujasirup"/>
+			<ingredient amount="4" unit="cl" substance="Rauch Happy Day Ananassaft"/>
+			<ingredient amount="1" unit="cl" substance="Grenadine"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>White Russian</name>
 		<teaser>Wodka, Kaffeelikör, Sahne</teaser>
 		<image>{B0EF4AC3-03A4-49C4-8450-E2C48E6A23A3}</image>
@@ -279,30 +303,7 @@
 	</drink>
 
 
-	<drink>
-		<name>Rosa Lady</name>
-		<teaser>Wodka, Vanillelikör, Bananenlikör, Sahne, Maracujasaft, Ananassaft</teaser>
-		<image>{871629C3-362F-4565-9AB8-02DE0452D06C}</image>
-		<!-- sour;sweet;bitter;dry;fresh;spicy;creamy;fruity;herbal;floral;tropical;exotic;0-star;1-star;2-star;3-star;in-testing -->
-		<tags>sweet;tropical;creamy</tags>
-		<description>
-			Ein süß-cremiger Cocktail, der bei seiner rosa Farbe geschmacklich automatisch an Erdbeere erinnert, obwohl Bananensirup enthalten ist.
-		</description>
-		<glass>Fancy (300 ml)</glass>
-		<garnish>Limettenscheibe, Minze</garnish>
-		<ice kind="small">8</ice>
-		<ice kind="large">6</ice>
-		<recipe>
-			<ingredient amount="2" unit="cl" substance="Wodka"/>
-			<ingredient amount="4" unit="cl" substance="Likör 43"/>
-			<ingredient amount="2" unit="cl" substance="Bananensirup"/>
-			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
-			<ingredient amount="2" unit="cl" substance="Sahne"/>
-			<ingredient amount="8" unit="cl" substance="Maracujasirup"/>
-			<ingredient amount="4" unit="cl" substance="Ananassaft"/>
-			<ingredient amount="1" unit="cl" substance="Grenadine"/>
-		</recipe>
-	</drink>
+
 
 
 
