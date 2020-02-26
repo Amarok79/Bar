@@ -53,6 +53,28 @@
 	</drink>
 
 	<drink>
+		<name>Bellevue</name>
+		<teaser>Rum, Cointreau, Creme of Coconut, Ananassaft</teaser>
+		<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
+		<tags>sweet;tropical;creamy;1-star</tags>
+		<description>
+			Ein süßer und cremiger Cocktail der nach Kokosnuss und Ananas schmeckt. Freunde von Pina Coladas werden den Bellevue ebenfalls mögen.
+		</description>
+		<glass>Longdrink (300 ml)</glass>
+		<garnish>Limettenscheibe, Minze</garnish>
+		<ice kind="small">10</ice>
+		<ice kind="large">6</ice>
+		<recipe>
+			<!-- 15 cl -->
+			<ingredient amount="4" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
+			<ingredient amount="2" unit="cl" substance="Cointreau"/>
+			<ingredient amount="1" unit="cl" substance="Frischer Limettensaft"/>
+			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
+			<ingredient amount="6" unit="cl" substance="Rauch Happy Day Ananassaft"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>Cuba Libre</name>
 		<teaser>Rum, Limette, Coca Cola</teaser>
 		<image>{021F9377-6B6D-4C77-9273-44A9D8DD23B9}</image>
@@ -176,7 +198,7 @@
 			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
 			<ingredient amount="4.5" unit="cl" substance="Ramazotti"/>
 			<ingredient amount="0.5" unit="cl" substance="Zuckersirup 1.5:1"/>
-			<ingredient amount="3" unit="cl" substance="Orangensaft"/>
+			<ingredient amount="3" unit="cl" substance="Rauch Happy Day Orange Mild"/>
 		</recipe>
 	</drink>
 
@@ -207,28 +229,6 @@
 
 	<!-- TODO -->
 
-	<drink>
-		<name>Bellevue</name>
-		<teaser>Rum, Cointreau, Creme of Coconut, Ananassaft</teaser>
-		<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
-		<!-- sour;sweet;bitter;dry;fresh;spicy;creamy;fruity;herbal;floral;tropical;exotic;0-star;1-star;2-star;3-star;in-testing -->
-		<tags>sweet;tropical;creamy</tags>
-		<description>
-			Ein süßer und cremiger Cocktail der nach Kokosnuss und Ananas schmeckt. Freunde von Pina Coladas werden den Bellevue ebenfalls mögen.
-		</description>
-		<glass>Fancy (300 ml)</glass>
-		<garnish>Limettenscheibe, Minze</garnish>
-		<ice kind="small">8</ice>
-		<ice kind="large">6</ice>
-		<recipe>
-			<!-- 15 cl -->
-			<ingredient amount="4" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
-			<ingredient amount="2" unit="cl" substance="Cointreau"/>
-			<ingredient amount="1" unit="cl" substance="Limettensirup"/>
-			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
-			<ingredient amount="6" unit="cl" substance="Ananassaft"/>
-		</recipe>
-	</drink>
 
 	<drink>
 		<name>Pina Colada</name>
