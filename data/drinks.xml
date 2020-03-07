@@ -146,6 +146,35 @@
 	</drink>
 
 	<drink>
+		<name>Jet Pilot</name>
+		<teaser>Rum, Zimt, Graipefruitsaft, Limettensaf</teaser>
+		<image>{44CA47B4-B8B1-42C8-BC7C-F5B1FC6B0196}</image>
+		<!-- sour;sweet;bitter;dry;fresh;spicy;creamy;fruity;herbal;floral;tropical;exotic;0-star;1-star;2-star;3-star;in-testing -->
+		<tags>in-testing;strong</tags>
+		<description>
+			TODO
+
+			(Wikipedia)
+		</description>
+		<glass>Double Old Fashioned (325 ml)</glass>
+		<garnish>Limette</garnish>
+		<ice kind="small">12</ice>
+		<ice kind="large">6</ice>
+		<recipe>
+			<!-- ? cl -->
+			<ingredient amount="3" unit="cl" substance="Jamaican Rum"/>
+			<ingredient amount="2.25" unit="cl" substance="Overproof Rum"/>
+			<ingredient amount="2.25" unit="cl" substance="Golden Rum"/>
+			<ingredient amount="1.5" unit="cl" substance="Velvet Falernum"/>
+			<ingredient amount="0.75" unit="cl" substance="Zimtsirup"/>
+			<ingredient amount="1.5" unit="cl" substance="Frischer Graipefruitsaft"/>
+			<ingredient amount="1.5" unit="cl" substance="Limettensaft"/>
+			<ingredient amount="2" unit="dash" substance="Absinthe"/>
+			<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>Horse's Neck with a Kick</name>
 		<teaser>Bourbon Whiskey, Ginger Ale</teaser>
 		<image>{333B7D62-E8CD-4449-8B13-F48538E63F7F}</image>
