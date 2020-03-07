@@ -320,6 +320,36 @@
 	</drink>
 
 	<drink>
+		<name>Singapore Sling</name>
+		<teaser>Gin, Limettensaft, Kirschlikör, Cointreau, Benedictine, Ananassaft</teaser>
+		<image>{50B3EA34-2FE3-47D2-8498-C956687DE2FB}</image>
+		<tags>sour;fresh;bitter;3-star</tags>
+		<description>
+			Singapore Sling ist ein fruchtig-aromatischer Cocktail aus Gin, Kirschlikör, Bénédictine und weiteren Zutaten.
+
+			Die Slings bilden eine sehr alte Gruppe von Mixgetränken und bestanden ursprünglich – nach einer Definition von 1675 – aus einer Spirituose, Zucker und Wasser, sowie optional etwas Muskatnuss. Dementsprechend wurde auch 1806 das damals noch neue Wort "Cocktail" als "bittered sling" definiert, also als ein mit Cocktailbitter gewürzter Sling.
+
+			Die herbere Vorgängervariante des Singapore Sling ist der Straits Sling. Hier wird der Ananassaft weggelassen. Dadurch wird der Cocktail weniger fruchtig.
+
+			(Wikipedia)
+		</description>
+		<glass>Fancy (300 ml)</glass>
+		<garnish>Amarenakirsche</garnish>
+		<ice kind="small">10</ice>
+		<ice kind="large">6</ice>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
+			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+			<ingredient amount="2" unit="cl" substance="Heering Kirschlikör"/>
+			<ingredient amount="1" unit="cl" substance="Cointreau"/>
+			<ingredient amount="1" unit="cl" substance="D.O.M. Benedictine Kräuterlikör"/>
+			<ingredient amount="1" unit="cl" substance="Grenadine"/>
+			<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
+			<ingredient amount="8" unit="cl" substance="Ananassaft"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>White Russian</name>
 		<teaser>Wodka, Kaffeelikör, Sahne</teaser>
 		<image>{B0EF4AC3-03A4-49C4-8450-E2C48E6A23A3}</image>
@@ -714,31 +744,7 @@
 		</recipe>
 	</drink>
 
-	<drink>
-		<name>Singapore Sling</name>
-		<teaser>Gin, Limettensaft, Kirschlikör, Cointreau, Benedictine, Ananassaft</teaser>
-		<image>{50B3EA34-2FE3-47D2-8498-C956687DE2FB}</image>
-		<tags>sour;exotic</tags>
-		<description>
-			Singapore Sling ist ein fruchtig-aromatischer Cocktail aus Gin, Kirschlikör, Bénédictine und weiteren Zutaten.
 
-			Die Slings bilden eine sehr alte Gruppe von Mixgetränken und bestanden ursprünglich – nach einer Definition von 1675 – aus einer Spirituose, Zucker und Wasser, sowie optional etwas Muskatnuss. Dementsprechend wurde auch 1806 das damals noch neue Wort „Cocktail“ als „bittered sling“ definiert, also als ein mit Cocktailbitter gewürzter Sling.
-
-			Die herbere Vorgängervariante des Singapore Sling ist der Straits Sling. Hier wird der Ananassaft weggelassen. Dadurch wird der Cocktail weniger fruchtig.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-			<ingredient amount="2" unit="cl" substance="Heering Kirschlikör"/>
-			<ingredient amount="1" unit="cl" substance="Cointreau"/>
-			<ingredient amount="1" unit="cl" substance="D.O.M. Benedictine Kräuterlikör"/>
-			<ingredient amount="1" unit="cl" substance="Grenadine"/>
-			<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
-			<ingredient amount="8" unit="cl" substance="Ananassaft"/>
-		</recipe>
-	</drink>
 
 
 	<drink>
