@@ -173,6 +173,30 @@
 	</drink>
 
 	<drink>
+		<name>Martinez (Old Tom Gin)</name>
+		<teaser>Old Tom Gin, Vermouth, Maraschino</teaser>
+		<image>{A4A74BCF-80B8-4489-AEC5-35AF97FBA949}</image>
+		<tags>in-testing;sweet;bitter;dry;0-star</tags>
+		<description>
+			Der Martinez Cocktail gilt landläufig als Urgroßvater des Dry Martini. Und diese Zuschreibung stimmt mehr oder weniger, soweit die Quellen es zeigen. Gleichzeitig wird man dem Drink mit dieser Sichtweise allein nicht gerecht.
+
+			(mixology.eu)
+		</description>
+		<glass>Martini (200 ml)</glass>
+		<garnish>Zitronenzeste</garnish>
+		<ice kind="small"></ice>
+		<ice kind="large">6</ice>
+		<recipe>
+			<!-- 9 cl -->
+			<ingredient amount="6" unit="cl" substance="Hayman's Old Tom Gin"/>
+			<ingredient amount="0.75" unit="cl" substance="Vermouth Dry"/>
+			<ingredient amount="2.25" unit="cl" substance="Martini Vermouth Rosso"/>
+			<ingredient amount="0.75" unit="cl" substance="Luxardo Maraschino"/>
+			<ingredient amount="1" unit="dash" substance="Angustora Bitter"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>Negroni</name>
 		<teaser>Gin, Campari, Vermouth Rosso</teaser>
 		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
@@ -746,5 +770,9 @@
 			<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
 		</recipe>
 	</drink>
+
+
+
+
 
 </drinks>
