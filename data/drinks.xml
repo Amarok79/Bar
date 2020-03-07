@@ -218,7 +218,7 @@
 			<ingredient amount="0.75" unit="cl" substance="Vermouth Dry"/>
 			<ingredient amount="2.25" unit="cl" substance="Martini Vermouth Rosso"/>
 			<ingredient amount="0.75" unit="cl" substance="Luxardo Maraschino"/>
-			<ingredient amount="1" unit="dash" substance="Angustora Bitter"/>
+			<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
 		</recipe>
 	</drink>
 
