@@ -122,6 +122,31 @@
 	</drink>
 
 	<drink>
+		<name>Caipirinha</name>
+		<teaser>Cachaça, Limette, Rohrzucker</teaser>
+		<image>{A6652EC4-99C8-4A96-B5DC-10831E208217}</image>
+		<tags>3-star;sour;sweet</tags>
+		<description>
+			Caipirinha ist ein aus Brasilien stammender Cocktail, der mittlerweile weltweit verbreitet ist. Er wird auch – in Anlehnung an die portugiesische weibliche Form (a caipirinha) – als die Caipirinha bezeichnet. Im deutschen Sprachraum ist auch die Kurzbezeichnung (der) Caipi verbreitet.
+
+			Die Bezeichnung Caipirinha ist die Verkleinerungsform des brasilianischen Caipira, das soviel wie „Landei“ bedeutet. Trotz des Namens war Caipirinha ursprünglich ein Cocktail der ländlichen Oberschicht und verbreitete sich nach Ende des Ersten Weltkrieges in den Großstädten, während im Landesinneren der Zuckerrohrschnaps meistens pur genossen wird.
+
+			Cachaça – man spricht Kaschassa – ist eine brasilianische Spirituose aus Zuckerrohrsaft, die früher und hochsprachlich als Aguardente (= heiß brennendes Wasser oder "Feuerwasser") und umgangssprachlich oft als Pinga (= Fusel) bezeichnet wird. Ähnlich wie Rum wird Cachaça aus Zuckerrohrsaft hergestellt, wobei hier die Verarbeitungsschritte anders sind.
+
+			(Wikipedia)
+		</description>
+		<glass>Caipirinha (250 ml)</glass>
+		<garnish></garnish>
+		<ice kind="small">12</ice>
+		<ice kind="large">0</ice>
+		<recipe>
+			<ingredient amount="1" unit="" substance="Limette"/>
+			<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
+			<ingredient amount="6" unit="cl" substance="Germana da Palha Premium Artesanal Cachaça"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>Cuba Libre</name>
 		<teaser>Rum, Limette, Coca Cola</teaser>
 		<image>{021F9377-6B6D-4C77-9273-44A9D8DD23B9}</image>
@@ -528,27 +553,6 @@
 			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
 			<ingredient amount="1.5" unit="cl" substance="Zuckersirup 2:1"/>
 			<ingredient amount="2" unit="BL" substance="Brombeerlikör"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Caipirinha</name>
-		<teaser>Cachaça, Limette, Rohrzucker</teaser>
-		<image>{A6652EC4-99C8-4A96-B5DC-10831E208217}</image>
-		<tags>sour;sweet</tags>
-		<description>
-			Caipirinha ist ein aus Brasilien stammender Cocktail, der mittlerweile weltweit verbreitet ist. Er wird auch – in Anlehnung an die portugiesische weibliche Form (a caipirinha) – als die Caipirinha bezeichnet. Im deutschen Sprachraum ist auch die Kurzbezeichnung (der) Caipi verbreitet.
-
-			Die Bezeichnung Caipirinha ist die Verkleinerungsform des brasilianischen Caipira, das soviel wie „Landei“ bedeutet. Trotz des Namens war Caipirinha ursprünglich ein Cocktail der ländlichen Oberschicht und verbreitete sich nach Ende des Ersten Weltkrieges in den Großstädten, während im Landesinneren der Zuckerrohrschnaps meistens pur genossen wird.
-
-			Cachaça – man spricht Kaschassa – ist eine brasilianische Spirituose aus Zuckerrohrsaft, die früher und hochsprachlich als Aguardente (= heiß brennendes Wasser oder „Feuerwasser“) und umgangssprachlich oft als Pinga (= Fusel) bezeichnet wird. Ähnlich wie Rum wird Cachaça aus Zuckerrohrsaft hergestellt, wobei hier die Verarbeitungsschritte anders sind.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="1" unit="" substance="Limette"/>
-			<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
-			<ingredient amount="6" unit="cl" substance="Germana da Palha Premium Cachaca"/>
 		</recipe>
 	</drink>
 
