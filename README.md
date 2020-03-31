@@ -1,4 +1,4 @@
 
-![](res/Home.png?raw=true)
+![](res/Home2.png?raw=true)
 
-![](res/Detail.png?raw=true)
+![](res/Detail2.png?raw=true)
