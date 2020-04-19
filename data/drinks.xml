@@ -423,7 +423,7 @@
 			<ingredient amount="1" unit="cl" substance="D.O.M. Benedictine Kräuterlikör"/>
 			<ingredient amount="1" unit="cl" substance="Grenadine"/>
 			<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
-			<ingredient amount="8" unit="cl" substance="Ananassaft"/>
+			<ingredient amount="6" unit="cl" substance="Ananassaft"/>
 		</recipe>
 	</drink>
 
