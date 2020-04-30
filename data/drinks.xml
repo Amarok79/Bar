@@ -322,6 +322,27 @@
 	</drink>
 
 	<drink>
+		<name>Mojito</name>
+		<teaser>Weißer Rum, Limettensaft, Minze, Soda</teaser>
+		<image>{A1863D10-D675-4A35-8E0D-AF26115A24D9}</image>
+		<tags>3-star;sour;sweet</tags>
+		<description>
+			Der Mojito ist ein ursprünglich kubanischer Drink, über die Entstehung seines Namens kursieren jedoch verschiedene Erklärungen. Einer zufolge soll die Bezeichnung vom westafrikanischen Wort mojo abgeleitet sein, einem Stoffbeutel mit magischen Gewürzen und Zaubergegenständen. Die verniedlichende Form dieses Lehnwortes würde mojito folglich „kleiner Zauber“ bedeuten.
+
+			Der Mojito geht auf eine lange Tradition von Rum-Getränken in der Karibik zurück. So soll bereits im 16. Jahrhundert der britische Freibeuter Francis Drake ein Getränk aus Zucker, echten Limetten, Aguardiente de Caña (ein einfacher Zuckerrohrschnaps) und Minze gegen seine Magenbeschwerden konsumiert haben. Von den Spaniern wurde Drake gefürchtet und erhielt den Spitznamen „El Draque“ (span. der Drache) und so nannte man auch das Getränk, das später mit Rum gemischt wurde, als sich dessen Herstellung in der Karibik verbreitete.
+
+			(Wikipedia)
+		</description>
+		<recipe>
+			<ingredient substance="Minzzweige"/>
+			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
+			<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
+			<ingredient amount="6" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
+			<ingredient amount="3" unit="cl" substance="Soda"/>
+		</recipe>
+	</drink>
+
+	<drink>
 		<name>Negroni</name>
 		<teaser>Gin, Campari, Vermouth Rosso</teaser>
 		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
@@ -755,26 +776,6 @@
 	</drink>
 
 
-	<drink>
-		<name>Mojito</name>
-		<teaser>Weißer Rum, Limettensaft, Minze, Soda</teaser>
-		<image>{A1863D10-D675-4A35-8E0D-AF26115A24D9}</image>
-		<tags>sour;sweet;exotic</tags>
-		<description>
-			Der Mojito ist ein ursprünglich kubanischer Drink, über die Entstehung seines Namens kursieren jedoch verschiedene Erklärungen. Einer zufolge soll die Bezeichnung vom westafrikanischen Wort mojo abgeleitet sein, einem Stoffbeutel mit magischen Gewürzen und Zaubergegenständen. Die verniedlichende Form dieses Lehnwortes würde mojito folglich „kleiner Zauber“ bedeuten.
-
-			Der Mojito geht auf eine lange Tradition von Rum-Getränken in der Karibik zurück. So soll bereits im 16. Jahrhundert der britische Freibeuter Francis Drake ein Getränk aus Zucker, echten Limetten, Aguardiente de Caña (ein einfacher Zuckerrohrschnaps) und Minze gegen seine Magenbeschwerden konsumiert haben. Von den Spaniern wurde Drake gefürchtet und erhielt den Spitznamen „El Draque“ (span. der Drache) und so nannte man auch das Getränk, das später mit Rum gemischt wurde, als sich dessen Herstellung in der Karibik verbreitete.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient substance="Minzzweige"/>
-			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
-			<ingredient amount="6" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
-			<ingredient amount="3" unit="cl" substance="Soda"/>
-		</recipe>
-	</drink>
 
 
 	<drink>
