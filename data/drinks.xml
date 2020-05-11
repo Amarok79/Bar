@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <drinks>
 
+	<!-- sour|sweet|bitter|dry|fresh|spicy|creamy|fruity|herbal|floral|tropical|exotic|0-star|1-star|2-star|3-star|in-testing -->
+
 	<drink>
 		<name>Alexander (Gin)</name>
 		<teaser>Gin, Creme de Cacaco, Sahne, Muskatnuss</teaser>
@@ -13,11 +15,7 @@
 
 			(Wikipedia)
 		</description>
-		<garnish></garnish>
-		<ice kind="small">0</ice>
-		<ice kind="large">5</ice>
 		<recipe>
-			<!-- 8 cl -->
 			<ingredient amount="3" unit="cl" substance="Beefeater 24 London Dry Gin"/>
 			<ingredient amount="2" unit="cl" substance="Creme de Cacao Blanc"/>
 			<ingredient amount="3" unit="cl" substance="Sahne"/>
@@ -37,17 +35,33 @@
 
 			(Wikipedia)
 		</description>
-		<glass>Old Fashioned (250 ml)</glass>
-		<garnish>Zitronenzeste, Amarenakirsche</garnish>
-		<ice kind="small">8</ice>
-		<ice kind="large">6</ice>
 		<recipe>
-			<!-- 11 cl -->
 			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
 			<ingredient amount="4.5" unit="cl" substance="Amaretto Disaronno Originale"/>
-			<ingredient amount="0.5" unit="cl" substance="Zuckersirup 1.5:1"/>
-			<ingredient amount="3" unit="cl" substance="Rauch Happy Day Orange Mild"/>
+			<ingredient amount="0.5" unit="cl" substance="Zuckersirup"/>
+			<ingredient amount="3" unit="cl" substance="Frischer Orangensaft"/>
 			<ingredient amount="2" unit="dash" substance="The Bitter Truth Orange Bitter"/>
+		</recipe>
+	</drink>
+
+	<drink>
+		<name>Americano</name>
+		<teaser>Campari, Vermouth Rosso, Soda</teaser>
+		<image>{5F0D01F0-B2CD-496F-BA3E-79BB0D564D9C}</image>
+		<tags>1-star;bitter;fresh</tags>
+		<description>
+			Der Americano ist ein klassischer Aperitifcocktail. Zubereitet wird er aus Campari und Vermouth rosso. Als Garnierung werden Orange und Zitrone verwendet.
+
+			Bekanntheit erlangte der Americano nicht zuletzt auch durch Ian Flemings James Bond, der in Casino Royale, dem allerersten Band der Romanserie, als ersten Drink einen Americano bestellt.
+
+			Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
+
+			(Wikipedia)
+		</description>
+		<recipe>
+			<ingredient amount="4.5" unit="cl" substance="Martini Vermouth Rosso"/>
+			<ingredient amount="4.5" unit="cl" substance="Campari Bitterlikör"/>
+			<ingredient amount="7.5" unit="cl" substance="Soda"/>
 		</recipe>
 	</drink>
 
@@ -55,7 +69,7 @@
 		<name>Averna Sour</name>
 		<teaser>Averna, Zitronensaft, Orangensaft</teaser>
 		<image>{521394D8-A663-44AA-9385-4C626BD8586B}</image>
-		<tags>3-star;sour;bitter;herbal</tags>
+		<tags>3-star;sour;sweet;bitter;herbal</tags>
 		<description>
 			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge.
 
@@ -63,16 +77,11 @@
 
 			(Wikipedia)
 		</description>
-		<glass>Old Fashioned (250 ml)</glass>
-		<garnish>Zitronenscheibe</garnish>
-		<ice kind="small">8</ice>
-		<ice kind="large">6</ice>
 		<recipe>
-			<!-- 11 cl -->
 			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
 			<ingredient amount="5" unit="cl" substance="Averna Bitterlikör"/>
-			<ingredient amount="1" unit="cl" substance="Zuckersirup 1.5:1"/>
-			<ingredient amount="2" unit="cl" substance="Rauch Happy Day Orange Mild"/>
+			<ingredient amount="1" unit="cl" substance="Zuckersirup"/>
+			<ingredient amount="2" unit="cl" substance="Frischer Orangensaft"/>
 		</recipe>
 	</drink>
 
@@ -80,7 +89,7 @@
 		<name>Aviation</name>
 		<teaser>Gin, Zitronensaft, Maraschino, Crème de Violette</teaser>
 		<image>{136D550D-DEA2-445C-BF40-0890D0BD6920}</image>
-		<tags>in-testing;sour;floral;0-star</tags>
+		<tags>in-testing;sour;sweet;floral;0-star</tags>
 		<description>
 			Der Aviation ist ein klassischer Cocktail aus Gin, Maraschino-Likör, Crème de Violette (Veilchenlikör) und Zitronensaft. Durch die Kombination einer Basisspirituose mit Zitrussaft und einer Zuckerquelle – hier den Likören – ist der Shortdrink in der Gruppe der Sours einzuordnen. Seinen Namen verdankt der Cocktail wahrscheinlich seiner zart silbrig-grauen Färbung durch den Veilchenlikör, der an den Himmel und die zu seiner Entstehungszeit Anfang des 20. Jahrhunderts aufkommende Luftfahrt (engl. „aviation“) erinnert.
 
@@ -88,12 +97,7 @@
 
 			(Wikipedia)
 		</description>
-		<glass>Martini (200 ml)</glass>
-		<garnish>Zitronenzeste, Cocktailkirsche</garnish>
-		<ice kind="small"></ice>
-		<ice kind="large">6</ice>
 		<recipe>
-			<!-- 9 cl -->
 			<ingredient amount="1.5" unit="cl" substance="Frischer Zitronensaft"/>
 			<ingredient amount="5.25" unit="cl" substance="Beefeater 24 London Dry Gin"/>
 			<ingredient amount="1.5" unit="cl" substance="Luxardo Maraschino"/>
@@ -106,7 +110,7 @@
 		<name>B52</name>
 		<teaser>Kaffeelikör, Baileys, Grand Manier</teaser>
 		<image>{BFF1FC54-B5B3-4F19-B517-1D77130A27A1}</image>
-		<tags>sweet;strong;3-star</tags>
+		<tags>sweet;creamy;3-star</tags>
 		<description>
 			Der B52 (auch „Bifi“) ist ein Cocktail (Kurzer), dessen Bestandteile im Glas drei – auch optisch – klar abgegrenzte Schichten ergeben.
 
@@ -117,9 +121,30 @@
 			(Wikipedia)
 		</description>
 		<recipe>
+			<ingredient amount="1" unit="BL" substance="Plantation OFTD Overproof"/>
 			<ingredient amount="2" unit="cl" substance="Kahlua Kaffeelikör"/>
 			<ingredient amount="2" unit="cl" substance="Baileys"/>
 			<ingredient amount="2" unit="cl" substance="Grand Manier"/>
+		</recipe>
+	</drink>
+
+	<drink>
+		<name>Batida de Maracuja</name>
+		<teaser>Cachaça, Passionsfrucht, Kokosmilch</teaser>
+		<image>{013A08A2-8958-4287-9AE1-759431D6F57B}</image>
+		<tags>sweet;creamy;tropical;2-star</tags>
+		<description>
+			Batida ist die portugiesisch-brasilianische Bezeichnung für eine Gruppe von alkoholischen Cocktails. Das Wort leitet sich von Portugiesisch „bater“ (schlagen) ab. Ein Batida besteht immer aus Cachaça (weißem Zuckerrohrschnaps), Fruchtsaft oder Fruchtmark, Rohrzucker und meist auch etwas Wasser.
+
+			Die Passionsfrucht ist meist auch unter dem Namen Maracuja bekannt wobei sich bei der Maracuja um eine gelbe Variante der Passionsfrucht handelt. Die biologischen Verwandten der Passionsfrucht gehen zu den Weiden, Pappeln oder Veilchen zurück. Die Passionsfrucht stammt von der Passionsblume ab und ist eine essbare Art.
+
+			(Wikipedia)
+		</description>
+		<recipe>
+			<ingredient amount="2" unit="" substance="Passionsfrucht"/>
+			<ingredient amount="5" unit="cl" substance="Germana da Palha Premium Cachaca"/>
+			<ingredient amount="2" unit="cl" substance="Monin Maracuja Fruchtpüree"/>
+			<ingredient amount="6" unit="cl" substance="Alnatura Kokosmilch"/>
 		</recipe>
 	</drink>
 
@@ -131,12 +156,7 @@
 		<description>
 			Ein süßer und cremiger Cocktail der nach Kokosnuss und Ananas schmeckt. Freunde von Pina Coladas werden den Bellevue ebenfalls mögen.
 		</description>
-		<glass>Longdrink (300 ml)</glass>
-		<garnish>Limettenscheibe, Minze</garnish>
-		<ice kind="small">10</ice>
-		<ice kind="large">6</ice>
 		<recipe>
-			<!-- 15 cl -->
 			<ingredient amount="4" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
 			<ingredient amount="2" unit="cl" substance="Cointreau"/>
 			<ingredient amount="1" unit="cl" substance="Frischer Limettensaft"/>
@@ -144,6 +164,26 @@
 			<ingredient amount="6" unit="cl" substance="Rauch Happy Day Ananassaft"/>
 		</recipe>
 	</drink>
+
+	<drink>
+		<name>Bramble</name>
+		<teaser>Gin, Zitronensaft, Brombeerlikör</teaser>
+		<image>{41E7903D-086C-4E4B-A4BA-869248A2DB25}</image>
+		<tags>sour;sweet;fruity;3-star</tags>
+		<description>
+			Der Bramble (Englisch für Brombeere) ist ein Cocktail aus Gin, Zitronensaft, Zuckersirup und dem namensgebenden Brombeerlikör. Er wird auf Eiswürfeln geschüttelt und dann in einem Old-Fashioned-Glas auf Crushed Ice (zerstoßenem Eis) serviert, dekoriert mit einer Zitronenscheibe und einer frischen Brombeere.
+
+			(Wikipedia)
+		</description>
+		<recipe>
+			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
+			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+			<ingredient amount="1.5" unit="cl" substance="Zuckersirup"/>
+			<ingredient amount="2" unit="BL" substance="Brombeerlikör"/>
+		</recipe>
+	</drink>
+
+
 
 	<drink>
 		<name>Caipirinha</name>
@@ -552,75 +592,16 @@
 
 
 
-	<drink>
-		<name>Americano</name>
-		<teaser>Campari, Vermouth Rosso, Soda</teaser>
-		<image>{5F0D01F0-B2CD-496F-BA3E-79BB0D564D9C}</image>
-		<!-- sour;sweet;bitter;dry;fresh;spicy;creamy;fruity;herbal;floral;tropical;exotic;0-star;1-star;2-star;3-star;in-testing -->
-		<tags>bitter;prickling</tags>
-		<description>
-			Der Americano ist ein klassischer Aperitifcocktail. Zubereitet wird er aus Campari und Vermouth rosso. Als Garnierung werden Orange und Zitrone verwendet.
-
-			Bekanntheit erlangte der Americano nicht zuletzt auch durch Ian Flemings James Bond, der in Casino Royale, dem allerersten Band der Romanserie, als ersten Drink einen Americano bestellt.
-
-			Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="4.5" unit="cl" substance="Martini Vermouth Rosso"/>
-			<ingredient amount="4.5" unit="cl" substance="Campari Bitterlikör"/>
-			<ingredient amount="7.5" unit="cl" substance="Soda"/>
-		</recipe>
-	</drink>
 
 
 
 
 
 
-	<drink>
-		<name>Batida de Maracuja</name>
-		<teaser>Cachaça, Passionsfrucht, Kokosmilch</teaser>
-		<image>{013A08A2-8958-4287-9AE1-759431D6F57B}</image>
-		<tags>exotic;creamy</tags>
-		<description>
-			Batida ist die portugiesisch-brasilianische Bezeichnung für eine Gruppe von alkoholischen Cocktails. Das Wort leitet sich von Portugiesisch „bater“ (schlagen) ab. Ein Batida besteht immer aus Cachaça (weißem Zuckerrohrschnaps), Fruchtsaft oder Fruchtmark, Rohrzucker und meist auch etwas Wasser.
-
-			Die Passionsfrucht ist meist auch unter dem Namen Maracuja bekannt wobei sich bei der Maracuja um eine gelbe Variante der Passionsfrucht handelt. Die biologischen Verwandten der Passionsfrucht gehen zu den Weiden, Pappeln oder Veilchen zurück. Die Passionsfrucht stammt von der Passionsblume ab und ist eine essbare Art.
-
-			(Wikipedia)
-		</description>
-		<glass>Caipirinha (300 ml)</glass>
-		<garnish>Rote Ribisel, Erdbeere</garnish>
-		<ice kind="small">8</ice>
-		<recipe>
-			<ingredient amount="2" unit="" substance="Passionsfrucht"/>
-			<ingredient amount="5" unit="cl" substance="Germana da Palha Premium Cachaca"/>
-			<ingredient amount="2" unit="cl" substance="Monin Maracuja Fruchtpüree"/>
-			<ingredient amount="6" unit="cl" substance="Alnatura Kokosmilch"/>
-		</recipe>
-	</drink>
 
 
 
-	<drink>
-		<name>Bramble</name>
-		<teaser>Gin, Zitronensaft, Brombeerlikör</teaser>
-		<image>{41E7903D-086C-4E4B-A4BA-869248A2DB25}</image>
-		<tags>sour;sweet</tags>
-		<description>
-			Der Bramble (Englisch für Brombeere) ist ein Cocktail aus Gin, Zitronensaft, Zuckersirup und dem namensgebenden Brombeerlikör. Er wird auf Eiswürfeln geschüttelt und dann in einem Old-Fashioned-Glas auf Crushed Ice (zerstoßenem Eis) serviert, dekoriert mit einer Zitronenscheibe und einer frischen Brombeere.
 
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
-			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-			<ingredient amount="1.5" unit="cl" substance="Zuckersirup 2:1"/>
-			<ingredient amount="2" unit="BL" substance="Brombeerlikör"/>
-		</recipe>
-	</drink>
 
 	<drink>
 		<name>Caipirinha &amp; Passion</name>
