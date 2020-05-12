@@ -36,6 +36,9 @@ namespace Drinks.Model
 	/// A Drink belongs to a single Bar. A Drink contains information like a simple Name, e.g. "Mai Tai",
 	/// a so called Teaser text representing the main ingredients, e.g. "Lime, Orgeat, Rum", a photo, and
 	/// a longer Description text providing interesting information about the drink.
+	/// 
+	/// In addition, a Drink refers to a Recipe, which indicates a list of Ingredients and a list of 
+	/// Instructions, both necessary to create the Drink.
 	/// </summary>
 	public sealed class Drink : Entity<DrinkId>
 	{
@@ -73,6 +76,16 @@ namespace Drinks.Model
 		/// Gets a collection of Tags associated with the Drink.
 		/// </summary>
 		public IReadOnlyCollection<String> Tags { get; private set; } = Array.Empty<String>();
+
+		/// <summary>
+		/// Gets the Glasware (the cocktail glass to use) for this Drink.
+		/// </summary>
+		public String Glasware { get; private set; }
+
+		/// <summary>
+		/// Gets the kind of Ice to use for this Drink.
+		/// </summary>
+		public String Ice { get; private set; }
 
 
 		/// <summary>
@@ -159,6 +172,32 @@ namespace Drinks.Model
 		{
 			Verify.NotNull(tags, nameof(tags));
 			this.Tags = tags.ToArray();
+			return this;
+		}
+
+		/// <summary>
+		/// Sets the Glasware of the Drink.
+		/// </summary>
+		/// 
+		/// <param name="glasware">
+		/// The teaser of the drink. Null is not allowed.</param>
+		public Drink SetGlasware(String glasware)
+		{
+			Verify.NotNull(glasware, nameof(glasware));
+			this.Glasware = glasware;
+			return this;
+		}
+
+		/// <summary>
+		/// Sets the Glasware of the Drink.
+		/// </summary>
+		/// 
+		/// <param name="ice">
+		/// The teaser of the drink. Null is not allowed.</param>
+		public Drink SetIce(String ice)
+		{
+			Verify.NotNull(ice, nameof(ice));
+			this.Ice = ice;
 			return this;
 		}
 	}
