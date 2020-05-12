@@ -47,7 +47,7 @@ namespace Drinks.Services.DrinkRepository
 		/// <summary>
 		/// Gets all drinks.
 		/// </summary>
-		public async Task<IEnumerable<Drink>> GetAll()
+		public async Task<IEnumerable<Drink>> GetAll(BarId barId)
 		{
 			String manifestPath = null;
 			try

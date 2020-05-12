@@ -34,8 +34,8 @@ namespace Drinks.Model
     public interface IDrinkRepository
     {
         /// <summary>
-        /// Gets all drinks.
+        /// Gets all Drinks for the given Bar.
         /// </summary>
-        Task<IEnumerable<Drink>> GetAll();
+        Task<IEnumerable<Drink>> GetAll(BarId barId);
     }
 }
