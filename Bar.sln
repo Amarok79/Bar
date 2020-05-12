@@ -19,11 +19,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution Items", ".Solutio
 		data\drinks.xsd = data\drinks.xsd
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Drinks.Model", "Drinks.Model", "{E6C537D2-8893-4372-9D0A-546D783787ED}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{E6C537D2-8893-4372-9D0A-546D783787ED}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Drinks.Services", "Drinks.Services", "{2E057FE2-93DB-4729-83E5-9DF442F19690}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2E057FE2-93DB-4729-83E5-9DF442F19690}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Drinks.Viewer (UWP)", "Drinks.Viewer (UWP)", "{39BFA583-9FE4-44B6-AF97-606613476BC6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Viewer", "Viewer", "{39BFA583-9FE4-44B6-AF97-606613476BC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
