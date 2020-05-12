@@ -119,7 +119,7 @@ namespace Drinks.Services.DrinkRepository
 						})
 						.ToList();
 
-					drink.SetRecipe(new Recipe(ingredients));
+					drink.SetRecipe(new Recipe(ingredients, Array.Empty<String>()));	// TODO
 				}
 
 				drinks.Add(drink);

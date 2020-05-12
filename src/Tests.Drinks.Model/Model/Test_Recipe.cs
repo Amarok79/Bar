@@ -37,7 +37,10 @@ namespace Drinks.Model
 			var ing1 = new Ingredient(5, "cl", "Light Rum");
 			var ing2 = new Ingredient(2, "tea spoon", "Sugar");
 
-			var rec = new Recipe(new[] { ing1, ing2 });
+			var rec = new Recipe(
+				new[] { ing1, ing2 },
+				new[] { "Shake all", "Fine Grain" }
+			);
 
 			Check.That(rec.Ingredients[0].Amount)
 				.IsEqualTo(5);
@@ -53,8 +56,19 @@ namespace Drinks.Model
 			Check.That(rec.Ingredients[1].Substance)
 				.IsEqualTo("Sugar");
 
+			Check.That(rec.Instructions)
+				.ContainsExactly(
+					"Shake all",
+					"Fine Grain"
+				);
+
 			Check.That(rec.ToString())
-				.IsEqualTo("5 cl Light Rum, 2 tea spoon Sugar");
+				.Contains(
+					"5 cl Light Rum",
+					"2 tea spoon Sugar",
+					"Shake all",
+					"Fine Grain"
+				);
 		}
 	}
 }

@@ -39,7 +39,7 @@ namespace Drinks.Model
 			var drinkId = new DrinkId(Guid.NewGuid());
 			var barId = new BarId(Guid.NewGuid());
 			var drink = new Drink(drinkId, barId);
-			var recipe = new Recipe(Array.Empty<Ingredient>());
+			var recipe = new Recipe(Array.Empty<Ingredient>(), Array.Empty<String>());
 
 			// assert
 			Check.That(drink.Id)

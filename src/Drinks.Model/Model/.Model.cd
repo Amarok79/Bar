@@ -12,6 +12,10 @@
   </Class>
   <Class Name="Drinks.Model.Ingredient">
     <Position X="4.75" Y="5.25" Width="1.5" />
+    <Members>
+      <Method Name="Ingredient" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
       <HashCode>AEAAAAAAAAAAAAAEIAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Ingredient.cs</FileName>
@@ -19,8 +23,12 @@
   </Class>
   <Class Name="Drinks.Model.Recipe">
     <Position X="1.75" Y="5.25" Width="1.75" />
+    <Members>
+      <Method Name="Recipe" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAACAAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Recipe.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -28,14 +36,14 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Interface Name="Drinks.Model.IImageRepository">
-    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Model\IImageRepository.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Drinks.Model.IDrinkRepository">
-    <Position X="4.5" Y="2" Width="1.5" />
+    <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>Model\IDrinkRepository.cs</FileName>
