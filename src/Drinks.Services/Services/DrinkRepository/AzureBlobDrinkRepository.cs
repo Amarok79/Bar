@@ -45,35 +45,38 @@ namespace Drinks.Services.DrinkRepository
 		IDrinkRepository
 	{
 		/// <summary>
-		/// Gets all drinks.
+		/// Gets all Drinks for the given Bar.
 		/// </summary>
 		public async Task<IEnumerable<Drink>> GetAll(BarId barId)
 		{
-			String manifestPath = null;
+			String tempPath = null;
 			try
 			{
-				manifestPath = Path.GetTempFileName();
+				tempPath = Path.GetTempFileName();
 
-				await _DownloadManifest(manifestPath)
+				await _DownloadManifest(barId, tempPath)
 					.ConfigureAwait(false);
 
-				return _LoadFromManifest(manifestPath);
+				return _LoadFromManifest(tempPath);
 			}
 			finally
 			{
-				if (manifestPath != null)
-					File.Delete(manifestPath);
+				if (tempPath != null)
+					File.Delete(tempPath);
 			}
 		}
 
 
-		private async Task _DownloadManifest(String manifestPath)
+		private async Task _DownloadManifest(BarId barId, String manifestPath)
 		{
-			const String __url = "https://amarok.blob.core.windows.net/drinks/drinks.xml";
+			var fileName = barId.Guid.ToString("D", CultureInfo.InvariantCulture)
+				.ToUpperInvariant();
+
+			var url = $"https://amarok.blob.core.windows.net/drinks/{fileName}.xml";
 
 			using (var client = new WebClient())
 			{
-				await client.DownloadFileTaskAsync(__url, manifestPath)
+				await client.DownloadFileTaskAsync(url, manifestPath)
 					.ConfigureAwait(false);
 			}
 		}
@@ -119,7 +122,7 @@ namespace Drinks.Services.DrinkRepository
 						})
 						.ToList();
 
-					drink.SetRecipe(new Recipe(ingredients, Array.Empty<String>()));	// TODO
+					drink.SetRecipe(new Recipe(ingredients, Array.Empty<String>()));    // TODO
 				}
 
 				drinks.Add(drink);

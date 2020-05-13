@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests.Drinks.Services", "sr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution Items", ".Solution Items", "{409C042A-E2B9-444D-AF7B-1FF0236028C1}"
 	ProjectSection(SolutionItems) = preProject
-		data\drinks.xml = data\drinks.xml
+		data\A8A4E6C2-2B7D-41EE-8B3D-2053D74FAD67.xml = data\A8A4E6C2-2B7D-41EE-8B3D-2053D74FAD67.xml
 		data\drinks.xsd = data\drinks.xsd
 	EndProjectSection
 EndProject

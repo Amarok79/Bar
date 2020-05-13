@@ -37,9 +37,11 @@ namespace Drinks.Services.DrinkRepository
 		[Test]
 		public async Task GetAll()
 		{
+			var barId = new BarId(new System.Guid("A8A4E6C2-2B7D-41EE-8B3D-2053D74FAD67"));
+
 			var repo = new AzureBlobDrinkRepository();
 
-			var drinks = (await repo.GetAll())
+			var drinks = (await repo.GetAll(barId))
 				.ToList();
 
 			Check.That(drinks.Count)
@@ -48,7 +50,7 @@ namespace Drinks.Services.DrinkRepository
 			foreach (var drink in drinks)
 			{
 				Check.That(drink.BarId)
-					.IsEqualTo(default(BarId));
+					.IsEqualTo(default);
 				Check.That(drink.Description)
 					.IsNotNull();
 				Check.That(drink.Id)
@@ -56,8 +58,6 @@ namespace Drinks.Services.DrinkRepository
 				Check.That(drink.Name)
 					.Not.IsEmpty();
 				Check.That(drink.Teaser)
-					.Not.IsEmpty();
-				Check.That(drink.Tags)
 					.Not.IsEmpty();
 			}
 		}
