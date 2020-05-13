@@ -42,32 +42,40 @@ namespace Drinks.Model
 		/// </summary>
 		public IReadOnlyList<Ingredient> Ingredients { get; }
 
+		/// <summary>
+		/// A list of Instructions needed for creating the Drink.
+		/// </summary>
+		public IReadOnlyList<String> Instructions { get; }
+
 
 		/// <summary>
 		/// Initializes a new instance.
 		/// </summary>
-		public Recipe(IReadOnlyList<Ingredient> ingredients)
+		public Recipe(IReadOnlyList<Ingredient> ingredients, IReadOnlyList<String> instructions)
 		{
 			Verify.NotNull(ingredients, nameof(ingredients));
+			Verify.NotNull(instructions, nameof(instructions));
+
 			this.Ingredients = ingredients;
+			this.Instructions = instructions;
 		}
 
 
 		/// <summary>
 		/// Returns a string that represents the current instance.
 		/// </summary>
-		///
-		/// <returns>
-		/// A string that represents the current instance.</returns>
 		public override String ToString()
 		{
 			var sb = new StringBuilder();
+
+			sb.AppendLine("Ingredients:");
 			foreach (var ingredient in this.Ingredients)
-			{
-				if (sb.Length > 0)
-					sb.Append(", ");
-				sb.Append(ingredient.ToString());
-			}
+				sb.AppendLine(ingredient.ToString());
+
+			sb.AppendLine("Instructions:");
+			foreach (var instruction in this.Instructions)
+				sb.AppendLine(instruction);
+
 			return sb.ToString();
 		}
 	}

@@ -98,7 +98,9 @@ namespace Drinks.Viewer.Home
 			{
 				ViewModel.IsDrinksLoading = true;
 
-				var drinks = await this.DrinkRepository.GetAll()
+				var barId = new BarId(new Guid("A8A4E6C2-2B7D-41EE-8B3D-2053D74FAD67"));
+
+				var drinks = await this.DrinkRepository.GetAll(barId)
 					.ConfigureAwait(true);
 
 				var uiDrinks = new List<UiDrink>();

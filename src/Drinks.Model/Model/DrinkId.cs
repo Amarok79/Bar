@@ -64,10 +64,6 @@ namespace Drinks.Model
 		/// Returns a string that represents the current instance. This method returns a string in upper case 
 		/// to make returned strings equatable.
 		/// </summary>
-		/// 
-		/// <returns>
-		/// A string that represents the current instance.
-		/// </returns>
 		public override String ToString()
 		{
 			return mGuid.ToString("B", CultureInfo.InvariantCulture).ToUpperInvariant();
@@ -80,9 +76,6 @@ namespace Drinks.Model
 		/// <summary>
 		/// Returns the hash code for the current instance. 
 		/// </summary>
-		/// 
-		/// <returns>
-		/// A 32-bit signed integer hash code.</returns>
 		public override Int32 GetHashCode()
 		{
 			return mGuid.GetHashCode();
@@ -127,6 +120,7 @@ namespace Drinks.Model
 		/// The first instance to compare.</param>
 		/// <param name="b">
 		/// The second instance to compare.</param>
+		/// 
 		/// <returns>
 		/// True, if the specified instances are equal; otherwise, False.</returns>
 		public static Boolean operator ==(DrinkId a, DrinkId b)
@@ -142,6 +136,7 @@ namespace Drinks.Model
 		/// The first instance to compare.</param>
 		/// <param name="b">
 		/// The second instance to compare.</param>
+		/// 
 		/// <returns>
 		/// True, if the specified instances are unequal; otherwise, False.</returns>
 		public static Boolean operator !=(DrinkId a, DrinkId b)

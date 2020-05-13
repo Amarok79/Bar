@@ -52,7 +52,8 @@
 			  IsEditable="False"
 			  ItemsSource="{Binding Styles}"
 			  SelectedItem="{Binding SelectedStyle, Mode=TwoWay}"
-			  SelectionChanged="_HandleDrinkStyleSelectionChanged">
+			  SelectionChanged="_HandleDrinkStyleSelectionChanged"
+			  Visibility="Collapsed">
 			</ComboBox>
 		</Grid>
 

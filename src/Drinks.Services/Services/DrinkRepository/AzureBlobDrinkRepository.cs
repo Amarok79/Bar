@@ -45,69 +45,97 @@ namespace Drinks.Services.DrinkRepository
 		IDrinkRepository
 	{
 		/// <summary>
-		/// Gets all drinks.
+		/// Gets all Drinks for the given Bar.
 		/// </summary>
-		public async Task<IEnumerable<Drink>> GetAll()
+		public async Task<IEnumerable<Drink>> GetAll(BarId barId)
 		{
-			String manifestPath = null;
+			String tempPath = null;
 			try
 			{
-				manifestPath = Path.GetTempFileName();
+				tempPath = Path.GetTempFileName();
 
-				await _DownloadManifest(manifestPath)
+				await _DownloadManifest(barId, tempPath)
 					.ConfigureAwait(false);
 
-				return _LoadFromManifest(manifestPath);
+				return _LoadFromManifest(barId, tempPath);
 			}
 			finally
 			{
-				if (manifestPath != null)
-					File.Delete(manifestPath);
+				if (tempPath != null)
+					File.Delete(tempPath);
 			}
 		}
 
 
-		private async Task _DownloadManifest(String manifestPath)
+		private async Task _DownloadManifest(BarId barId, String manifestPath)
 		{
-			const String __url = "https://amarok.blob.core.windows.net/drinks/drinks.xml";
+			var fileName = barId.Guid.ToString("D", CultureInfo.InvariantCulture)
+				.ToUpperInvariant();
+
+			var url = $"https://amarok.blob.core.windows.net/drinks/{fileName}.xml";
 
 			using (var client = new WebClient())
 			{
-				await client.DownloadFileTaskAsync(__url, manifestPath)
+				await client.DownloadFileTaskAsync(url, manifestPath)
 					.ConfigureAwait(false);
 			}
 		}
 
-		private List<Drink> _LoadFromManifest(String manifestPath)
+		private List<Drink> _LoadFromManifest(BarId barId, String manifestPath)
 		{
 			var doc = XDocument.Load(manifestPath);
+			var catalogNode = doc.Element("catalog");
+
+			var substances = new Dictionary<String, String>();
+			foreach (var substanceNode in catalogNode.Element("substances").Elements("substance"))
+			{
+				var id = substanceNode.Attribute("id").Value;
+				var name = substanceNode.Value;
+
+				substances.Add(id, name.Trim());
+			}
 
 			var drinks = new List<Drink>();
-			foreach (var drinkNode in doc.Element("drinks").Elements("drink"))
+			foreach (var drinkNode in catalogNode.Element("drinks").Elements("drink"))
 			{
 				var name = drinkNode.Element("name").Value;
 				var teaser = drinkNode.Element("teaser").Value;
 				var image = Guid.Parse(drinkNode.Element("image").Value);
-				var desc = drinkNode.Element("description")?.Value;
-				var tags = drinkNode.Element("tags")?.Value;
+				var desc = drinkNode.Element("description").Value;
+				var tags = drinkNode.Element("tags").Value;
+				var glass = drinkNode.Element("glass")?.Value;
+				var ice = drinkNode.Element("ice")?.Value;
 
-				var drink = new Drink(new DrinkId(Guid.NewGuid()), new BarId())
-					.SetName(name)
-					.SetTeaser(teaser)
+				var drink = new Drink(new DrinkId(Guid.NewGuid()), barId)
+					.SetName(name.Trim())
+					.SetTeaser(teaser.Trim())
 					.SetImage(new ImageId(image))
 					.SetDescription(_TrimDescription(desc))
-					.SetTags(_SplitAndTrimTags(tags));
+					.SetTags(_SplitAndTrimTags(tags))
+					.SetGlass(glass?.Trim() ?? String.Empty)
+					.SetIce(ice?.Trim() ?? String.Empty)
+					;
+
+				Ingredient[] ingredients = null;
+				String[] instructions = null;
 
 				var recipeNode = drinkNode.Element("recipe");
 
 				if (recipeNode != null)
 				{
-					var ingredients = recipeNode.Elements("ingredient")
+					ingredients = recipeNode.Elements("ingredient")
 						.Select(x =>
 						{
 							var amount = x.Attribute("amount")?.Value;
 							var unit = x.Attribute("unit")?.Value;
 							var substance = x.Attribute("substance").Value;
+
+							if (substance.StartsWith("@", StringComparison.Ordinal))
+							{
+								var substanceId = substance.Substring(1);
+								if (substances.TryGetValue(substanceId, out var substanceName))
+									substance = substanceName;
+							}
 
 							if (amount == null && unit == null)
 								return new Ingredient(substance);
@@ -117,10 +145,17 @@ namespace Drinks.Services.DrinkRepository
 									unit,
 									substance);
 						})
-						.ToList();
+						.ToArray();
 
-					drink.SetRecipe(new Recipe(ingredients));
+					instructions = recipeNode.Elements("instruction")
+						.Select(x => x.Value?.Trim())
+						.ToArray();
 				}
+
+				drink.SetRecipe(new Recipe(
+					ingredients ?? Array.Empty<Ingredient>(),
+					instructions ?? Array.Empty<String>()
+				));
 
 				drinks.Add(drink);
 			}
