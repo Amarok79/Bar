@@ -40,7 +40,9 @@ namespace Drinks.Viewer.DrinkDetail
 					new Ingredient(3, "cl", "dmBio Cranberrysaft, 100% Muttersaft"),
 					new Ingredient(1.5, "cl", "Zuckersirup 2:1"),
 					new Ingredient(1, "cl", "The Bitter Truth Orange Bitter"),
-				});
+				},
+				Array.Empty<String>()
+			);
 
 			var drink = new Drink(default, default)
 				.SetDescription(
