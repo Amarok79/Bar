@@ -1,739 +1,762 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<drinks>
-
-	<!-- sour|sweet|bitter|dry|fresh|spicy|creamy|fruity|herbal|floral|tropical|exotic|0-star|1-star|2-star|3-star|in-testing -->
-
-	<drink>
-		<name>Alexander (Gin)</name>
-		<teaser>Gin, Creme de Cacaco, Sahne, Muskatnuss</teaser>
-		<image>{8AFFEC5A-A659-460F-8BE4-438C1F17F638}</image>
-		<tags>2-star;sweet;creamy</tags>
-		<description>
-			Der Alexander ist ein alkoholischer Sahne-Cocktail und gehört als Digestif zu den After-Dinner-Drinks, also alkoholhaltigen Shortdrinks, die gerne nach dem Essen genossen werden. Verbreitet ist vor allem die auch als Brandy Alexander bezeichnete Variante mit Brandy statt, wie ursprünglich, Gin.
-
-			Der Cocktail entstand Anfang des 20. Jahrhunderts, eine der frühesten Quellen ist die 1916 vom New Yorker Barkeeper Hugo Ensslin im Selbstverlag herausgegebene Sammlung Recipes for Mixed Drinks.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-			<ingredient amount="2" unit="cl" substance="Creme de Cacao Blanc"/>
-			<ingredient amount="3" unit="cl" substance="Sahne"/>
-			<ingredient substance="Muskatnuss"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Amaretto Sour</name>
-		<teaser>Amaretto, Zitronensaft, Orangensaft</teaser>
-		<image>{AB485B95-363F-4365-8FCD-1E2F7BF3BF7C}</image>
-		<tags>3-star;sour;sweet</tags>
-		<description>
-			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge.
-
-			Amaretto ist eine Geschmacksrichtung für ursprünglich aus Italien stammende Liköre mit einem nussigen Aroma, das an Marzipan erinnert. Die Bezeichnung „Amaretto“ ist eine Verkleinerungsform des italienischen Wortes amaro, was so viel bedeutet wie „bitter“. Ursprünglich wurden Bittermandeln (italienisch mandorla amara) oder Aprikosenkerne, teilweise auch süße Mandeln zur Aromatisierung verwendet.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
-			<ingredient amount="4.5" unit="cl" substance="Amaretto Disaronno Originale"/>
-			<ingredient amount="0.5" unit="cl" substance="Zuckersirup"/>
-			<ingredient amount="3" unit="cl" substance="Frischer Orangensaft"/>
-			<ingredient amount="2" unit="dash" substance="The Bitter Truth Orange Bitter"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Americano</name>
-		<teaser>Campari, Vermouth Rosso, Soda</teaser>
-		<image>{5F0D01F0-B2CD-496F-BA3E-79BB0D564D9C}</image>
-		<tags>1-star;bitter;fresh</tags>
-		<description>
-			Der Americano ist ein klassischer Aperitifcocktail. Zubereitet wird er aus Campari und Vermouth rosso. Als Garnierung werden Orange und Zitrone verwendet.
-
-			Bekanntheit erlangte der Americano nicht zuletzt auch durch Ian Flemings James Bond, der in Casino Royale, dem allerersten Band der Romanserie, als ersten Drink einen Americano bestellt.
-
-			Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="4.5" unit="cl" substance="Martini Vermouth Rosso"/>
-			<ingredient amount="4.5" unit="cl" substance="Campari Bitterlikör"/>
-			<ingredient amount="7.5" unit="cl" substance="Soda"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Averna Sour</name>
-		<teaser>Averna, Zitronensaft, Orangensaft</teaser>
-		<image>{521394D8-A663-44AA-9385-4C626BD8586B}</image>
-		<tags>3-star;sour;sweet;bitter;herbal</tags>
-		<description>
-			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge.
-
-			Averna (Amaro Siciliano) ist ein sizilianischer Bitterlikör, hergestellt aus verschiedenen Kräutern, Wurzeln und ätherischen Ölen aus Bitterorangen und Zitronen. Der Geschmack von Averna ist bittersüß mit Anklängen von Orange und Süßholz sowie Noten von Myrte, Wacholderbeeren, Rosmarin und Salbei.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
-			<ingredient amount="5" unit="cl" substance="Averna Bitterlikör"/>
-			<ingredient amount="1" unit="cl" substance="Zuckersirup"/>
-			<ingredient amount="2" unit="cl" substance="Frischer Orangensaft"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Aviation</name>
-		<teaser>Gin, Zitronensaft, Maraschino, Crème de Violette</teaser>
-		<image>{136D550D-DEA2-445C-BF40-0890D0BD6920}</image>
-		<tags>in-testing;sour;sweet;floral;0-star</tags>
-		<description>
-			Der Aviation ist ein klassischer Cocktail aus Gin, Maraschino-Likör, Crème de Violette (Veilchenlikör) und Zitronensaft. Durch die Kombination einer Basisspirituose mit Zitrussaft und einer Zuckerquelle – hier den Likören – ist der Shortdrink in der Gruppe der Sours einzuordnen. Seinen Namen verdankt der Cocktail wahrscheinlich seiner zart silbrig-grauen Färbung durch den Veilchenlikör, der an den Himmel und die zu seiner Entstehungszeit Anfang des 20. Jahrhunderts aufkommende Luftfahrt (engl. „aviation“) erinnert.
-
-			Der Aviation Cocktail ist ein leichter, floraler Drink aus lediglich vier Zutaten, die jedoch nicht leicht miteinander in Einklang zu bringen sind. Zum Einen dürfe das Süße-Säure-Verhältnis zwischen dem Zitronensaft und den verwendeten Likören nicht kippen, zum anderen gleite der Geschmack des Drinks allzu leicht ins Seifige, wenn man zu viel Veilchenlikör verwende.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="1.5" unit="cl" substance="Frischer Zitronensaft"/>
-			<ingredient amount="5.25" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-			<ingredient amount="1.5" unit="cl" substance="Luxardo Maraschino"/>
-			<ingredient amount="1" unit="cl" substance="Creme de Violette"/>
-			<ingredient amount="0.75" unit="cl" substance="Gekühltes Wasser"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>B52</name>
-		<teaser>Kaffeelikör, Baileys, Grand Manier</teaser>
-		<image>{BFF1FC54-B5B3-4F19-B517-1D77130A27A1}</image>
-		<tags>sweet;creamy;3-star</tags>
-		<description>
-			Der B52 (auch „Bifi“) ist ein Cocktail (Kurzer), dessen Bestandteile im Glas drei – auch optisch – klar abgegrenzte Schichten ergeben.
-
-			Der B52 wurde der Legende nach im berühmten Alice's Restaurant in Malibu (Kalifornien) kreiert. Der Name bezieht sich auf den US-Langstreckenbomber Boeing B-52. Dieser Bomber wurde unter anderem im Vietnamkrieg zum Abwurf von Brandbomben verwendet. Gerüchteweise entstand in Anlehnung daran die heute gängige flambierte Variante des Cocktails.
-
-			Getrunken wird der B52 von unten weg mit einem Trinkhalm, wobei der Grand Marnier vom Barkeeper kurz vorher entzündet wird. Da der Trinkhalm nicht hitzebeständig ist, muss der Cocktail möglichst schnell getrunken werden.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="1" unit="BL" substance="Plantation OFTD Overproof"/>
-			<ingredient amount="2" unit="cl" substance="Kahlua Kaffeelikör"/>
-			<ingredient amount="2" unit="cl" substance="Baileys"/>
-			<ingredient amount="2" unit="cl" substance="Grand Manier"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Batida de Maracuja</name>
-		<teaser>Cachaça, Passionsfrucht, Kokosmilch</teaser>
-		<image>{013A08A2-8958-4287-9AE1-759431D6F57B}</image>
-		<tags>sweet;creamy;tropical;2-star</tags>
-		<description>
-			Batida ist die portugiesisch-brasilianische Bezeichnung für eine Gruppe von alkoholischen Cocktails. Das Wort leitet sich von Portugiesisch „bater“ (schlagen) ab. Ein Batida besteht immer aus Cachaça (weißem Zuckerrohrschnaps), Fruchtsaft oder Fruchtmark, Rohrzucker und meist auch etwas Wasser.
-
-			Die Passionsfrucht ist meist auch unter dem Namen Maracuja bekannt wobei sich bei der Maracuja um eine gelbe Variante der Passionsfrucht handelt. Die biologischen Verwandten der Passionsfrucht gehen zu den Weiden, Pappeln oder Veilchen zurück. Die Passionsfrucht stammt von der Passionsblume ab und ist eine essbare Art.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="2" unit="" substance="Passionsfrucht"/>
-			<ingredient amount="5" unit="cl" substance="Germana da Palha Premium Cachaca"/>
-			<ingredient amount="2" unit="cl" substance="Monin Maracuja Fruchtpüree"/>
-			<ingredient amount="6" unit="cl" substance="Alnatura Kokosmilch"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Bellevue</name>
-		<teaser>Rum, Cointreau, Creme of Coconut, Ananassaft</teaser>
-		<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
-		<tags>sweet;tropical;creamy;1-star</tags>
-		<description>
-			Ein süßer und cremiger Cocktail der nach Kokosnuss und Ananas schmeckt. Freunde von Pina Coladas werden den Bellevue ebenfalls mögen.
-		</description>
-		<recipe>
-			<ingredient amount="4" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
-			<ingredient amount="2" unit="cl" substance="Cointreau"/>
-			<ingredient amount="1" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
-			<ingredient amount="6" unit="cl" substance="Rauch Happy Day Ananassaft"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Bramble</name>
-		<teaser>Gin, Zitronensaft, Brombeerlikör</teaser>
-		<image>{41E7903D-086C-4E4B-A4BA-869248A2DB25}</image>
-		<tags>sour;sweet;fruity;3-star</tags>
-		<description>
-			Der Bramble (Englisch für Brombeere) ist ein Cocktail aus Gin, Zitronensaft, Zuckersirup und dem namensgebenden Brombeerlikör. Er wird auf Eiswürfeln geschüttelt und dann in einem Old-Fashioned-Glas auf Crushed Ice (zerstoßenem Eis) serviert, dekoriert mit einer Zitronenscheibe und einer frischen Brombeere.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
-			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-			<ingredient amount="1.5" unit="cl" substance="Zuckersirup"/>
-			<ingredient amount="2" unit="BL" substance="Brombeerlikör"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Caipirinha</name>
-		<teaser>Cachaça, Limette, Rohrzucker</teaser>
-		<image>{A6652EC4-99C8-4A96-B5DC-10831E208217}</image>
-		<tags>3-star;sour;sweet</tags>
-		<description>
-			Caipirinha ist ein aus Brasilien stammender Cocktail, der mittlerweile weltweit verbreitet ist. Er wird auch – in Anlehnung an die portugiesische weibliche Form (a caipirinha) – als die Caipirinha bezeichnet. Im deutschen Sprachraum ist auch die Kurzbezeichnung (der) Caipi verbreitet.
-
-			Die Bezeichnung Caipirinha ist die Verkleinerungsform des brasilianischen Caipira, das soviel wie „Landei“ bedeutet. Trotz des Namens war Caipirinha ursprünglich ein Cocktail der ländlichen Oberschicht und verbreitete sich nach Ende des Ersten Weltkrieges in den Großstädten, während im Landesinneren der Zuckerrohrschnaps meistens pur genossen wird.
-
-			Cachaça – man spricht Kaschassa – ist eine brasilianische Spirituose aus Zuckerrohrsaft, die früher und hochsprachlich als Aguardente (= heiß brennendes Wasser oder "Feuerwasser") und umgangssprachlich oft als Pinga (= Fusel) bezeichnet wird. Ähnlich wie Rum wird Cachaça aus Zuckerrohrsaft hergestellt, wobei hier die Verarbeitungsschritte anders sind.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="1" unit="" substance="Limette"/>
-			<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
-			<ingredient amount="6" unit="cl" substance="Germana da Palha Premium Artesanal Cachaça"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Caipirinha &amp; Passion</name>
-		<teaser>Cachaça, Limette, Passionsfrucht, Rohrzucker</teaser>
-		<image>{ECEB76C2-C992-4054-99AC-F6384404F90B}</image>
-		<tags>3-star;sour;sweet;exotic</tags>
-		<description>
-			Dies ist eine Abwandlung des Caipirinha unter Zugabe von Passionsfrucht.
-
-			Caipirinha ist ein aus Brasilien stammender Cocktail, der mittlerweile weltweit verbreitet ist. Er wird auch – in Anlehnung an die portugiesische weibliche Form (a caipirinha) – als die Caipirinha bezeichnet. Im deutschen Sprachraum ist auch die Kurzbezeichnung (der) Caipi verbreitet.
-
-			Die Passionsfrucht ist meist auch unter dem Namen Maracuja bekannt wobei sich bei der Maracuja um eine gelbe Variante der Passionsfrucht handelt. Die biologischen Verwandten der Passionsfrucht gehen auch zu den Weiden, Pappeln oder Veilchen zurück. Die Passionsfrucht stammt von der Passionsblume ab und ist eine essbare Art.
-
-			Cachaça – man spricht Kaschassa – ist eine brasilianische Spirituose aus Zuckerrohrsaft, die früher und hochsprachlich als Aguardente (= heiß brennendes Wasser oder „Feuerwasser“) und umgangssprachlich oft als Pinga (= Fusel) bezeichnet wird. Ähnlich wie Rum wird Cachaça aus Zuckerrohrsaft hergestellt, wobei hier die Verarbeitungsschritte anders sind.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="1" unit="" substance="Passionsfrucht"/>
-			<ingredient amount="1" unit="" substance="Limette"/>
-			<ingredient amount="1" unit="BL" substance="Weißer Rohrzucker"/>
-			<ingredient amount="1.5" unit="cl" substance="Monin Maracuja Fruchtpüree"/>
-			<ingredient amount="6" unit="cl" substance="Germana da Palha Premium Cachaca"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Cosmopolitan</name>
-		<teaser>Wodka, Triple Sec, Cranberrysaft, Limettensaft</teaser>
-		<image>{C5C04892-97F7-4C01-B799-B1ECACB7384B}</image>
-		<tags>2-star;sour;sweet;fruity</tags>
-		<description>
-			Der Cosmopolitan (kurz „Cosmo“) ist ein herb-süßer, erfrischender Cocktail, dessen moderne Rezeptur aus aromatisiertem Wodka, Orangenlikör, Limetten- und Cranberrysaft besteht. Erstmals erwähnt wird ein Shortdrink dieses Namens in einem Barbuch von 1934, in seiner heutigen Form ist der Cosmopolitan aber erst seit den 1990er Jahren weltweit verbreitet. Er steht sinnbildlich für die moderne, design-orientierte Bar, die der Barboom der 1990er Jahre hervorbrachte.
-
-			Ende der 1990er Jahre erlangte der Cosmopolitan einen Bekanntheitsschub durch die Fernsehserie Sex and the City, in der er das Lieblingsgetränk der Hauptfiguren war.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="3" unit="cl" substance="Absolut Citron Wodka"/>
-			<ingredient amount="3" unit="cl" substance="Triple Sec"/>
-			<ingredient amount="3" unit="cl" substance="dmBio Cranberrysaft, 100% Muttersaft"/>
-			<ingredient amount="1.5" unit="cl" substance="Zuckersirup"/>
-			<ingredient amount="1" unit="dash" substance="The Bitter Truth Orange Bitter"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Cuba Libre</name>
-		<teaser>Rum, Limette, Coca Cola</teaser>
-		<image>{021F9377-6B6D-4C77-9273-44A9D8DD23B9}</image>
-		<tags>3-star;sour;fresh</tags>
-		<description>
-			Der Name soll entstanden sein, als nach Ende des Spanisch-Amerikanischen Krieges US-amerikanische Soldaten mit der Kombination aus Coca Cola, Rum und Limettensaft auf die Befreiung Kubas von der spanischen Kolonialherrschaft anstießen (Viva Cuba libre, zu dt.: "Es lebe das freie Kuba").
-
-			Wie bei nahezu jedem Cocktail gibt es auch beim Cuba Libre viele verschiedene und anerkannte Varianten (Art des Rums, Marke der Cola, mit und ohne Limettensaft). Klassischerweise wird Coca-Cola und ein weißer kubanischer Rum verwendet. Eine andere Version dieses Longdrinks ist der so genannte Cubata, der mit braunem anstatt mit weißem Rum gemixt wird.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="1" unit="" substance="Limette"/>
-			<ingredient amount="5" unit="cl" substance="Santiago de Cuba Anejo Rum"/>
-			<ingredient amount="10" unit="cl" substance="Coca Cola, Original Taste"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Dark &amp; Stormy</name>
-		<teaser>Rum, Ginger Beer, Limettensaft</teaser>
-		<image>{9009BC99-9427-4940-BCA2-B6CDA4151DA7}</image>
-		<tags>2-star;fresh;exotic</tags>
-		<description>
-			Der erste Dark and Stormy soll einer Legende nach an der Bar des Royal Bermuda Yacht Club in Hamilton gemixt worden sein, wo man Gosling’s Rum mit etwas Sodawasser aufzuspritzen pflegte. Eines Tages habe ein Barkeeper versehentlich Ginger Beer gezapft und erst nachträglich den dunkelbraun gefärbten Rum darüber gegeben, worauf ein Segler an der Theke anmerkte, unter einer so dunklen und stürmischen Wolke würde doch niemand, der bei Trost sei, segeln wollen. Damit hatte die neue Mixtur ihren Namen und wurde angeblich bald zum Lieblingsgetränk britischer Seeleute auf den Bermuda-Inseln.
-
-			Ginger Beer (engl. für Ingwerbier) ist ein kohlensäurehaltiges, meist alkoholfreies Erfrischungsgetränk mit kräftigem Ingwergeschmack. Der Softdrink Ginger Beer ähnelt insoweit dem Ginger Ale, enthält jedoch mehr Ingwer und schmeckt darum intensiver, würziger und schärfer und enthält oft zusätzlich Zitrussäfte. Oft ist Ginger Beer, im Gegensatz zu Ginger Ale, auch trüb. Anders als der Name vermuten lässt, handelt es sich bei Ginger Beer nicht um Bier, sondern meist um Limonaden.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="6" unit="cl" substance="Appleton Estate Jamaica Rum"/>
-			<ingredient amount="12" unit="cl" substance="Fentimas Ginger Beer"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Gin &amp; Sin</name>
-		<teaser>Gin, Zitronensaft, Orangensaft, Grenadine</teaser>
-		<image>{73F3EE52-A781-4A39-B3FD-80BEE1F16751}</image>
-		<tags>2-star;sour;sweet;fruity</tags>
-		<description>
-		</description>
-		<recipe>
-			<ingredient amount="4" unit="cl" substance="Beefeater 25 Gin"/>
-			<ingredient amount="2" unit="cl" substance="Frischer Zitronensaft"/>
-			<ingredient amount="4" unit="cl" substance="Frischer Orangensaft"/>
-			<ingredient amount="1" unit="cl" substance="Zuckersirup"/>
-			<ingredient amount="1" unit="dash" substance="Grenadine"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Gamble</name>
-		<teaser>Sloe Gin, Graipefruitsaft, Kirschlikör</teaser>
-		<image>{1A409062-F852-4EDD-BEB8-BF22BC191E9A}</image>
-		<tags>2-star;bitter;sweet;fresh</tags>
-		<description>
-			Eine Abwandlung des Bramble mit Schlehenbeeren Gin (Sloe Gin), Graipefruitsaft und Kirschlikör. Bitter, süß, erfrischend, anders, lecker.
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Graipefruitsaft"/>
-			<ingredient amount="3" unit="cl" substance="The Stin Sloe Gin"/>
-			<ingredient amount="3" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-			<ingredient amount="1" unit="cl" substance="Zuckersirup 1.5:1"/>
-			<ingredient amount="1.5" unit="cl" substance="Heering Kirschlikör"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Gin &amp; Tonic</name>
-		<teaser>Gin, Tonic Water</teaser>
-		<image>{18EF0752-8D39-4A58-9D93-FC99BA35AF5E}</image>
-		<tags>3-star;bitter;sweet;herbal;floral;fresh;dry</tags>
-		<description>
-			Gin Tonic (engl. gin and tonic) ist ein klassischer Longdrink aus Gin und Tonic Water. Das Mischverhältnis variiert je nach Geschmack von 1:1 bis 1:3 oder höher.
-
-			Der Gin Tonic kommt wahrscheinlich aus dem British Empire, als in Indien zum Schutz vor Malaria das chininhaltige, damals sehr bittere Indian Tonic Water getrunken wurde, welches zugefügter Gin geschmacklich verbesserte.
-
-			Unter ultraviolettem Licht („Schwarzlicht“) fluoresziert Gin Tonic wegen des Chiningehalts im Tonic Water leicht bläulich.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="5" unit="cl" substance="Gin"/>
-			<ingredient substance="  • Aeijst Styrian Pale London Dry Gin"/>
-			<ingredient substance="  • The STIN Styrian Dry Gin"/>
-			<ingredient substance="  • The Good Gin"/>
-			<ingredient substance="  • Burleigh's London Dry Gin"/>
-			<ingredient substance="  • The Duke Munich Dry Gin"/>
-			<ingredient substance="  • HOLY Gin Marille"/>
-			<ingredient substance="  • See Destillerie Toplitz Gin"/>
-			<ingredient substance="  • See Destillerie Gletscher Gin"/>
-			<ingredient substance="  • Hayman's Old Tom Gin"/>
-			<ingredient substance="  • Beefeater 24 London Dry Gin"/>
-			<ingredient substance="  • Plymouth Dry Gin"/>
-			<ingredient amount="20" unit="cl" substance="Tonic Water"/>
-			<ingredient substance="  • Le Tribute"/>
-			<ingredient substance="  • Thomas Henry"/>
-			<ingredient substance="  • Thomas Henry Elderflower"/>
-			<ingredient substance="  • Fentimans Premium Indian"/>
-			<ingredient substance="  • Fever Tree Premium Indian"/>
-			<ingredient substance="  • Fever Tree Mediterranean"/>
-			<ingredient substance="  • 1724"/>
-			<ingredient substance="  • Schweppes Premium"/>
-			<ingredient substance="  • Gents Swiss Roots"/>
-			<ingredient substance="  • Golden Monaco Extra Dry"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Horse's Neck with a Kick</name>
-		<teaser>Bourbon Whiskey, Ginger Ale</teaser>
-		<image>{333B7D62-E8CD-4449-8B13-F48538E63F7F}</image>
-		<tags>2-star;sour;fresh</tags>
-		<description>
-			Horse's Neck (englisch etwa Pferdehals) ist ein klassischer Cocktail, der Ende des 19. Jahrhunderts entstand und als typischer Highball zu den Longdrinks gehört. Er wird aus Weinbrand bzw. Cognac und Ingwerlimonade (Ginger Ale) zubereitet. Sehr häufig wird als Basis-Spirituose auch Bourbon Whiskey verwendet. Seinen Namen verdankt das Getränk einer dünn geschnittenen, langen Zitronenspirale, deren Ende aus dem Glas ragt und dadurch entfernt an einen Pferdekopf erinnern soll.
-
-			Ginger Ale ist ein kohlensäurehaltiges Erfrischungsgetränk, das seinen Geschmack und seinen Namen dem Zusatz von natürlichem Ingwer verdankt.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="6" unit="cl" substance="Four Roses Single Barrel Bourbon Whiskey"/>
-			<ingredient amount="3" unit="dash" substance="Angostura Bitter"/>
-			<ingredient amount="12" unit="cl" substance="Ginger Ale oder Ginger Beer"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Italian Lover</name>
-		<teaser>Brandy, Baileys, Amaretto, Sahne</teaser>
-		<image>{3933D4A6-F987-4D3B-BFFC-524A57AF94C4}</image>
-		<tags>2-star;sweet;creamy</tags>
-		<description>
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Brandy"/>
-			<ingredient amount="3" unit="cl" substance="Baileys"/>
-			<ingredient amount="3" unit="cl" substance="Amaretto"/>
-			<ingredient amount="3" unit="cl" substance="Sahne"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Jet Pilot</name>
-		<teaser>Rum, Zimt, Graipefruitsaft, Limettensaf</teaser>
-		<image>{44CA47B4-B8B1-42C8-BC7C-F5B1FC6B0196}</image>
-		<tags>1-star;exotic</tags>
-		<description>
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Jamaican Rum"/>
-			<ingredient amount="2.25" unit="cl" substance="Overproof Rum"/>
-			<ingredient amount="2.25" unit="cl" substance="Golden Rum"/>
-			<ingredient amount="1.5" unit="cl" substance="Velvet Falernum"/>
-			<ingredient amount="0.75" unit="cl" substance="Zimtsirup"/>
-			<ingredient amount="1.5" unit="cl" substance="Frischer Graipefruitsaft"/>
-			<ingredient amount="1.5" unit="cl" substance="Limettensaft"/>
-			<ingredient amount="2" unit="dash" substance="Absinthe"/>
-			<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Long Island Iced Tea</name>
-		<teaser>Vodka, Gin, Tequilla, Rum, Triple Sec, Limettensaft, Cola</teaser>
-		<image>{37944174-35CE-4895-B9F2-A2DF02749857}</image>
-		<tags>3-star;sweet;fresh</tags>
-		<description>
-			Der Long Island Iced Tea ist ein weit verbreiteter Cocktail auf Basis mehrerer hochprozentiger Spirituosen. Obwohl sein Name dies andeutet, enthält er keinen Tee, sieht aber wegen der enthaltenen Cola wie Eistee aus. Wegen seines Alkoholvolumens zählt der Drink zu den Longdrinks.
-
-			Es gibt zahlreiche Legenden zum Ursprung des Cocktails. So soll er zur Zeit der Alkoholprohibition in den USA (1919–1932) entstanden sein, da Aussehen und Name über seinen recht beträchtlichen Alkoholgehalt hinwegtäuschten. Anderen Versionen zufolge soll er von einer reichen, gelangweilten Hausfrau auf Long Island im US-Bundesstaat New York erfunden worden sein. Diese habe beim heimlichen Griff in die Hausbar von jeder Flasche nur eine geringe Menge entnommen, da ihr Mann davon nichts bemerken sollte. Zur Tarnung habe sie den Drink mit Cola aufgefüllt. Auch von Studenten, die sich mit jeweils kleinen Mengen aus den Flaschen ihrer Eltern bedienten, wird erzählt.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="1.5" unit="cl" substance="Wodka"/>
-			<ingredient amount="1.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-			<ingredient amount="2" unit="cl" substance="Sierra Milenario Blanco Tequila"/>
-			<ingredient amount="1.5" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
-			<ingredient amount="2" unit="cl" substance="Cointreau"/>
-			<ingredient amount="1.5" unit="cl" substance="Zuckersirup 2:1"/>
-			<ingredient substance="Coca Cola, Original Taste"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Mai Tai</name>
-		<teaser>Rum, Cointreau, Mandellikör, Limettensaft, Muskatnuss</teaser>
-		<image>{893B7036-36A2-41B5-9283-15830C0E1F92}</image>
-		<tags>3-star;sour;exotic</tags>
-		<description>
-			Mai Tai ist ein klassischer Rum-Cocktail und gehört zu den weltweit erfolgreichsten Drinks. Victor Bergeron alias Trader Vic nahm für sich in Anspruch, den Mai Tai 1944 erfunden zu haben. Angeblich mixte er den ersten Mai Tai für zwei gute Freunde aus Tahiti, Carrie und Eastham Guild, die daraufhin ausgerufen haben sollen: Mai Tai Roa Ae, was in etwa heißt: „Nicht von dieser Welt – Das Beste“.
-
-			Der Mai Tai ist einer der klassischen Tiki-Drinks, zu denen auch der Zombie gehört. Typisch für die Tiki-Ära war, dass die Barkeeper ihre Rezepte als ihr „Kapital“ ansahen und daher nicht verrieten oder veröffentlichten. Dementsprechend hielt sich auch Bergeron mit der Veröffentlichung des Mai-Tai-Rezeptes lange zurück.
-
-			Orgeat ist ein Sirup mit Mandelgeschmack, der oft mit Orangenblütenwasser oder Rosenwasser verfeinert wird. Er findet vor allem an der Bar für die Zubereitung von Cocktails Verwendung. Der Sirup geht geschmacklich in Richtung Marzipan und ist milchig-trüb.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="2" unit="cl" substance="Clément Rhum Blanc"/>
-			<ingredient amount="3" unit="cl" substance="Appleton Estate Jamaica Rum"/>
-			<ingredient amount="2" unit="cl" substance="Cointreau"/>
-			<ingredient amount="2" unit="cl" substance="Orgeat (selbstgemacht)"/>
-			<ingredient substance="Muskatnuss"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Martinez (Gin)</name>
-		<teaser>Old Tom Gin, Vermouth, Maraschino</teaser>
-		<image>{A4A74BCF-80B8-4489-AEC5-35AF97FBA949}</image>
-		<tags>in-testing;sweet;bitter;dry;0-star</tags>
-		<description>
-			Der Martinez Cocktail gilt landläufig als Urgroßvater des Dry Martini. Und diese Zuschreibung stimmt mehr oder weniger, soweit die Quellen es zeigen. Gleichzeitig wird man dem Drink mit dieser Sichtweise allein nicht gerecht.
-
-			(mixology.eu)
-		</description>
-		<recipe>
-			<ingredient amount="6" unit="cl" substance="Hayman's Old Tom Gin"/>
-			<ingredient amount="0.75" unit="cl" substance="Vermouth Dry"/>
-			<ingredient amount="2.25" unit="cl" substance="Martini Vermouth Rosso"/>
-			<ingredient amount="0.75" unit="cl" substance="Luxardo Maraschino"/>
-			<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Mojito</name>
-		<teaser>Weißer Rum, Limettensaft, Minze, Soda</teaser>
-		<image>{A1863D10-D675-4A35-8E0D-AF26115A24D9}</image>
-		<tags>3-star;sour;sweet</tags>
-		<description>
-			Der Mojito ist ein ursprünglich kubanischer Drink, über die Entstehung seines Namens kursieren jedoch verschiedene Erklärungen. Einer zufolge soll die Bezeichnung vom westafrikanischen Wort mojo abgeleitet sein, einem Stoffbeutel mit magischen Gewürzen und Zaubergegenständen. Die verniedlichende Form dieses Lehnwortes würde mojito folglich „kleiner Zauber“ bedeuten.
-
-			Der Mojito geht auf eine lange Tradition von Rum-Getränken in der Karibik zurück. So soll bereits im 16. Jahrhundert der britische Freibeuter Francis Drake ein Getränk aus Zucker, echten Limetten, Aguardiente de Caña (ein einfacher Zuckerrohrschnaps) und Minze gegen seine Magenbeschwerden konsumiert haben. Von den Spaniern wurde Drake gefürchtet und erhielt den Spitznamen „El Draque“ (span. der Drache) und so nannte man auch das Getränk, das später mit Rum gemischt wurde, als sich dessen Herstellung in der Karibik verbreitete.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient substance="Minzzweige"/>
-			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
-			<ingredient amount="6" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
-			<ingredient amount="3" unit="cl" substance="Soda"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Negroni</name>
-		<teaser>Gin, Campari, Vermouth Rosso</teaser>
-		<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
-		<tags>3-star;bitter;dry</tags>
-		<description>
-			Der Negroni ist ein klassischer, aus Italien stammender Cocktail mit bitter-süßem Geschmack.
-
-			Der Negroni wurde in Florenz im Caffè Casoni (heute Caffè Giacosa) in der Via de′ Tornabuoni erfunden. Er ist nach dem Grafen Camillo Negroni benannt, der beim Barkeeper (Fosco Scarselli) zwischen 1919 und 1920 zum ersten Mal einen mit Gin verlängerten Americano bestellte.
-
-			Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Plymouth Dry Gin"/>
-			<ingredient amount="3" unit="cl" substance="Campari Bitterlikör"/>
-			<ingredient amount="3" unit="cl" substance="Martini Vermouth Rosso"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Old Fashioned</name>
-		<teaser>Bourbon Whiskey, Bitters</teaser>
-		<image>{49F4ADEF-FE11-4BE4-B397-4978B9515163}</image>
-		<tags></tags>
-		<description>
-			Ein Old Fashioned (von englisch old-fashioned für altmodisch, althergebracht) ist einer der wichtigsten klassischen Cocktails. Im 19. Jahrhundert zunächst als Whiskey Cocktail, später Old Fashioned Whiskey Cocktail, bezeichnet, entspricht der Shortdrink noch heute weitgehend der Urform eines „Cocktails“ in seiner ursprünglichen Definition, besteht also aus einer Spirituose, Zucker, Wasser bzw. Eis sowie Cocktailbitter.
-
-			Serviert werden Old Fashioneds meist in einem kleinen Becherglas, das auch Old-Fashioned-Glas genannt wird.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="1" unit="" substance="Zuckerwürfel"/>
-			<ingredient amount="1" unit="BL" substance="Soda"/>
-			<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
-			<ingredient amount="1" unit="dash" substance="The Bitter Truth Orange Bitter"/>
-			<ingredient amount="6" unit="cl" substance="Four Roses Single Barrel Bourbon Whiskey"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Piña Colada</name>
-		<teaser>Rum, Limettensaft, Creme of Coconut, Ananassaft</teaser>
-		<image>{A065DC95-1DD9-4CCB-A9F6-3336AB835236}</image>
-		<tags>sweet;tropical;creamy</tags>
-		<description>
-			Die Piña Colada (von span. piña ‚Ananas‘ und colar ‚durchsieben‘) ist ein süßer, cremiger Cocktail aus Rum, Kokosnusscreme und Ananassaft. Sie ist namensgebend für eine ganze Gruppe von Cocktails, den Coladas. Die Piña Colada wurde in den 1950er Jahren populär und gehört zu den weltweit bekanntesten Cocktails.
-
-			Die Piña Colada wird zu den einflussreichsten Cocktails gezählt und hat, ähnlich wie der Martini, wenn auch in völlig entgegengesetzter Hinsicht, Bedeutung weit über die Bar hinaus erlangt. Eine Piña Colada symbolisiert Urlaub, Strand, Sonne, ein tropisches Lebensgefühl und die Karibik schlechthin. Am 17. Juli 1978 erklärte Gouverneur Rafael Hernández Colón die Piña Colada zum Nationalgetränk von Puerto Rico.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="2" unit="" substance="Scheiben frisch Ananas"/>
-			<ingredient amount="5" unit="cl" substance="Don Papas Rum"/>
-			<ingredient amount="1" unit="cl" substance="Baileys"/>
-			<ingredient amount="3" unit="cl" substance="Creme of Coconut"/>
-			<ingredient amount="3" unit="cl" substance="Alnatura Kokosmilch"/>
-			<ingredient amount="2" unit="cl" substance="Ananassaft"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Prince</name>
-		<teaser>Tequilla, Vanillelikör, Creme of Coconut, Sahne, Maracujasaft</teaser>
-		<image>{5C12D764-FE88-48BA-A4BD-9FDF0945EEAB}</image>
-		<tags>sweet;tropical;creamy;2-star</tags>
-		<description>
-			Ein süßer-cremiger Cocktail mit feinem Vanille- und Maracujageschmack.
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Sierra Milenario Blanco Tequila"/>
-			<ingredient amount="2" unit="cl" substance="Likör 43"/>
-			<ingredient amount="2" unit="cl" substance="Sahne"/>
-			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
-			<ingredient amount="10" unit="cl" substance="Rauch Happy Day Maracujasaft"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Ramazotti Sour</name>
-		<teaser>Ramazotti, Zitronensaft, Orangensaft</teaser>
-		<image>{643AD007-EC64-4D68-AECF-C62695AA1DE7}</image>
-		<tags>2-star;sweet;herbal</tags>
-		<description>
-			Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge.
-
-			Das Herstellungsverfahren von Ramazotti ist das gleiche wie 1815. Die Rezeptur umfasst 33 Kräuter und Pflanzen, unter anderem süße und bittere Orangenschalen, Chinarinde, Engelwurz, Kaiserwurz, Rosenblüten, Vanille und Sternanis. Diese werden extrahiert und pulverisiert. Dann werden Zucker, Alkohol und weitere Zutaten hinzugefügt. Die entstandene Flüssigkeit wird anschließend filtriert.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
-			<ingredient amount="4.5" unit="cl" substance="Ramazotti"/>
-			<ingredient amount="0.5" unit="cl" substance="Zuckersirup"/>
-			<ingredient amount="3" unit="cl" substance="Frischer Orangensaft"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Rosa Lady</name>
-		<teaser>Wodka, Vanillelikör, Bananenlikör, Sahne, Maracujasaft, Ananassaft</teaser>
-		<image>{871629C3-362F-4565-9AB8-02DE0452D06C}</image>
-		<tags>sweet;tropical;creamy;2-star</tags>
-		<description>
-			Ein süß-cremiger Cocktail, der bei seiner rosa Farbe geschmacklich automatisch an Erdbeere erinnert, obwohl Bananensirup enthalten ist.
-		</description>
-		<recipe>
-			<ingredient amount="2" unit="cl" substance="Wodka"/>
-			<ingredient amount="4" unit="cl" substance="Likör 43"/>
-			<ingredient amount="2" unit="cl" substance="Bananensirup"/>
-			<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
-			<ingredient amount="2" unit="cl" substance="Sahne"/>
-			<ingredient amount="8" unit="cl" substance="Rauch Happy Day Maracujasirup"/>
-			<ingredient amount="4" unit="cl" substance="Rauch Happy Day Ananassaft"/>
-			<ingredient amount="1" unit="cl" substance="Grenadine"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Singapore Sling</name>
-		<teaser>Gin, Limettensaft, Kirschlikör, Cointreau, Benedictine, Ananassaft</teaser>
-		<image>{50B3EA34-2FE3-47D2-8498-C956687DE2FB}</image>
-		<tags>sour;fresh;bitter;3-star</tags>
-		<description>
-			Singapore Sling ist ein fruchtig-aromatischer Cocktail aus Gin, Kirschlikör, Bénédictine und weiteren Zutaten.
-
-			Die Slings bilden eine sehr alte Gruppe von Mixgetränken und bestanden ursprünglich – nach einer Definition von 1675 – aus einer Spirituose, Zucker und Wasser, sowie optional etwas Muskatnuss. Dementsprechend wurde auch 1806 das damals noch neue Wort "Cocktail" als "bittered sling" definiert, also als ein mit Cocktailbitter gewürzter Sling.
-
-			Die herbere Vorgängervariante des Singapore Sling ist der Straits Sling. Hier wird der Ananassaft weggelassen. Dadurch wird der Cocktail weniger fruchtig.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-			<ingredient amount="2" unit="cl" substance="Heering Kirschlikör"/>
-			<ingredient amount="1" unit="cl" substance="Cointreau"/>
-			<ingredient amount="1" unit="cl" substance="D.O.M. Benedictine Kräuterlikör"/>
-			<ingredient amount="1" unit="cl" substance="Grenadine"/>
-			<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
-			<ingredient amount="6" unit="cl" substance="Ananassaft"/>
-		</recipe>
-	</drink>
-
-	<drink>
-		<name>Saturn</name>
-		<teaser>Gin, Limettensaft, Falerum, Orgeat, Maracujasirup</teaser>
-		<image>{4A9196C2-8C9C-4850-B777-7C237085D694}</image>
-		<tags>sour;exotic</tags>
-		<description>
-			Ein Tiki-inspirierter Gin Sour mit Passionsfrucht und Mandel.
-		</description>
-		<recipe>
-			<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-			<ingredient amount="0.75" unit="cl" substance="Taylor's Velvet Falernum"/>
-			<ingredient amount="0.75" unit="cl" substance="Orgeat (selbstgemacht)"/>
-			<ingredient amount="0.75" unit="cl" substance="Maracujasirup"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>White Russian</name>
-		<teaser>Wodka, Kaffeelikör, Sahne</teaser>
-		<image>{B0EF4AC3-03A4-49C4-8450-E2C48E6A23A3}</image>
-		<tags>2-star;creamy;sweet</tags>
-		<description>
-			White Russian (englisch für "Weißer Russe") ist ein Cocktail aus Wodka, Kaffeelikör und Sahne oder Milch. Aufgrund seiner süßen und cremigen Bestandteile (Likör und Sahne) zählt der Shortdrink zu den After-Dinner-Drinks. Die Variante ohne Sahne und Milch heißt Black Russian ("Schwarzer Russe").
-
-			Der White Russian ist das Lieblingsgetränk der Hauptfigur in dem von den Coen-Brüdern gedrehten Spielfilm "The Big Lebowski".
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="6" unit="cl" substance="Wodka"/>
-			<ingredient amount="3" unit="cl" substance="Kahlua Kaffeelikör"/>
-			<ingredient amount="3" unit="cl" substance="Leicht geschlagene Sahne"/>
-			<ingredient substance="Muskatnuss"/>
-		</recipe>
-	</drink>
-
-
-	<drink>
-		<name>Zombie</name>
-		<teaser>Rum, Limettensaft, Falernum, Maraschino</teaser>
-		<image>{D34B1939-F5D4-497B-A6DD-AF839308E285}</image>
-		<tags>exotic</tags>
-		<description>
-			Der Zombie (ursprünglich auch Zombie Punch) ist ein sehr starker Cocktail aus Rum und Fruchtsäften, der nach seiner Wirkung auf den Konsumenten benannt wurde und zu den bekanntesten Tiki-Drinks zählt.
-
-			Erstmals tauchte der Zombie als Zombie Punch in den 1930er-Jahren auf und geht auf Donn Beach (eigentlich Ernest Raymond Beaumont-Gannt) zurück, einen Unternehmer, der unter anderem das Restaurant Don the Beachcomber in Hollywood besaß.
-
-			Angeblich mixte er ihn im Jahr 1934 eines Nachmittags für einen verkaterten Freund, der vor seinem Abflug nach San Francisco in diesem Restaurant vorbeischaute. Nachdem er drei Zombies zu sich genommen hatte, ging er wieder. Als er mehrere Tage später zurückkam, sagte er, er habe sich während des ganzen Flugs wie ein Untoter gefühlt, daher der Name Zombie.
-
-			Aufgrund des hohen Alkoholgehaltes beschränkte das Don the Beachcomber den Ausschank seines Zombie Drinks jahrelang auf zwei Stück pro Gast.
-
-			(Wikipedia)
-		</description>
-		<recipe>
-			<ingredient amount="2.5" unit="cl" substance="Frischer Limettensaft"/>
-			<ingredient amount="2" unit="cl" substance="Frischer Grapefruitsaft"/>
-			<ingredient amount="4.5" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
-			<ingredient amount="4.5" unit="cl" substance="Appleton Estate Jamaica Rum"/>
-			<ingredient amount="3" unit="cl" substance="Plantation OFTD Overproof"/>
-			<ingredient amount="2" unit="cl" substance="Taylor's Velvet Falernum"/>
-			<ingredient amount="2" unit="cl" substance="The Bitter Truth Golden Falernum"/>
-			<ingredient amount="2" unit="cl" substance="Maraschino"/>
-			<ingredient amount="1.5" unit="cl" substance="Zimt-Zuckersirup"/>
-			<ingredient amount="2" unit="dash" substance="Absinth"/>
-			<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
-		</recipe>
-	</drink>
-
-</drinks>
+<catalog>
+
+	<substances>
+		<substance id="Beefeater24">
+			Beefeater 24 London Dry Gin
+		</substance>
+		<substance id="CremeDeCacaoBlanc">
+			Crème de Cacao Blanc
+		</substance>
+		<substance id="Creme">
+			Sahne
+		</substance>
+	</substances>
+
+	<drinks>
+
+		<drink>
+			<name>Alexander</name>
+			<teaser>Gin, Crème de Cacao, Sahne, Muskatnuss</teaser>
+			<image>{8AFFEC5A-A659-460F-8BE4-438C1F17F638}</image>
+			<tags>sweet;creamy</tags>
+			<description>
+				Der Alexander ist ein alkoholischer Sahne-Cocktail und gehört als Digestif zu den After-Dinner-Drinks, also alkoholhaltigen Shortdrinks, die gerne nach dem Essen genossen werden. Verbreitet ist vor allem die auch als Brandy Alexander bezeichnete Variante mit Brandy statt, wie ursprünglich, Gin.
+
+				Der Cocktail entstand Anfang des 20. Jahrhunderts, eine der frühesten Quellen ist die 1916 vom New Yorker Barkeeper Hugo Ensslin im Selbstverlag herausgegebene Sammlung Recipes for Mixed Drinks.
+
+				(Wikipedia)
+
+				Der Cocktail wird als einer "Der Unvergesslichen" bei der International Bartenders Association (IBA) geführt.
+			</description>
+			<glasware>Martini</glasware>
+			<ice>None</ice>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="@Beefeater24"/>
+				<ingredient amount="3" unit="cl" substance="@CremeDeCacaoBlanc"/>
+				<ingredient amount="3" unit="cl" substance="@Creme"/>
+				<ingredient substance="Muskatnuss"/>
+				<instruction>SHAKE alle Zutaten</instruction>
+				<instruction>FINE STRAIN ins Gästeglas</instruction>
+				<instruction>DUST mit Muskatnuss</instruction>
+			</recipe>
+		</drink>
+
+
+
+		<drink>
+			<name>Amaretto Sour</name>
+			<teaser>Amaretto, Zitronensaft, Orangensaft</teaser>
+			<image>{AB485B95-363F-4365-8FCD-1E2F7BF3BF7C}</image>
+			<tags>3-star;sour;sweet</tags>
+			<description>
+				Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge.
+
+				Amaretto ist eine Geschmacksrichtung für ursprünglich aus Italien stammende Liköre mit einem nussigen Aroma, das an Marzipan erinnert. Die Bezeichnung „Amaretto“ ist eine Verkleinerungsform des italienischen Wortes amaro, was so viel bedeutet wie „bitter“. Ursprünglich wurden Bittermandeln (italienisch mandorla amara) oder Aprikosenkerne, teilweise auch süße Mandeln zur Aromatisierung verwendet.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
+				<ingredient amount="4.5" unit="cl" substance="Amaretto Disaronno Originale"/>
+				<ingredient amount="0.5" unit="cl" substance="Zuckersirup"/>
+				<ingredient amount="3" unit="cl" substance="Frischer Orangensaft"/>
+				<ingredient amount="2" unit="dash" substance="The Bitter Truth Orange Bitter"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Americano</name>
+			<teaser>Campari, Vermouth Rosso, Soda</teaser>
+			<image>{5F0D01F0-B2CD-496F-BA3E-79BB0D564D9C}</image>
+			<tags>1-star;bitter;fresh</tags>
+			<description>
+				Der Americano ist ein klassischer Aperitifcocktail. Zubereitet wird er aus Campari und Vermouth rosso. Als Garnierung werden Orange und Zitrone verwendet.
+
+				Bekanntheit erlangte der Americano nicht zuletzt auch durch Ian Flemings James Bond, der in Casino Royale, dem allerersten Band der Romanserie, als ersten Drink einen Americano bestellt.
+
+				Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="4.5" unit="cl" substance="Martini Vermouth Rosso"/>
+				<ingredient amount="4.5" unit="cl" substance="Campari Bitterlikör"/>
+				<ingredient amount="7.5" unit="cl" substance="Soda"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Averna Sour</name>
+			<teaser>Averna, Zitronensaft, Orangensaft</teaser>
+			<image>{521394D8-A663-44AA-9385-4C626BD8586B}</image>
+			<tags>3-star;sour;sweet;bitter;herbal</tags>
+			<description>
+				Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge.
+
+				Averna (Amaro Siciliano) ist ein sizilianischer Bitterlikör, hergestellt aus verschiedenen Kräutern, Wurzeln und ätherischen Ölen aus Bitterorangen und Zitronen. Der Geschmack von Averna ist bittersüß mit Anklängen von Orange und Süßholz sowie Noten von Myrte, Wacholderbeeren, Rosmarin und Salbei.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
+				<ingredient amount="5" unit="cl" substance="Averna Bitterlikör"/>
+				<ingredient amount="1" unit="cl" substance="Zuckersirup"/>
+				<ingredient amount="2" unit="cl" substance="Frischer Orangensaft"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Aviation</name>
+			<teaser>Gin, Zitronensaft, Maraschino, Crème de Violette</teaser>
+			<image>{136D550D-DEA2-445C-BF40-0890D0BD6920}</image>
+			<tags>in-testing;sour;sweet;floral;0-star</tags>
+			<description>
+				Der Aviation ist ein klassischer Cocktail aus Gin, Maraschino-Likör, Crème de Violette (Veilchenlikör) und Zitronensaft. Durch die Kombination einer Basisspirituose mit Zitrussaft und einer Zuckerquelle – hier den Likören – ist der Shortdrink in der Gruppe der Sours einzuordnen. Seinen Namen verdankt der Cocktail wahrscheinlich seiner zart silbrig-grauen Färbung durch den Veilchenlikör, der an den Himmel und die zu seiner Entstehungszeit Anfang des 20. Jahrhunderts aufkommende Luftfahrt (engl. „aviation“) erinnert.
+
+				Der Aviation Cocktail ist ein leichter, floraler Drink aus lediglich vier Zutaten, die jedoch nicht leicht miteinander in Einklang zu bringen sind. Zum Einen dürfe das Süße-Säure-Verhältnis zwischen dem Zitronensaft und den verwendeten Likören nicht kippen, zum anderen gleite der Geschmack des Drinks allzu leicht ins Seifige, wenn man zu viel Veilchenlikör verwende.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="1.5" unit="cl" substance="Frischer Zitronensaft"/>
+				<ingredient amount="5.25" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+				<ingredient amount="1.5" unit="cl" substance="Luxardo Maraschino"/>
+				<ingredient amount="1" unit="cl" substance="Creme de Violette"/>
+				<ingredient amount="0.75" unit="cl" substance="Gekühltes Wasser"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>B52</name>
+			<teaser>Kaffeelikör, Baileys, Grand Manier</teaser>
+			<image>{BFF1FC54-B5B3-4F19-B517-1D77130A27A1}</image>
+			<tags>sweet;creamy;3-star</tags>
+			<description>
+				Der B52 (auch „Bifi“) ist ein Cocktail (Kurzer), dessen Bestandteile im Glas drei – auch optisch – klar abgegrenzte Schichten ergeben.
+
+				Der B52 wurde der Legende nach im berühmten Alice's Restaurant in Malibu (Kalifornien) kreiert. Der Name bezieht sich auf den US-Langstreckenbomber Boeing B-52. Dieser Bomber wurde unter anderem im Vietnamkrieg zum Abwurf von Brandbomben verwendet. Gerüchteweise entstand in Anlehnung daran die heute gängige flambierte Variante des Cocktails.
+
+				Getrunken wird der B52 von unten weg mit einem Trinkhalm, wobei der Grand Marnier vom Barkeeper kurz vorher entzündet wird. Da der Trinkhalm nicht hitzebeständig ist, muss der Cocktail möglichst schnell getrunken werden.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="1" unit="BL" substance="Plantation OFTD Overproof"/>
+				<ingredient amount="2" unit="cl" substance="Kahlua Kaffeelikör"/>
+				<ingredient amount="2" unit="cl" substance="Baileys"/>
+				<ingredient amount="2" unit="cl" substance="Grand Manier"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Batida de Maracuja</name>
+			<teaser>Cachaça, Passionsfrucht, Kokosmilch</teaser>
+			<image>{013A08A2-8958-4287-9AE1-759431D6F57B}</image>
+			<tags>sweet;creamy;tropical;2-star</tags>
+			<description>
+				Batida ist die portugiesisch-brasilianische Bezeichnung für eine Gruppe von alkoholischen Cocktails. Das Wort leitet sich von Portugiesisch „bater“ (schlagen) ab. Ein Batida besteht immer aus Cachaça (weißem Zuckerrohrschnaps), Fruchtsaft oder Fruchtmark, Rohrzucker und meist auch etwas Wasser.
+
+				Die Passionsfrucht ist meist auch unter dem Namen Maracuja bekannt wobei sich bei der Maracuja um eine gelbe Variante der Passionsfrucht handelt. Die biologischen Verwandten der Passionsfrucht gehen zu den Weiden, Pappeln oder Veilchen zurück. Die Passionsfrucht stammt von der Passionsblume ab und ist eine essbare Art.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="2" unit="" substance="Passionsfrucht"/>
+				<ingredient amount="5" unit="cl" substance="Germana da Palha Premium Cachaca"/>
+				<ingredient amount="2" unit="cl" substance="Monin Maracuja Fruchtpüree"/>
+				<ingredient amount="6" unit="cl" substance="Alnatura Kokosmilch"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Bellevue</name>
+			<teaser>Rum, Cointreau, Creme of Coconut, Ananassaft</teaser>
+			<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
+			<tags>sweet;tropical;creamy;1-star</tags>
+			<description>
+				Ein süßer und cremiger Cocktail der nach Kokosnuss und Ananas schmeckt. Freunde von Pina Coladas werden den Bellevue ebenfalls mögen.
+			</description>
+			<recipe>
+				<ingredient amount="4" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
+				<ingredient amount="2" unit="cl" substance="Cointreau"/>
+				<ingredient amount="1" unit="cl" substance="Frischer Limettensaft"/>
+				<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
+				<ingredient amount="6" unit="cl" substance="Rauch Happy Day Ananassaft"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Bramble</name>
+			<teaser>Gin, Zitronensaft, Brombeerlikör</teaser>
+			<image>{41E7903D-086C-4E4B-A4BA-869248A2DB25}</image>
+			<tags>sour;sweet;fruity;3-star</tags>
+			<description>
+				Der Bramble (Englisch für Brombeere) ist ein Cocktail aus Gin, Zitronensaft, Zuckersirup und dem namensgebenden Brombeerlikör. Er wird auf Eiswürfeln geschüttelt und dann in einem Old-Fashioned-Glas auf Crushed Ice (zerstoßenem Eis) serviert, dekoriert mit einer Zitronenscheibe und einer frischen Brombeere.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
+				<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+				<ingredient amount="1.5" unit="cl" substance="Zuckersirup"/>
+				<ingredient amount="2" unit="BL" substance="Brombeerlikör"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Caipirinha</name>
+			<teaser>Cachaça, Limette, Rohrzucker</teaser>
+			<image>{A6652EC4-99C8-4A96-B5DC-10831E208217}</image>
+			<tags>3-star;sour;sweet</tags>
+			<description>
+				Caipirinha ist ein aus Brasilien stammender Cocktail, der mittlerweile weltweit verbreitet ist. Er wird auch – in Anlehnung an die portugiesische weibliche Form (a caipirinha) – als die Caipirinha bezeichnet. Im deutschen Sprachraum ist auch die Kurzbezeichnung (der) Caipi verbreitet.
+
+				Die Bezeichnung Caipirinha ist die Verkleinerungsform des brasilianischen Caipira, das soviel wie „Landei“ bedeutet. Trotz des Namens war Caipirinha ursprünglich ein Cocktail der ländlichen Oberschicht und verbreitete sich nach Ende des Ersten Weltkrieges in den Großstädten, während im Landesinneren der Zuckerrohrschnaps meistens pur genossen wird.
+
+				Cachaça – man spricht Kaschassa – ist eine brasilianische Spirituose aus Zuckerrohrsaft, die früher und hochsprachlich als Aguardente (= heiß brennendes Wasser oder "Feuerwasser") und umgangssprachlich oft als Pinga (= Fusel) bezeichnet wird. Ähnlich wie Rum wird Cachaça aus Zuckerrohrsaft hergestellt, wobei hier die Verarbeitungsschritte anders sind.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="1" unit="" substance="Limette"/>
+				<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
+				<ingredient amount="6" unit="cl" substance="Germana da Palha Premium Artesanal Cachaça"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Caipirinha &amp; Passion</name>
+			<teaser>Cachaça, Limette, Passionsfrucht, Rohrzucker</teaser>
+			<image>{ECEB76C2-C992-4054-99AC-F6384404F90B}</image>
+			<tags>3-star;sour;sweet;exotic</tags>
+			<description>
+				Dies ist eine Abwandlung des Caipirinha unter Zugabe von Passionsfrucht.
+
+				Caipirinha ist ein aus Brasilien stammender Cocktail, der mittlerweile weltweit verbreitet ist. Er wird auch – in Anlehnung an die portugiesische weibliche Form (a caipirinha) – als die Caipirinha bezeichnet. Im deutschen Sprachraum ist auch die Kurzbezeichnung (der) Caipi verbreitet.
+
+				Die Passionsfrucht ist meist auch unter dem Namen Maracuja bekannt wobei sich bei der Maracuja um eine gelbe Variante der Passionsfrucht handelt. Die biologischen Verwandten der Passionsfrucht gehen auch zu den Weiden, Pappeln oder Veilchen zurück. Die Passionsfrucht stammt von der Passionsblume ab und ist eine essbare Art.
+
+				Cachaça – man spricht Kaschassa – ist eine brasilianische Spirituose aus Zuckerrohrsaft, die früher und hochsprachlich als Aguardente (= heiß brennendes Wasser oder „Feuerwasser“) und umgangssprachlich oft als Pinga (= Fusel) bezeichnet wird. Ähnlich wie Rum wird Cachaça aus Zuckerrohrsaft hergestellt, wobei hier die Verarbeitungsschritte anders sind.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="1" unit="" substance="Passionsfrucht"/>
+				<ingredient amount="1" unit="" substance="Limette"/>
+				<ingredient amount="1" unit="BL" substance="Weißer Rohrzucker"/>
+				<ingredient amount="1.5" unit="cl" substance="Monin Maracuja Fruchtpüree"/>
+				<ingredient amount="6" unit="cl" substance="Germana da Palha Premium Cachaca"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Cosmopolitan</name>
+			<teaser>Wodka, Triple Sec, Cranberrysaft, Limettensaft</teaser>
+			<image>{C5C04892-97F7-4C01-B799-B1ECACB7384B}</image>
+			<tags>2-star;sour;sweet;fruity</tags>
+			<description>
+				Der Cosmopolitan (kurz „Cosmo“) ist ein herb-süßer, erfrischender Cocktail, dessen moderne Rezeptur aus aromatisiertem Wodka, Orangenlikör, Limetten- und Cranberrysaft besteht. Erstmals erwähnt wird ein Shortdrink dieses Namens in einem Barbuch von 1934, in seiner heutigen Form ist der Cosmopolitan aber erst seit den 1990er Jahren weltweit verbreitet. Er steht sinnbildlich für die moderne, design-orientierte Bar, die der Barboom der 1990er Jahre hervorbrachte.
+
+				Ende der 1990er Jahre erlangte der Cosmopolitan einen Bekanntheitsschub durch die Fernsehserie Sex and the City, in der er das Lieblingsgetränk der Hauptfiguren war.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
+				<ingredient amount="3" unit="cl" substance="Absolut Citron Wodka"/>
+				<ingredient amount="3" unit="cl" substance="Triple Sec"/>
+				<ingredient amount="3" unit="cl" substance="dmBio Cranberrysaft, 100% Muttersaft"/>
+				<ingredient amount="1.5" unit="cl" substance="Zuckersirup"/>
+				<ingredient amount="1" unit="dash" substance="The Bitter Truth Orange Bitter"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Cuba Libre</name>
+			<teaser>Rum, Limette, Coca Cola</teaser>
+			<image>{021F9377-6B6D-4C77-9273-44A9D8DD23B9}</image>
+			<tags>3-star;sour;fresh</tags>
+			<description>
+				Der Name soll entstanden sein, als nach Ende des Spanisch-Amerikanischen Krieges US-amerikanische Soldaten mit der Kombination aus Coca Cola, Rum und Limettensaft auf die Befreiung Kubas von der spanischen Kolonialherrschaft anstießen (Viva Cuba libre, zu dt.: "Es lebe das freie Kuba").
+
+				Wie bei nahezu jedem Cocktail gibt es auch beim Cuba Libre viele verschiedene und anerkannte Varianten (Art des Rums, Marke der Cola, mit und ohne Limettensaft). Klassischerweise wird Coca-Cola und ein weißer kubanischer Rum verwendet. Eine andere Version dieses Longdrinks ist der so genannte Cubata, der mit braunem anstatt mit weißem Rum gemixt wird.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="1" unit="" substance="Limette"/>
+				<ingredient amount="5" unit="cl" substance="Santiago de Cuba Anejo Rum"/>
+				<ingredient amount="10" unit="cl" substance="Coca Cola, Original Taste"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Dark &amp; Stormy</name>
+			<teaser>Rum, Ginger Beer, Limettensaft</teaser>
+			<image>{9009BC99-9427-4940-BCA2-B6CDA4151DA7}</image>
+			<tags>2-star;fresh;exotic</tags>
+			<description>
+				Der erste Dark and Stormy soll einer Legende nach an der Bar des Royal Bermuda Yacht Club in Hamilton gemixt worden sein, wo man Gosling’s Rum mit etwas Sodawasser aufzuspritzen pflegte. Eines Tages habe ein Barkeeper versehentlich Ginger Beer gezapft und erst nachträglich den dunkelbraun gefärbten Rum darüber gegeben, worauf ein Segler an der Theke anmerkte, unter einer so dunklen und stürmischen Wolke würde doch niemand, der bei Trost sei, segeln wollen. Damit hatte die neue Mixtur ihren Namen und wurde angeblich bald zum Lieblingsgetränk britischer Seeleute auf den Bermuda-Inseln.
+
+				Ginger Beer (engl. für Ingwerbier) ist ein kohlensäurehaltiges, meist alkoholfreies Erfrischungsgetränk mit kräftigem Ingwergeschmack. Der Softdrink Ginger Beer ähnelt insoweit dem Ginger Ale, enthält jedoch mehr Ingwer und schmeckt darum intensiver, würziger und schärfer und enthält oft zusätzlich Zitrussäfte. Oft ist Ginger Beer, im Gegensatz zu Ginger Ale, auch trüb. Anders als der Name vermuten lässt, handelt es sich bei Ginger Beer nicht um Bier, sondern meist um Limonaden.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
+				<ingredient amount="6" unit="cl" substance="Appleton Estate Jamaica Rum"/>
+				<ingredient amount="12" unit="cl" substance="Fentimas Ginger Beer"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Gin &amp; Sin</name>
+			<teaser>Gin, Zitronensaft, Orangensaft, Grenadine</teaser>
+			<image>{73F3EE52-A781-4A39-B3FD-80BEE1F16751}</image>
+			<tags>2-star;sour;sweet;fruity</tags>
+			<description>
+			</description>
+			<recipe>
+				<ingredient amount="4" unit="cl" substance="Beefeater 25 Gin"/>
+				<ingredient amount="2" unit="cl" substance="Frischer Zitronensaft"/>
+				<ingredient amount="4" unit="cl" substance="Frischer Orangensaft"/>
+				<ingredient amount="1" unit="cl" substance="Zuckersirup"/>
+				<ingredient amount="1" unit="dash" substance="Grenadine"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Gamble</name>
+			<teaser>Sloe Gin, Graipefruitsaft, Kirschlikör</teaser>
+			<image>{1A409062-F852-4EDD-BEB8-BF22BC191E9A}</image>
+			<tags>2-star;bitter;sweet;fresh</tags>
+			<description>
+				Eine Abwandlung des Bramble mit Schlehenbeeren Gin (Sloe Gin), Graipefruitsaft und Kirschlikör. Bitter, süß, erfrischend, anders, lecker.
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Frischer Graipefruitsaft"/>
+				<ingredient amount="3" unit="cl" substance="The Stin Sloe Gin"/>
+				<ingredient amount="3" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+				<ingredient amount="1" unit="cl" substance="Zuckersirup 1.5:1"/>
+				<ingredient amount="1.5" unit="cl" substance="Heering Kirschlikör"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Gin &amp; Tonic</name>
+			<teaser>Gin, Tonic Water</teaser>
+			<image>{18EF0752-8D39-4A58-9D93-FC99BA35AF5E}</image>
+			<tags>3-star;bitter;sweet;herbal;floral;fresh;dry</tags>
+			<description>
+				Gin Tonic (engl. gin and tonic) ist ein klassischer Longdrink aus Gin und Tonic Water. Das Mischverhältnis variiert je nach Geschmack von 1:1 bis 1:3 oder höher.
+
+				Der Gin Tonic kommt wahrscheinlich aus dem British Empire, als in Indien zum Schutz vor Malaria das chininhaltige, damals sehr bittere Indian Tonic Water getrunken wurde, welches zugefügter Gin geschmacklich verbesserte.
+
+				Unter ultraviolettem Licht („Schwarzlicht“) fluoresziert Gin Tonic wegen des Chiningehalts im Tonic Water leicht bläulich.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="5" unit="cl" substance="Gin"/>
+				<ingredient substance="  • Aeijst Styrian Pale London Dry Gin"/>
+				<ingredient substance="  • The STIN Styrian Dry Gin"/>
+				<ingredient substance="  • The Good Gin"/>
+				<ingredient substance="  • Burleigh's London Dry Gin"/>
+				<ingredient substance="  • The Duke Munich Dry Gin"/>
+				<ingredient substance="  • HOLY Gin Marille"/>
+				<ingredient substance="  • See Destillerie Toplitz Gin"/>
+				<ingredient substance="  • See Destillerie Gletscher Gin"/>
+				<ingredient substance="  • Hayman's Old Tom Gin"/>
+				<ingredient substance="  • Beefeater 24 London Dry Gin"/>
+				<ingredient substance="  • Plymouth Dry Gin"/>
+				<ingredient amount="20" unit="cl" substance="Tonic Water"/>
+				<ingredient substance="  • Le Tribute"/>
+				<ingredient substance="  • Thomas Henry"/>
+				<ingredient substance="  • Thomas Henry Elderflower"/>
+				<ingredient substance="  • Fentimans Premium Indian"/>
+				<ingredient substance="  • Fever Tree Premium Indian"/>
+				<ingredient substance="  • Fever Tree Mediterranean"/>
+				<ingredient substance="  • 1724"/>
+				<ingredient substance="  • Schweppes Premium"/>
+				<ingredient substance="  • Gents Swiss Roots"/>
+				<ingredient substance="  • Golden Monaco Extra Dry"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Horse's Neck with a Kick</name>
+			<teaser>Bourbon Whiskey, Ginger Ale</teaser>
+			<image>{333B7D62-E8CD-4449-8B13-F48538E63F7F}</image>
+			<tags>2-star;sour;fresh</tags>
+			<description>
+				Horse's Neck (englisch etwa Pferdehals) ist ein klassischer Cocktail, der Ende des 19. Jahrhunderts entstand und als typischer Highball zu den Longdrinks gehört. Er wird aus Weinbrand bzw. Cognac und Ingwerlimonade (Ginger Ale) zubereitet. Sehr häufig wird als Basis-Spirituose auch Bourbon Whiskey verwendet. Seinen Namen verdankt das Getränk einer dünn geschnittenen, langen Zitronenspirale, deren Ende aus dem Glas ragt und dadurch entfernt an einen Pferdekopf erinnern soll.
+
+				Ginger Ale ist ein kohlensäurehaltiges Erfrischungsgetränk, das seinen Geschmack und seinen Namen dem Zusatz von natürlichem Ingwer verdankt.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="6" unit="cl" substance="Four Roses Single Barrel Bourbon Whiskey"/>
+				<ingredient amount="3" unit="dash" substance="Angostura Bitter"/>
+				<ingredient amount="12" unit="cl" substance="Ginger Ale oder Ginger Beer"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Italian Lover</name>
+			<teaser>Brandy, Baileys, Amaretto, Sahne</teaser>
+			<image>{3933D4A6-F987-4D3B-BFFC-524A57AF94C4}</image>
+			<tags>2-star;sweet;creamy</tags>
+			<description>
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Brandy"/>
+				<ingredient amount="3" unit="cl" substance="Baileys"/>
+				<ingredient amount="3" unit="cl" substance="Amaretto"/>
+				<ingredient amount="3" unit="cl" substance="Sahne"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Jet Pilot</name>
+			<teaser>Rum, Zimt, Graipefruitsaft, Limettensaf</teaser>
+			<image>{44CA47B4-B8B1-42C8-BC7C-F5B1FC6B0196}</image>
+			<tags>1-star;exotic</tags>
+			<description>
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Jamaican Rum"/>
+				<ingredient amount="2.25" unit="cl" substance="Overproof Rum"/>
+				<ingredient amount="2.25" unit="cl" substance="Golden Rum"/>
+				<ingredient amount="1.5" unit="cl" substance="Velvet Falernum"/>
+				<ingredient amount="0.75" unit="cl" substance="Zimtsirup"/>
+				<ingredient amount="1.5" unit="cl" substance="Frischer Graipefruitsaft"/>
+				<ingredient amount="1.5" unit="cl" substance="Limettensaft"/>
+				<ingredient amount="2" unit="dash" substance="Absinthe"/>
+				<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Long Island Iced Tea</name>
+			<teaser>Vodka, Gin, Tequilla, Rum, Triple Sec, Limettensaft, Cola</teaser>
+			<image>{37944174-35CE-4895-B9F2-A2DF02749857}</image>
+			<tags>3-star;sweet;fresh</tags>
+			<description>
+				Der Long Island Iced Tea ist ein weit verbreiteter Cocktail auf Basis mehrerer hochprozentiger Spirituosen. Obwohl sein Name dies andeutet, enthält er keinen Tee, sieht aber wegen der enthaltenen Cola wie Eistee aus. Wegen seines Alkoholvolumens zählt der Drink zu den Longdrinks.
+
+				Es gibt zahlreiche Legenden zum Ursprung des Cocktails. So soll er zur Zeit der Alkoholprohibition in den USA (1919–1932) entstanden sein, da Aussehen und Name über seinen recht beträchtlichen Alkoholgehalt hinwegtäuschten. Anderen Versionen zufolge soll er von einer reichen, gelangweilten Hausfrau auf Long Island im US-Bundesstaat New York erfunden worden sein. Diese habe beim heimlichen Griff in die Hausbar von jeder Flasche nur eine geringe Menge entnommen, da ihr Mann davon nichts bemerken sollte. Zur Tarnung habe sie den Drink mit Cola aufgefüllt. Auch von Studenten, die sich mit jeweils kleinen Mengen aus den Flaschen ihrer Eltern bedienten, wird erzählt.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
+				<ingredient amount="1.5" unit="cl" substance="Wodka"/>
+				<ingredient amount="1.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+				<ingredient amount="2" unit="cl" substance="Sierra Milenario Blanco Tequila"/>
+				<ingredient amount="1.5" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
+				<ingredient amount="2" unit="cl" substance="Cointreau"/>
+				<ingredient amount="1.5" unit="cl" substance="Zuckersirup 2:1"/>
+				<ingredient substance="Coca Cola, Original Taste"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Mai Tai</name>
+			<teaser>Rum, Cointreau, Mandellikör, Limettensaft, Muskatnuss</teaser>
+			<image>{893B7036-36A2-41B5-9283-15830C0E1F92}</image>
+			<tags>3-star;sour;exotic</tags>
+			<description>
+				Mai Tai ist ein klassischer Rum-Cocktail und gehört zu den weltweit erfolgreichsten Drinks. Victor Bergeron alias Trader Vic nahm für sich in Anspruch, den Mai Tai 1944 erfunden zu haben. Angeblich mixte er den ersten Mai Tai für zwei gute Freunde aus Tahiti, Carrie und Eastham Guild, die daraufhin ausgerufen haben sollen: Mai Tai Roa Ae, was in etwa heißt: „Nicht von dieser Welt – Das Beste“.
+
+				Der Mai Tai ist einer der klassischen Tiki-Drinks, zu denen auch der Zombie gehört. Typisch für die Tiki-Ära war, dass die Barkeeper ihre Rezepte als ihr „Kapital“ ansahen und daher nicht verrieten oder veröffentlichten. Dementsprechend hielt sich auch Bergeron mit der Veröffentlichung des Mai-Tai-Rezeptes lange zurück.
+
+				Orgeat ist ein Sirup mit Mandelgeschmack, der oft mit Orangenblütenwasser oder Rosenwasser verfeinert wird. Er findet vor allem an der Bar für die Zubereitung von Cocktails Verwendung. Der Sirup geht geschmacklich in Richtung Marzipan und ist milchig-trüb.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
+				<ingredient amount="2" unit="cl" substance="Clément Rhum Blanc"/>
+				<ingredient amount="3" unit="cl" substance="Appleton Estate Jamaica Rum"/>
+				<ingredient amount="2" unit="cl" substance="Cointreau"/>
+				<ingredient amount="2" unit="cl" substance="Orgeat (selbstgemacht)"/>
+				<ingredient substance="Muskatnuss"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Martinez (Gin)</name>
+			<teaser>Old Tom Gin, Vermouth, Maraschino</teaser>
+			<image>{A4A74BCF-80B8-4489-AEC5-35AF97FBA949}</image>
+			<tags>in-testing;sweet;bitter;dry;0-star</tags>
+			<description>
+				Der Martinez Cocktail gilt landläufig als Urgroßvater des Dry Martini. Und diese Zuschreibung stimmt mehr oder weniger, soweit die Quellen es zeigen. Gleichzeitig wird man dem Drink mit dieser Sichtweise allein nicht gerecht.
+
+				(mixology.eu)
+			</description>
+			<recipe>
+				<ingredient amount="6" unit="cl" substance="Hayman's Old Tom Gin"/>
+				<ingredient amount="0.75" unit="cl" substance="Vermouth Dry"/>
+				<ingredient amount="2.25" unit="cl" substance="Martini Vermouth Rosso"/>
+				<ingredient amount="0.75" unit="cl" substance="Luxardo Maraschino"/>
+				<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Mojito</name>
+			<teaser>Weißer Rum, Limettensaft, Minze, Soda</teaser>
+			<image>{A1863D10-D675-4A35-8E0D-AF26115A24D9}</image>
+			<tags>3-star;sour;sweet</tags>
+			<description>
+				Der Mojito ist ein ursprünglich kubanischer Drink, über die Entstehung seines Namens kursieren jedoch verschiedene Erklärungen. Einer zufolge soll die Bezeichnung vom westafrikanischen Wort mojo abgeleitet sein, einem Stoffbeutel mit magischen Gewürzen und Zaubergegenständen. Die verniedlichende Form dieses Lehnwortes würde mojito folglich „kleiner Zauber“ bedeuten.
+
+				Der Mojito geht auf eine lange Tradition von Rum-Getränken in der Karibik zurück. So soll bereits im 16. Jahrhundert der britische Freibeuter Francis Drake ein Getränk aus Zucker, echten Limetten, Aguardiente de Caña (ein einfacher Zuckerrohrschnaps) und Minze gegen seine Magenbeschwerden konsumiert haben. Von den Spaniern wurde Drake gefürchtet und erhielt den Spitznamen „El Draque“ (span. der Drache) und so nannte man auch das Getränk, das später mit Rum gemischt wurde, als sich dessen Herstellung in der Karibik verbreitete.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient substance="Minzzweige"/>
+				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
+				<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
+				<ingredient amount="6" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
+				<ingredient amount="3" unit="cl" substance="Soda"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Negroni</name>
+			<teaser>Gin, Campari, Vermouth Rosso</teaser>
+			<image>{AB859645-791B-405B-80DB-1D2B86FDFF30}</image>
+			<tags>3-star;bitter;dry</tags>
+			<description>
+				Der Negroni ist ein klassischer, aus Italien stammender Cocktail mit bitter-süßem Geschmack.
+
+				Der Negroni wurde in Florenz im Caffè Casoni (heute Caffè Giacosa) in der Via de′ Tornabuoni erfunden. Er ist nach dem Grafen Camillo Negroni benannt, der beim Barkeeper (Fosco Scarselli) zwischen 1919 und 1920 zum ersten Mal einen mit Gin verlängerten Americano bestellte.
+
+				Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Plymouth Dry Gin"/>
+				<ingredient amount="3" unit="cl" substance="Campari Bitterlikör"/>
+				<ingredient amount="3" unit="cl" substance="Martini Vermouth Rosso"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Old Fashioned</name>
+			<teaser>Bourbon Whiskey, Bitters</teaser>
+			<image>{49F4ADEF-FE11-4BE4-B397-4978B9515163}</image>
+			<tags></tags>
+			<description>
+				Ein Old Fashioned (von englisch old-fashioned für altmodisch, althergebracht) ist einer der wichtigsten klassischen Cocktails. Im 19. Jahrhundert zunächst als Whiskey Cocktail, später Old Fashioned Whiskey Cocktail, bezeichnet, entspricht der Shortdrink noch heute weitgehend der Urform eines „Cocktails“ in seiner ursprünglichen Definition, besteht also aus einer Spirituose, Zucker, Wasser bzw. Eis sowie Cocktailbitter.
+
+				Serviert werden Old Fashioneds meist in einem kleinen Becherglas, das auch Old-Fashioned-Glas genannt wird.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="1" unit="" substance="Zuckerwürfel"/>
+				<ingredient amount="1" unit="BL" substance="Soda"/>
+				<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
+				<ingredient amount="1" unit="dash" substance="The Bitter Truth Orange Bitter"/>
+				<ingredient amount="6" unit="cl" substance="Four Roses Single Barrel Bourbon Whiskey"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Piña Colada</name>
+			<teaser>Rum, Limettensaft, Creme of Coconut, Ananassaft</teaser>
+			<image>{A065DC95-1DD9-4CCB-A9F6-3336AB835236}</image>
+			<tags>sweet;tropical;creamy</tags>
+			<description>
+				Die Piña Colada (von span. piña ‚Ananas‘ und colar ‚durchsieben‘) ist ein süßer, cremiger Cocktail aus Rum, Kokosnusscreme und Ananassaft. Sie ist namensgebend für eine ganze Gruppe von Cocktails, den Coladas. Die Piña Colada wurde in den 1950er Jahren populär und gehört zu den weltweit bekanntesten Cocktails.
+
+				Die Piña Colada wird zu den einflussreichsten Cocktails gezählt und hat, ähnlich wie der Martini, wenn auch in völlig entgegengesetzter Hinsicht, Bedeutung weit über die Bar hinaus erlangt. Eine Piña Colada symbolisiert Urlaub, Strand, Sonne, ein tropisches Lebensgefühl und die Karibik schlechthin. Am 17. Juli 1978 erklärte Gouverneur Rafael Hernández Colón die Piña Colada zum Nationalgetränk von Puerto Rico.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="2" unit="" substance="Scheiben frisch Ananas"/>
+				<ingredient amount="5" unit="cl" substance="Don Papas Rum"/>
+				<ingredient amount="1" unit="cl" substance="Baileys"/>
+				<ingredient amount="3" unit="cl" substance="Creme of Coconut"/>
+				<ingredient amount="3" unit="cl" substance="Alnatura Kokosmilch"/>
+				<ingredient amount="2" unit="cl" substance="Ananassaft"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Prince</name>
+			<teaser>Tequilla, Vanillelikör, Creme of Coconut, Sahne, Maracujasaft</teaser>
+			<image>{5C12D764-FE88-48BA-A4BD-9FDF0945EEAB}</image>
+			<tags>sweet;tropical;creamy;2-star</tags>
+			<description>
+				Ein süßer-cremiger Cocktail mit feinem Vanille- und Maracujageschmack.
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Sierra Milenario Blanco Tequila"/>
+				<ingredient amount="2" unit="cl" substance="Likör 43"/>
+				<ingredient amount="2" unit="cl" substance="Sahne"/>
+				<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
+				<ingredient amount="10" unit="cl" substance="Rauch Happy Day Maracujasaft"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Ramazotti Sour</name>
+			<teaser>Ramazotti, Zitronensaft, Orangensaft</teaser>
+			<image>{643AD007-EC64-4D68-AECF-C62695AA1DE7}</image>
+			<tags>2-star;sweet;herbal</tags>
+			<description>
+				Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge.
+
+				Das Herstellungsverfahren von Ramazotti ist das gleiche wie 1815. Die Rezeptur umfasst 33 Kräuter und Pflanzen, unter anderem süße und bittere Orangenschalen, Chinarinde, Engelwurz, Kaiserwurz, Rosenblüten, Vanille und Sternanis. Diese werden extrahiert und pulverisiert. Dann werden Zucker, Alkohol und weitere Zutaten hinzugefügt. Die entstandene Flüssigkeit wird anschließend filtriert.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
+				<ingredient amount="4.5" unit="cl" substance="Ramazotti"/>
+				<ingredient amount="0.5" unit="cl" substance="Zuckersirup"/>
+				<ingredient amount="3" unit="cl" substance="Frischer Orangensaft"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Rosa Lady</name>
+			<teaser>Wodka, Vanillelikör, Bananenlikör, Sahne, Maracujasaft, Ananassaft</teaser>
+			<image>{871629C3-362F-4565-9AB8-02DE0452D06C}</image>
+			<tags>sweet;tropical;creamy;2-star</tags>
+			<description>
+				Ein süß-cremiger Cocktail, der bei seiner rosa Farbe geschmacklich automatisch an Erdbeere erinnert, obwohl Bananensirup enthalten ist.
+			</description>
+			<recipe>
+				<ingredient amount="2" unit="cl" substance="Wodka"/>
+				<ingredient amount="4" unit="cl" substance="Likör 43"/>
+				<ingredient amount="2" unit="cl" substance="Bananensirup"/>
+				<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
+				<ingredient amount="2" unit="cl" substance="Sahne"/>
+				<ingredient amount="8" unit="cl" substance="Rauch Happy Day Maracujasirup"/>
+				<ingredient amount="4" unit="cl" substance="Rauch Happy Day Ananassaft"/>
+				<ingredient amount="1" unit="cl" substance="Grenadine"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Singapore Sling</name>
+			<teaser>Gin, Limettensaft, Kirschlikör, Cointreau, Benedictine, Ananassaft</teaser>
+			<image>{50B3EA34-2FE3-47D2-8498-C956687DE2FB}</image>
+			<tags>sour;fresh;bitter;3-star</tags>
+			<description>
+				Singapore Sling ist ein fruchtig-aromatischer Cocktail aus Gin, Kirschlikör, Bénédictine und weiteren Zutaten.
+
+				Die Slings bilden eine sehr alte Gruppe von Mixgetränken und bestanden ursprünglich – nach einer Definition von 1675 – aus einer Spirituose, Zucker und Wasser, sowie optional etwas Muskatnuss. Dementsprechend wurde auch 1806 das damals noch neue Wort "Cocktail" als "bittered sling" definiert, also als ein mit Cocktailbitter gewürzter Sling.
+
+				Die herbere Vorgängervariante des Singapore Sling ist der Straits Sling. Hier wird der Ananassaft weggelassen. Dadurch wird der Cocktail weniger fruchtig.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
+				<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+				<ingredient amount="2" unit="cl" substance="Heering Kirschlikör"/>
+				<ingredient amount="1" unit="cl" substance="Cointreau"/>
+				<ingredient amount="1" unit="cl" substance="D.O.M. Benedictine Kräuterlikör"/>
+				<ingredient amount="1" unit="cl" substance="Grenadine"/>
+				<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
+				<ingredient amount="6" unit="cl" substance="Ananassaft"/>
+			</recipe>
+		</drink>
+
+		<drink>
+			<name>Saturn</name>
+			<teaser>Gin, Limettensaft, Falerum, Orgeat, Maracujasirup</teaser>
+			<image>{4A9196C2-8C9C-4850-B777-7C237085D694}</image>
+			<tags>sour;exotic</tags>
+			<description>
+				Ein Tiki-inspirierter Gin Sour mit Passionsfrucht und Mandel.
+			</description>
+			<recipe>
+				<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
+				<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
+				<ingredient amount="0.75" unit="cl" substance="Taylor's Velvet Falernum"/>
+				<ingredient amount="0.75" unit="cl" substance="Orgeat (selbstgemacht)"/>
+				<ingredient amount="0.75" unit="cl" substance="Maracujasirup"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>White Russian</name>
+			<teaser>Wodka, Kaffeelikör, Sahne</teaser>
+			<image>{B0EF4AC3-03A4-49C4-8450-E2C48E6A23A3}</image>
+			<tags>2-star;creamy;sweet</tags>
+			<description>
+				White Russian (englisch für "Weißer Russe") ist ein Cocktail aus Wodka, Kaffeelikör und Sahne oder Milch. Aufgrund seiner süßen und cremigen Bestandteile (Likör und Sahne) zählt der Shortdrink zu den After-Dinner-Drinks. Die Variante ohne Sahne und Milch heißt Black Russian ("Schwarzer Russe").
+
+				Der White Russian ist das Lieblingsgetränk der Hauptfigur in dem von den Coen-Brüdern gedrehten Spielfilm "The Big Lebowski".
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="6" unit="cl" substance="Wodka"/>
+				<ingredient amount="3" unit="cl" substance="Kahlua Kaffeelikör"/>
+				<ingredient amount="3" unit="cl" substance="Leicht geschlagene Sahne"/>
+				<ingredient substance="Muskatnuss"/>
+			</recipe>
+		</drink>
+
+
+		<drink>
+			<name>Zombie</name>
+			<teaser>Rum, Limettensaft, Falernum, Maraschino</teaser>
+			<image>{D34B1939-F5D4-497B-A6DD-AF839308E285}</image>
+			<tags>exotic</tags>
+			<description>
+				Der Zombie (ursprünglich auch Zombie Punch) ist ein sehr starker Cocktail aus Rum und Fruchtsäften, der nach seiner Wirkung auf den Konsumenten benannt wurde und zu den bekanntesten Tiki-Drinks zählt.
+
+				Erstmals tauchte der Zombie als Zombie Punch in den 1930er-Jahren auf und geht auf Donn Beach (eigentlich Ernest Raymond Beaumont-Gannt) zurück, einen Unternehmer, der unter anderem das Restaurant Don the Beachcomber in Hollywood besaß.
+
+				Angeblich mixte er ihn im Jahr 1934 eines Nachmittags für einen verkaterten Freund, der vor seinem Abflug nach San Francisco in diesem Restaurant vorbeischaute. Nachdem er drei Zombies zu sich genommen hatte, ging er wieder. Als er mehrere Tage später zurückkam, sagte er, er habe sich während des ganzen Flugs wie ein Untoter gefühlt, daher der Name Zombie.
+
+				Aufgrund des hohen Alkoholgehaltes beschränkte das Don the Beachcomber den Ausschank seines Zombie Drinks jahrelang auf zwei Stück pro Gast.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="2.5" unit="cl" substance="Frischer Limettensaft"/>
+				<ingredient amount="2" unit="cl" substance="Frischer Grapefruitsaft"/>
+				<ingredient amount="4.5" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
+				<ingredient amount="4.5" unit="cl" substance="Appleton Estate Jamaica Rum"/>
+				<ingredient amount="3" unit="cl" substance="Plantation OFTD Overproof"/>
+				<ingredient amount="2" unit="cl" substance="Taylor's Velvet Falernum"/>
+				<ingredient amount="2" unit="cl" substance="The Bitter Truth Golden Falernum"/>
+				<ingredient amount="2" unit="cl" substance="Maraschino"/>
+				<ingredient amount="1.5" unit="cl" substance="Zimt-Zuckersirup"/>
+				<ingredient amount="2" unit="dash" substance="Absinth"/>
+				<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
+			</recipe>
+		</drink>
+
+	</drinks>
+
+</catalog>
