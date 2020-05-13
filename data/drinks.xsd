@@ -35,7 +35,7 @@
 											</xs:simpleType>
 										</xs:element>
 										<xs:element name="description" type="xs:string" />
-										<xs:element name="glasware">
+										<xs:element name="glass">
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
 													<xs:pattern value="Old Fashioned|Double Old Fashioned|Caipirinha|Martini|Margarita|Longdrink|Tiki|Fancy"/>

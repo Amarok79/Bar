@@ -29,7 +29,7 @@
 
 				Der Cocktail wird als einer "Der Unvergesslichen" bei der International Bartenders Association (IBA) geführt.
 			</description>
-			<glasware>Martini</glasware>
+			<glass>Martini</glass>
 			<ice>None</ice>
 			<recipe>
 				<ingredient amount="3" unit="cl" substance="@Beefeater24"/>
