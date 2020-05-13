@@ -58,7 +58,7 @@ namespace Drinks.Model
 				.IsNull();
 			Check.That(drink.Tags)
 				.IsEmpty();
-			Check.That(drink.Glasware)
+			Check.That(drink.Glass)
 				.IsNull();
 			Check.That(drink.Ice)
 				.IsNull();
@@ -70,7 +70,7 @@ namespace Drinks.Model
 				.SetDescription("The Mai Tai is a cocktail based on rum...")
 				.SetRecipe(recipe)
 				.SetTags(new[] { "sweet", "exotic" })
-				.SetGlasware("Martini Glas")
+				.SetGlass("Martini Glas")
 				.SetIce("Cubed");
 
 			// assert
@@ -90,7 +90,7 @@ namespace Drinks.Model
 				.IsSameReferenceAs(recipe);
 			Check.That(drink.Tags)
 				.ContainsExactly("sweet", "exotic");
-			Check.That(drink.Glasware)
+			Check.That(drink.Glass)
 				.IsEqualTo("Martini Glas");
 			Check.That(drink.Ice)
 				.IsEqualTo("Cubed");

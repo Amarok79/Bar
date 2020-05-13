@@ -78,9 +78,9 @@ namespace Drinks.Model
 		public IReadOnlyCollection<String> Tags { get; private set; } = Array.Empty<String>();
 
 		/// <summary>
-		/// Gets the Glasware (the cocktail glass to use) for this Drink.
+		/// Gets the Glass to use for this Drink.
 		/// </summary>
-		public String Glasware { get; private set; }
+		public String Glass { get; private set; }
 
 		/// <summary>
 		/// Gets the kind of Ice to use for this Drink.
@@ -179,12 +179,12 @@ namespace Drinks.Model
 		/// Sets the Glasware of the Drink.
 		/// </summary>
 		/// 
-		/// <param name="glasware">
+		/// <param name="glass">
 		/// The teaser of the drink. Null is not allowed.</param>
-		public Drink SetGlasware(String glasware)
+		public Drink SetGlass(String glass)
 		{
-			Verify.NotNull(glasware, nameof(glasware));
-			this.Glasware = glasware;
+			Verify.NotNull(glass, nameof(glass));
+			this.Glass = glass;
 			return this;
 		}
 
