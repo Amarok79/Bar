@@ -28,14 +28,14 @@ using System.Threading.Tasks;
 
 namespace Drinks.Model
 {
-	/// <summary>
-	/// This service provides access to drinks.
-	/// </summary>
-	public interface IDrinkRepository
-	{
-		/// <summary>
-		/// Gets all drinks.
-		/// </summary>
-		Task<IEnumerable<Drink>> GetAll();
-	}
+    /// <summary>
+    /// This service provides access to drinks.
+    /// </summary>
+    public interface IDrinkRepository
+    {
+        /// <summary>
+        /// Gets all Drinks for the given Bar.
+        /// </summary>
+        Task<IEnumerable<Drink>> GetAll(BarId barId);
+    }
 }

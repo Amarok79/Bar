@@ -79,15 +79,12 @@ namespace Drinks.Model
 		/// <summary>
 		/// Returns a string that represents the current instance.
 		/// </summary>
-		///
-		/// <returns>
-		/// A string that represents the current instance.</returns>
 		public override String ToString()
 		{
-			if (Amount.HasValue)
-				return $"{Amount} {Unit} {Substance}";
+			if (this.Amount.HasValue)
+				return $"{this.Amount} {this.Unit} {this.Substance}";
 			else
-				return Substance;
+				return this.Substance;
 		}
 	}
 }

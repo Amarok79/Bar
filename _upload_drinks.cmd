@@ -1,1 +1,1 @@
-pwsh.exe _upload_drinks.ps1
+pwsh.exe .\_upload_drinks.ps1

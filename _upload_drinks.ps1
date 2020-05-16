@@ -1,4 +1,6 @@
 
 $account = Get-AzStorageAccount
 
-Set-AzStorageBlobContent -Context $account.Context -Container drinks -File data\drinks.xml -Force
+Get-ChildItem -Path .\data -Filter *.xml | ForEach-Object {
+    Set-AzStorageBlobContent -Context $account.Context -Container drinks -File $_ -Force
+}
