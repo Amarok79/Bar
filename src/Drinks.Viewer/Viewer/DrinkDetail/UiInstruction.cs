@@ -1,6 +1,4 @@
-﻿extensions:  .generated.cs
-extensions: .cs .designer.cs
-/* MIT License
+﻿/* MIT License
  * 
  * Copyright (c) 2020, Olaf Kober
  * https://github.com/Amarok79/Bar
@@ -23,3 +21,16 @@ extensions: .cs .designer.cs
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
 */
+
+using System;
+
+
+namespace Drinks.Viewer.DrinkDetail
+{
+    public class UiInstruction : BindableBase
+    {
+        public Int32 No { get; set; }
+
+        public String Text { get; set; }
+    }
+}

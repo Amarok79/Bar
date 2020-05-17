@@ -1,6 +1,4 @@
-﻿extensions:  .generated.cs
-extensions: .cs .designer.cs
-/* MIT License
+﻿/* MIT License
  * 
  * Copyright (c) 2020, Olaf Kober
  * https://github.com/Amarok79/Bar
@@ -23,3 +21,33 @@ extensions: .cs .designer.cs
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
 */
+
+using System;
+using Windows.UI.Xaml.Data;
+
+
+namespace Drinks.Viewer.DrinkDetail
+{
+    public sealed class IceConverter :
+        IValueConverter
+    {
+        public Object Convert(Object value, Type targetType, Object parameter, String language)
+        {
+            var ice = (String)value;
+
+            if (String.Equals(ice, "Cubed", StringComparison.OrdinalIgnoreCase))
+                return "Würfel";
+            if (String.Equals(ice, "Crushed", StringComparison.OrdinalIgnoreCase))
+                return "Gestoßen";
+            if (String.Equals(ice, "None", StringComparison.OrdinalIgnoreCase))
+                return "-";
+
+            return ice;
+        }
+
+        public Object ConvertBack(Object value, Type targetType, Object parameter, String language)
+        {
+            throw new NotSupportedException();
+        }
+    }
+}

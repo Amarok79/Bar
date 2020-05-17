@@ -41,7 +41,11 @@ namespace Drinks.Viewer.DrinkDetail
 					new Ingredient(1.5, "cl", "Zuckersirup 2:1"),
 					new Ingredient(1, "cl", "The Bitter Truth Orange Bitter"),
 				},
-				Array.Empty<String>()
+				new[] {
+					"SHAKE alle Zutaten",
+					"FINE STRAIN ins Gästeglas",
+					"DUST mit Muskatnuss"
+				}
 			);
 
 			var drink = new Drink(default, default)
@@ -53,7 +57,9 @@ Ende der 1990er Jahre erlangte der Cosmopolitan einen Bekanntheitsschub durch di
 (Wikipedia)")
 				.SetTeaser("Wodka, Triple Sec, Cranberrysaft, Limettensaft")
 				.SetName("Cosmopolitan")
-				.SetRecipe(recipe);
+				.SetRecipe(recipe)
+				.SetGlass("Martini")
+				.SetIce("Cubed");
 
 			this.Drink = drink;
 			this.Image = new BitmapImage(new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg"));

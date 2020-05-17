@@ -34,6 +34,7 @@ namespace Drinks.Viewer.DrinkDetail
 	{
 		// state
 		private UiIngredient[] mIngredients;
+		private UiInstruction[] mInstructions;
 		private Drink mDrink;
 		private BitmapImage mImage;
 
@@ -55,13 +56,19 @@ namespace Drinks.Viewer.DrinkDetail
 				mDrink = value;
 
 				mIngredients = mDrink.Recipe.Ingredients
-					.Select(x => new UiIngredient() { Ingredient = x })
+					.Select(x => new UiIngredient { Ingredient = x })
+					.ToArray();
+
+				Int32 no = 1;
+				mInstructions = mDrink.Recipe.Instructions
+					.Select(x => new UiInstruction { No = no++, Text = x })
 					.ToArray();
 
 				OnPropertyChanged(nameof(Name));
 				OnPropertyChanged(nameof(Teaser));
 				OnPropertyChanged(nameof(Description));
 				OnPropertyChanged(nameof(Ingredients));
+				OnPropertyChanged(nameof(Instructions));
 			}
 		}
 
@@ -69,12 +76,37 @@ namespace Drinks.Viewer.DrinkDetail
 
 		public String Teaser => this.Drink.Teaser;
 
+
+		public Boolean HasDescription => !String.IsNullOrEmpty(this.Drink.Description);
+
 		public String DescriptionHeader => "Beschreibung";
 
 		public String Description => this.Drink.Description;
 
+
 		public String IngredientsHeader => "Rezeptur";
 
 		public UiIngredient[] Ingredients => mIngredients;
+
+
+		public Boolean HasInstructions => this.Drink.Recipe.Instructions.Any();
+
+		public String InstructionsHeader => "Arbeitsschritte";
+
+		public UiInstruction[] Instructions => mInstructions;
+
+
+		public Boolean HasGlass => !String.IsNullOrEmpty(this.Drink.Glass);
+
+		public String GlassHeader => "Glas";
+
+		public String Glass => this.Drink.Glass;
+
+
+		public Boolean HasIce => !String.IsNullOrEmpty(this.Drink.Ice);
+
+		public String IceHeader => "Eis";
+
+		public String Ice => this.Drink.Ice;
 	}
 }
