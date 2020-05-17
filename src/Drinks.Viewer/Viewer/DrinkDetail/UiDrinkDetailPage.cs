@@ -76,6 +76,8 @@ namespace Drinks.Viewer.DrinkDetail
 
 		public String Teaser => this.Drink.Teaser;
 
+		public Boolean HasDescription => !String.IsNullOrEmpty(this.Drink.Description);
+
 		public String DescriptionHeader => "Beschreibung";
 
 		public String Description => this.Drink.Description;

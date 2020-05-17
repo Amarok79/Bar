@@ -145,11 +145,13 @@
 					<TextBlock
 					  Margin="0,52,0,4"
 					  Style="{StaticResource BarSubTitleTextStyle}"
-					  Text="{Binding DescriptionHeader, Mode=OneWay}" />
+					  Text="{Binding DescriptionHeader, Mode=OneWay}"
+					  Visibility="{Binding HasDescription, Mode=OneWay}" />
 
 					<TextBlock
 					  Style="{StaticResource BarDescriptionTextStyle}"
-					  Text="{Binding Description, Mode=OneWay}" />
+					  Text="{Binding Description, Mode=OneWay}"
+					  Visibility="{Binding HasDescription, Mode=OneWay}" />
 
 				</StackPanel>
 			</ScrollViewer>
