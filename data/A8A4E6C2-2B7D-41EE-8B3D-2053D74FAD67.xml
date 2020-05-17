@@ -71,7 +71,7 @@
 			</recipe>
 		</drink>
 
-		<drink>
+		<!--<drink>
 			<name>Americano</name>
 			<teaser>Campari, Vermouth Rosso, Soda</teaser>
 			<image>{5F0D01F0-B2CD-496F-BA3E-79BB0D564D9C}</image>
@@ -90,7 +90,7 @@
 				<ingredient amount="4.5" unit="cl" substance="Campari Bitterlikör"/>
 				<ingredient amount="7.5" unit="cl" substance="Soda"/>
 			</recipe>
-		</drink>
+		</drink>-->
 
 		<drink>
 			<name>Averna Sour</name>
@@ -98,17 +98,24 @@
 			<image>{521394D8-A663-44AA-9385-4C626BD8586B}</image>
 			<tags>sour;sweet;bitter;herbal</tags>
 			<description>
-				Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge.
+				Als Sour bezeichnet man einen alkoholhaltigen Cocktail, der aus einer Spirituose, Zitronensaft und Zucker besteht. Er stellt die Urform einer ganzen Gattung von Cocktails dar, die alle auf dem selben Grundprinzip aufbauen. Wenn die Spirituose ein Likör ist, lässt man den Zucker weg oder reduziert zumindest seine Menge. ⁽¹⁾
 
-				Averna (Amaro Siciliano) ist ein sizilianischer Bitterlikör, hergestellt aus verschiedenen Kräutern, Wurzeln und ätherischen Ölen aus Bitterorangen und Zitronen. Der Geschmack von Averna ist bittersüß mit Anklängen von Orange und Süßholz sowie Noten von Myrte, Wacholderbeeren, Rosmarin und Salbei.
+				Averna (Amaro Siciliano) ist ein sizilianischer Bitterlikör, hergestellt aus verschiedenen Kräutern, Wurzeln und ätherischen Ölen aus Bitterorangen und Zitronen. Der Geschmack von Averna ist bittersüß mit Anklängen von Orange und Süßholz sowie Noten von Myrte, Wacholderbeeren, Rosmarin und Salbei. ⁽¹⁾
 
-				(Wikipedia)
+				Der Averna Sour ist zusammen mit dem Amaretto Sour einer unserer beliebtesten Cocktails. Wer es lieber süßer hat, wählt den Amaretto Sour. Wer es lieber ein wenig bitterer mag, den Averna Sour.
+
+				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
+			<glass>Old Fashioned</glass>
+			<ice>Cubed</ice>
+			<garnish>Zitronenscheibe</garnish>
 			<recipe>
 				<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
 				<ingredient amount="5" unit="cl" substance="Averna Bitterlikör"/>
 				<ingredient amount="1" unit="cl" substance="Zuckersirup"/>
 				<ingredient amount="2" unit="cl" substance="Frischer Orangensaft"/>
+				<instruction>SHAKE alle Zutaten</instruction>
+				<instruction>STRAIN ins Gästeglas</instruction>
 			</recipe>
 		</drink>
 
