@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <catalog>
 
 	<substances>
@@ -31,6 +31,7 @@
 			</description>
 			<glass>Martini</glass>
 			<ice>None</ice>
+			<garnish>Muskatnuss</garnish>
 			<recipe>
 				<ingredient amount="3" unit="cl" substance="@Beefeater24"/>
 				<ingredient amount="3" unit="cl" substance="@CremeDeCacaoBlanc"/>

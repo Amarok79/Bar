@@ -87,6 +87,11 @@ namespace Drinks.Model
 		/// </summary>
 		public String Ice { get; private set; }
 
+		/// <summary>
+		/// Gets the kind of Garnish to use for this Drink.
+		/// </summary>
+		public String Garnish { get; private set; }
+
 
 		/// <summary>
 		/// Initializes a new instance.
@@ -176,11 +181,11 @@ namespace Drinks.Model
 		}
 
 		/// <summary>
-		/// Sets the Glasware of the Drink.
+		/// Sets the Glass of the Drink.
 		/// </summary>
 		/// 
 		/// <param name="glass">
-		/// The teaser of the drink. Null is not allowed.</param>
+		/// The glass of the drink. Null is not allowed.</param>
 		public Drink SetGlass(String glass)
 		{
 			Verify.NotNull(glass, nameof(glass));
@@ -189,15 +194,28 @@ namespace Drinks.Model
 		}
 
 		/// <summary>
-		/// Sets the Glasware of the Drink.
+		/// Sets the Ice of the Drink.
 		/// </summary>
 		/// 
 		/// <param name="ice">
-		/// The teaser of the drink. Null is not allowed.</param>
+		/// The ice of the drink. Null is not allowed.</param>
 		public Drink SetIce(String ice)
 		{
 			Verify.NotNull(ice, nameof(ice));
 			this.Ice = ice;
+			return this;
+		}
+
+		/// <summary>
+		/// Sets the Garnish of the Drink.
+		/// </summary>
+		/// 
+		/// <param name="garnish">
+		/// The garnish of the drink. Null is not allowed.</param>
+		public Drink SetGarnish(String garnish)
+		{
+			Verify.NotNull(garnish, nameof(garnish));
+			this.Garnish = garnish;
 			return this;
 		}
 	}

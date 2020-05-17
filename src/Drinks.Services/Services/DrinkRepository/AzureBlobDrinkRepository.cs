@@ -105,6 +105,7 @@ namespace Drinks.Services.DrinkRepository
 				var tags = drinkNode.Element("tags").Value;
 				var glass = drinkNode.Element("glass")?.Value;
 				var ice = drinkNode.Element("ice")?.Value;
+				var garnish = drinkNode.Element("garnish")?.Value;
 
 				var drink = new Drink(new DrinkId(Guid.NewGuid()), barId)
 					.SetName(name.Trim())
@@ -114,6 +115,7 @@ namespace Drinks.Services.DrinkRepository
 					.SetTags(_SplitAndTrimTags(tags))
 					.SetGlass(glass?.Trim() ?? String.Empty)
 					.SetIce(ice?.Trim() ?? String.Empty)
+					.SetGarnish(garnish?.Trim() ?? String.Empty)
 					;
 
 				Ingredient[] ingredients = null;

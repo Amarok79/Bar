@@ -49,6 +49,7 @@
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
+										<xs:element name="garnish" type="xs:string" />
 										<xs:element name="recipe">
 											<xs:complexType>
 												<xs:sequence>

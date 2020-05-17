@@ -108,5 +108,12 @@ namespace Drinks.Viewer.DrinkDetail
 		public String IceHeader => "Eis";
 
 		public String Ice => this.Drink.Ice;
+
+
+		public Boolean HasGarnish => !String.IsNullOrEmpty(this.Drink.Garnish);
+
+		public String GarnishHeader => "Dekoration";
+
+		public String Garnish => this.Drink.Garnish;
 	}
 }

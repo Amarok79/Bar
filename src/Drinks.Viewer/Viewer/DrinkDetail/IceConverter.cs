@@ -40,7 +40,7 @@ namespace Drinks.Viewer.DrinkDetail
             if (String.Equals(ice, "Crushed", StringComparison.OrdinalIgnoreCase))
                 return "Gestoßen";
             if (String.Equals(ice, "None", StringComparison.OrdinalIgnoreCase))
-                return "-";
+                return "Keines";
 
             return ice;
         }
