@@ -68,11 +68,13 @@
     <Compile Include="Viewer\Common\BindableBase.cs" />
     <Compile Include="Viewer\Converter\AmountConverter.cs" />
     <Compile Include="Viewer\Common\DelegateCommand.cs" />
+    <Compile Include="Viewer\DrinkDetail\NoConverter.cs" />
     <Compile Include="Viewer\DrinkDetail\DrinkDetailPageArgs.cs" />
     <Compile Include="Viewer\DrinkDetail\DrinkDetailPage.xaml.cs">
       <DependentUpon>DrinkDetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Viewer\DrinkDetail\UiDrinkDetailPage.cs" />
+    <Compile Include="Viewer\DrinkDetail\UiInstruction.cs" />
     <Compile Include="Viewer\DrinkDetail\UiIngredient.cs" />
     <Compile Include="Viewer\DrinkDetail\SampleUiDrinkDetailPage.cs" />
     <Compile Include="Viewer\Home\UiDrinkStyle.cs" />

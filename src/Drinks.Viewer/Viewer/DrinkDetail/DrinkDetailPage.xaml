@@ -10,6 +10,14 @@
   Background="{StaticResource BarHeaderBackgroundBrush}"
   mc:Ignorable="d">
 
+	<Page.Resources>
+		<ResourceDictionary>
+
+			<vm:NoConverter x:Key="NoConverter" />
+
+		</ResourceDictionary>
+	</Page.Resources>
+
 	<Grid x:Name="Root">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="80" />
@@ -95,6 +103,38 @@
 									  Grid.Column="2"
 									  Style="{StaticResource BarIngredientSubstanceTextStyle}"
 									  Text="{Binding Substance, Mode=OneWay}" />
+								</Grid>
+							</DataTemplate>
+						</ListView.ItemTemplate>
+					</ListView>
+
+					<!--  Instructions  -->
+
+					<TextBlock
+					  Margin="0,52,0,4"
+					  Style="{StaticResource BarSubTitleTextStyle}"
+					  Text="{Binding InstructionsHeader, Mode=OneWay}"
+					  Visibility="{Binding HasInstructions, Mode=OneWay}" />
+
+					<ListView
+					  ItemsSource="{Binding Instructions, Mode=OneWay}"
+					  SelectionMode="None"
+					  Visibility="{Binding HasInstructions, Mode=OneWay}">
+						<ListView.ItemTemplate>
+							<DataTemplate>
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="60" />
+										<ColumnDefinition Width="*" />
+									</Grid.ColumnDefinitions>
+									<TextBlock
+									  Grid.Column="0"
+									  Style="{StaticResource BarIngredientSubstanceTextStyle}"
+									  Text="{Binding No, Mode=OneWay, Converter={StaticResource NoConverter}}" />
+									<TextBlock
+									  Grid.Column="1"
+									  Style="{StaticResource BarIngredientSubstanceTextStyle}"
+									  Text="{Binding Text, Mode=OneWay}" />
 								</Grid>
 							</DataTemplate>
 						</ListView.ItemTemplate>

@@ -28,17 +28,17 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Drinks.Viewer.DrinkDetail
 {
-	public sealed class DrinkDetailPageArgs
-	{
-		public Drink Drink { get; }
+    public sealed class DrinkDetailPageArgs
+    {
+        public Drink Drink { get; }
 
-		public BitmapImage Image { get; }
+        public BitmapImage Image { get; }
 
 
-		public DrinkDetailPageArgs(Drink drink, BitmapImage image)
-		{
-			this.Drink = drink;
-			this.Image = image;
-		}
-	}
+        public DrinkDetailPageArgs(Drink drink, BitmapImage image)
+        {
+            this.Drink = drink;
+            this.Image = image;
+        }
+    }
 }
