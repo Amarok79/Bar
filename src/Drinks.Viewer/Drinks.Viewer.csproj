@@ -68,6 +68,7 @@
     <Compile Include="Viewer\Common\BindableBase.cs" />
     <Compile Include="Viewer\Converter\AmountConverter.cs" />
     <Compile Include="Viewer\Common\DelegateCommand.cs" />
+    <Compile Include="Viewer\DrinkDetail\IceConverter.cs" />
     <Compile Include="Viewer\DrinkDetail\NoConverter.cs" />
     <Compile Include="Viewer\DrinkDetail\DrinkDetailPageArgs.cs" />
     <Compile Include="Viewer\DrinkDetail\DrinkDetailPage.xaml.cs">

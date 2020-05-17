@@ -12,9 +12,8 @@
 
 	<Page.Resources>
 		<ResourceDictionary>
-
 			<vm:NoConverter x:Key="NoConverter" />
-
+			<vm:IceConverter x:Key="IceConverter" />
 		</ResourceDictionary>
 	</Page.Resources>
 
@@ -75,38 +74,77 @@
 
 					<!--  Ingredients  -->
 
-					<TextBlock
-					  Margin="0,0,0,4"
-					  Style="{StaticResource BarSubTitleTextStyle}"
-					  Text="{Binding IngredientsHeader, Mode=OneWay}" />
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*" />
+							<ColumnDefinition Width="Auto" />
+						</Grid.ColumnDefinitions>
 
-					<ListView
-					  ItemsSource="{Binding Ingredients, Mode=OneWay}"
-					  SelectionMode="None">
-						<ListView.ItemTemplate>
-							<DataTemplate x:DataType="vm:UiIngredient">
-								<Grid>
-									<Grid.ColumnDefinitions>
-										<ColumnDefinition Width="60" />
-										<ColumnDefinition Width="80" />
-										<ColumnDefinition Width="*" />
-									</Grid.ColumnDefinitions>
-									<TextBlock
-									  Grid.Column="0"
-									  Style="{StaticResource BarIngredientAmountTextStyle}"
-									  Text="{Binding Amount, Mode=OneWay, Converter={StaticResource AmountConverter}}" />
-									<TextBlock
-									  Grid.Column="1"
-									  Style="{StaticResource BarIngredientUnitTextStyle}"
-									  Text="{Binding Unit, Mode=OneWay}" />
-									<TextBlock
-									  Grid.Column="2"
-									  Style="{StaticResource BarIngredientSubstanceTextStyle}"
-									  Text="{Binding Substance, Mode=OneWay}" />
-								</Grid>
-							</DataTemplate>
-						</ListView.ItemTemplate>
-					</ListView>
+						<StackPanel
+						  Grid.Column="0">
+
+							<TextBlock
+							  Margin="0,0,0,4"
+							  Style="{StaticResource BarSubTitleTextStyle}"
+							  Text="{Binding IngredientsHeader, Mode=OneWay}" />
+
+							<ListView
+							  ItemsSource="{Binding Ingredients, Mode=OneWay}"
+							  SelectionMode="None">
+								<ListView.ItemTemplate>
+									<DataTemplate x:DataType="vm:UiIngredient">
+										<Grid>
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="60" />
+												<ColumnDefinition Width="80" />
+												<ColumnDefinition Width="*" />
+											</Grid.ColumnDefinitions>
+											<TextBlock
+											  Grid.Column="0"
+											  Style="{StaticResource BarIngredientAmountTextStyle}"
+											  Text="{Binding Amount, Mode=OneWay, Converter={StaticResource AmountConverter}}" />
+											<TextBlock
+											  Grid.Column="1"
+											  Style="{StaticResource BarIngredientUnitTextStyle}"
+											  Text="{Binding Unit, Mode=OneWay}" />
+											<TextBlock
+											  Grid.Column="2"
+											  Style="{StaticResource BarIngredientSubstanceTextStyle}"
+											  Text="{Binding Substance, Mode=OneWay}" />
+										</Grid>
+									</DataTemplate>
+								</ListView.ItemTemplate>
+							</ListView>
+
+						</StackPanel>
+
+						<StackPanel
+						  Grid.Column="1"
+						  Margin="32,0,32,0">
+
+							<TextBlock
+							  Margin="0,0,0,8"
+							  Style="{StaticResource BarSubTitleTextStyle}"
+							  Text="{Binding GlassHeader, Mode=OneWay}"
+							  Visibility="{Binding HasGlass, Mode=OneWay}" />
+							<TextBlock
+							  Style="{StaticResource BarIngredientSubstanceTextStyle}"
+							  Text="{Binding Glass, Mode=OneWay}"
+							  Visibility="{Binding HasGlass, Mode=OneWay}" />
+
+							<TextBlock
+							  Margin="0,40,0,8"
+							  Style="{StaticResource BarSubTitleTextStyle}"
+							  Text="{Binding IceHeader, Mode=OneWay}"
+							  Visibility="{Binding HasIce, Mode=OneWay}" />
+							<TextBlock
+							  Style="{StaticResource BarIngredientSubstanceTextStyle}"
+							  Text="{Binding Ice, Mode=OneWay, Converter={StaticResource IceConverter}}"
+							  Visibility="{Binding HasIce, Mode=OneWay}" />
+
+						</StackPanel>
+
+					</Grid>
 
 					<!--  Instructions  -->
 

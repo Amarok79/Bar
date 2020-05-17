@@ -76,15 +76,18 @@ namespace Drinks.Viewer.DrinkDetail
 
 		public String Teaser => this.Drink.Teaser;
 
+
 		public Boolean HasDescription => !String.IsNullOrEmpty(this.Drink.Description);
 
 		public String DescriptionHeader => "Beschreibung";
 
 		public String Description => this.Drink.Description;
 
+
 		public String IngredientsHeader => "Rezeptur";
 
 		public UiIngredient[] Ingredients => mIngredients;
+
 
 		public Boolean HasInstructions => this.Drink.Recipe.Instructions.Any();
 
@@ -92,7 +95,17 @@ namespace Drinks.Viewer.DrinkDetail
 
 		public UiInstruction[] Instructions => mInstructions;
 
+
+		public Boolean HasGlass => !String.IsNullOrEmpty(this.Drink.Glass);
+
+		public String GlassHeader => "Glas";
+
 		public String Glass => this.Drink.Glass;
+
+
+		public Boolean HasIce => !String.IsNullOrEmpty(this.Drink.Ice);
+
+		public String IceHeader => "Eis";
 
 		public String Ice => this.Drink.Ice;
 	}
