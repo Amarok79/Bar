@@ -2,15 +2,20 @@
 <catalog>
 
 	<substances>
-		<substance id="Beefeater24">
-			Beefeater 24 London Dry Gin
-		</substance>
-		<substance id="CremeDeCacaoBlanc">
-			Crème de Cacao Blanc
-		</substance>
-		<substance id="Creme">
-			Sahne
-		</substance>
+		<!-- juices -->
+		<substance id="FreshLemonJuice">Frisch gepresster Zitronensaft</substance>
+		<substance id="FreshOrangeJuice">Frisch gepresster Orangensaft</substance>
+		<!-- bitters -->
+		<substance id="OrangeBitter">The Bitter Truth Orange Bitter</substance>
+		<!-- gins -->
+		<substance id="Beefeater24">Beefeater 24 London Dry Gin</substance>
+		<!-- liqueurs -->
+		<substance id="Amaretto">Disaronno Originale Amaretto</substance>
+		<substance id="Averna">Averna Amaro Siciliano</substance>
+		<substance id="CremeDeCacaoBlanc">Crème de Cacao Blanc</substance>
+		<!-- misc -->
+		<substance id="Creme">Sahne</substance>
+		<substance id="SimpleSirup">Läuterzucker</substance>
 	</substances>
 
 	<drinks>
@@ -61,11 +66,11 @@
 			<ice>Cubed</ice>
 			<garnish>Cocktailkirsche, Zitronenzeste</garnish>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
-				<ingredient amount="4.5" unit="cl" substance="Amaretto Disaronno Originale"/>
-				<ingredient amount="0.5" unit="cl" substance="Zuckersirup"/>
-				<ingredient amount="3" unit="cl" substance="Frischer Orangensaft"/>
-				<ingredient amount="2" unit="dash" substance="The Bitter Truth Orange Bitter"/>
+				<ingredient amount="3" unit="cl" substance="@FreshLemonJuice"/>
+				<ingredient amount="4.5" unit="cl" substance="@Amaretto"/>
+				<ingredient amount="0.5" unit="cl" substance="@SimpleSirup"/>
+				<ingredient amount="3" unit="cl" substance="@FreshOrangeJuice"/>
+				<ingredient amount="2" unit="dash" substance="@OrangeBitter"/>
 				<instruction>SHAKE alle Zutaten</instruction>
 				<instruction>STRAIN ins Gästeglas</instruction>
 			</recipe>
@@ -110,14 +115,16 @@
 			<ice>Cubed</ice>
 			<garnish>Zitronenscheibe</garnish>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
-				<ingredient amount="5" unit="cl" substance="Averna Bitterlikör"/>
-				<ingredient amount="1" unit="cl" substance="Zuckersirup"/>
-				<ingredient amount="2" unit="cl" substance="Frischer Orangensaft"/>
+				<ingredient amount="3" unit="cl" substance="@FreshLemonJuice"/>
+				<ingredient amount="5" unit="cl" substance="@Averna"/>
+				<ingredient amount="1" unit="cl" substance="@SimpleSirup"/>
+				<ingredient amount="2" unit="cl" substance="@FreshOrangeJuice"/>
 				<instruction>SHAKE alle Zutaten</instruction>
 				<instruction>STRAIN ins Gästeglas</instruction>
 			</recipe>
 		</drink>
+
+
 
 		<drink>
 			<name>Aviation</name>
