@@ -62,6 +62,8 @@ namespace Drinks.Model
 				.IsNull();
 			Check.That(drink.Ice)
 				.IsNull();
+			Check.That(drink.Garnish)
+				.IsNull();
 
 			// act
 			drink
@@ -71,7 +73,8 @@ namespace Drinks.Model
 				.SetRecipe(recipe)
 				.SetTags(new[] { "sweet", "exotic" })
 				.SetGlass("Martini Glas")
-				.SetIce("Cubed");
+				.SetIce("Cubed")
+				.SetGarnish("Lemon twist");
 
 			// assert
 			Check.That(drink.Id)
@@ -94,6 +97,8 @@ namespace Drinks.Model
 				.IsEqualTo("Martini Glas");
 			Check.That(drink.Ice)
 				.IsEqualTo("Cubed");
+			Check.That(drink.Garnish)
+				.IsEqualTo("Lemon twist");
 		}
 	}
 }

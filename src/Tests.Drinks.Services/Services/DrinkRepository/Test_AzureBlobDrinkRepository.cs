@@ -98,6 +98,8 @@ namespace Drinks.Services.DrinkRepository
 				.IsEqualTo("Martini");
 			Check.That(drink.Ice)
 				.IsEqualTo("None");
+			Check.That(drink.Garnish)
+				.IsEqualTo("Muskatnuss");
 
 			Check.That(drink.Recipe.Ingredients)
 				.HasSize(4);

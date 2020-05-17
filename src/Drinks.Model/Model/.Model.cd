@@ -3,7 +3,7 @@
   <Class Name="Drinks.Model.Drink">
     <Position X="0.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAQAAABEAAAgBAAAAAACCAUAAAQAAEUAAAAAQAAAQgA=</HashCode>
+      <HashCode>AAQAAAhEAAAgAAAAAAACiAUAAAgAAEUAAAAAQAAgQgA=</HashCode>
       <FileName>Model\Drink.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -11,7 +11,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Drinks.Model.Ingredient">
-    <Position X="3.75" Y="5.75" Width="1.5" />
+    <Position X="3.75" Y="6" Width="1.5" />
     <Members>
       <Method Name="Ingredient" Hidden="true" />
       <Method Name="ToString" Hidden="true" />
@@ -22,7 +22,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Drinks.Model.Recipe">
-    <Position X="0.75" Y="5.75" Width="1.75" />
+    <Position X="0.75" Y="6" Width="1.75" />
     <Members>
       <Method Name="Recipe" Hidden="true" />
       <Method Name="ToString" Hidden="true" />
