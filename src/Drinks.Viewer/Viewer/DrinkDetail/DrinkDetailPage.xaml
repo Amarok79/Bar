@@ -72,8 +72,6 @@
 				  Margin="64,52,64,52"
 				  Orientation="Vertical">
 
-					<!--  Ingredients  -->
-
 					<Grid>
 						<Grid.ColumnDefinitions>
 							<ColumnDefinition Width="*" />
@@ -82,6 +80,8 @@
 
 						<StackPanel
 						  Grid.Column="0">
+
+							<!--  Ingredients  -->
 
 							<TextBlock
 							  Margin="0,0,0,4"
@@ -116,6 +116,38 @@
 								</ListView.ItemTemplate>
 							</ListView>
 
+							<!--  Instructions  -->
+
+							<TextBlock
+							  Margin="0,52,0,4"
+							  Style="{StaticResource BarSubTitleTextStyle}"
+							  Text="{Binding InstructionsHeader, Mode=OneWay}"
+							  Visibility="{Binding HasInstructions, Mode=OneWay}" />
+
+							<ListView
+							  ItemsSource="{Binding Instructions, Mode=OneWay}"
+							  SelectionMode="None"
+							  Visibility="{Binding HasInstructions, Mode=OneWay}">
+								<ListView.ItemTemplate>
+									<DataTemplate>
+										<Grid>
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="60" />
+												<ColumnDefinition Width="*" />
+											</Grid.ColumnDefinitions>
+											<TextBlock
+											  Grid.Column="0"
+											  Style="{StaticResource BarIngredientSubstanceTextStyle}"
+											  Text="{Binding No, Mode=OneWay, Converter={StaticResource NoConverter}}" />
+											<TextBlock
+											  Grid.Column="1"
+											  Style="{StaticResource BarIngredientSubstanceTextStyle}"
+											  Text="{Binding Text, Mode=OneWay}" />
+										</Grid>
+									</DataTemplate>
+								</ListView.ItemTemplate>
+							</ListView>
+
 						</StackPanel>
 
 						<StackPanel
@@ -142,41 +174,19 @@
 							  Text="{Binding Ice, Mode=OneWay, Converter={StaticResource IceConverter}}"
 							  Visibility="{Binding HasIce, Mode=OneWay}" />
 
+							<TextBlock
+							  Margin="0,40,0,8"
+							  Style="{StaticResource BarSubTitleTextStyle}"
+							  Text="{Binding GarnishHeader, Mode=OneWay}"
+							  Visibility="{Binding HasGarnish, Mode=OneWay}" />
+							<TextBlock
+							  Style="{StaticResource BarIngredientSubstanceTextStyle}"
+							  Text="{Binding Garnish, Mode=OneWay, Converter={StaticResource IceConverter}}"
+							  Visibility="{Binding HasGarnish, Mode=OneWay}" />
+
 						</StackPanel>
 
 					</Grid>
-
-					<!--  Instructions  -->
-
-					<TextBlock
-					  Margin="0,52,0,4"
-					  Style="{StaticResource BarSubTitleTextStyle}"
-					  Text="{Binding InstructionsHeader, Mode=OneWay}"
-					  Visibility="{Binding HasInstructions, Mode=OneWay}" />
-
-					<ListView
-					  ItemsSource="{Binding Instructions, Mode=OneWay}"
-					  SelectionMode="None"
-					  Visibility="{Binding HasInstructions, Mode=OneWay}">
-						<ListView.ItemTemplate>
-							<DataTemplate>
-								<Grid>
-									<Grid.ColumnDefinitions>
-										<ColumnDefinition Width="60" />
-										<ColumnDefinition Width="*" />
-									</Grid.ColumnDefinitions>
-									<TextBlock
-									  Grid.Column="0"
-									  Style="{StaticResource BarIngredientSubstanceTextStyle}"
-									  Text="{Binding No, Mode=OneWay, Converter={StaticResource NoConverter}}" />
-									<TextBlock
-									  Grid.Column="1"
-									  Style="{StaticResource BarIngredientSubstanceTextStyle}"
-									  Text="{Binding Text, Mode=OneWay}" />
-								</Grid>
-							</DataTemplate>
-						</ListView.ItemTemplate>
-					</ListView>
 
 					<!--  Description  -->
 
