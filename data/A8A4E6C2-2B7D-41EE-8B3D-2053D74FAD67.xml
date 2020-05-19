@@ -9,10 +9,15 @@
 		<substance id="OrangeBitter">The Bitter Truth Orange Bitter</substance>
 		<!-- gins -->
 		<substance id="Beefeater24">Beefeater 24 London Dry Gin</substance>
+		<!-- rums -->
+		<substance id="PlantationOverproof">Plantation O.F.T.D Overproof</substance>
 		<!-- liqueurs -->
 		<substance id="Amaretto">Disaronno Originale Amaretto</substance>
 		<substance id="Averna">Averna Amaro Siciliano</substance>
 		<substance id="CremeDeCacaoBlanc">Crème de Cacao Blanc</substance>
+		<substance id="GrandMarnier">Grand Marnier Cordon Rouge</substance>
+		<substance id="Kahlua">Kahlúa Original Coffee Liqueur</substance>
+		<substance id="Baileys">Baileys Original Irish Cream</substance>
 		<!-- misc -->
 		<substance id="Creme">Sahne</substance>
 		<substance id="SimpleSirup">Läuterzucker</substance>
@@ -76,27 +81,6 @@
 			</recipe>
 		</drink>
 
-		<!--<drink>
-			<name>Americano</name>
-			<teaser>Campari, Vermouth Rosso, Soda</teaser>
-			<image>{5F0D01F0-B2CD-496F-BA3E-79BB0D564D9C}</image>
-			<tags>bitter;fresh</tags>
-			<description>
-				Der Americano ist ein klassischer Aperitifcocktail. Zubereitet wird er aus Campari und Vermouth rosso. Als Garnierung werden Orange und Zitrone verwendet.
-
-				Bekanntheit erlangte der Americano nicht zuletzt auch durch Ian Flemings James Bond, der in Casino Royale, dem allerersten Band der Romanserie, als ersten Drink einen Americano bestellt.
-
-				Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
-
-				(Wikipedia)
-			</description>
-			<recipe>
-				<ingredient amount="4.5" unit="cl" substance="Martini Vermouth Rosso"/>
-				<ingredient amount="4.5" unit="cl" substance="Campari Bitterlikör"/>
-				<ingredient amount="7.5" unit="cl" substance="Soda"/>
-			</recipe>
-		</drink>-->
-
 		<drink>
 			<name>Averna Sour</name>
 			<teaser>Averna, Zitronensaft, Orangensaft</teaser>
@@ -124,49 +108,30 @@
 			</recipe>
 		</drink>
 
-
-
-		<drink>
-			<name>Aviation</name>
-			<teaser>Gin, Zitronensaft, Maraschino, Crème de Violette</teaser>
-			<image>{136D550D-DEA2-445C-BF40-0890D0BD6920}</image>
-			<tags>in-testing;sour;sweet;floral</tags>
-			<description>
-				Der Aviation ist ein klassischer Cocktail aus Gin, Maraschino-Likör, Crème de Violette (Veilchenlikör) und Zitronensaft. Durch die Kombination einer Basisspirituose mit Zitrussaft und einer Zuckerquelle – hier den Likören – ist der Shortdrink in der Gruppe der Sours einzuordnen. Seinen Namen verdankt der Cocktail wahrscheinlich seiner zart silbrig-grauen Färbung durch den Veilchenlikör, der an den Himmel und die zu seiner Entstehungszeit Anfang des 20. Jahrhunderts aufkommende Luftfahrt (engl. „aviation“) erinnert.
-
-				Der Aviation Cocktail ist ein leichter, floraler Drink aus lediglich vier Zutaten, die jedoch nicht leicht miteinander in Einklang zu bringen sind. Zum Einen dürfe das Süße-Säure-Verhältnis zwischen dem Zitronensaft und den verwendeten Likören nicht kippen, zum anderen gleite der Geschmack des Drinks allzu leicht ins Seifige, wenn man zu viel Veilchenlikör verwende.
-
-				(Wikipedia)
-			</description>
-			<recipe>
-				<ingredient amount="1.5" unit="cl" substance="Frischer Zitronensaft"/>
-				<ingredient amount="5.25" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-				<ingredient amount="1.5" unit="cl" substance="Luxardo Maraschino"/>
-				<ingredient amount="1" unit="cl" substance="Creme de Violette"/>
-				<ingredient amount="0.75" unit="cl" substance="Gekühltes Wasser"/>
-			</recipe>
-		</drink>
-
-
 		<drink>
 			<name>B52</name>
-			<teaser>Kaffeelikör, Baileys, Grand Manier</teaser>
+			<teaser>Kahlua, Baileys, Grand Marnier</teaser>
 			<image>{BFF1FC54-B5B3-4F19-B517-1D77130A27A1}</image>
 			<tags>sweet;creamy</tags>
 			<description>
-				Der B52 (auch „Bifi“) ist ein Cocktail (Kurzer), dessen Bestandteile im Glas drei – auch optisch – klar abgegrenzte Schichten ergeben.
+				Der B52 (auch "Bifi") ist ein Cocktail (Kurzer), dessen Bestandteile im Glas drei – auch optisch – klar abgegrenzte Schichten ergeben. ⁽¹⁾
 
-				Der B52 wurde der Legende nach im berühmten Alice's Restaurant in Malibu (Kalifornien) kreiert. Der Name bezieht sich auf den US-Langstreckenbomber Boeing B-52. Dieser Bomber wurde unter anderem im Vietnamkrieg zum Abwurf von Brandbomben verwendet. Gerüchteweise entstand in Anlehnung daran die heute gängige flambierte Variante des Cocktails.
+				Der B52 wurde der Legende nach im berühmten Alice's Restaurant in Malibu (Kalifornien) kreiert. Der Name bezieht sich auf den US-Langstreckenbomber Boeing B-52. Dieser Bomber wurde unter anderem im Vietnamkrieg zum Abwurf von Brandbomben verwendet. Gerüchteweise entstand in Anlehnung daran die heute gängige flambierte Variante des Cocktails. ⁽¹⁾
 
-				Getrunken wird der B52 von unten weg mit einem Trinkhalm, wobei der Grand Marnier vom Barkeeper kurz vorher entzündet wird. Da der Trinkhalm nicht hitzebeständig ist, muss der Cocktail möglichst schnell getrunken werden.
+				Getrunken wird der B52 von unten weg mit einem Trinkhalm, wobei der Grand Marnier vom Barkeeper kurz vorher entzündet wird. Da der Trinkhalm nicht hitzebeständig ist, muss der Cocktail möglichst schnell getrunken werden. ⁽¹⁾
 
-				(Wikipedia)
+				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
+			<glass>Shot</glass>
+			<ice>None</ice>
+			<garnish></garnish>
 			<recipe>
-				<ingredient amount="1" unit="BL" substance="Plantation OFTD Overproof"/>
-				<ingredient amount="2" unit="cl" substance="Kahlua Kaffeelikör"/>
-				<ingredient amount="2" unit="cl" substance="Baileys"/>
-				<ingredient amount="2" unit="cl" substance="Grand Manier"/>
+				<ingredient amount="1" unit="BL" substance="@PlantationOverproof"/>
+				<ingredient amount="2" unit="cl" substance="@GrandMarnier"/>
+				<ingredient amount="2" unit="cl" substance="@Baileys"/>
+				<ingredient amount="2" unit="cl" substance="@Kahlua"/>
+				<instruction>LAYER Kahlua, Baileys, Grand Marnier</instruction>
+				<instruction>Entzünden</instruction>
 			</recipe>
 		</drink>
 
@@ -774,6 +739,49 @@
 				<ingredient amount="1.5" unit="cl" substance="Zimt-Zuckersirup"/>
 				<ingredient amount="2" unit="dash" substance="Absinth"/>
 				<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
+			</recipe>
+		</drink>
+
+
+		<!--<drink>
+			<name>Americano</name>
+			<teaser>Campari, Vermouth Rosso, Soda</teaser>
+			<image>{5F0D01F0-B2CD-496F-BA3E-79BB0D564D9C}</image>
+			<tags>bitter;fresh</tags>
+			<description>
+				Der Americano ist ein klassischer Aperitifcocktail. Zubereitet wird er aus Campari und Vermouth rosso. Als Garnierung werden Orange und Zitrone verwendet.
+
+				Bekanntheit erlangte der Americano nicht zuletzt auch durch Ian Flemings James Bond, der in Casino Royale, dem allerersten Band der Romanserie, als ersten Drink einen Americano bestellt.
+
+				Wermut (international auch Vermouth) ist ein mit Gewürzen und Kräutern aromatisierter und aufgespriteter Wein. Seinen Namen verdankt der Wermut dem Wermutkraut (Artemisia absinthium), das durch seine bitteren Aromastoffe den Geschmack deutlich prägt. Wermut wird als Aperitif getrunken, ist Bestandteil vieler Cocktails und wird auch zur Verfeinerung von Speisen genutzt.
+
+				(Wikipedia)
+			</description>
+			<recipe>
+				<ingredient amount="4.5" unit="cl" substance="Martini Vermouth Rosso"/>
+				<ingredient amount="4.5" unit="cl" substance="Campari Bitterlikör"/>
+				<ingredient amount="7.5" unit="cl" substance="Soda"/>
+			</recipe>
+		</drink>-->
+
+		<drink>
+			<name>Aviation</name>
+			<teaser>Gin, Zitronensaft, Maraschino, Crème de Violette</teaser>
+			<image>{136D550D-DEA2-445C-BF40-0890D0BD6920}</image>
+			<tags>sour;sweet;floral</tags>
+			<description>
+				Der Aviation ist ein klassischer Cocktail aus Gin, Maraschino-Likör, Crème de Violette (Veilchenlikör) und Zitronensaft. Durch die Kombination einer Basisspirituose mit Zitrussaft und einer Zuckerquelle – hier den Likören – ist der Shortdrink in der Gruppe der Sours einzuordnen. Seinen Namen verdankt der Cocktail wahrscheinlich seiner zart silbrig-grauen Färbung durch den Veilchenlikör, der an den Himmel und die zu seiner Entstehungszeit Anfang des 20. Jahrhunderts aufkommende Luftfahrt (engl. „aviation“) erinnert. ⁽¹⁾
+
+				Der Aviation Cocktail ist ein leichter, floraler Drink aus lediglich vier Zutaten, die jedoch nicht leicht miteinander in Einklang zu bringen sind. Zum Einen dürfe das Süße-Säure-Verhältnis zwischen dem Zitronensaft und den verwendeten Likören nicht kippen, zum anderen gleite der Geschmack des Drinks allzu leicht ins Seifige, wenn man zu viel Veilchenlikör verwende. ⁽¹⁾
+
+				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
+			</description>
+			<recipe>
+				<ingredient amount="1.5" unit="cl" substance="@FreshLemonJuice"/>
+				<ingredient amount="4.5" unit="cl" substance="@Beefeater24"/>
+				<ingredient amount="1.5" unit="cl" substance="Luxardo Maraschino"/>
+				<ingredient amount="0.75" unit="cl" substance="Creme de Violette"/>
+				<ingredient amount="0.75" unit="cl" substance="Gekühltes Wasser"/>
 			</recipe>
 		</drink>
 
