@@ -2,6 +2,8 @@
 <catalog>
 
 	<substances>
+		<!-- fruits -->
+		<substance id="PassionFruit">Passionsfrucht</substance>
 		<!-- juices -->
 		<substance id="FreshLemonJuice">Frisch gepresster Zitronensaft</substance>
 		<substance id="FreshOrangeJuice">Frisch gepresster Orangensaft</substance>
@@ -11,6 +13,7 @@
 		<substance id="Beefeater24">Beefeater 24 London Dry Gin</substance>
 		<!-- rums -->
 		<substance id="PlantationOverproof">Plantation O.F.T.D Overproof</substance>
+		<substance id="CachacaGermana">Germana da Palha Premium Cachaça</substance>
 		<!-- liqueurs -->
 		<substance id="Amaretto">Disaronno Originale Amaretto</substance>
 		<substance id="Averna">Averna Amaro Siciliano</substance>
@@ -18,9 +21,12 @@
 		<substance id="GrandMarnier">Grand Marnier Cordon Rouge</substance>
 		<substance id="Kahlua">Kahlúa Original Coffee Liqueur</substance>
 		<substance id="Baileys">Baileys Original Irish Cream</substance>
+		<!-- syrups -->
+		<substance id="SugarSyrup">Läuterzucker</substance>
+		<substance id="PassionFruitMix">Monin Fruchtpüree Passionsfrucht</substance>
 		<!-- misc -->
 		<substance id="Creme">Sahne</substance>
-		<substance id="SimpleSirup">Läuterzucker</substance>
+		<substance id="CocosMilk">Alnatura Kokosmilch</substance>
 	</substances>
 
 	<drinks>
@@ -73,7 +79,7 @@
 			<recipe>
 				<ingredient amount="3" unit="cl" substance="@FreshLemonJuice"/>
 				<ingredient amount="4.5" unit="cl" substance="@Amaretto"/>
-				<ingredient amount="0.5" unit="cl" substance="@SimpleSirup"/>
+				<ingredient amount="0.5" unit="cl" substance="@SugarSyrup"/>
 				<ingredient amount="3" unit="cl" substance="@FreshOrangeJuice"/>
 				<ingredient amount="2" unit="dash" substance="@OrangeBitter"/>
 				<instruction>SHAKE alle Zutaten</instruction>
@@ -101,7 +107,7 @@
 			<recipe>
 				<ingredient amount="3" unit="cl" substance="@FreshLemonJuice"/>
 				<ingredient amount="5" unit="cl" substance="@Averna"/>
-				<ingredient amount="1" unit="cl" substance="@SimpleSirup"/>
+				<ingredient amount="1" unit="cl" substance="@SugarSyrup"/>
 				<ingredient amount="2" unit="cl" substance="@FreshOrangeJuice"/>
 				<instruction>SHAKE alle Zutaten</instruction>
 				<instruction>STRAIN ins Gästeglas</instruction>
@@ -141,19 +147,25 @@
 			<image>{013A08A2-8958-4287-9AE1-759431D6F57B}</image>
 			<tags>sweet;creamy;tropical</tags>
 			<description>
-				Batida ist die portugiesisch-brasilianische Bezeichnung für eine Gruppe von alkoholischen Cocktails. Das Wort leitet sich von Portugiesisch „bater“ (schlagen) ab. Ein Batida besteht immer aus Cachaça (weißem Zuckerrohrschnaps), Fruchtsaft oder Fruchtmark, Rohrzucker und meist auch etwas Wasser.
+				Batida ist die portugiesisch-brasilianische Bezeichnung für eine Gruppe von alkoholischen Cocktails. Das Wort leitet sich von Portugiesisch "bater" (schlagen) ab. Ein Batida besteht immer aus Cachaça (weißem Zuckerrohrschnaps), Fruchtsaft oder Fruchtmark, Rohrzucker und meist auch etwas Wasser. ⁽¹⁾
 
-				Die Passionsfrucht ist meist auch unter dem Namen Maracuja bekannt wobei sich bei der Maracuja um eine gelbe Variante der Passionsfrucht handelt. Die biologischen Verwandten der Passionsfrucht gehen zu den Weiden, Pappeln oder Veilchen zurück. Die Passionsfrucht stammt von der Passionsblume ab und ist eine essbare Art.
+				Die Passionsfrucht ist meist auch unter dem Namen Maracuja bekannt wobei sich bei der Maracuja um eine gelbe Variante der Passionsfrucht handelt. Die biologischen Verwandten der Passionsfrucht gehen zu den Weiden, Pappeln oder Veilchen zurück. Die Passionsfrucht stammt von der Passionsblume ab und ist eine essbare Art. ⁽¹⁾
 
-				(Wikipedia)
+				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
+			<glass>Caipirinha</glass>
+			<ice>Cubed</ice>
+			<garnish>Johannisbeeren</garnish>
 			<recipe>
-				<ingredient amount="2" unit="" substance="Passionsfrucht"/>
-				<ingredient amount="5" unit="cl" substance="Germana da Palha Premium Cachaca"/>
-				<ingredient amount="2" unit="cl" substance="Monin Maracuja Fruchtpüree"/>
-				<ingredient amount="6" unit="cl" substance="Alnatura Kokosmilch"/>
+				<ingredient amount="2" unit="" substance="@PassionFruit"/>
+				<ingredient amount="5" unit="cl" substance="@CachacaGermana"/>
+				<ingredient amount="2" unit="cl" substance="@PassionFruitMix"/>
+				<ingredient amount="6" unit="cl" substance="@CocosMilk"/>
+				<instruction>LONG SHAKE alle Zutaten</instruction>
+				<instruction>POUR ins Gästeglas mit Eiswürfel</instruction>
 			</recipe>
 		</drink>
+
 
 		<drink>
 			<name>Bellevue</name>
@@ -764,7 +776,7 @@
 			</recipe>
 		</drink>-->
 
-		<drink>
+		<!--<drink>
 			<name>Aviation</name>
 			<teaser>Gin, Zitronensaft, Maraschino, Crème de Violette</teaser>
 			<image>{136D550D-DEA2-445C-BF40-0890D0BD6920}</image>
@@ -783,7 +795,7 @@
 				<ingredient amount="0.75" unit="cl" substance="Creme de Violette"/>
 				<ingredient amount="0.75" unit="cl" substance="Gekühltes Wasser"/>
 			</recipe>
-		</drink>
+		</drink>-->
 
 	</drinks>
 
