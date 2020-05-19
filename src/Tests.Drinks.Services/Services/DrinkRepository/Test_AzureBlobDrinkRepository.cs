@@ -92,7 +92,7 @@ namespace Drinks.Services.DrinkRepository
 				.Contains(
 					"Der Alexander ist ein alkoholischer Sahne-Cocktail",
 					"Der Cocktail entstand Anfang des 20. Jahrhunderts, eine",
-					"(Wikipedia)"
+					"⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ"
 				);
 			Check.That(drink.Glass)
 				.IsEqualTo("Martini");
