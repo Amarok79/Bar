@@ -21,6 +21,7 @@
 		<!-- syrups -->
 		<substance id="SugarSyrup">Läuterzucker</substance>
 		<substance id="PassionFruitMix">Monin Fruchtpüree Passionsfrucht</substance>
+		<substance id="CremeDeMure">Brombeerlikör</substance>
 		<!-- misc -->
 		<substance id="Creme">Sahne</substance>
 		<substance id="CocosMilk">Alnatura Kokosmilch</substance>
@@ -193,23 +194,29 @@
 			</recipe>
 		</drink>
 
-
-
 		<drink>
 			<name>Bramble</name>
 			<teaser>Gin, Zitronensaft, Brombeerlikör</teaser>
 			<image>{41E7903D-086C-4E4B-A4BA-869248A2DB25}</image>
 			<tags>sour;sweet;fruity</tags>
 			<description>
-				Der Bramble (Englisch für Brombeere) ist ein Cocktail aus Gin, Zitronensaft, Zuckersirup und dem namensgebenden Brombeerlikör. Er wird auf Eiswürfeln geschüttelt und dann in einem Old-Fashioned-Glas auf Crushed Ice (zerstoßenem Eis) serviert, dekoriert mit einer Zitronenscheibe und einer frischen Brombeere.
+				Der Bramble (Englisch für Brombeere) ist ein Cocktail aus Gin, Zitronensaft, Zuckersirup und dem namensgebenden Brombeerlikör. Er wird auf Eiswürfeln geschüttelt und dann in einem Old-Fashioned-Glas auf Crushed Ice (zerstoßenem Eis) serviert, dekoriert mit einer Zitronenscheibe und einer frischen Brombeere. ⁽¹⁾
 
-				(Wikipedia)
+				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
+			<glass>Old Fashioned</glass>
+			<ice>Crushed</ice>
+			<garnish>Brombeeren, Zitronenspalte</garnish>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
-				<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-				<ingredient amount="1.5" unit="cl" substance="Zuckersirup"/>
-				<ingredient amount="2" unit="BL" substance="Brombeerlikör"/>
+				<ingredient amount="3" unit="cl" substance="@FreshLemonJuice"/>
+				<ingredient amount="4.5" unit="cl" substance="@Beefeater24"/>
+				<ingredient amount="1.5" unit="cl" substance="@SugarSyrup"/>
+				<ingredient amount="2" unit="BL" substance="@CremeDeMure"/>
+				<instruction>LIGHT SHAKE Zitronensaft, Gin und Läuterzucker</instruction>
+				<instruction>FILL Gästeglas mit Crushed Ice 3/4</instruction>
+				<instruction>POUR ins Gästeglas</instruction>
+				<instruction>FILL Gästeglas mit Crushed Ice</instruction>
+				<instruction>FLOAT Brombeerlikör</instruction>
 			</recipe>
 		</drink>
 
