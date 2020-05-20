@@ -29,6 +29,7 @@
     <PackageCertificateKeyFile />
     <AppxPackageDir>D:\Bar\bin\app\apppackage\</AppxPackageDir>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
