@@ -4,15 +4,11 @@
 	<substances>
 		<!-- fruits -->
 		<substance id="PassionFruit">Passionsfrucht</substance>
-		<!-- juices -->
-		<substance id="FreshLemonJuice">Frisch gepresster Zitronensaft</substance>
-		<substance id="FreshOrangeJuice">Frisch gepresster Orangensaft</substance>
-		<!-- bitters -->
-		<substance id="OrangeBitter">The Bitter Truth Orange Bitter</substance>
 		<!-- gins -->
 		<substance id="Beefeater24">Beefeater 24 London Dry Gin</substance>
 		<!-- rums -->
 		<substance id="PlantationOverproof">Plantation O.F.T.D Overproof</substance>
+		<substance id="PlantationThreeStars">Plantation 3 Stars White Rum</substance>
 		<substance id="CachacaGermana">Germana da Palha Premium Cachaça</substance>
 		<!-- liqueurs -->
 		<substance id="Amaretto">Disaronno Originale Amaretto</substance>
@@ -21,12 +17,21 @@
 		<substance id="GrandMarnier">Grand Marnier Cordon Rouge</substance>
 		<substance id="Kahlua">Kahlúa Original Coffee Liqueur</substance>
 		<substance id="Baileys">Baileys Original Irish Cream</substance>
+		<substance id="Cointreau">Cointreau Orangenlikör</substance>
 		<!-- syrups -->
 		<substance id="SugarSyrup">Läuterzucker</substance>
 		<substance id="PassionFruitMix">Monin Fruchtpüree Passionsfrucht</substance>
 		<!-- misc -->
 		<substance id="Creme">Sahne</substance>
 		<substance id="CocosMilk">Alnatura Kokosmilch</substance>
+		<substance id="CreamOfCoconut">Cream of Coconut</substance>
+		<!-- bitters -->
+		<substance id="OrangeBitter">The Bitter Truth Orange Bitter</substance>
+		<!-- juices -->
+		<substance id="FreshLemonJuice">Frisch gepresster Zitronensaft</substance>
+		<substance id="FreshLimeJuice">Frisch gepresster Limettensaft</substance>
+		<substance id="FreshOrangeJuice">Frisch gepresster Orangensaft</substance>
+		<substance id="PineappleJuice">Rauch Happy Day Ananassaft</substance>
 	</substances>
 
 	<drinks>
@@ -132,10 +137,10 @@
 			<ice>None</ice>
 			<garnish></garnish>
 			<recipe>
-				<ingredient amount="1" unit="BL" substance="@PlantationOverproof"/>
-				<ingredient amount="2" unit="cl" substance="@GrandMarnier"/>
-				<ingredient amount="2" unit="cl" substance="@Baileys"/>
 				<ingredient amount="2" unit="cl" substance="@Kahlua"/>
+				<ingredient amount="2" unit="cl" substance="@Baileys"/>
+				<ingredient amount="2" unit="cl" substance="@GrandMarnier"/>
+				<ingredient amount="1" unit="BL" substance="@PlantationOverproof"/>
 				<instruction>LAYER Kahlua, Baileys, Grand Marnier</instruction>
 				<instruction>Entzünden</instruction>
 			</recipe>
@@ -166,23 +171,29 @@
 			</recipe>
 		</drink>
 
-
 		<drink>
 			<name>Bellevue</name>
-			<teaser>Rum, Cointreau, Creme of Coconut, Ananassaft</teaser>
+			<teaser>Rum, Cointreau, Cream of Coconut, Ananassaft</teaser>
 			<image>{2D763A7E-8283-4F96-A96B-05C05B7AA58A}</image>
 			<tags>sweet;tropical;creamy</tags>
 			<description>
 				Ein süßer und cremiger Cocktail der nach Kokosnuss und Ananas schmeckt. Freunde von Pina Coladas werden den Bellevue ebenfalls mögen.
 			</description>
+			<glass>Longdrink</glass>
+			<ice>Crushed</ice>
+			<garnish>Limettenscheibe</garnish>
 			<recipe>
-				<ingredient amount="4" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
-				<ingredient amount="2" unit="cl" substance="Cointreau"/>
-				<ingredient amount="1" unit="cl" substance="Frischer Limettensaft"/>
-				<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
-				<ingredient amount="6" unit="cl" substance="Rauch Happy Day Ananassaft"/>
+				<ingredient amount="1" unit="cl" substance="@FreshLimeJuice"/>
+				<ingredient amount="4" unit="cl" substance="@PlantationThreeStars"/>
+				<ingredient amount="2" unit="cl" substance="@Cointreau"/>
+				<ingredient amount="2" unit="cl" substance="@CreamOfCoconut"/>
+				<ingredient amount="6" unit="cl" substance="@PineappleJuice"/>
+				<instruction>SHAKE alle Zutaten</instruction>
+				<instruction>STRAIN ins Gästeglas</instruction>
 			</recipe>
 		</drink>
+
+
 
 		<drink>
 			<name>Bramble</name>
