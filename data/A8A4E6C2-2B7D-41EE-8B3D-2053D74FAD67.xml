@@ -3,6 +3,7 @@
 
 	<substances>
 		<!-- fruits -->
+		<substance id="Lime">Limette</substance>
 		<substance id="PassionFruit">Passionsfrucht</substance>
 		<!-- gins -->
 		<substance id="Beefeater24">Beefeater 24 London Dry Gin</substance>
@@ -26,6 +27,7 @@
 		<substance id="Creme">Sahne</substance>
 		<substance id="CocosMilk">Alnatura Kokosmilch</substance>
 		<substance id="CreamOfCoconut">Cream of Coconut</substance>
+		<substance id="WhiteCaneSugar">Weißer Rohrzucker</substance>
 		<!-- bitters -->
 		<substance id="OrangeBitter">The Bitter Truth Orange Bitter</substance>
 		<!-- juices -->
@@ -168,7 +170,7 @@
 				<ingredient amount="2" unit="cl" substance="@PassionFruitMix"/>
 				<ingredient amount="6" unit="cl" substance="@CocosMilk"/>
 				<instruction>LONG SHAKE alle Zutaten</instruction>
-				<instruction>POUR ins Gästeglas mit Eiswürfel</instruction>
+				<instruction>POUR ins Gästeglas mit Eis</instruction>
 			</recipe>
 		</drink>
 
@@ -220,27 +222,41 @@
 			</recipe>
 		</drink>
 
-
 		<drink>
 			<name>Caipirinha</name>
 			<teaser>Cachaça, Limette, Rohrzucker</teaser>
 			<image>{A6652EC4-99C8-4A96-B5DC-10831E208217}</image>
 			<tags>sour;sweet</tags>
 			<description>
-				Caipirinha ist ein aus Brasilien stammender Cocktail, der mittlerweile weltweit verbreitet ist. Er wird auch – in Anlehnung an die portugiesische weibliche Form (a caipirinha) – als die Caipirinha bezeichnet. Im deutschen Sprachraum ist auch die Kurzbezeichnung (der) Caipi verbreitet.
+				Caipirinha ist ein aus Brasilien stammender Cocktail, der mittlerweile weltweit verbreitet ist. Er wird auch – in Anlehnung an die portugiesische weibliche Form (a caipirinha) – als die Caipirinha bezeichnet. Im deutschen Sprachraum ist auch die Kurzbezeichnung (der) Caipi verbreitet. ⁽¹⁾
 
-				Die Bezeichnung Caipirinha ist die Verkleinerungsform des brasilianischen Caipira, das soviel wie „Landei“ bedeutet. Trotz des Namens war Caipirinha ursprünglich ein Cocktail der ländlichen Oberschicht und verbreitete sich nach Ende des Ersten Weltkrieges in den Großstädten, während im Landesinneren der Zuckerrohrschnaps meistens pur genossen wird.
+				Die Bezeichnung Caipirinha ist die Verkleinerungsform des brasilianischen Caipira, das soviel wie „Landei“ bedeutet. Trotz des Namens war Caipirinha ursprünglich ein Cocktail der ländlichen Oberschicht und verbreitete sich nach Ende des Ersten Weltkrieges in den Großstädten, während im Landesinneren der Zuckerrohrschnaps meistens pur genossen wird. ⁽¹⁾
 
-				Cachaça – man spricht Kaschassa – ist eine brasilianische Spirituose aus Zuckerrohrsaft, die früher und hochsprachlich als Aguardente (= heiß brennendes Wasser oder "Feuerwasser") und umgangssprachlich oft als Pinga (= Fusel) bezeichnet wird. Ähnlich wie Rum wird Cachaça aus Zuckerrohrsaft hergestellt, wobei hier die Verarbeitungsschritte anders sind.
+				Cachaça – man spricht Kaschassa – ist eine brasilianische Spirituose aus Zuckerrohrsaft, die früher und hochsprachlich als Aguardente (= heiß brennendes Wasser oder "Feuerwasser") und umgangssprachlich oft als Pinga (= Fusel) bezeichnet wird. Ähnlich wie Rum wird Cachaça aus Zuckerrohrsaft hergestellt, wobei hier die Verarbeitungsschritte anders sind. ⁽¹⁾
 
 				(Wikipedia)
 			</description>
+			<glass>Caipirinha</glass>
+			<ice>Cubed</ice>
+			<garnish>None</garnish>
 			<recipe>
-				<ingredient amount="1" unit="" substance="Limette"/>
-				<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
-				<ingredient amount="6" unit="cl" substance="Germana da Palha Premium Artesanal Cachaça"/>
+				<ingredient amount="1" unit="" substance="@Lime"/>
+				<ingredient amount="2" unit="BL" substance="@WhiteCaneSugar"/>
+				<ingredient amount="6" unit="cl" substance="@CachacaGermana"/>
+				<instruction>Limette skalpieren</instruction>
+				<instruction>Limette halbieren</instruction>
+				<instruction>Limette Strunk entfernen</instruction>
+				<instruction>Limette in 3 Scheiben schneiden</instruction>
+				<instruction>Limette in Shaker geben</instruction>
+				<instruction>Rohrzucker in Shaker geben</instruction>
+				<instruction>Limette zerdrücken</instruction>
+				<instruction>Eiswürfel in Shaker geben</instruction>
+				<instruction>LONG SHAKE</instruction>
+				<instruction>POUR ins Gästeglas mit Eis</instruction>
 			</recipe>
 		</drink>
+
+
 
 		<drink>
 			<name>Caipirinha &amp; Passion</name>
