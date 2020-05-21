@@ -296,30 +296,35 @@
 			</recipe>
 		</drink>
 
-
-
-
 		<drink>
 			<name>Cosmopolitan</name>
-			<teaser>Wodka, Triple Sec, Cranberrysaft, Limettensaft</teaser>
+			<teaser>Wodka, Cointreau, Cranberrysaft, Limettensaft</teaser>
 			<image>{C5C04892-97F7-4C01-B799-B1ECACB7384B}</image>
 			<tags>sour;sweet;fruity</tags>
 			<description>
-				Der Cosmopolitan (kurz „Cosmo“) ist ein herb-süßer, erfrischender Cocktail, dessen moderne Rezeptur aus aromatisiertem Wodka, Orangenlikör, Limetten- und Cranberrysaft besteht. Erstmals erwähnt wird ein Shortdrink dieses Namens in einem Barbuch von 1934, in seiner heutigen Form ist der Cosmopolitan aber erst seit den 1990er Jahren weltweit verbreitet. Er steht sinnbildlich für die moderne, design-orientierte Bar, die der Barboom der 1990er Jahre hervorbrachte.
+				Der Cosmopolitan (kurz "Cosmo") ist ein herb-süßer, erfrischender Cocktail, dessen moderne Rezeptur aus aromatisiertem Wodka, Orangenlikör, Limetten- und Cranberrysaft besteht. Erstmals erwähnt wird ein Shortdrink dieses Namens in einem Barbuch von 1934, in seiner heutigen Form ist der Cosmopolitan aber erst seit den 1990er Jahren weltweit verbreitet. Er steht sinnbildlich für die moderne, design-orientierte Bar, die der Barboom der 1990er Jahre hervorbrachte. ⁽¹⁾
 
-				Ende der 1990er Jahre erlangte der Cosmopolitan einen Bekanntheitsschub durch die Fernsehserie Sex and the City, in der er das Lieblingsgetränk der Hauptfiguren war.
+				Ende der 1990er Jahre erlangte der Cosmopolitan einen Bekanntheitsschub durch die Fernsehserie Sex and the City, in der er das Lieblingsgetränk der Hauptfiguren war. ⁽¹⁾
 
-				(Wikipedia)
+				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
+			<glass>Martini</glass>
+			<ice>None</ice>
+			<garnish>Flambierte Orangenzeste</garnish>
 			<recipe>
-				<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
+				<ingredient amount="1.5" unit="cl" substance="@FreshLimeJuice"/>
 				<ingredient amount="3" unit="cl" substance="Absolut Citron Wodka"/>
-				<ingredient amount="3" unit="cl" substance="Triple Sec"/>
+				<ingredient amount="3" unit="cl" substance="@Cointreau"/>
 				<ingredient amount="3" unit="cl" substance="dmBio Cranberrysaft, 100% Muttersaft"/>
-				<ingredient amount="1.5" unit="cl" substance="Zuckersirup"/>
-				<ingredient amount="1" unit="dash" substance="The Bitter Truth Orange Bitter"/>
+				<ingredient amount="1.5" unit="cl" substance="@SugarSyrup"/>
+				<ingredient amount="1" unit="dash" substance="@OrangeBitter"/>
+				<instruction>SHAKE alle Zutaten</instruction>
+				<instruction>FINE STRAIN ins Gästeglas</instruction>
+				<instruction>Glasrand mit Orange einreiben</instruction>
 			</recipe>
 		</drink>
+
+
 
 		<drink>
 			<name>Cuba Libre</name>
