@@ -12,6 +12,7 @@
 		<substance id="PlantationThreeStars">Plantation 3 Stars White Rum</substance>
 		<substance id="CachacaGermana">Germana da Palha Premium Cachaça</substance>
 		<substance id="SantiagoDeCuba">Santiago de Cuba Anejo Rum</substance>
+		<substance id="AppletonRum">Appleton Estate 12 YO Jamaica Rum</substance>
 		<!-- liqueurs -->
 		<substance id="Amaretto">Disaronno Originale Amaretto</substance>
 		<substance id="Averna">Averna Amaro Siciliano</substance>
@@ -349,10 +350,9 @@
 				<instruction>Ins Gästeglas ausdrücken, geben</instruction>
 				<instruction>Eis und Rum drauf</instruction>
 				<instruction>STIR</instruction>
-				<instruction>TOP mit Cola</instruction>
+				<instruction>FILL mit Cola</instruction>
 			</recipe>
 		</drink>
-
 
 		<drink>
 			<name>Dark &amp; Stormy</name>
@@ -366,10 +366,15 @@
 
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
+			<glass>Longdrink</glass>
+			<ice>Cubed</ice>
+			<garnish>Limettenscheibe</garnish>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-				<ingredient amount="6" unit="cl" substance="Appleton Estate Jamaica Rum"/>
-				<ingredient amount="12" unit="cl" substance="Fentimas Ginger Beer"/>
+				<ingredient amount="3" unit="cl" substance="@FreshLimeJuice"/>
+				<ingredient amount="6" unit="cl" substance="@AppletonRum"/>
+				<ingredient amount="12" unit="cl" substance="Ginger Beer"/>
+				<instruction>STIR Limettensaft und Rum auf Eis</instruction>
+				<instruction>FILL mit Ginger Beer</instruction>
 			</recipe>
 		</drink>
 
