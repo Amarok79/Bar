@@ -7,6 +7,7 @@
 		<substance id="Passionfruit">Passionsfrucht</substance>
 		<!-- gins -->
 		<substance id="Beefeater24">Beefeater 24 London Dry Gin</substance>
+		<substance id="BurleighsGin">Burleigh`s London Dry Gin</substance>
 		<!-- rums -->
 		<substance id="PlantationOverproof">Plantation O.F.T.D Overproof</substance>
 		<substance id="PlantationThreeStars">Plantation 3 Stars White Rum</substance>
@@ -35,6 +36,7 @@
 		<substance id="CreamOfCoconut">Cream of Coconut</substance>
 		<substance id="WhiteCaneSugar">Weißer Rohrzucker</substance>
 		<substance id="CocaCola">Coca Cola, Original Taste</substance>
+		<substance id="GingerAle">Ginger Ale</substance>
 		<!-- bitters -->
 		<substance id="OrangeBitter">The Bitter Truth Orange Bitter</substance>
 		<!-- juices -->
@@ -432,6 +434,34 @@
 				<instruction>FILL mit Ginger Beer</instruction>
 			</recipe>
 		</drink>
+
+
+		<drink>
+			<name>Leapfrog</name>
+			<teaser>Gin, Zitronensaft, Ginger Ale</teaser>
+			<image>{D7C10589-46C0-41C0-8D50-843663CD1668}</image>
+			<tags>sour;fresh</tags>
+			<description>
+				Ein erfrischender Drink für heiße Tage.
+
+				Ginger Ale ist ein kohlensäurehaltiges Erfrischungsgetränk, das seinen Geschmack und seinen Namen dem Zusatz von natürlichem Ingwer verdankt. ⁽¹⁾
+
+				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
+			</description>
+			<glass>Longdrink</glass>
+			<ice>Cubed</ice>
+			<garnish>Orangenscheibe</garnish>
+			<recipe>
+				<ingredient amount="1.5" unit="cl" substance="@FreshLemonJuice"/>
+				<ingredient amount="4.5" unit="cl" substance="@BurleighsGin"/>
+				<ingredient substance="@GingerAle"/>
+				<instruction>STIR Zitronensaft und Gin</instruction>
+				<instruction>POUR ins Gästeglas</instruction>
+				<instruction>FILL mit Ginger Ale</instruction>
+			</recipe>
+		</drink>
+
+
 
 
 		<drink>
