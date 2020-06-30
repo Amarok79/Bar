@@ -484,8 +484,6 @@
 			</recipe>
 		</drink>
 
-
-
 		<drink>
 			<name>Gin &amp; Tonic</name>
 			<teaser>Gin, Tonic Water</teaser>
@@ -500,19 +498,27 @@
 
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
+			<glass>Double Old Fashioned</glass>
+			<ice>Cubed</ice>
+			<garnish>Zitronenzeste</garnish>
 			<recipe>
-				<ingredient amount="5" unit="cl" substance="Gin"/>
+				<ingredient amount="4.5" unit="cl" substance="Gin"/>
 				<ingredient substance="  • Aeijst Styrian Pale London Dry Gin"/>
-				<ingredient substance="  • The STIN Styrian Dry Gin"/>
-				<ingredient substance="  • The Good Gin"/>
+				<ingredient substance="  • Brockman's Intensely Smooth Premium Gin"/>
 				<ingredient substance="  • Burleigh's London Dry Gin"/>
-				<ingredient substance="  • The Duke Munich Dry Gin"/>
-				<ingredient substance="  • HOLY Gin Marille"/>
-				<ingredient substance="  • See Destillerie Toplitz Gin"/>
+				<ingredient substance="  • Danger Line Gin"/>
+				<ingredient substance="  • Fuxbau Distilled Gin"/>
 				<ingredient substance="  • See Destillerie Gletscher Gin"/>
-				<ingredient substance="  • Hayman's Old Tom Gin"/>
-				<ingredient substance="  • Beefeater 24 London Dry Gin"/>
+				<ingredient substance="  • See Destillerie Toplitz Gin"/>
+				<ingredient substance="  • HOLY Gin Marille"/>
+				<ingredient substance="  • O•Gin"/>
 				<ingredient substance="  • Plymouth Dry Gin"/>
+				<ingredient substance="  • Siegfried Herzog Hagmoar Gin"/>
+				<ingredient substance="  • The Duke Munich Dry Gin"/>
+				<ingredient substance="  • Sinnesfreuden Gin"/>
+				<ingredient substance="  • The Good Gin"/>
+				<ingredient substance="  • The STIN Styrian Dry Gin"/>
+				<ingredient substance="  • Wieser Wahouua Bitter Pink Gin"/>
 				<ingredient amount="20" unit="cl" substance="Tonic Water"/>
 				<ingredient substance="  • Le Tribute"/>
 				<ingredient substance="  • Thomas Henry"/>
@@ -524,8 +530,10 @@
 				<ingredient substance="  • Schweppes Premium"/>
 				<ingredient substance="  • Gents Swiss Roots"/>
 				<ingredient substance="  • Golden Monaco Extra Dry"/>
+				<instruction>BUILD im Gästeglas</instruction>
 			</recipe>
 		</drink>
+
 
 		<drink>
 			<name>Horse's Neck with a Kick</name>
