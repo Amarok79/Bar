@@ -32,6 +32,7 @@
 		<substance id="PassionFruitMix">Monin Fruchtpüree Passionsfrucht</substance>
 		<substance id="CremeDeMure">Brombeerlikör</substance>
 		<substance id="CremeDeViolette">Crème de Violette</substance>
+		<substance id="Grenadine">Grenadine</substance>
 		<!-- misc -->
 		<substance id="Creme">Sahne</substance>
 		<substance id="CocosMilk">Alnatura Kokosmilch</substance>
@@ -462,7 +463,6 @@
 			</recipe>
 		</drink>
 
-
 		<drink>
 			<name>Gin &amp; Sin</name>
 			<teaser>Gin, Zitronensaft, Orangensaft, Grenadine</teaser>
@@ -470,14 +470,21 @@
 			<tags>sour;sweet;fruity</tags>
 			<description>
 			</description>
+			<glass>Martini</glass>
+			<ice>None</ice>
+			<garnish></garnish>
 			<recipe>
-				<ingredient amount="4" unit="cl" substance="Beefeater 25 Gin"/>
-				<ingredient amount="2" unit="cl" substance="Frischer Zitronensaft"/>
-				<ingredient amount="4" unit="cl" substance="Frischer Orangensaft"/>
-				<ingredient amount="1" unit="cl" substance="Zuckersirup"/>
-				<ingredient amount="1" unit="dash" substance="Grenadine"/>
+				<ingredient amount="2" unit="cl" substance="@FreshLemonJuice"/>
+				<ingredient amount="4" unit="cl" substance="@FreshOrangeJuice"/>
+				<ingredient amount="4" unit="cl" substance="@Beefeater24"/>
+				<ingredient amount="1" unit="cl" substance="@SugarSyrup"/>
+				<ingredient amount="1" unit="dash" substance="@Grenadine"/>
+				<instruction>SHAKE alle Zutaten</instruction>
+				<instruction>FILL STRAIN ins Gästeglas</instruction>
 			</recipe>
 		</drink>
+
+
 
 		<drink>
 			<name>Gin &amp; Tonic</name>
