@@ -15,6 +15,8 @@
 		<substance id="CachacaGermana">Germana da Palha Premium Cachaça</substance>
 		<substance id="SantiagoDeCuba">Santiago de Cuba Anejo Rum</substance>
 		<substance id="AppletonRum">Appleton Estate 12 YO Jamaica Rum</substance>
+		<!-- whiskeys -->
+		<substance id="FourRoses">Four Roses Single Barrel Bourbon Whiskey</substance>
 		<!-- liqueurs -->
 		<substance id="Amaretto">Disaronno Originale Amaretto</substance>
 		<substance id="Averna">Averna Amaro Siciliano</substance>
@@ -40,8 +42,10 @@
 		<substance id="WhiteCaneSugar">Weißer Rohrzucker</substance>
 		<substance id="CocaCola">Coca Cola, Original Taste</substance>
 		<substance id="GingerAle">Ginger Ale</substance>
+		<substance id="LeTributeGingerBeer">Le Tribute Ginger Beer</substance>
 		<!-- bitters -->
 		<substance id="OrangeBitter">The Bitter Truth Orange Bitter</substance>
+		<substance id="AngosturaBitter">Angostura Bitter</substance>
 		<!-- juices -->
 		<substance id="FreshLemonJuice">Frisch gepresster Zitronensaft</substance>
 		<substance id="FreshLimeJuice">Frisch gepresster Limettensaft</substance>
@@ -534,7 +538,6 @@
 			</recipe>
 		</drink>
 
-
 		<drink>
 			<name>Horse's Neck with a Kick</name>
 			<teaser>Bourbon Whiskey, Ginger Ale</teaser>
@@ -547,12 +550,17 @@
 
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
+			<glass>Longdrink</glass>
+			<ice>Cubed</ice>
+			<garnish>Zitronenzeste</garnish>
 			<recipe>
-				<ingredient amount="6" unit="cl" substance="Four Roses Single Barrel Bourbon Whiskey"/>
-				<ingredient amount="3" unit="dash" substance="Angostura Bitter"/>
-				<ingredient amount="12" unit="cl" substance="Ginger Ale oder Ginger Beer"/>
+				<ingredient amount="6" unit="cl" substance="@FourRoses"/>
+				<ingredient amount="3" unit="dash" substance="@AngosturaBitter"/>
+				<ingredient amount="12" unit="cl" substance="@GingerAle"/>
+				<instruction>BUILD im Gästeglas</instruction>
 			</recipe>
 		</drink>
+
 
 		<drink>
 			<name>Italian Lover</name>
