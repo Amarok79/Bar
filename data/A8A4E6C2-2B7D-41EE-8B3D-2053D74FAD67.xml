@@ -562,20 +562,7 @@
 		</drink>
 
 
-		<drink>
-			<name>Italian Lover</name>
-			<teaser>Brandy, Baileys, Amaretto, Sahne</teaser>
-			<image>{3933D4A6-F987-4D3B-BFFC-524A57AF94C4}</image>
-			<tags>sweet;creamy</tags>
-			<description>
-			</description>
-			<recipe>
-				<ingredient amount="3" unit="cl" substance="Brandy"/>
-				<ingredient amount="3" unit="cl" substance="Baileys"/>
-				<ingredient amount="3" unit="cl" substance="Amaretto"/>
-				<ingredient amount="3" unit="cl" substance="Sahne"/>
-			</recipe>
-		</drink>
+
 
 
 
@@ -958,7 +945,20 @@
 
 
 
-
+		<!--<drink>
+			<name>Italian Lover</name>
+			<teaser>Brandy, Baileys, Amaretto, Sahne</teaser>
+			<image>{3933D4A6-F987-4D3B-BFFC-524A57AF94C4}</image>
+			<tags>sweet;creamy</tags>
+			<description>
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Brandy"/>
+				<ingredient amount="3" unit="cl" substance="Baileys"/>
+				<ingredient amount="3" unit="cl" substance="Amaretto"/>
+				<ingredient amount="3" unit="cl" substance="Sahne"/>
+			</recipe>
+		</drink>-->
 
 	</drinks>
 
