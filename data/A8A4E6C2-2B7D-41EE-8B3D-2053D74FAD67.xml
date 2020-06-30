@@ -611,25 +611,7 @@
 
 
 
-		<drink>
-			<name>Jet Pilot</name>
-			<teaser>Rum, Zimt, Graipefruitsaft, Limettensaft</teaser>
-			<image>{44CA47B4-B8B1-42C8-BC7C-F5B1FC6B0196}</image>
-			<tags>exotic</tags>
-			<description>
-			</description>
-			<recipe>
-				<ingredient amount="3" unit="cl" substance="Jamaican Rum"/>
-				<ingredient amount="2.25" unit="cl" substance="Overproof Rum"/>
-				<ingredient amount="2.25" unit="cl" substance="Golden Rum"/>
-				<ingredient amount="1.5" unit="cl" substance="Velvet Falernum"/>
-				<ingredient amount="0.75" unit="cl" substance="Zimtsirup"/>
-				<ingredient amount="1.5" unit="cl" substance="Frischer Graipefruitsaft"/>
-				<ingredient amount="1.5" unit="cl" substance="Limettensaft"/>
-				<ingredient amount="2" unit="dash" substance="Absinthe"/>
-				<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
-			</recipe>
-		</drink>
+
 
 
 		<drink>
@@ -957,6 +939,26 @@
 				<ingredient amount="3" unit="cl" substance="Baileys"/>
 				<ingredient amount="3" unit="cl" substance="Amaretto"/>
 				<ingredient amount="3" unit="cl" substance="Sahne"/>
+			</recipe>
+		</drink>-->
+
+		<!--<drink>
+			<name>Jet Pilot</name>
+			<teaser>Rum, Zimt, Graipefruitsaft, Limettensaft</teaser>
+			<image>{44CA47B4-B8B1-42C8-BC7C-F5B1FC6B0196}</image>
+			<tags>exotic</tags>
+			<description>
+			</description>
+			<recipe>
+				<ingredient amount="3" unit="cl" substance="Jamaican Rum"/>
+				<ingredient amount="2.25" unit="cl" substance="Overproof Rum"/>
+				<ingredient amount="2.25" unit="cl" substance="Golden Rum"/>
+				<ingredient amount="1.5" unit="cl" substance="Velvet Falernum"/>
+				<ingredient amount="0.75" unit="cl" substance="Zimtsirup"/>
+				<ingredient amount="1.5" unit="cl" substance="Frischer Graipefruitsaft"/>
+				<ingredient amount="1.5" unit="cl" substance="Limettensaft"/>
+				<ingredient amount="2" unit="dash" substance="Absinthe"/>
+				<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
 			</recipe>
 		</drink>-->
 
