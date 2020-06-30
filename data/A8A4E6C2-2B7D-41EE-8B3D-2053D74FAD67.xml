@@ -8,6 +8,7 @@
 		<!-- gins -->
 		<substance id="Beefeater24">Beefeater 24 London Dry Gin</substance>
 		<substance id="BurleighsGin">Burleigh`s London Dry Gin</substance>
+		<substance id="TheStinSloeGin">The Stin Sloe Gin</substance>
 		<!-- rums -->
 		<substance id="PlantationOverproof">Plantation O.F.T.D Overproof</substance>
 		<substance id="PlantationThreeStars">Plantation 3 Stars White Rum</substance>
@@ -25,6 +26,7 @@
 		<substance id="VermouthRosso">Martini Vermouth Rosso</substance>
 		<substance id="Campari">Campari Bitter Likör</substance>
 		<substance id="Maraschino">Luxardo Maraschino Originale</substance>
+		<substance id="CherryHeering">Cherry Heering Kirschlikör</substance>
 		<!-- syrups -->
 		<substance id="SugarSyrup">Läuterzucker</substance>
 		<substance id="PassionFruitMix">Monin Fruchtpüree Passionsfrucht</substance>
@@ -43,6 +45,7 @@
 		<substance id="FreshLemonJuice">Frisch gepresster Zitronensaft</substance>
 		<substance id="FreshLimeJuice">Frisch gepresster Limettensaft</substance>
 		<substance id="FreshOrangeJuice">Frisch gepresster Orangensaft</substance>
+		<substance id="FreshGrapefruitJuice">Frisch gepresster Grapefruitsaft</substance>
 		<substance id="PineappleJuice">Rauch Happy Day Ananassaft</substance>
 	</substances>
 
@@ -435,33 +438,29 @@
 			</recipe>
 		</drink>
 
-
 		<drink>
-			<name>Leapfrog</name>
-			<teaser>Gin, Zitronensaft, Ginger Ale</teaser>
-			<image>{D7C10589-46C0-41C0-8D50-843663CD1668}</image>
-			<tags>sour;fresh</tags>
+			<name>Gamble</name>
+			<teaser>Sloe Gin, Grapefruitsaft, Kirschlikör</teaser>
+			<image>{1A409062-F852-4EDD-BEB8-BF22BC191E9A}</image>
+			<tags>bitter;sweet;fresh</tags>
 			<description>
-				Ein erfrischender Drink für heiße Tage.
-
-				Ginger Ale ist ein kohlensäurehaltiges Erfrischungsgetränk, das seinen Geschmack und seinen Namen dem Zusatz von natürlichem Ingwer verdankt. ⁽¹⁾
-
-				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
+				Eine Abwandlung des Bramble mit Schlehenbeeren Gin (Sloe Gin), Grapefruitsaft und Kirschlikör. Bitter, süß, erfrischend, anders, lecker.
 			</description>
-			<glass>Longdrink</glass>
-			<ice>Cubed</ice>
-			<garnish>Orangenscheibe</garnish>
+			<glass>Old Fashioned</glass>
+			<ice>Crushed</ice>
+			<garnish>Grapefruitscheibe</garnish>
 			<recipe>
-				<ingredient amount="1.5" unit="cl" substance="@FreshLemonJuice"/>
-				<ingredient amount="4.5" unit="cl" substance="@BurleighsGin"/>
-				<ingredient substance="@GingerAle"/>
-				<instruction>STIR Zitronensaft und Gin</instruction>
+				<ingredient amount="3" unit="cl" substance="@FreshGrapefruitJuice"/>
+				<ingredient amount="3" unit="cl" substance="@TheStinSloeGin"/>
+				<ingredient amount="3" unit="cl" substance="@Beefeater24"/>
+				<ingredient amount="1" unit="cl" substance="@SugarSyrup"/>
+				<ingredient amount="1.5" unit="cl" substance="@CherryHeering"/>
+				<instruction>LIGHT SHAKE Grapefruitsaft, Gin und Läuterzucker</instruction>
+				<instruction>FILL Gästeglas mit Crushed Ice 3/4</instruction>
 				<instruction>POUR ins Gästeglas</instruction>
-				<instruction>FILL mit Ginger Ale</instruction>
+				<instruction>FILL Gästeglas mit Crushed Ice</instruction>
 			</recipe>
 		</drink>
-
-
 
 
 		<drink>
@@ -477,23 +476,6 @@
 				<ingredient amount="4" unit="cl" substance="Frischer Orangensaft"/>
 				<ingredient amount="1" unit="cl" substance="Zuckersirup"/>
 				<ingredient amount="1" unit="dash" substance="Grenadine"/>
-			</recipe>
-		</drink>
-
-		<drink>
-			<name>Gamble</name>
-			<teaser>Sloe Gin, Graipefruitsaft, Kirschlikör</teaser>
-			<image>{1A409062-F852-4EDD-BEB8-BF22BC191E9A}</image>
-			<tags>bitter;sweet;fresh</tags>
-			<description>
-				Eine Abwandlung des Bramble mit Schlehenbeeren Gin (Sloe Gin), Graipefruitsaft und Kirschlikör. Bitter, süß, erfrischend, anders, lecker.
-			</description>
-			<recipe>
-				<ingredient amount="3" unit="cl" substance="Frischer Graipefruitsaft"/>
-				<ingredient amount="3" unit="cl" substance="The Stin Sloe Gin"/>
-				<ingredient amount="3" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-				<ingredient amount="1" unit="cl" substance="Zuckersirup 1.5:1"/>
-				<ingredient amount="1.5" unit="cl" substance="Heering Kirschlikör"/>
 			</recipe>
 		</drink>
 
@@ -538,7 +520,6 @@
 			</recipe>
 		</drink>
 
-
 		<drink>
 			<name>Horse's Neck with a Kick</name>
 			<teaser>Bourbon Whiskey, Ginger Ale</teaser>
@@ -558,7 +539,6 @@
 			</recipe>
 		</drink>
 
-
 		<drink>
 			<name>Italian Lover</name>
 			<teaser>Brandy, Baileys, Amaretto, Sahne</teaser>
@@ -575,9 +555,55 @@
 		</drink>
 
 
+
+
+
+
+
+		<drink>
+			<name>Leapfrog</name>
+			<teaser>Gin, Zitronensaft, Ginger Ale</teaser>
+			<image>{D7C10589-46C0-41C0-8D50-843663CD1668}</image>
+			<tags>sour;fresh</tags>
+			<description>
+				Ein erfrischender Drink für heiße Tage.
+
+				Ginger Ale ist ein kohlensäurehaltiges Erfrischungsgetränk, das seinen Geschmack und seinen Namen dem Zusatz von natürlichem Ingwer verdankt. ⁽¹⁾
+
+				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
+			</description>
+			<glass>Longdrink</glass>
+			<ice>Cubed</ice>
+			<garnish>Orangenscheibe</garnish>
+			<recipe>
+				<ingredient amount="1.5" unit="cl" substance="@FreshLemonJuice"/>
+				<ingredient amount="4.5" unit="cl" substance="@BurleighsGin"/>
+				<ingredient substance="@GingerAle"/>
+				<instruction>STIR Zitronensaft und Gin</instruction>
+				<instruction>POUR ins Gästeglas</instruction>
+				<instruction>FILL mit Ginger Ale</instruction>
+			</recipe>
+		</drink>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<drink>
 			<name>Jet Pilot</name>
-			<teaser>Rum, Zimt, Graipefruitsaft, Limettensaf</teaser>
+			<teaser>Rum, Zimt, Graipefruitsaft, Limettensaft</teaser>
 			<image>{44CA47B4-B8B1-42C8-BC7C-F5B1FC6B0196}</image>
 			<tags>exotic</tags>
 			<description>
