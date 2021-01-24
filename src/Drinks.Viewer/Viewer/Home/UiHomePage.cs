@@ -29,24 +29,24 @@ using Microsoft.Toolkit.Uwp.UI;
 
 namespace Drinks.Viewer.Home
 {
-	public class UiHomePage : BindableBase
-	{
-		// state
-		private Boolean mIsDrinksLoading;
+    public class UiHomePage : BindableBase
+    {
+        // state
+        private Boolean mIsDrinksLoading;
 
 
-		public Boolean IsDrinksLoading
-		{
-			get => mIsDrinksLoading;
-			set => Set(ref mIsDrinksLoading, value);
-		}
+        public Boolean IsDrinksLoading
+        {
+            get => mIsDrinksLoading;
+            set => this.Set(ref mIsDrinksLoading, value);
+        }
 
-		public String Title => "Die \"KroKo\" Hausbar";
+        public String Title => "Die \"KroKo\" Hausbar";
 
-		public AdvancedCollectionView DrinksView { get; } = new AdvancedCollectionView();
+        public AdvancedCollectionView DrinksView { get; } = new AdvancedCollectionView();
 
-		public ObservableCollection<UiDrinkStyle> Styles { get; } = new ObservableCollection<UiDrinkStyle>();
+        public ObservableCollection<UiDrinkStyle> Styles { get; } = new ObservableCollection<UiDrinkStyle>();
 
-		public UiDrinkStyle SelectedStyle { get; set; }
-	}
+        public UiDrinkStyle SelectedStyle { get; set; }
+    }
 }

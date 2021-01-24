@@ -28,12 +28,12 @@ using Windows.UI.Xaml.Data;
 
 namespace Drinks.Viewer.DrinkDetail
 {
-    public sealed class NoConverter :
-        IValueConverter
+    public sealed class NoConverter : IValueConverter
     {
         public Object Convert(Object value, Type targetType, Object parameter, String language)
         {
-            var intValue = (Int32)value;
+            var intValue = (Int32) value;
+
             return $"{intValue}.";
         }
 

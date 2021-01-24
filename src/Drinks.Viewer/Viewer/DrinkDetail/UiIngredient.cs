@@ -28,33 +28,30 @@ using Drinks.Model;
 
 namespace Drinks.Viewer.DrinkDetail
 {
-	public class UiIngredient : BindableBase
-	{
-		// state
-		private Ingredient mIngredient;
+    public class UiIngredient : BindableBase
+    {
+        // state
+        private Ingredient mIngredient;
 
 
-		public Ingredient Ingredient
-		{
-			get
-			{
-				return mIngredient;
-			}
-			set
-			{
-				mIngredient = value;
+        public Ingredient Ingredient
+        {
+            get => mIngredient;
+            set
+            {
+                mIngredient = value;
 
-				OnPropertyChanged(nameof(Amount));
-				OnPropertyChanged(nameof(Unit));
-				OnPropertyChanged(nameof(Substance));
-			}
-		}
+                this.OnPropertyChanged(nameof(Amount));
+                this.OnPropertyChanged(nameof(Unit));
+                this.OnPropertyChanged(nameof(Substance));
+            }
+        }
 
 
-		public Double? Amount => this.Ingredient.Amount;
+        public Double? Amount => Ingredient.Amount;
 
-		public String Unit => this.Ingredient.Unit;
+        public String Unit => Ingredient.Unit;
 
-		public String Substance => this.Ingredient.Substance;
-	}
+        public String Substance => Ingredient.Substance;
+    }
 }

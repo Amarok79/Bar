@@ -24,96 +24,91 @@
 
 using System;
 using System.Linq;
-using Drinks.Model;
 using Windows.UI.Xaml.Media.Imaging;
+using Drinks.Model;
 
 
 namespace Drinks.Viewer.DrinkDetail
 {
-	public class UiDrinkDetailPage : BindableBase
-	{
-		// state
-		private UiIngredient[] mIngredients;
-		private UiInstruction[] mInstructions;
-		private Drink mDrink;
-		private BitmapImage mImage;
+    public class UiDrinkDetailPage : BindableBase
+    {
+        // state
+        private UiIngredient[] mIngredients;
+        private UiInstruction[] mInstructions;
+        private Drink mDrink;
+        private BitmapImage mImage;
 
 
-		public BitmapImage Image
-		{
-			get => mImage;
-			set => Set(ref mImage, value);
-		}
+        public BitmapImage Image
+        {
+            get => mImage;
+            set => this.Set(ref mImage, value);
+        }
 
-		public Drink Drink
-		{
-			get
-			{
-				return mDrink;
-			}
-			set
-			{
-				mDrink = value;
+        public Drink Drink
+        {
+            get => mDrink;
+            set
+            {
+                mDrink = value;
 
-				mIngredients = mDrink.Recipe.Ingredients
-					.Select(x => new UiIngredient { Ingredient = x })
-					.ToArray();
+                mIngredients = mDrink.Recipe.Ingredients.Select(x => new UiIngredient { Ingredient = x }).ToArray();
 
-				Int32 no = 1;
-				mInstructions = mDrink.Recipe.Instructions
-					.Select(x => new UiInstruction { No = no++, Text = x })
-					.ToArray();
+                var no = 1;
 
-				OnPropertyChanged(nameof(Name));
-				OnPropertyChanged(nameof(Teaser));
-				OnPropertyChanged(nameof(Description));
-				OnPropertyChanged(nameof(Ingredients));
-				OnPropertyChanged(nameof(Instructions));
-			}
-		}
+                mInstructions = mDrink.Recipe.Instructions.Select(x => new UiInstruction { No = no++, Text = x })
+                   .ToArray();
 
-		public String Name => this.Drink.Name;
+                this.OnPropertyChanged(nameof(Name));
+                this.OnPropertyChanged(nameof(Teaser));
+                this.OnPropertyChanged(nameof(Description));
+                this.OnPropertyChanged(nameof(Ingredients));
+                this.OnPropertyChanged(nameof(Instructions));
+            }
+        }
 
-		public String Teaser => this.Drink.Teaser;
+        public String Name => Drink.Name;
+
+        public String Teaser => Drink.Teaser;
 
 
-		public Boolean HasDescription => !String.IsNullOrEmpty(this.Drink.Description);
+        public Boolean HasDescription => !String.IsNullOrEmpty(Drink.Description);
 
-		public String DescriptionHeader => "Beschreibung";
+        public String DescriptionHeader => "Beschreibung";
 
-		public String Description => this.Drink.Description;
-
-
-		public String IngredientsHeader => "Rezeptur";
-
-		public UiIngredient[] Ingredients => mIngredients;
+        public String Description => Drink.Description;
 
 
-		public Boolean HasInstructions => this.Drink.Recipe.Instructions.Any();
+        public String IngredientsHeader => "Rezeptur";
 
-		public String InstructionsHeader => "Arbeitsschritte";
-
-		public UiInstruction[] Instructions => mInstructions;
+        public UiIngredient[] Ingredients => mIngredients;
 
 
-		public Boolean HasGlass => !String.IsNullOrEmpty(this.Drink.Glass);
+        public Boolean HasInstructions => Drink.Recipe.Instructions.Any();
 
-		public String GlassHeader => "Glas";
+        public String InstructionsHeader => "Arbeitsschritte";
 
-		public String Glass => this.Drink.Glass;
-
-
-		public Boolean HasIce => !String.IsNullOrEmpty(this.Drink.Ice);
-
-		public String IceHeader => "Eis";
-
-		public String Ice => this.Drink.Ice;
+        public UiInstruction[] Instructions => mInstructions;
 
 
-		public Boolean HasGarnish => !String.IsNullOrEmpty(this.Drink.Garnish);
+        public Boolean HasGlass => !String.IsNullOrEmpty(Drink.Glass);
 
-		public String GarnishHeader => "Dekoration";
+        public String GlassHeader => "Glas";
 
-		public String Garnish => this.Drink.Garnish;
-	}
+        public String Glass => Drink.Glass;
+
+
+        public Boolean HasIce => !String.IsNullOrEmpty(Drink.Ice);
+
+        public String IceHeader => "Eis";
+
+        public String Ice => Drink.Ice;
+
+
+        public Boolean HasGarnish => !String.IsNullOrEmpty(Drink.Garnish);
+
+        public String GarnishHeader => "Dekoration";
+
+        public String Garnish => Drink.Garnish;
+    }
 }

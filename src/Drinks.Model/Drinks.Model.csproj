@@ -41,7 +41,7 @@
 	<ItemGroup>
 		<PackageReference Include="Amarok.Contracts" Version="2.0.0" />
 		<PackageReference Include="SonarAnalyzer.CSharp">
-			<Version>8.7.0.17535</Version>
+			<Version>8.17.0.26580</Version>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>

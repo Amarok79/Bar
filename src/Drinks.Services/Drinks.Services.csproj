@@ -45,7 +45,7 @@
 	<ItemGroup>
 		<ProjectReference Include="..\Drinks.Model\Drinks.Model.csproj" />
 		<PackageReference Include="SonarAnalyzer.CSharp">
-			<Version>8.7.0.17535</Version>
+			<Version>8.17.0.26580</Version>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>

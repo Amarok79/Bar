@@ -28,47 +28,28 @@ using NUnit.Framework;
 
 namespace Drinks.Model
 {
-	[TestFixture]
-	public class Test_Recipe
-	{
-		[Test]
-		public void Construction()
-		{
-			var ing1 = new Ingredient(5, "cl", "Light Rum");
-			var ing2 = new Ingredient(2, "tea spoon", "Sugar");
+    [TestFixture]
+    public class Test_Recipe
+    {
+        [Test]
+        public void Construction()
+        {
+            var ing1 = new Ingredient(5, "cl", "Light Rum");
+            var ing2 = new Ingredient(2, "tea spoon", "Sugar");
 
-			var rec = new Recipe(
-				new[] { ing1, ing2 },
-				new[] { "Shake all", "Fine Grain" }
-			);
+            var rec = new Recipe(new[] { ing1, ing2 }, new[] { "Shake all", "Fine Grain" });
 
-			Check.That(rec.Ingredients[0].Amount)
-				.IsEqualTo(5);
-			Check.That(rec.Ingredients[0].Unit)
-				.IsEqualTo("cl");
-			Check.That(rec.Ingredients[0].Substance)
-				.IsEqualTo("Light Rum");
+            Check.That(rec.Ingredients[0].Amount).IsEqualTo(5);
+            Check.That(rec.Ingredients[0].Unit).IsEqualTo("cl");
+            Check.That(rec.Ingredients[0].Substance).IsEqualTo("Light Rum");
 
-			Check.That(rec.Ingredients[1].Amount)
-				.IsEqualTo(2);
-			Check.That(rec.Ingredients[1].Unit)
-				.IsEqualTo("tea spoon");
-			Check.That(rec.Ingredients[1].Substance)
-				.IsEqualTo("Sugar");
+            Check.That(rec.Ingredients[1].Amount).IsEqualTo(2);
+            Check.That(rec.Ingredients[1].Unit).IsEqualTo("tea spoon");
+            Check.That(rec.Ingredients[1].Substance).IsEqualTo("Sugar");
 
-			Check.That(rec.Instructions)
-				.ContainsExactly(
-					"Shake all",
-					"Fine Grain"
-				);
+            Check.That(rec.Instructions).ContainsExactly("Shake all", "Fine Grain");
 
-			Check.That(rec.ToString())
-				.Contains(
-					"5 cl Light Rum",
-					"2 tea spoon Sugar",
-					"Shake all",
-					"Fine Grain"
-				);
-		}
-	}
+            Check.That(rec.ToString()).Contains("5 cl Light Rum", "2 tea spoon Sugar", "Shake all", "Fine Grain");
+        }
+    }
 }

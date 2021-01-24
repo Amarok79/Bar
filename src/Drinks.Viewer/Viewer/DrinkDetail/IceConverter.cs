@@ -28,17 +28,18 @@ using Windows.UI.Xaml.Data;
 
 namespace Drinks.Viewer.DrinkDetail
 {
-    public sealed class IceConverter :
-        IValueConverter
+    public sealed class IceConverter : IValueConverter
     {
         public Object Convert(Object value, Type targetType, Object parameter, String language)
         {
-            var ice = (String)value;
+            var ice = (String) value;
 
             if (String.Equals(ice, "Cubed", StringComparison.OrdinalIgnoreCase))
                 return "Würfel";
+
             if (String.Equals(ice, "Crushed", StringComparison.OrdinalIgnoreCase))
                 return "Gestoßen";
+
             if (String.Equals(ice, "None", StringComparison.OrdinalIgnoreCase))
                 return "Keines";
 

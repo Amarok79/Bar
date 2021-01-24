@@ -30,50 +30,51 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
 using Drinks.Viewer.Mobile.Models;
 using Drinks.Viewer.Mobile.Views;
 using Drinks.Viewer.Mobile.ViewModels;
 
+
 namespace Drinks.Viewer.Mobile.Views
 {
-	// Learn more about making custom code visible in the Xamarin.Forms previewer
-	// by visiting https://aka.ms/xamarinforms-previewer
-	[DesignTimeVisible(false)]
-	public partial class ItemsPage : ContentPage
-	{
-		ItemsViewModel viewModel;
+    // Learn more about making custom code visible in the Xamarin.Forms previewer
+    // by visiting https://aka.ms/xamarinforms-previewer
+    [DesignTimeVisible(false)]
+    public partial class ItemsPage : ContentPage
+    {
+        ItemsViewModel viewModel;
 
-		public ItemsPage()
-		{
-			InitializeComponent();
+        public ItemsPage()
+        {
+            InitializeComponent();
 
-			BindingContext = viewModel = new ItemsViewModel();
-		}
+            BindingContext = viewModel = new ItemsViewModel();
+        }
 
-		async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
-		{
-			var item = args.SelectedItem as Item;
-			if (item == null)
-				return;
+        async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
+        {
+            var item = args.SelectedItem as Item;
 
-			await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+            if (item == null)
+                return;
 
-			// Manually deselect item.
-			ItemsListView.SelectedItem = null;
-		}
+            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
 
-		async void AddItem_Clicked(object sender, EventArgs e)
-		{
-			await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
-		}
+            // Manually deselect item.
+            ItemsListView.SelectedItem = null;
+        }
 
-		protected override void OnAppearing()
-		{
-			base.OnAppearing();
+        async void AddItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
+        }
 
-			if (viewModel.Items.Count == 0)
-				viewModel.LoadItemsCommand.Execute(null);
-		}
-	}
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (viewModel.Items.Count == 0)
+                viewModel.LoadItemsCommand.Execute(null);
+        }
+    }
 }

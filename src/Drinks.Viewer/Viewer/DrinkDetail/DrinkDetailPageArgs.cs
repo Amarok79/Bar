@@ -22,8 +22,8 @@
  * SOFTWARE.
 */
 
-using Drinks.Model;
 using Windows.UI.Xaml.Media.Imaging;
+using Drinks.Model;
 
 
 namespace Drinks.Viewer.DrinkDetail
@@ -37,8 +37,8 @@ namespace Drinks.Viewer.DrinkDetail
 
         public DrinkDetailPageArgs(Drink drink, BitmapImage image)
         {
-            this.Drink = drink;
-            this.Image = image;
+            Drink = drink;
+            Image = image;
         }
     }
 }

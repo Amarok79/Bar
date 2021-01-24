@@ -29,22 +29,21 @@ using Windows.UI.Xaml.Data;
 
 namespace Drinks.Viewer.Converter
 {
-	public sealed class AmountConverter :
-		IValueConverter
-	{
-		public Object Convert(Object value, Type targetType, Object parameter, String language)
-		{
-			var doubleValue = (Double?)value;
+    public sealed class AmountConverter : IValueConverter
+    {
+        public Object Convert(Object value, Type targetType, Object parameter, String language)
+        {
+            var doubleValue = (Double?) value;
 
-			if (doubleValue.HasValue)
-				return doubleValue.Value.ToString(CultureInfo.CurrentCulture);
-			else
-				return String.Empty;
-		}
+            if (doubleValue.HasValue)
+                return doubleValue.Value.ToString(CultureInfo.CurrentCulture);
 
-		public Object ConvertBack(Object value, Type targetType, Object parameter, String language)
-		{
-			throw new NotSupportedException();
-		}
-	}
+            return String.Empty;
+        }
+
+        public Object ConvertBack(Object value, Type targetType, Object parameter, String language)
+        {
+            throw new NotSupportedException();
+        }
+    }
 }

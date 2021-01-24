@@ -23,73 +23,71 @@
 */
 
 using System;
+using Windows.ApplicationModel.Activation;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Animation;
 using Drinks.Model;
 using Drinks.Services;
 using Drinks.Services.DrinkRepository;
 using Drinks.Services.ImageRepository;
 using Drinks.Viewer.Home;
 using Unity;
-using Windows.ApplicationModel.Activation;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media.Animation;
 
 
 namespace Drinks.Viewer
 {
-	public sealed partial class App : Application,
-		INavigationService
-	{
-		public IUnityContainer Container { get; }
+    public sealed partial class App : Application, INavigationService
+    {
+        public IUnityContainer Container { get; }
 
-		public Frame Frame { get; private set; }
+        public Frame Frame { get; private set; }
 
-		public static new App Current => (App)Application.Current;
-
-
-		public App()
-		{
-			this.Container = new UnityContainer();
-			this.InitializeComponent();
-		}
-
-		protected override void OnLaunched(LaunchActivatedEventArgs args)
-		{
-			base.OnLaunched(args);
-
-			_RegisterServices(this.Container, this);
-
-			Frame = new Frame();
-			Frame.Navigate(typeof(HomePage), null, new EntranceNavigationTransitionInfo());
-
-			Window.Current.Content = Frame;
-			Window.Current.Activate();
-		}
+        public new static App Current => (App) Application.Current;
 
 
-		private static void _RegisterServices(IUnityContainer container, App me)
-		{
-			container.RegisterSingleton<IImageRepository, AzureImageRepository>();
-			container.RegisterSingleton<IDrinkRepository, AzureBlobDrinkRepository>();
-			container.RegisterInstance<INavigationService>(me);
-		}
+        public App()
+        {
+            Container = new UnityContainer();
+            InitializeComponent();
+        }
 
-		public Boolean Navigate(Type pageType, Object args, NavigationTransitionInfo transitionInfo)
-		{
-			return this.Frame.Navigate(pageType, args, transitionInfo);
-		}
+        protected override void OnLaunched(LaunchActivatedEventArgs args)
+        {
+            base.OnLaunched(args);
 
-		public Boolean GoBack()
-		{
-			if (this.Frame.CanGoBack)
-			{
-				this.Frame.GoBack();
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		}
-	}
+            _RegisterServices(Container, this);
+
+            Frame = new Frame();
+            Frame.Navigate(typeof(HomePage), null, new EntranceNavigationTransitionInfo());
+
+            Window.Current.Content = Frame;
+            Window.Current.Activate();
+        }
+
+
+        private static void _RegisterServices(IUnityContainer container, App me)
+        {
+            container.RegisterSingleton<IImageRepository, AzureImageRepository>();
+            container.RegisterSingleton<IDrinkRepository, AzureBlobDrinkRepository>();
+            container.RegisterInstance<INavigationService>(me);
+        }
+
+        public Boolean Navigate(Type pageType, Object args, NavigationTransitionInfo transitionInfo)
+        {
+            return Frame.Navigate(pageType, args, transitionInfo);
+        }
+
+        public Boolean GoBack()
+        {
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+
+                return true;
+            }
+
+            return false;
+        }
+    }
 }

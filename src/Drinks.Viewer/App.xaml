@@ -1,198 +1,198 @@
 ﻿<Application
-  x:Class="Drinks.Viewer.App"
-  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-  xmlns:converter="using:Drinks.Viewer.Converter"
-  RequestedTheme="Dark">
-	<Application.Resources>
+    x:Class="Drinks.Viewer.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converter="using:Drinks.Viewer.Converter"
+    RequestedTheme="Dark">
+    <Application.Resources>
 
-		<!--  CONVERTERS  -->
+        <!--  CONVERTERS  -->
 
-		<converter:AmountConverter x:Key="AmountConverter" />
-
-
-		<!--  BRUSHES  -->
-
-		<SolidColorBrush x:Key="BarHeaderBackgroundBrush" Color="#FF121212" />
-		<LinearGradientBrush x:Key="BarContentBackgroundBrush" StartPoint="0.0,0.0" EndPoint="0.0,1.0">
-			<GradientStop Offset="0.0" Color="#FF181818" />
-			<GradientStop Offset="1.0" Color="#FF080808" />
-		</LinearGradientBrush>
-		<SolidColorBrush x:Key="BarContentBorderBrush" Color="#FF2A2A2A" />
-		<SolidColorBrush x:Key="BarTextBrush" Color="#FFB3B3B3" />
-		<SolidColorBrush x:Key="BarPopupBackgroundBrush" Color="#E0121212" />
+        <converter:AmountConverter x:Key="AmountConverter" />
 
 
-		<!--  TEXTBLOCK STYLES  -->
+        <!--  BRUSHES  -->
 
-		<Style x:Key="BarTitleTextStyle" TargetType="TextBlock">
-			<Style.Setters>
-				<Setter Property="FontFamily" Value="Arial Rounded MT Bold" />
-				<Setter Property="FontSize" Value="36" />
-				<Setter Property="HorizontalAlignment" Value="Left" />
-				<Setter Property="VerticalAlignment" Value="Center" />
-			</Style.Setters>
-		</Style>
+        <SolidColorBrush x:Key="BarHeaderBackgroundBrush" Color="#FF121212" />
+        <LinearGradientBrush x:Key="BarContentBackgroundBrush" StartPoint="0.0,0.0" EndPoint="0.0,1.0">
+            <GradientStop Offset="0.0" Color="#FF181818" />
+            <GradientStop Offset="1.0" Color="#FF080808" />
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="BarContentBorderBrush" Color="#FF2A2A2A" />
+        <SolidColorBrush x:Key="BarTextBrush" Color="#FFB3B3B3" />
+        <SolidColorBrush x:Key="BarPopupBackgroundBrush" Color="#E0121212" />
 
-		<Style x:Key="BarSubTitleTextStyle" TargetType="TextBlock">
-			<Style.Setters>
-				<Setter Property="FontFamily" Value="Arial Rounded MT Bold" />
-				<Setter Property="FontSize" Value="24" />
-				<Setter Property="HorizontalAlignment" Value="Left" />
-				<Setter Property="VerticalAlignment" Value="Center" />
-			</Style.Setters>
-		</Style>
 
-		<Style x:Key="BarDrinkNameTextStyle" TargetType="TextBlock">
-			<Style.Setters>
-				<Setter Property="FontSize" Value="18" />
-				<Setter Property="HorizontalTextAlignment" Value="Left" />
-				<Setter Property="VerticalAlignment" Value="Center" />
-				<Setter Property="FontWeight" Value="Bold" />
-				<Setter Property="Foreground" Value="White" />
-				<Setter Property="TextTrimming" Value="CharacterEllipsis" />
-				<Setter Property="TextWrapping" Value="NoWrap" />
-			</Style.Setters>
-		</Style>
+        <!--  TEXTBLOCK STYLES  -->
 
-		<Style x:Key="BarDrinkTeaserTextStyle" TargetType="TextBlock">
-			<Style.Setters>
-				<Setter Property="FontSize" Value="16" />
-				<Setter Property="HorizontalTextAlignment" Value="Left" />
-				<Setter Property="VerticalAlignment" Value="Center" />
-				<Setter Property="Foreground" Value="#FFB3B3B3" />
-				<Setter Property="TextTrimming" Value="CharacterEllipsis" />
-				<Setter Property="TextWrapping" Value="Wrap" />
-			</Style.Setters>
-		</Style>
+        <Style x:Key="BarTitleTextStyle" TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="FontFamily" Value="Arial Rounded MT Bold" />
+                <Setter Property="FontSize" Value="36" />
+                <Setter Property="HorizontalAlignment" Value="Left" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+            </Style.Setters>
+        </Style>
 
-		<Style x:Key="BarIngredientAmountTextStyle" TargetType="TextBlock">
-			<Style.Setters>
-				<Setter Property="FontSize" Value="20" />
-				<Setter Property="FontWeight" Value="Bold" />
-				<Setter Property="Foreground" Value="{StaticResource BarTextBrush}" />
-			</Style.Setters>
-		</Style>
+        <Style x:Key="BarSubTitleTextStyle" TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="FontFamily" Value="Arial Rounded MT Bold" />
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="HorizontalAlignment" Value="Left" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+            </Style.Setters>
+        </Style>
 
-		<Style x:Key="BarIngredientUnitTextStyle" TargetType="TextBlock">
-			<Style.Setters>
-				<Setter Property="FontSize" Value="18" />
-				<Setter Property="FontWeight" Value="Normal" />
-				<Setter Property="Foreground" Value="{StaticResource BarTextBrush}" />
-			</Style.Setters>
-		</Style>
+        <Style x:Key="BarDrinkNameTextStyle" TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="HorizontalTextAlignment" Value="Left" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+                <Setter Property="TextWrapping" Value="NoWrap" />
+            </Style.Setters>
+        </Style>
 
-		<Style x:Key="BarIngredientSubstanceTextStyle" TargetType="TextBlock">
-			<Style.Setters>
-				<Setter Property="FontSize" Value="20" />
-				<Setter Property="FontWeight" Value="Normal" />
-				<Setter Property="Foreground" Value="{StaticResource BarTextBrush}" />
-			</Style.Setters>
-		</Style>
+        <Style x:Key="BarDrinkTeaserTextStyle" TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="HorizontalTextAlignment" Value="Left" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+                <Setter Property="Foreground" Value="#FFB3B3B3" />
+                <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+                <Setter Property="TextWrapping" Value="Wrap" />
+            </Style.Setters>
+        </Style>
 
-		<Style x:Key="BarDescriptionTextStyle" TargetType="TextBlock">
-			<Style.Setters>
-				<Setter Property="FontSize" Value="18" />
-				<Setter Property="FontWeight" Value="Normal" />
-				<Setter Property="Foreground" Value="{StaticResource BarTextBrush}" />
-				<Setter Property="TextWrapping" Value="WrapWholeWords" />
-			</Style.Setters>
-		</Style>
+        <Style x:Key="BarIngredientAmountTextStyle" TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Foreground" Value="{StaticResource BarTextBrush}" />
+            </Style.Setters>
+        </Style>
 
-		<!--  BUTTON STYLES  -->
+        <Style x:Key="BarIngredientUnitTextStyle" TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontWeight" Value="Normal" />
+                <Setter Property="Foreground" Value="{StaticResource BarTextBrush}" />
+            </Style.Setters>
+        </Style>
 
-		<Style x:Key="NavigationBackButtonNormalStyle" TargetType="Button">
-			<Setter Property="Background" Value="{ThemeResource NavigationViewBackButtonBackground}" />
-			<Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseHighBrush}" />
-			<Setter Property="FontFamily" Value="{ThemeResource SymbolThemeFontFamily}" />
-			<Setter Property="FontSize" Value="36" />
-			<Setter Property="Height" Value="{ThemeResource NavigationBackButtonHeight}" />
-			<Setter Property="Width" Value="{ThemeResource NavigationBackButtonWidth}" />
-			<Setter Property="HorizontalContentAlignment" Value="Center" />
-			<Setter Property="VerticalContentAlignment" Value="Center" />
-			<Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
-			<Setter Property="Content" Value="&#xE830;" />
-			<Setter Property="Template">
-				<Setter.Value>
-					<ControlTemplate TargetType="Button">
-						<Grid x:Name="RootGrid"
-						  Background="{TemplateBinding Background}">
-							<FontIcon x:Name="Content"
-							  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-							  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-							  AutomationProperties.AccessibilityView="Raw"
-							  FontFamily="{TemplateBinding FontFamily}"
-							  FontSize="{TemplateBinding FontSize}"
-							  Foreground="{TemplateBinding Foreground}"
-							  Glyph="{TemplateBinding Content}"
-							  MirroredWhenRightToLeft="True" />
+        <Style x:Key="BarIngredientSubstanceTextStyle" TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontWeight" Value="Normal" />
+                <Setter Property="Foreground" Value="{StaticResource BarTextBrush}" />
+            </Style.Setters>
+        </Style>
 
-							<VisualStateManager.VisualStateGroups>
-								<VisualStateGroup x:Name="CommonStates">
-									<VisualState x:Name="Normal" />
+        <Style x:Key="BarDescriptionTextStyle" TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontWeight" Value="Normal" />
+                <Setter Property="Foreground" Value="{StaticResource BarTextBrush}" />
+                <Setter Property="TextWrapping" Value="WrapWholeWords" />
+            </Style.Setters>
+        </Style>
 
-									<VisualState x:Name="PointerOver">
+        <!--  BUTTON STYLES  -->
 
-										<Storyboard>
-											<ObjectAnimationUsingKeyFrames
-											  Storyboard.TargetName="RootGrid"
-											  Storyboard.TargetProperty="Background">
-												<DiscreteObjectKeyFrame
-												  KeyTime="0"
-												  Value="{ThemeResource SystemControlHighlightListLowBrush}" />
-											</ObjectAnimationUsingKeyFrames>
-											<ObjectAnimationUsingKeyFrames
-											  Storyboard.TargetName="Content"
-											  Storyboard.TargetProperty="Foreground">
-												<DiscreteObjectKeyFrame
-												  KeyTime="0"
-												  Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}" />
-											</ObjectAnimationUsingKeyFrames>
-										</Storyboard>
-									</VisualState>
+        <Style x:Key="NavigationBackButtonNormalStyle" TargetType="Button">
+            <Setter Property="Background" Value="{ThemeResource NavigationViewBackButtonBackground}" />
+            <Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseHighBrush}" />
+            <Setter Property="FontFamily" Value="{ThemeResource SymbolThemeFontFamily}" />
+            <Setter Property="FontSize" Value="36" />
+            <Setter Property="Height" Value="{ThemeResource NavigationBackButtonHeight}" />
+            <Setter Property="Width" Value="{ThemeResource NavigationBackButtonWidth}" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
+            <Setter Property="Content" Value="&#xE830;" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid x:Name="RootGrid"
+                              Background="{TemplateBinding Background}">
+                            <FontIcon x:Name="Content"
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      AutomationProperties.AccessibilityView="Raw"
+                                      FontFamily="{TemplateBinding FontFamily}"
+                                      FontSize="{TemplateBinding FontSize}"
+                                      Foreground="{TemplateBinding Foreground}"
+                                      Glyph="{TemplateBinding Content}"
+                                      MirroredWhenRightToLeft="True" />
 
-									<VisualState x:Name="Pressed">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
 
-										<Storyboard>
-											<ObjectAnimationUsingKeyFrames
-											  Storyboard.TargetName="RootGrid"
-											  Storyboard.TargetProperty="Background">
-												<DiscreteObjectKeyFrame
-												  KeyTime="0"
-												  Value="{ThemeResource SystemControlHighlightListMediumBrush}" />
-											</ObjectAnimationUsingKeyFrames>
-											<ObjectAnimationUsingKeyFrames
-											  Storyboard.TargetName="Content"
-											  Storyboard.TargetProperty="Foreground">
-												<DiscreteObjectKeyFrame
-												  KeyTime="0"
-												  Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}" />
-											</ObjectAnimationUsingKeyFrames>
-										</Storyboard>
-									</VisualState>
+                                    <VisualState x:Name="PointerOver">
 
-									<VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames
+                                                Storyboard.TargetName="RootGrid"
+                                                Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame
+                                                    KeyTime="0"
+                                                    Value="{ThemeResource SystemControlHighlightListLowBrush}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames
+                                                Storyboard.TargetName="Content"
+                                                Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame
+                                                    KeyTime="0"
+                                                    Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
 
-										<Storyboard>
-											<ObjectAnimationUsingKeyFrames
-											  Storyboard.TargetName="Content"
-											  Storyboard.TargetProperty="Foreground">
-												<DiscreteObjectKeyFrame
-												  KeyTime="0"
-												  Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}" />
-											</ObjectAnimationUsingKeyFrames>
-										</Storyboard>
-									</VisualState>
+                                    <VisualState x:Name="Pressed">
 
-								</VisualStateGroup>
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames
+                                                Storyboard.TargetName="RootGrid"
+                                                Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame
+                                                    KeyTime="0"
+                                                    Value="{ThemeResource SystemControlHighlightListMediumBrush}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames
+                                                Storyboard.TargetName="Content"
+                                                Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame
+                                                    KeyTime="0"
+                                                    Value="{ThemeResource SystemControlHighlightAltBaseHighBrush}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
 
-							</VisualStateManager.VisualStateGroups>
-						</Grid>
+                                    <VisualState x:Name="Disabled">
 
-					</ControlTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames
+                                                Storyboard.TargetName="Content"
+                                                Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame
+                                                    KeyTime="0"
+                                                    Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
 
-	</Application.Resources>
+                                </VisualStateGroup>
+
+                            </VisualStateManager.VisualStateGroups>
+                        </Grid>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Application.Resources>
 </Application>

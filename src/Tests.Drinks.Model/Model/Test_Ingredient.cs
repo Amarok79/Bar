@@ -28,39 +28,31 @@ using NUnit.Framework;
 
 namespace Drinks.Model
 {
-	[TestFixture]
-	public class Test_Ingredient
-	{
-		[Test]
-		public void Construction()
-		{
-			var ing = new Ingredient(5, "cl", "Light Rum");
+    [TestFixture]
+    public class Test_Ingredient
+    {
+        [Test]
+        public void Construction()
+        {
+            var ing = new Ingredient(5, "cl", "Light Rum");
 
-			Check.That(ing.Amount)
-				.IsEqualTo(5.0);
-			Check.That(ing.Unit)
-				.IsEqualTo("cl");
-			Check.That(ing.Substance)
-				.IsEqualTo("Light Rum");
+            Check.That(ing.Amount).IsEqualTo(5.0);
+            Check.That(ing.Unit).IsEqualTo("cl");
+            Check.That(ing.Substance).IsEqualTo("Light Rum");
 
-			Check.That(ing.ToString())
-				.IsEqualTo("5 cl Light Rum");
-		}
+            Check.That(ing.ToString()).IsEqualTo("5 cl Light Rum");
+        }
 
-		[Test]
-		public void Construction_WithoutAmountAndUnit()
-		{
-			var ing = new Ingredient("Muskatnuss");
+        [Test]
+        public void Construction_WithoutAmountAndUnit()
+        {
+            var ing = new Ingredient("Muskatnuss");
 
-			Check.That(ing.Amount)
-				.IsEqualTo(null);
-			Check.That(ing.Unit)
-				.IsEqualTo(null);
-			Check.That(ing.Substance)
-				.IsEqualTo("Muskatnuss");
+            Check.That(ing.Amount).IsEqualTo(null);
+            Check.That(ing.Unit).IsEqualTo(null);
+            Check.That(ing.Substance).IsEqualTo("Muskatnuss");
 
-			Check.That(ing.ToString())
-				.IsEqualTo("Muskatnuss");
-		}
-	}
+            Check.That(ing.ToString()).IsEqualTo("Muskatnuss");
+        }
+    }
 }

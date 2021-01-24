@@ -28,30 +28,29 @@ using System.Windows.Input;
 
 namespace Drinks.Viewer
 {
-	public sealed class DelegateCommand :
-		ICommand
-	{
-		// data
-		private readonly Action mCallback;
+    public sealed class DelegateCommand : ICommand
+    {
+        // data
+        private readonly Action mCallback;
 
 #pragma warning disable 0067
         public event EventHandler CanExecuteChanged;
 #pragma warning restore 0067
 
         public DelegateCommand(Action callback)
-		{
-			mCallback = callback;
-		}
+        {
+            mCallback = callback;
+        }
 
 
-		public Boolean CanExecute(Object parameter)
-		{
-			return true;
-		}
+        public Boolean CanExecute(Object parameter)
+        {
+            return true;
+        }
 
-		public void Execute(Object parameter)
-		{
-			mCallback();
-		}
-	}
+        public void Execute(Object parameter)
+        {
+            mCallback();
+        }
+    }
 }

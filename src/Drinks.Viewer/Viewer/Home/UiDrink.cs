@@ -24,55 +24,59 @@
 
 using System;
 using System.Linq;
-using Drinks.Model;
 using Windows.UI.Xaml.Media.Imaging;
+using Drinks.Model;
 
 
 namespace Drinks.Viewer.Home
 {
-	public class UiDrink : BindableBase
-	{
-		// state
-		private Boolean mIsImageLoading;
+    public class UiDrink : BindableBase
+    {
+        // state
+        private Boolean mIsImageLoading;
 
 
-		public Drink Drink { get; set; }
+        public Drink Drink { get; set; }
 
 
-		public String Name => this.Drink.Name;
+        public String Name => Drink.Name;
 
-		public String Teaser => this.Drink.Teaser;
+        public String Teaser => Drink.Teaser;
 
-		public Boolean HasDescription => !String.IsNullOrEmpty(this.Drink.Description);
+        public Boolean HasDescription => !String.IsNullOrEmpty(Drink.Description);
 
-		public Int32 Rating
-		{
-			get
-			{
-				if (Drink.Tags.Contains("3-star"))
-					return 3;
-				if (Drink.Tags.Contains("2-star"))
-					return 2;
-				if (Drink.Tags.Contains("1-star"))
-					return 1;
-				if (Drink.Tags.Contains("0-star"))
-					return 0;
-				return -1;
-			}
-		}
+        public Int32 Rating
+        {
+            get
+            {
+                if (Drink.Tags.Contains("3-star"))
+                    return 3;
 
-		public Boolean RatingVisible => this.Rating >= 0;
+                if (Drink.Tags.Contains("2-star"))
+                    return 2;
 
-		public Boolean InTesting => Drink.Tags.Contains("in-testing");
+                if (Drink.Tags.Contains("1-star"))
+                    return 1;
 
-		public String InTestingLabel => "In Erprobung";
+                if (Drink.Tags.Contains("0-star"))
+                    return 0;
 
-		public BitmapImage Image { get; set; }
+                return -1;
+            }
+        }
 
-		public Boolean IsImageLoading
-		{
-			get => mIsImageLoading;
-			set => Set(ref mIsImageLoading, value);
-		}
-	}
+        public Boolean RatingVisible => Rating >= 0;
+
+        public Boolean InTesting => Drink.Tags.Contains("in-testing");
+
+        public String InTestingLabel => "In Erprobung";
+
+        public BitmapImage Image { get; set; }
+
+        public Boolean IsImageLoading
+        {
+            get => mIsImageLoading;
+            set => this.Set(ref mIsImageLoading, value);
+        }
+    }
 }

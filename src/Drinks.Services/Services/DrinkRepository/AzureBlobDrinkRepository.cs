@@ -38,163 +38,160 @@ using Drinks.Model;
 
 namespace Drinks.Services.DrinkRepository
 {
-	/// <summary>
-	/// An implementation that loads drinks from a file downloaded from Azure.
-	/// </summary>
-	public sealed class AzureBlobDrinkRepository :
-		IDrinkRepository
-	{
-		/// <summary>
-		/// Gets all Drinks for the given Bar.
-		/// </summary>
-		public async Task<IEnumerable<Drink>> GetAll(BarId barId)
-		{
-			String tempPath = null;
-			try
-			{
-				tempPath = Path.GetTempFileName();
+    /// <summary>
+    /// An implementation that loads drinks from a file downloaded from Azure.
+    /// </summary>
+    public sealed class AzureBlobDrinkRepository : IDrinkRepository
+    {
+        /// <summary>
+        /// Gets all Drinks for the given Bar.
+        /// </summary>
+        public async Task<IEnumerable<Drink>> GetAll(BarId barId)
+        {
+            String tempPath = null;
 
-				await _DownloadManifest(barId, tempPath)
-					.ConfigureAwait(false);
+            try
+            {
+                tempPath = Path.GetTempFileName();
 
-				return _LoadFromManifest(barId, tempPath);
-			}
-			finally
-			{
-				if (tempPath != null)
-					File.Delete(tempPath);
-			}
-		}
+                await _DownloadManifest(barId, tempPath).ConfigureAwait(false);
+
+                return _LoadFromManifest(barId, tempPath);
+            }
+            finally
+            {
+                if (tempPath != null)
+                    File.Delete(tempPath);
+            }
+        }
 
 
-		private async Task _DownloadManifest(BarId barId, String manifestPath)
-		{
-			var fileName = barId.Guid.ToString("D", CultureInfo.InvariantCulture)
-				.ToUpperInvariant();
+        private async Task _DownloadManifest(BarId barId, String manifestPath)
+        {
+            var fileName = barId.Guid.ToString("D", CultureInfo.InvariantCulture).ToUpperInvariant();
 
-			var url = $"https://amarok.blob.core.windows.net/drinks/{fileName}.xml";
+            var url = $"https://amarok.blob.core.windows.net/drinks/{fileName}.xml";
 
-			using (var client = new WebClient())
-			{
-				await client.DownloadFileTaskAsync(url, manifestPath)
-					.ConfigureAwait(false);
-			}
-		}
+            using (var client = new WebClient())
+            {
+                await client.DownloadFileTaskAsync(url, manifestPath).ConfigureAwait(false);
+            }
+        }
 
-		private List<Drink> _LoadFromManifest(BarId barId, String manifestPath)
-		{
-			var doc = XDocument.Load(manifestPath);
-			var catalogNode = doc.Element("catalog");
+        private List<Drink> _LoadFromManifest(BarId barId, String manifestPath)
+        {
+            var doc         = XDocument.Load(manifestPath);
+            var catalogNode = doc.Element("catalog");
 
-			var substances = new Dictionary<String, String>();
-			foreach (var substanceNode in catalogNode.Element("substances").Elements("substance"))
-			{
-				var id = substanceNode.Attribute("id").Value;
-				var name = substanceNode.Value;
+            var substances = new Dictionary<String, String>();
 
-				substances.Add(id, name.Trim());
-			}
+            foreach (var substanceNode in catalogNode.Element("substances").Elements("substance"))
+            {
+                var id   = substanceNode.Attribute("id").Value;
+                var name = substanceNode.Value;
 
-			var drinks = new List<Drink>();
-			foreach (var drinkNode in catalogNode.Element("drinks").Elements("drink"))
-			{
-				var name = drinkNode.Element("name").Value;
-				var teaser = drinkNode.Element("teaser").Value;
-				var image = Guid.Parse(drinkNode.Element("image").Value);
-				var desc = drinkNode.Element("description").Value;
-				var tags = drinkNode.Element("tags").Value;
-				var glass = drinkNode.Element("glass")?.Value;
-				var ice = drinkNode.Element("ice")?.Value;
-				var garnish = drinkNode.Element("garnish")?.Value;
+                substances.Add(id, name.Trim());
+            }
 
-				var drink = new Drink(new DrinkId(Guid.NewGuid()), barId)
-					.SetName(name.Trim())
-					.SetTeaser(teaser.Trim())
-					.SetImage(new ImageId(image))
-					.SetDescription(_TrimDescription(desc))
-					.SetTags(_SplitAndTrimTags(tags))
-					.SetGlass(glass?.Trim() ?? String.Empty)
-					.SetIce(ice?.Trim() ?? String.Empty)
-					.SetGarnish(garnish?.Trim() ?? String.Empty)
-					;
+            var drinks = new List<Drink>();
 
-				Ingredient[] ingredients = null;
-				String[] instructions = null;
+            foreach (var drinkNode in catalogNode.Element("drinks").Elements("drink"))
+            {
+                var name    = drinkNode.Element("name").Value;
+                var teaser  = drinkNode.Element("teaser").Value;
+                var image   = Guid.Parse(drinkNode.Element("image").Value);
+                var desc    = drinkNode.Element("description").Value;
+                var tags    = drinkNode.Element("tags").Value;
+                var glass   = drinkNode.Element("glass")?.Value;
+                var ice     = drinkNode.Element("ice")?.Value;
+                var garnish = drinkNode.Element("garnish")?.Value;
 
-				var recipeNode = drinkNode.Element("recipe");
+                var drink = new Drink(new DrinkId(Guid.NewGuid()), barId).SetName(name.Trim())
+                   .SetTeaser(teaser.Trim())
+                   .SetImage(new ImageId(image))
+                   .SetDescription(_TrimDescription(desc))
+                   .SetTags(_SplitAndTrimTags(tags))
+                   .SetGlass(glass?.Trim() ?? String.Empty)
+                   .SetIce(ice?.Trim() ?? String.Empty)
+                   .SetGarnish(garnish?.Trim() ?? String.Empty);
 
-				if (recipeNode != null)
-				{
-					ingredients = recipeNode.Elements("ingredient")
-						.Select(x =>
-						{
-							var amount = x.Attribute("amount")?.Value;
-							var unit = x.Attribute("unit")?.Value;
-							var substance = x.Attribute("substance").Value;
+                Ingredient[] ingredients  = null;
+                String[]     instructions = null;
 
-							if (substance.StartsWith("@", StringComparison.Ordinal))
-							{
-								var substanceId = substance.Substring(1);
-								if (substances.TryGetValue(substanceId, out var substanceName))
-									substance = substanceName;
-							}
+                var recipeNode = drinkNode.Element("recipe");
 
-							if (amount == null && unit == null)
-								return new Ingredient(substance);
-							else
-								return new Ingredient(
-									Double.Parse(amount, CultureInfo.InvariantCulture),
-									unit,
-									substance);
-						})
-						.ToArray();
+                if (recipeNode != null)
+                {
+                    ingredients = recipeNode.Elements("ingredient")
+                       .Select(
+                            x => {
+                                var amount    = x.Attribute("amount")?.Value;
+                                var unit      = x.Attribute("unit")?.Value;
+                                var substance = x.Attribute("substance").Value;
 
-					instructions = recipeNode.Elements("instruction")
-						.Select(x => x.Value?.Trim())
-						.ToArray();
-				}
+                                if (substance.StartsWith("@", StringComparison.Ordinal))
+                                {
+                                    var substanceId = substance.Substring(1);
 
-				drink.SetRecipe(new Recipe(
-					ingredients ?? Array.Empty<Ingredient>(),
-					instructions ?? Array.Empty<String>()
-				));
+                                    if (substances.TryGetValue(substanceId, out var substanceName))
+                                        substance = substanceName;
+                                }
 
-				drinks.Add(drink);
-			}
+                                if (amount == null && unit == null)
+                                    return new Ingredient(substance);
 
-			return drinks;
-		}
+                                return new Ingredient(
+                                    Double.Parse(amount, CultureInfo.InvariantCulture),
+                                    unit,
+                                    substance
+                                );
+                            }
+                        )
+                       .ToArray();
 
-		private static String _TrimDescription(String text)
-		{
-			if (text == null)
-				return String.Empty;
+                    instructions = recipeNode.Elements("instruction").Select(x => x.Value?.Trim()).ToArray();
+                }
 
-			var lines = text.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                drink.SetRecipe(
+                    new Recipe(ingredients ?? Array.Empty<Ingredient>(), instructions ?? Array.Empty<String>())
+                );
 
-			var sb = new StringBuilder();
-			foreach (var line in lines)
-			{
-				if (sb.Length > 0)
-					sb.AppendLine();
+                drinks.Add(drink);
+            }
 
-				sb.AppendLine(line.Trim());
-			}
+            return drinks;
+        }
 
-			return sb.ToString();
-		}
+        private static String _TrimDescription(String text)
+        {
+            if (text == null)
+                return String.Empty;
 
-		private static String[] _SplitAndTrimTags(String text)
-		{
-			if (text == null)
-				return Array.Empty<String>();
+            var lines = text.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
 
-			var tags = text
-				.Split(new[] { '|', ';', ',' }, StringSplitOptions.RemoveEmptyEntries)
-				.Select(x => x.Trim())
-				.ToArray();
+            var sb = new StringBuilder();
 
-			return tags;
-		}
-	}
+            foreach (var line in lines)
+            {
+                if (sb.Length > 0)
+                    sb.AppendLine();
+
+                sb.AppendLine(line.Trim());
+            }
+
+            return sb.ToString();
+        }
+
+        private static String[] _SplitAndTrimTags(String text)
+        {
+            if (text == null)
+                return Array.Empty<String>();
+
+            var tags = text.Split(new[] { '|', ';', ',' }, StringSplitOptions.RemoveEmptyEntries)
+               .Select(x => x.Trim())
+               .ToArray();
+
+            return tags;
+        }
+    }
 }

@@ -23,79 +23,11 @@
 */
 
 using System;
-using Drinks.Model;
-using Windows.UI.Xaml.Media.Imaging;
 
 
 namespace Drinks.Viewer.Home
 {
-	public class SampleUiHomePage : UiHomePage
-	{
-		public SampleUiHomePage()
-		{
-			//base.Drinks.Add(new UiDrink() {
-			//	Drink = new Drink(default, default)
-			//		.SetName("Cosmopolitan")
-			//		.SetTeaser("Wodka, Triple Sec, Cranberrysaft, Limettensaft"),
-			//	Image = new BitmapImage(new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg")),
-			//	IsImageLoading = false,
-			//});
-			//base.Drinks.Add(new UiDrink() {
-			//	Drink = new Drink(default, default)
-			//		.SetName("Negroni")
-			//		.SetTeaser("Gin, Campari, Vermouth Rosso"),
-			//	Image = new BitmapImage(new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg")),
-			//	IsImageLoading = false,
-			//});
-			//base.Drinks.Add(new UiDrink() {
-			//	Drink = new Drink(default, default)
-			//		.SetName("Amaretto Sour")
-			//		.SetTeaser("Zitronensaft, Amaretto, Limettensirup, Orangensaft"),
-			//	Image = new BitmapImage(new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg")),
-			//	IsImageLoading = false,
-			//});
-			//base.Drinks.Add(new UiDrink() {
-			//	Drink = new Drink(default, default)
-			//		.SetName("Cosmopolitan")
-			//		.SetTeaser("Wodka, Triple Sec, Cranberrysaft, Limettensaft"),
-			//	Image = new BitmapImage(new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg")),
-			//	IsImageLoading = false,
-			//});
-			//base.Drinks.Add(new UiDrink() {
-			//	Drink = new Drink(default, default)
-			//		.SetName("Negroni")
-			//		.SetTeaser("Gin, Campari, Vermouth Rosso"),
-			//	Image = new BitmapImage(new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg")),
-			//	IsImageLoading = false,
-			//});
-			//base.Drinks.Add(new UiDrink() {
-			//	Drink = new Drink(default, default)
-			//		.SetName("Amaretto Sour")
-			//		.SetTeaser("Zitronensaft, Amaretto, Limettensirup, Orangensaft"),
-			//	Image = new BitmapImage(new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg")),
-			//	IsImageLoading = false,
-			//});
-			//base.Drinks.Add(new UiDrink() {
-			//	Drink = new Drink(default, default)
-			//		.SetName("Cosmopolitan")
-			//		.SetTeaser("Wodka, Triple Sec, Cranberrysaft, Limettensaft"),
-			//	Image = new BitmapImage(new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg")),
-			//	IsImageLoading = false,
-			//});
-			//base.Drinks.Add(new UiDrink() {
-			//	Drink = new Drink(default, default)
-			//		.SetName("Negroni")
-			//		.SetTeaser("Gin, Campari, Vermouth Rosso"),
-			//	Image = new BitmapImage(new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg")),
-			//	IsImageLoading = false,
-			//});
-			//base.Drinks.Add(new UiDrink() {
-			//	Drink = new Drink(default, default)
-			//		.SetName("Amaretto Sour")
-			//		.SetTeaser("Zitronensaft, Amaretto, Limettensirup, Orangensaft"),
-			//	Image = new BitmapImage(new Uri("ms-appx:///Assets/{00000000-0000-0000-0000-000000000000}.jpg")),
-			//	IsImageLoading = false,
-			//});
-		}
-	}
+    public class SampleUiHomePage : UiHomePage
+    {
+    }
 }

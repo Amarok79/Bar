@@ -23,51 +23,48 @@
 */
 
 using System;
-using Drinks.Services;
-using Unity;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using Drinks.Services;
+using Unity;
 
 
 namespace Drinks.Viewer.DrinkDetail
 {
-	/// <summary>
-	/// An empty page that can be used on its own or navigated to within a Frame.
-	/// </summary>
-	public sealed partial class DrinkDetailPage : Page
-	{
-		[Dependency]
-		public INavigationService NavigationService { get; set; }
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class DrinkDetailPage : Page
+    {
+        [Dependency]
+        public INavigationService NavigationService { get; set; }
 
 
-		public DrinkDetailPage()
-		{
-			App.Current.Container.BuildUp(typeof(DrinkDetailPage), this);
-			this.InitializeComponent();
+        public DrinkDetailPage()
+        {
+            App.Current.Container.BuildUp(typeof(DrinkDetailPage), this);
+            InitializeComponent();
 
-			this.SizeChanged += this.DrinkDetailPage_SizeChanged;
-		}
+            this.SizeChanged += DrinkDetailPage_SizeChanged;
+        }
 
-		private void DrinkDetailPage_SizeChanged(Object sender, SizeChangedEventArgs e)
-		{
-			var width = ContentGrid.ActualHeight / 1.333;
-			ContentGrid.ColumnDefinitions[0].MaxWidth = width;
-		}
+        private void DrinkDetailPage_SizeChanged(Object sender, SizeChangedEventArgs e)
+        {
+            var width = ContentGrid.ActualHeight / 1.333;
+            ContentGrid.ColumnDefinitions[0].MaxWidth = width;
+        }
 
-		protected override void OnNavigatedTo(NavigationEventArgs e)
-		{
-			var args = (DrinkDetailPageArgs)e.Parameter;
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            var args = (DrinkDetailPageArgs) e.Parameter;
 
-			this.DataContext = new UiDrinkDetailPage() {
-				Drink = args.Drink,
-				Image = args.Image
-			};
-		}
+            this.DataContext = new UiDrinkDetailPage { Drink = args.Drink, Image = args.Image };
+        }
 
-		private void _HandleBackButtonClick(Object sender, RoutedEventArgs e)
-		{
-			this.NavigationService.GoBack();
-		}
-	}
+        private void _HandleBackButtonClick(Object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+    }
 }

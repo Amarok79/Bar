@@ -38,10 +38,10 @@ namespace Drinks.Services.ImageRepository
         public async Task GetById()
         {
             var repo = new AzureImageRepository();
-            var id = new ImageId(Guid.Empty);
+            var id   = new ImageId(Guid.Empty);
 
             Check.That(await repo.GetById(id))
-                .IsEqualTo(
+               .IsEqualTo(
                     new Uri("https://amarok.blob.core.windows.net/drinks/00000000-0000-0000-0000-000000000000.jpg")
                 );
         }

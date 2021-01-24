@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <catalog>
 
 	<substances>
@@ -74,10 +74,10 @@
 			<ice>None</ice>
 			<garnish>Muskatnuss</garnish>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="@Beefeater24"/>
-				<ingredient amount="3" unit="cl" substance="@CremeDeCacaoBlanc"/>
-				<ingredient amount="3" unit="cl" substance="@Creme"/>
-				<ingredient substance="Muskatnuss"/>
+				<ingredient amount="3" unit="cl" substance="@Beefeater24" />
+				<ingredient amount="3" unit="cl" substance="@CremeDeCacaoBlanc" />
+				<ingredient amount="3" unit="cl" substance="@Creme" />
+				<ingredient substance="Muskatnuss" />
 				<instruction>SHAKE alle Zutaten</instruction>
 				<instruction>FINE STRAIN ins Gästeglas</instruction>
 				<instruction>DUST mit Muskatnuss</instruction>
@@ -102,11 +102,11 @@
 			<ice>Cubed</ice>
 			<garnish>Cocktailkirsche, Zitronenzeste</garnish>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="@FreshLemonJuice"/>
-				<ingredient amount="4.5" unit="cl" substance="@Amaretto"/>
-				<ingredient amount="0.5" unit="cl" substance="@SugarSyrup"/>
-				<ingredient amount="3" unit="cl" substance="@FreshOrangeJuice"/>
-				<ingredient amount="2" unit="dash" substance="@OrangeBitter"/>
+				<ingredient amount="3" unit="cl" substance="@FreshLemonJuice" />
+				<ingredient amount="4.5" unit="cl" substance="@Amaretto" />
+				<ingredient amount="0.5" unit="cl" substance="@SugarSyrup" />
+				<ingredient amount="3" unit="cl" substance="@FreshOrangeJuice" />
+				<ingredient amount="2" unit="dash" substance="@OrangeBitter" />
 				<instruction>SHAKE alle Zutaten</instruction>
 				<instruction>STRAIN ins Gästeglas</instruction>
 			</recipe>
@@ -130,9 +130,9 @@
 			<ice>Cubed</ice>
 			<garnish>Limettenscheibe</garnish>
 			<recipe>
-				<ingredient amount="4.5" unit="cl" substance="@VermouthRosso"/>
-				<ingredient amount="4.5" unit="cl" substance="@Campari"/>
-				<ingredient amount="7.5" unit="cl" substance="Soda"/>
+				<ingredient amount="4.5" unit="cl" substance="@VermouthRosso" />
+				<ingredient amount="4.5" unit="cl" substance="@Campari" />
+				<ingredient amount="7.5" unit="cl" substance="Soda" />
 				<instruction>BUILD im Gästeglas</instruction>
 			</recipe>
 		</drink>
@@ -155,10 +155,10 @@
 			<ice>Cubed</ice>
 			<garnish>Zitronenscheibe</garnish>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="@FreshLemonJuice"/>
-				<ingredient amount="5" unit="cl" substance="@Averna"/>
-				<ingredient amount="1" unit="cl" substance="@SugarSyrup"/>
-				<ingredient amount="2" unit="cl" substance="@FreshOrangeJuice"/>
+				<ingredient amount="3" unit="cl" substance="@FreshLemonJuice" />
+				<ingredient amount="5" unit="cl" substance="@Averna" />
+				<ingredient amount="1" unit="cl" substance="@SugarSyrup" />
+				<ingredient amount="2" unit="cl" substance="@FreshOrangeJuice" />
 				<instruction>SHAKE alle Zutaten</instruction>
 				<instruction>STRAIN ins Gästeglas</instruction>
 			</recipe>
@@ -180,11 +180,11 @@
 			<ice>None</ice>
 			<garnish>Zitronenzeste</garnish>
 			<recipe>
-				<ingredient amount="1.5" unit="cl" substance="@FreshLemonJuice"/>
-				<ingredient amount="4.5" unit="cl" substance="@Beefeater24"/>
-				<ingredient amount="1.5" unit="cl" substance="@Maraschino"/>
-				<ingredient amount="0.75" unit="cl" substance="@CremeDeViolette"/>
-				<ingredient amount="0.75" unit="cl" substance="Gekühltes Wasser"/>
+				<ingredient amount="1.5" unit="cl" substance="@FreshLemonJuice" />
+				<ingredient amount="4.5" unit="cl" substance="@Beefeater24" />
+				<ingredient amount="1.5" unit="cl" substance="@Maraschino" />
+				<ingredient amount="0.75" unit="cl" substance="@CremeDeViolette" />
+				<ingredient amount="0.75" unit="cl" substance="Gekühltes Wasser" />
 				<instruction>LONG SHAKE alle Zutaten</instruction>
 				<instruction>FINE STRAIN ins Gästeglas</instruction>
 			</recipe>
@@ -208,10 +208,10 @@
 			<ice>None</ice>
 			<garnish></garnish>
 			<recipe>
-				<ingredient amount="2" unit="cl" substance="@Kahlua"/>
-				<ingredient amount="2" unit="cl" substance="@Baileys"/>
-				<ingredient amount="2" unit="cl" substance="@GrandMarnier"/>
-				<ingredient amount="1" unit="BL" substance="@PlantationOverproof"/>
+				<ingredient amount="2" unit="cl" substance="@Kahlua" />
+				<ingredient amount="2" unit="cl" substance="@Baileys" />
+				<ingredient amount="2" unit="cl" substance="@GrandMarnier" />
+				<ingredient amount="1" unit="BL" substance="@PlantationOverproof" />
 				<instruction>LAYER Kahlua, Baileys, Grand Marnier</instruction>
 				<instruction>Entzünden</instruction>
 			</recipe>
@@ -233,10 +233,10 @@
 			<ice>Cubed</ice>
 			<garnish>Johannisbeeren</garnish>
 			<recipe>
-				<ingredient amount="2" unit="" substance="@Passionfruit"/>
-				<ingredient amount="5" unit="cl" substance="@CachacaGermana"/>
-				<ingredient amount="2" unit="cl" substance="@PassionFruitMix"/>
-				<ingredient amount="6" unit="cl" substance="@CocosMilk"/>
+				<ingredient amount="2" unit="" substance="@Passionfruit" />
+				<ingredient amount="5" unit="cl" substance="@CachacaGermana" />
+				<ingredient amount="2" unit="cl" substance="@PassionFruitMix" />
+				<ingredient amount="6" unit="cl" substance="@CocosMilk" />
 				<instruction>LONG SHAKE alle Zutaten</instruction>
 				<instruction>POUR ins Gästeglas mit Eis</instruction>
 			</recipe>
@@ -254,11 +254,11 @@
 			<ice>Crushed</ice>
 			<garnish>Limettenscheibe</garnish>
 			<recipe>
-				<ingredient amount="1" unit="cl" substance="@FreshLimeJuice"/>
-				<ingredient amount="4" unit="cl" substance="@PlantationThreeStars"/>
-				<ingredient amount="2" unit="cl" substance="@Cointreau"/>
-				<ingredient amount="2" unit="cl" substance="@CreamOfCoconut"/>
-				<ingredient amount="6" unit="cl" substance="@PineappleJuice"/>
+				<ingredient amount="1" unit="cl" substance="@FreshLimeJuice" />
+				<ingredient amount="4" unit="cl" substance="@PlantationThreeStars" />
+				<ingredient amount="2" unit="cl" substance="@Cointreau" />
+				<ingredient amount="2" unit="cl" substance="@CreamOfCoconut" />
+				<ingredient amount="6" unit="cl" substance="@PineappleJuice" />
 				<instruction>SHAKE alle Zutaten</instruction>
 				<instruction>STRAIN ins Gästeglas</instruction>
 			</recipe>
@@ -278,10 +278,10 @@
 			<ice>Crushed</ice>
 			<garnish>Brombeeren, Zitronenspalte</garnish>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="@FreshLemonJuice"/>
-				<ingredient amount="4.5" unit="cl" substance="@Beefeater24"/>
-				<ingredient amount="1.5" unit="cl" substance="@SugarSyrup"/>
-				<ingredient amount="2" unit="BL" substance="@CremeDeMure"/>
+				<ingredient amount="3" unit="cl" substance="@FreshLemonJuice" />
+				<ingredient amount="4.5" unit="cl" substance="@Beefeater24" />
+				<ingredient amount="1.5" unit="cl" substance="@SugarSyrup" />
+				<ingredient amount="2" unit="BL" substance="@CremeDeMure" />
 				<instruction>LIGHT SHAKE Zitronensaft, Gin und Läuterzucker</instruction>
 				<instruction>FILL Gästeglas mit Crushed Ice 3/4</instruction>
 				<instruction>POUR ins Gästeglas</instruction>
@@ -308,9 +308,9 @@
 			<ice>Cubed</ice>
 			<garnish>None</garnish>
 			<recipe>
-				<ingredient amount="1" unit="" substance="@Lime"/>
-				<ingredient amount="2" unit="BL" substance="@WhiteCaneSugar"/>
-				<ingredient amount="6" unit="cl" substance="@CachacaGermana"/>
+				<ingredient amount="1" unit="" substance="@Lime" />
+				<ingredient amount="2" unit="BL" substance="@WhiteCaneSugar" />
+				<ingredient amount="6" unit="cl" substance="@CachacaGermana" />
 				<instruction>Limette skalpieren</instruction>
 				<instruction>Limette halbieren</instruction>
 				<instruction>Limette Strunk entfernen</instruction>
@@ -345,11 +345,11 @@
 			<ice>Cubed</ice>
 			<garnish>None</garnish>
 			<recipe>
-				<ingredient amount="1" unit="" substance="@Passionfruit"/>
-				<ingredient amount="1" unit="" substance="@Lime"/>
-				<ingredient amount="1" unit="BL" substance="@WhiteCaneSugar"/>
-				<ingredient amount="1.5" unit="cl" substance="@PassionFruitMix"/>
-				<ingredient amount="6" unit="cl" substance="@CachacaGermana"/>
+				<ingredient amount="1" unit="" substance="@Passionfruit" />
+				<ingredient amount="1" unit="" substance="@Lime" />
+				<ingredient amount="1" unit="BL" substance="@WhiteCaneSugar" />
+				<ingredient amount="1.5" unit="cl" substance="@PassionFruitMix" />
+				<ingredient amount="6" unit="cl" substance="@CachacaGermana" />
 				<instruction>Limette skalpieren</instruction>
 				<instruction>Limette halbieren</instruction>
 				<instruction>Limette Strunk entfernen</instruction>
@@ -380,12 +380,12 @@
 			<ice>None</ice>
 			<garnish>Flambierte Orangenzeste</garnish>
 			<recipe>
-				<ingredient amount="1.5" unit="cl" substance="@FreshLimeJuice"/>
-				<ingredient amount="3" unit="cl" substance="Absolut Citron Wodka"/>
-				<ingredient amount="3" unit="cl" substance="@Cointreau"/>
-				<ingredient amount="3" unit="cl" substance="dmBio Cranberrysaft, 100% Muttersaft"/>
-				<ingredient amount="1.5" unit="cl" substance="@SugarSyrup"/>
-				<ingredient amount="1" unit="dash" substance="@OrangeBitter"/>
+				<ingredient amount="1.5" unit="cl" substance="@FreshLimeJuice" />
+				<ingredient amount="3" unit="cl" substance="Absolut Citron Wodka" />
+				<ingredient amount="3" unit="cl" substance="@Cointreau" />
+				<ingredient amount="3" unit="cl" substance="dmBio Cranberrysaft, 100% Muttersaft" />
+				<ingredient amount="1.5" unit="cl" substance="@SugarSyrup" />
+				<ingredient amount="1" unit="dash" substance="@OrangeBitter" />
 				<instruction>SHAKE alle Zutaten</instruction>
 				<instruction>FINE STRAIN ins Gästeglas</instruction>
 				<instruction>Glasrand mit Orange einreiben</instruction>
@@ -408,9 +408,9 @@
 			<ice>Cubed</ice>
 			<garnish>Limetten-scheibe/spalte</garnish>
 			<recipe>
-				<ingredient amount="1" unit="" substance="@Lime"/>
-				<ingredient amount="5" unit="cl" substance="@SantiagoDeCuba"/>
-				<ingredient amount="10" unit="cl" substance="@CocaCola"/>
+				<ingredient amount="1" unit="" substance="@Lime" />
+				<ingredient amount="5" unit="cl" substance="@SantiagoDeCuba" />
+				<ingredient amount="10" unit="cl" substance="@CocaCola" />
 				<instruction>Limette in Spalten schneiden</instruction>
 				<instruction>Ins Gästeglas ausdrücken, geben</instruction>
 				<instruction>Eis und Rum drauf</instruction>
@@ -435,9 +435,9 @@
 			<ice>Cubed</ice>
 			<garnish>Limettenscheibe</garnish>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="@FreshLimeJuice"/>
-				<ingredient amount="6" unit="cl" substance="@AppletonRum"/>
-				<ingredient amount="12" unit="cl" substance="Ginger Beer"/>
+				<ingredient amount="3" unit="cl" substance="@FreshLimeJuice" />
+				<ingredient amount="6" unit="cl" substance="@AppletonRum" />
+				<ingredient amount="12" unit="cl" substance="Ginger Beer" />
 				<instruction>STIR Limettensaft und Rum auf Eis</instruction>
 				<instruction>FILL mit Ginger Beer</instruction>
 			</recipe>
@@ -455,11 +455,11 @@
 			<ice>Crushed</ice>
 			<garnish>Grapefruitscheibe</garnish>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="@FreshGrapefruitJuice"/>
-				<ingredient amount="3" unit="cl" substance="@TheStinSloeGin"/>
-				<ingredient amount="3" unit="cl" substance="@Beefeater24"/>
-				<ingredient amount="1" unit="cl" substance="@SugarSyrup"/>
-				<ingredient amount="1.5" unit="cl" substance="@CherryHeering"/>
+				<ingredient amount="3" unit="cl" substance="@FreshGrapefruitJuice" />
+				<ingredient amount="3" unit="cl" substance="@TheStinSloeGin" />
+				<ingredient amount="3" unit="cl" substance="@Beefeater24" />
+				<ingredient amount="1" unit="cl" substance="@SugarSyrup" />
+				<ingredient amount="1.5" unit="cl" substance="@CherryHeering" />
 				<instruction>LIGHT SHAKE Grapefruitsaft, Gin und Läuterzucker</instruction>
 				<instruction>FILL Gästeglas mit Crushed Ice 3/4</instruction>
 				<instruction>POUR ins Gästeglas</instruction>
@@ -478,11 +478,11 @@
 			<ice>None</ice>
 			<garnish></garnish>
 			<recipe>
-				<ingredient amount="2" unit="cl" substance="@FreshLemonJuice"/>
-				<ingredient amount="4" unit="cl" substance="@FreshOrangeJuice"/>
-				<ingredient amount="4" unit="cl" substance="@Beefeater24"/>
-				<ingredient amount="1" unit="cl" substance="@SugarSyrup"/>
-				<ingredient amount="1" unit="dash" substance="@Grenadine"/>
+				<ingredient amount="2" unit="cl" substance="@FreshLemonJuice" />
+				<ingredient amount="4" unit="cl" substance="@FreshOrangeJuice" />
+				<ingredient amount="4" unit="cl" substance="@Beefeater24" />
+				<ingredient amount="1" unit="cl" substance="@SugarSyrup" />
+				<ingredient amount="1" unit="dash" substance="@Grenadine" />
 				<instruction>SHAKE alle Zutaten</instruction>
 				<instruction>FILL STRAIN ins Gästeglas</instruction>
 			</recipe>
@@ -506,34 +506,34 @@
 			<ice>Cubed</ice>
 			<garnish>Zitronenzeste</garnish>
 			<recipe>
-				<ingredient amount="4.5" unit="cl" substance="Gin"/>
-				<ingredient substance="  • Aeijst Styrian Pale London Dry Gin"/>
-				<ingredient substance="  • Brockman's Intensely Smooth Premium Gin"/>
-				<ingredient substance="  • Burleigh's London Dry Gin"/>
-				<ingredient substance="  • Danger Line Gin"/>
-				<ingredient substance="  • Fuxbau Distilled Gin"/>
-				<ingredient substance="  • See Destillerie Gletscher Gin"/>
-				<ingredient substance="  • See Destillerie Toplitz Gin"/>
-				<ingredient substance="  • HOLY Gin Marille"/>
-				<ingredient substance="  • O•Gin"/>
-				<ingredient substance="  • Plymouth Dry Gin"/>
-				<ingredient substance="  • Siegfried Herzog Hagmoar Gin"/>
-				<ingredient substance="  • The Duke Munich Dry Gin"/>
-				<ingredient substance="  • Sinnesfreuden Gin"/>
-				<ingredient substance="  • The Good Gin"/>
-				<ingredient substance="  • The STIN Styrian Dry Gin"/>
-				<ingredient substance="  • Wieser Wahouua Bitter Pink Gin"/>
-				<ingredient amount="20" unit="cl" substance="Tonic Water"/>
-				<ingredient substance="  • Le Tribute"/>
-				<ingredient substance="  • Thomas Henry"/>
-				<ingredient substance="  • Thomas Henry Elderflower"/>
-				<ingredient substance="  • Fentimans Premium Indian"/>
-				<ingredient substance="  • Fever Tree Premium Indian"/>
-				<ingredient substance="  • Fever Tree Mediterranean"/>
-				<ingredient substance="  • 1724"/>
-				<ingredient substance="  • Schweppes Premium"/>
-				<ingredient substance="  • Gents Swiss Roots"/>
-				<ingredient substance="  • Golden Monaco Extra Dry"/>
+				<ingredient amount="4.5" unit="cl" substance="Gin" />
+				<ingredient substance="  • Aeijst Styrian Pale London Dry Gin" />
+				<ingredient substance="  • Brockman's Intensely Smooth Premium Gin" />
+				<ingredient substance="  • Burleigh's London Dry Gin" />
+				<ingredient substance="  • Danger Line Gin" />
+				<ingredient substance="  • Fuxbau Distilled Gin" />
+				<ingredient substance="  • See Destillerie Gletscher Gin" />
+				<ingredient substance="  • See Destillerie Toplitz Gin" />
+				<ingredient substance="  • HOLY Gin Marille" />
+				<ingredient substance="  • O•Gin" />
+				<ingredient substance="  • Plymouth Dry Gin" />
+				<ingredient substance="  • Siegfried Herzog Hagmoar Gin" />
+				<ingredient substance="  • The Duke Munich Dry Gin" />
+				<ingredient substance="  • Sinnesfreuden Gin" />
+				<ingredient substance="  • The Good Gin" />
+				<ingredient substance="  • The STIN Styrian Dry Gin" />
+				<ingredient substance="  • Wieser Wahouua Bitter Pink Gin" />
+				<ingredient amount="20" unit="cl" substance="Tonic Water" />
+				<ingredient substance="  • Le Tribute" />
+				<ingredient substance="  • Thomas Henry" />
+				<ingredient substance="  • Thomas Henry Elderflower" />
+				<ingredient substance="  • Fentimans Premium Indian" />
+				<ingredient substance="  • Fever Tree Premium Indian" />
+				<ingredient substance="  • Fever Tree Mediterranean" />
+				<ingredient substance="  • 1724" />
+				<ingredient substance="  • Schweppes Premium" />
+				<ingredient substance="  • Gents Swiss Roots" />
+				<ingredient substance="  • Golden Monaco Extra Dry" />
 				<instruction>BUILD im Gästeglas</instruction>
 			</recipe>
 		</drink>
@@ -554,9 +554,9 @@
 			<ice>Cubed</ice>
 			<garnish>Zitronenzeste</garnish>
 			<recipe>
-				<ingredient amount="6" unit="cl" substance="@FourRoses"/>
-				<ingredient amount="3" unit="dash" substance="@AngosturaBitter"/>
-				<ingredient amount="12" unit="cl" substance="@GingerAle"/>
+				<ingredient amount="6" unit="cl" substance="@FourRoses" />
+				<ingredient amount="3" unit="dash" substance="@AngosturaBitter" />
+				<ingredient amount="12" unit="cl" substance="@GingerAle" />
 				<instruction>BUILD im Gästeglas</instruction>
 			</recipe>
 		</drink>
@@ -577,17 +577,14 @@
 			<ice>Cubed</ice>
 			<garnish>Orangenscheibe</garnish>
 			<recipe>
-				<ingredient amount="1.5" unit="cl" substance="@FreshLemonJuice"/>
-				<ingredient amount="4.5" unit="cl" substance="@BurleighsGin"/>
-				<ingredient substance="@GingerAle"/>
+				<ingredient amount="1.5" unit="cl" substance="@FreshLemonJuice" />
+				<ingredient amount="4.5" unit="cl" substance="@BurleighsGin" />
+				<ingredient substance="@GingerAle" />
 				<instruction>STIR Zitronensaft und Gin</instruction>
 				<instruction>POUR ins Gästeglas</instruction>
 				<instruction>FILL mit Ginger Ale</instruction>
 			</recipe>
 		</drink>
-
-
-
 
 
 		<drink>
@@ -603,14 +600,14 @@
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-				<ingredient amount="1.5" unit="cl" substance="Wodka"/>
-				<ingredient amount="1.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-				<ingredient amount="2" unit="cl" substance="Sierra Milenario Blanco Tequila"/>
-				<ingredient amount="1.5" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
-				<ingredient amount="2" unit="cl" substance="Cointreau"/>
-				<ingredient amount="1.5" unit="cl" substance="Zuckersirup 2:1"/>
-				<ingredient substance="Coca Cola, Original Taste"/>
+				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft" />
+				<ingredient amount="1.5" unit="cl" substance="Wodka" />
+				<ingredient amount="1.5" unit="cl" substance="Beefeater 24 London Dry Gin" />
+				<ingredient amount="2" unit="cl" substance="Sierra Milenario Blanco Tequila" />
+				<ingredient amount="1.5" unit="cl" substance="Plantation 3 Stars White Jamaica Rum" />
+				<ingredient amount="2" unit="cl" substance="Cointreau" />
+				<ingredient amount="1.5" unit="cl" substance="Zuckersirup 2:1" />
+				<ingredient substance="Coca Cola, Original Taste" />
 			</recipe>
 		</drink>
 
@@ -630,12 +627,12 @@
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-				<ingredient amount="2" unit="cl" substance="Clément Rhum Blanc"/>
-				<ingredient amount="3" unit="cl" substance="Appleton Estate Jamaica Rum"/>
-				<ingredient amount="2" unit="cl" substance="Cointreau"/>
-				<ingredient amount="2" unit="cl" substance="Orgeat (selbstgemacht)"/>
-				<ingredient substance="Muskatnuss"/>
+				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft" />
+				<ingredient amount="2" unit="cl" substance="Clément Rhum Blanc" />
+				<ingredient amount="3" unit="cl" substance="Appleton Estate Jamaica Rum" />
+				<ingredient amount="2" unit="cl" substance="Cointreau" />
+				<ingredient amount="2" unit="cl" substance="Orgeat (selbstgemacht)" />
+				<ingredient substance="Muskatnuss" />
 			</recipe>
 		</drink>
 
@@ -650,11 +647,11 @@
 				(mixology.eu)
 			</description>
 			<recipe>
-				<ingredient amount="6" unit="cl" substance="Hayman's Old Tom Gin"/>
-				<ingredient amount="0.75" unit="cl" substance="Vermouth Dry"/>
-				<ingredient amount="2.25" unit="cl" substance="Martini Vermouth Rosso"/>
-				<ingredient amount="0.75" unit="cl" substance="Luxardo Maraschino"/>
-				<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
+				<ingredient amount="6" unit="cl" substance="Hayman's Old Tom Gin" />
+				<ingredient amount="0.75" unit="cl" substance="Vermouth Dry" />
+				<ingredient amount="2.25" unit="cl" substance="Martini Vermouth Rosso" />
+				<ingredient amount="0.75" unit="cl" substance="Luxardo Maraschino" />
+				<ingredient amount="1" unit="dash" substance="Angostura Bitter" />
 			</recipe>
 		</drink>
 
@@ -671,11 +668,11 @@
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
 			<recipe>
-				<ingredient substance="Minzzweige"/>
-				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-				<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker"/>
-				<ingredient amount="6" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
-				<ingredient amount="3" unit="cl" substance="Soda"/>
+				<ingredient substance="Minzzweige" />
+				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft" />
+				<ingredient amount="2" unit="BL" substance="Weißer Rohrzucker" />
+				<ingredient amount="6" unit="cl" substance="Plantation 3 Stars White Jamaica Rum" />
+				<ingredient amount="3" unit="cl" substance="Soda" />
 			</recipe>
 		</drink>
 
@@ -695,9 +692,9 @@
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="Plymouth Dry Gin"/>
-				<ingredient amount="3" unit="cl" substance="Campari Bitterlikör"/>
-				<ingredient amount="3" unit="cl" substance="Martini Vermouth Rosso"/>
+				<ingredient amount="3" unit="cl" substance="Plymouth Dry Gin" />
+				<ingredient amount="3" unit="cl" substance="Campari Bitterlikör" />
+				<ingredient amount="3" unit="cl" substance="Martini Vermouth Rosso" />
 			</recipe>
 		</drink>
 
@@ -715,11 +712,11 @@
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
 			<recipe>
-				<ingredient amount="1" unit="" substance="Zuckerwürfel"/>
-				<ingredient amount="1" unit="BL" substance="Soda"/>
-				<ingredient amount="1" unit="dash" substance="Angostura Bitter"/>
-				<ingredient amount="1" unit="dash" substance="The Bitter Truth Orange Bitter"/>
-				<ingredient amount="6" unit="cl" substance="Four Roses Single Barrel Bourbon Whiskey"/>
+				<ingredient amount="1" unit="" substance="Zuckerwürfel" />
+				<ingredient amount="1" unit="BL" substance="Soda" />
+				<ingredient amount="1" unit="dash" substance="Angostura Bitter" />
+				<ingredient amount="1" unit="dash" substance="The Bitter Truth Orange Bitter" />
+				<ingredient amount="6" unit="cl" substance="Four Roses Single Barrel Bourbon Whiskey" />
 			</recipe>
 		</drink>
 
@@ -737,12 +734,12 @@
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
 			<recipe>
-				<ingredient amount="2" unit="" substance="Scheiben frisch Ananas"/>
-				<ingredient amount="5" unit="cl" substance="Don Papas Rum"/>
-				<ingredient amount="1" unit="cl" substance="Baileys"/>
-				<ingredient amount="3" unit="cl" substance="Creme of Coconut"/>
-				<ingredient amount="3" unit="cl" substance="Alnatura Kokosmilch"/>
-				<ingredient amount="2" unit="cl" substance="Ananassaft"/>
+				<ingredient amount="2" unit="" substance="Scheiben frisch Ananas" />
+				<ingredient amount="5" unit="cl" substance="Don Papas Rum" />
+				<ingredient amount="1" unit="cl" substance="Baileys" />
+				<ingredient amount="3" unit="cl" substance="Creme of Coconut" />
+				<ingredient amount="3" unit="cl" substance="Alnatura Kokosmilch" />
+				<ingredient amount="2" unit="cl" substance="Ananassaft" />
 			</recipe>
 		</drink>
 
@@ -755,11 +752,11 @@
 				Ein süßer-cremiger Cocktail mit feinem Vanille- und Maracujageschmack.
 			</description>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="Sierra Milenario Blanco Tequila"/>
-				<ingredient amount="2" unit="cl" substance="Likör 43"/>
-				<ingredient amount="2" unit="cl" substance="Sahne"/>
-				<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
-				<ingredient amount="10" unit="cl" substance="Rauch Happy Day Maracujasaft"/>
+				<ingredient amount="3" unit="cl" substance="Sierra Milenario Blanco Tequila" />
+				<ingredient amount="2" unit="cl" substance="Likör 43" />
+				<ingredient amount="2" unit="cl" substance="Sahne" />
+				<ingredient amount="2" unit="cl" substance="Creme of Coconut" />
+				<ingredient amount="10" unit="cl" substance="Rauch Happy Day Maracujasaft" />
 			</recipe>
 		</drink>
 
@@ -777,10 +774,10 @@
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft"/>
-				<ingredient amount="4.5" unit="cl" substance="Ramazotti"/>
-				<ingredient amount="0.5" unit="cl" substance="Zuckersirup"/>
-				<ingredient amount="3" unit="cl" substance="Frischer Orangensaft"/>
+				<ingredient amount="3" unit="cl" substance="Frischer Zitronensaft" />
+				<ingredient amount="4.5" unit="cl" substance="Ramazotti" />
+				<ingredient amount="0.5" unit="cl" substance="Zuckersirup" />
+				<ingredient amount="3" unit="cl" substance="Frischer Orangensaft" />
 			</recipe>
 		</drink>
 
@@ -793,14 +790,14 @@
 				Ein süß-cremiger Cocktail, der bei seiner rosa Farbe geschmacklich automatisch an Erdbeere erinnert, obwohl Bananensirup enthalten ist.
 			</description>
 			<recipe>
-				<ingredient amount="2" unit="cl" substance="Wodka"/>
-				<ingredient amount="4" unit="cl" substance="Likör 43"/>
-				<ingredient amount="2" unit="cl" substance="Bananensirup"/>
-				<ingredient amount="2" unit="cl" substance="Creme of Coconut"/>
-				<ingredient amount="2" unit="cl" substance="Sahne"/>
-				<ingredient amount="8" unit="cl" substance="Rauch Happy Day Maracujasirup"/>
-				<ingredient amount="4" unit="cl" substance="Rauch Happy Day Ananassaft"/>
-				<ingredient amount="1" unit="cl" substance="Grenadine"/>
+				<ingredient amount="2" unit="cl" substance="Wodka" />
+				<ingredient amount="4" unit="cl" substance="Likör 43" />
+				<ingredient amount="2" unit="cl" substance="Bananensirup" />
+				<ingredient amount="2" unit="cl" substance="Creme of Coconut" />
+				<ingredient amount="2" unit="cl" substance="Sahne" />
+				<ingredient amount="8" unit="cl" substance="Rauch Happy Day Maracujasirup" />
+				<ingredient amount="4" unit="cl" substance="Rauch Happy Day Ananassaft" />
+				<ingredient amount="1" unit="cl" substance="Grenadine" />
 			</recipe>
 		</drink>
 
@@ -820,14 +817,14 @@
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
 			<recipe>
-				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft"/>
-				<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-				<ingredient amount="2" unit="cl" substance="Heering Kirschlikör"/>
-				<ingredient amount="1" unit="cl" substance="Cointreau"/>
-				<ingredient amount="1" unit="cl" substance="D.O.M. Benedictine Kräuterlikör"/>
-				<ingredient amount="1" unit="cl" substance="Grenadine"/>
-				<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
-				<ingredient amount="6" unit="cl" substance="Ananassaft"/>
+				<ingredient amount="3" unit="cl" substance="Frischer Limettensaft" />
+				<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin" />
+				<ingredient amount="2" unit="cl" substance="Heering Kirschlikör" />
+				<ingredient amount="1" unit="cl" substance="Cointreau" />
+				<ingredient amount="1" unit="cl" substance="D.O.M. Benedictine Kräuterlikör" />
+				<ingredient amount="1" unit="cl" substance="Grenadine" />
+				<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter" />
+				<ingredient amount="6" unit="cl" substance="Ananassaft" />
 			</recipe>
 		</drink>
 
@@ -840,11 +837,11 @@
 				Ein Tiki-inspirierter Gin Sour mit Passionsfrucht und Mandel.
 			</description>
 			<recipe>
-				<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft"/>
-				<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin"/>
-				<ingredient amount="0.75" unit="cl" substance="Taylor's Velvet Falernum"/>
-				<ingredient amount="0.75" unit="cl" substance="Orgeat (selbstgemacht)"/>
-				<ingredient amount="0.75" unit="cl" substance="Maracujasirup"/>
+				<ingredient amount="1.5" unit="cl" substance="Frischer Limettensaft" />
+				<ingredient amount="4.5" unit="cl" substance="Beefeater 24 London Dry Gin" />
+				<ingredient amount="0.75" unit="cl" substance="Taylor's Velvet Falernum" />
+				<ingredient amount="0.75" unit="cl" substance="Orgeat (selbstgemacht)" />
+				<ingredient amount="0.75" unit="cl" substance="Maracujasirup" />
 			</recipe>
 		</drink>
 
@@ -862,10 +859,10 @@
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
 			<recipe>
-				<ingredient amount="6" unit="cl" substance="Wodka"/>
-				<ingredient amount="3" unit="cl" substance="Kahlua Kaffeelikör"/>
-				<ingredient amount="3" unit="cl" substance="Leicht geschlagene Sahne"/>
-				<ingredient substance="Muskatnuss"/>
+				<ingredient amount="6" unit="cl" substance="Wodka" />
+				<ingredient amount="3" unit="cl" substance="Kahlua Kaffeelikör" />
+				<ingredient amount="3" unit="cl" substance="Leicht geschlagene Sahne" />
+				<ingredient substance="Muskatnuss" />
 			</recipe>
 		</drink>
 
@@ -887,20 +884,19 @@
 				⁽¹⁾ ᵂᶦᵏᶦᵖᵉᵈᶦᵃ
 			</description>
 			<recipe>
-				<ingredient amount="2.5" unit="cl" substance="Frischer Limettensaft"/>
-				<ingredient amount="2" unit="cl" substance="Frischer Grapefruitsaft"/>
-				<ingredient amount="4.5" unit="cl" substance="Plantation 3 Stars White Jamaica Rum"/>
-				<ingredient amount="4.5" unit="cl" substance="Appleton Estate Jamaica Rum"/>
-				<ingredient amount="3" unit="cl" substance="Plantation OFTD Overproof"/>
-				<ingredient amount="2" unit="cl" substance="Taylor's Velvet Falernum"/>
-				<ingredient amount="2" unit="cl" substance="The Bitter Truth Golden Falernum"/>
-				<ingredient amount="2" unit="cl" substance="Maraschino"/>
-				<ingredient amount="1.5" unit="cl" substance="Zimt-Zuckersirup"/>
-				<ingredient amount="2" unit="dash" substance="Absinth"/>
-				<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter"/>
+				<ingredient amount="2.5" unit="cl" substance="Frischer Limettensaft" />
+				<ingredient amount="2" unit="cl" substance="Frischer Grapefruitsaft" />
+				<ingredient amount="4.5" unit="cl" substance="Plantation 3 Stars White Jamaica Rum" />
+				<ingredient amount="4.5" unit="cl" substance="Appleton Estate Jamaica Rum" />
+				<ingredient amount="3" unit="cl" substance="Plantation OFTD Overproof" />
+				<ingredient amount="2" unit="cl" substance="Taylor's Velvet Falernum" />
+				<ingredient amount="2" unit="cl" substance="The Bitter Truth Golden Falernum" />
+				<ingredient amount="2" unit="cl" substance="Maraschino" />
+				<ingredient amount="1.5" unit="cl" substance="Zimt-Zuckersirup" />
+				<ingredient amount="2" unit="dash" substance="Absinth" />
+				<ingredient amount="2" unit="dash" substance="Angostura Aromatic Bitter" />
 			</recipe>
 		</drink>
-
 
 
 		<!--<drink>
